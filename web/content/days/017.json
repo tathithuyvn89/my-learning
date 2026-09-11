@@ -1,0 +1,215 @@
+{
+  "id": 17,
+  "week": 3,
+  "hsk": 1,
+  "theme": "Người thân 2",
+  "kind": "learn",
+  "vocab": [
+    {
+      "han": "弟弟",
+      "pinyin": "dìdi",
+      "vi": "Em trai",
+      "example": {
+        "han": "我有弟弟。",
+        "pinyin": "Wǒ yǒu dìdi.",
+        "vi": "Tôi có em trai."
+      }
+    },
+    {
+      "han": "妹妹",
+      "pinyin": "mèimei",
+      "vi": "Em gái",
+      "example": {
+        "han": "我没有妹妹。",
+        "pinyin": "Wǒ méiyǒu mèimei.",
+        "vi": "Tôi không có em gái."
+      }
+    },
+    {
+      "han": "儿子",
+      "pinyin": "érzi",
+      "vi": "Con trai",
+      "example": {
+        "han": "他有儿子。",
+        "pinyin": "Tā yǒu érzi.",
+        "vi": "Anh ấy có con trai."
+      }
+    },
+    {
+      "han": "女儿",
+      "pinyin": "nǚ'ér",
+      "vi": "Con gái",
+      "example": {
+        "han": "她有女儿。",
+        "pinyin": "Tā yǒu nǚ'ér.",
+        "vi": "Cô ấy có con gái."
+      }
+    },
+    {
+      "han": "爱",
+      "pinyin": "ài",
+      "vi": "Yêu",
+      "example": {
+        "han": "我爱妈妈。",
+        "pinyin": "Wǒ ài māma.",
+        "vi": "Tôi yêu mẹ."
+      }
+    }
+  ],
+  "grammar": {
+    "title": "几口人",
+    "pattern": "家有 + số + 口人",
+    "explainVi": "Nhà tôi có 4 người: 我家有四口人.",
+    "drills": [
+      {
+        "prompt": "Dịch: Nhà tôi có bốn người.",
+        "answer": "我家有四口人。"
+      },
+      {
+        "prompt": "Dịch: Tôi có em trai.",
+        "answer": "我有弟弟。"
+      },
+      {
+        "prompt": "Dịch: Tôi yêu mẹ.",
+        "answer": "我爱妈妈。"
+      },
+      {
+        "prompt": "Dịch: Tôi không có em gái.",
+        "answer": "我没有妹妹。"
+      }
+    ]
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "han": "你家有几口人？",
+      "pinyin": "Nǐ jiā yǒu jǐ kǒu rén?",
+      "vi": "Nhà bạn có mấy người?"
+    },
+    {
+      "speaker": "B",
+      "han": "我家有四口人。",
+      "pinyin": "Wǒ jiā yǒu sì kǒu rén.",
+      "vi": "Nhà tôi có bốn người."
+    },
+    {
+      "speaker": "A",
+      "han": "你有弟弟吗？",
+      "pinyin": "Nǐ yǒu dìdi ma?",
+      "vi": "Bạn có em trai không?"
+    },
+    {
+      "speaker": "B",
+      "han": "我有弟弟。我爱他。",
+      "pinyin": "Wǒ yǒu dìdi. Wǒ ài tā.",
+      "vi": "Tôi có em trai. Tôi yêu em."
+    },
+    {
+      "speaker": "A",
+      "han": "我没有妹妹。",
+      "pinyin": "Wǒ méiyǒu mèimei.",
+      "vi": "Tôi không có em gái."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "write",
+      "prompt": "Tự viết: Nhà tôi có bốn người.",
+      "answer": "我家有四口人。"
+    },
+    {
+      "type": "write",
+      "prompt": "Tự viết: Tôi yêu mẹ.",
+      "answer": "我爱妈妈。"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Nói nhà có bốn người. Chỉ dùng từ đến ngày 17.",
+    "system": "Bạn là bạn nói tiếng Trung trình độ HSK 1. Chỉ dùng các từ: 你好, 您, 谢谢, 不客气, 请, 我, 你, 他, 她, 叫, 是, 名字, 老师, 学生, 人, 中国, 美国, 呢, 什么, 谁, 哪, 哪国人, 吗, 很, 好, 高兴, 认识, 也, 一, 二, 三, 四, 五, 六, 七, 八, 九, 十, 个, 号, 十一, 二十, 百, 岁, 年, 月, 日, 星期, 今天, 点, 分, 现在, 半, 刻, 昨天, 明天, 上午, 下午, 时候, 有, 没有, 家, 口, 几, 爸爸, 妈妈, 哥哥, 姐姐, 这, 的, 弟弟, 妹妹, 儿子, 女儿, 爱. Mỗi lượt 1–2 câu ngắn. Viết Hán + pinyin. Nếu học viên sai, sửa nhẹ bằng tiếng Việt rồi hỏi lại. Không thêm từ mới. Bắt đầu bằng: 我家有四口人。",
+    "allowedWords": [
+      "你好",
+      "您",
+      "谢谢",
+      "不客气",
+      "请",
+      "我",
+      "你",
+      "他",
+      "她",
+      "叫",
+      "是",
+      "名字",
+      "老师",
+      "学生",
+      "人",
+      "中国",
+      "美国",
+      "呢",
+      "什么",
+      "谁",
+      "哪",
+      "哪国人",
+      "吗",
+      "很",
+      "好",
+      "高兴",
+      "认识",
+      "也",
+      "一",
+      "二",
+      "三",
+      "四",
+      "五",
+      "六",
+      "七",
+      "八",
+      "九",
+      "十",
+      "个",
+      "号",
+      "十一",
+      "二十",
+      "百",
+      "岁",
+      "年",
+      "月",
+      "日",
+      "星期",
+      "今天",
+      "点",
+      "分",
+      "现在",
+      "半",
+      "刻",
+      "昨天",
+      "明天",
+      "上午",
+      "下午",
+      "时候",
+      "有",
+      "没有",
+      "家",
+      "口",
+      "几",
+      "爸爸",
+      "妈妈",
+      "哥哥",
+      "姐姐",
+      "这",
+      "的",
+      "弟弟",
+      "妹妹",
+      "儿子",
+      "女儿",
+      "爱"
+    ],
+    "turns": 4
+  },
+  "timer": {
+    "review": 5,
+    "vocab": 8,
+    "grammar": 8,
+    "talk": 5,
+    "ai": 4
+  }
+}

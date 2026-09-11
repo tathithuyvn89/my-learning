@@ -1,0 +1,139 @@
+{
+  "id": 1,
+  "week": 1,
+  "hsk": 1,
+  "theme": "Chào hỏi",
+  "kind": "learn",
+  "vocab": [
+    {
+      "han": "你好",
+      "pinyin": "nǐ hǎo",
+      "vi": "Xin chào",
+      "example": {
+        "han": "你好！",
+        "pinyin": "Nǐ hǎo!",
+        "vi": "Xin chào!"
+      }
+    },
+    {
+      "han": "您",
+      "pinyin": "nín",
+      "vi": "Bạn (lịch sự)",
+      "example": {
+        "han": "您好！",
+        "pinyin": "Nín hǎo!",
+        "vi": "Xin chào (lịch sự)!"
+      }
+    },
+    {
+      "han": "谢谢",
+      "pinyin": "xièxie",
+      "vi": "Cảm ơn",
+      "example": {
+        "han": "谢谢！",
+        "pinyin": "Xièxie!",
+        "vi": "Cảm ơn!"
+      }
+    },
+    {
+      "han": "不客气",
+      "pinyin": "bú kèqi",
+      "vi": "Không có gì",
+      "example": {
+        "han": "不客气。",
+        "pinyin": "Bú kèqi.",
+        "vi": "Không có gì."
+      }
+    },
+    {
+      "han": "请",
+      "pinyin": "qǐng",
+      "vi": "Mời / xin",
+      "example": {
+        "han": "请。",
+        "pinyin": "Qǐng.",
+        "vi": "Mời."
+      }
+    }
+  ],
+  "grammar": {
+    "title": "Câu đơn + 吗",
+    "pattern": "……吗？",
+    "explainVi": "Câu đơn nêu một ý. Thêm 吗 vào cuối câu để hỏi yes/no. Ngày 1 dùng để hỏi thăm: 你好吗？ / 您好吗？",
+    "drills": [
+      {
+        "prompt": "Đổi thành câu hỏi: 你好。",
+        "answer": "你好吗？"
+      },
+      {
+        "prompt": "Hỏi thăm lịch sự với 您",
+        "answer": "您好吗？"
+      },
+      {
+        "prompt": "Dịch: Bạn khỏe không?",
+        "answer": "你好吗？"
+      },
+      {
+        "prompt": "Dịch: Xin chào (lịch sự), bạn khỏe không?",
+        "answer": "您好吗？"
+      }
+    ]
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "han": "你好！",
+      "pinyin": "Nǐ hǎo!",
+      "vi": "Xin chào!"
+    },
+    {
+      "speaker": "B",
+      "han": "您好！",
+      "pinyin": "Nín hǎo!",
+      "vi": "Xin chào (lịch sự)!"
+    },
+    {
+      "speaker": "A",
+      "han": "请。",
+      "pinyin": "Qǐng.",
+      "vi": "Mời."
+    },
+    {
+      "speaker": "B",
+      "han": "谢谢！",
+      "pinyin": "Xièxie!",
+      "vi": "Cảm ơn!"
+    },
+    {
+      "speaker": "A",
+      "han": "不客气。",
+      "pinyin": "Bú kèqi.",
+      "vi": "Không có gì."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "write",
+      "prompt": "Tự viết: câu hỏi chào bạn.",
+      "answer": "你好吗？"
+    },
+    {
+      "type": "write",
+      "prompt": "Tự viết: câu hỏi chào lịch sự.",
+      "answer": "您好吗？"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Gặp người lạ: chào và cảm ơn. Chỉ dùng từ ngày 1.",
+    "system": "Bạn là bạn nói tiếng Trung trình độ HSK 1. Chỉ dùng các từ: 你好, 您, 谢谢, 不客气, 请. Mỗi lượt 1–2 câu ngắn. Viết Hán + pinyin. Nếu học viên sai, sửa nhẹ bằng tiếng Việt rồi hỏi lại. Không thêm từ mới. Bắt đầu bằng: 你好！",
+    "allowedWords": ["你好", "您", "谢谢", "不客气", "请"],
+    "turns": 4
+  },
+  "timer": {
+    "review": 5,
+    "vocab": 8,
+    "grammar": 8,
+    "talk": 5,
+    "ai": 4
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "id": 11,
+  "week": 2,
+  "hsk": 1,
+  "theme": "Giờ phút",
+  "kind": "learn",
+  "vocab": [
+    {
+      "han": "点",
+      "pinyin": "diǎn",
+      "vi": "Giờ",
+      "example": {
+        "han": "三点。",
+        "pinyin": "Sān diǎn.",
+        "vi": "Ba giờ."
+      }
+    },
+    {
+      "han": "分",
+      "pinyin": "fēn",
+      "vi": "Phút",
+      "example": {
+        "han": "三点十分。",
+        "pinyin": "Sān diǎn shí fēn.",
+        "vi": "Ba giờ mười phút."
+      }
+    },
+    {
+      "han": "现在",
+      "pinyin": "xiànzài",
+      "vi": "Bây giờ",
+      "example": {
+        "han": "现在三点。",
+        "pinyin": "Xiànzài sān diǎn.",
+        "vi": "Bây giờ ba giờ."
+      }
+    },
+    {
+      "han": "半",
+      "pinyin": "bàn",
+      "vi": "Rưỡi",
+      "example": {
+        "han": "三点半。",
+        "pinyin": "Sān diǎn bàn.",
+        "vi": "Ba giờ rưỡi."
+      }
+    },
+    {
+      "han": "刻",
+      "pinyin": "kè",
+      "vi": "Kém/hơn 15 phút",
+      "example": {
+        "han": "三点一刻。",
+        "pinyin": "Sān diǎn yī kè.",
+        "vi": "Ba giờ mười lăm."
+      }
+    }
+  ],
+  "grammar": {
+    "title": "现在 + giờ",
+    "pattern": "现在 + số + 点 (+ 半 / 分)",
+    "explainVi": "Hỏi giờ: 现在三点吗？ Trả lời: 现在三点半.",
+    "drills": [
+      {
+        "prompt": "Dịch: Bây giờ ba giờ.",
+        "answer": "现在三点。"
+      },
+      {
+        "prompt": "Dịch: Ba giờ rưỡi.",
+        "answer": "三点半。"
+      },
+      {
+        "prompt": "Dịch: Ba giờ mười phút.",
+        "answer": "三点十分。"
+      },
+      {
+        "prompt": "Dịch: Ba giờ rưỡi, được không?",
+        "answer": "三点半，好吗？"
+      }
+    ]
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "han": "现在三点吗？",
+      "pinyin": "Xiànzài sān diǎn ma?",
+      "vi": "Bây giờ ba giờ à?"
+    },
+    {
+      "speaker": "B",
+      "han": "现在三点。",
+      "pinyin": "Xiànzài sān diǎn.",
+      "vi": "Bây giờ ba giờ."
+    },
+    {
+      "speaker": "A",
+      "han": "现在三点半吗？",
+      "pinyin": "Xiànzài sān diǎn bàn ma?",
+      "vi": "Bây giờ ba rưỡi à?"
+    },
+    {
+      "speaker": "B",
+      "han": "现在三点十分。",
+      "pinyin": "Xiànzài sān diǎn shí fēn.",
+      "vi": "Bây giờ ba giờ mười."
+    },
+    {
+      "speaker": "A",
+      "han": "谢谢！",
+      "pinyin": "Xièxie!",
+      "vi": "Cảm ơn!"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "write",
+      "prompt": "Tự viết: Bây giờ ba giờ.",
+      "answer": "现在三点。"
+    },
+    {
+      "type": "write",
+      "prompt": "Tự viết: Năm giờ rưỡi.",
+      "answer": "五点半。"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Hỏi bây giờ mấy giờ. Chỉ dùng từ đến ngày 11.",
+    "system": "Bạn là bạn nói tiếng Trung trình độ HSK 1. Chỉ dùng các từ: 你好, 您, 谢谢, 不客气, 请, 我, 你, 他, 她, 叫, 是, 名字, 老师, 学生, 人, 中国, 美国, 呢, 什么, 谁, 哪, 哪国人, 吗, 很, 好, 高兴, 认识, 也, 一, 二, 三, 四, 五, 六, 七, 八, 九, 十, 个, 号, 十一, 二十, 百, 岁, 年, 月, 日, 星期, 今天, 点, 分, 现在, 半, 刻. Mỗi lượt 1–2 câu ngắn. Viết Hán + pinyin. Nếu học viên sai, sửa nhẹ bằng tiếng Việt rồi hỏi lại. Không thêm từ mới. Bắt đầu bằng: 现在三点吗？",
+    "allowedWords": [
+      "你好",
+      "您",
+      "谢谢",
+      "不客气",
+      "请",
+      "我",
+      "你",
+      "他",
+      "她",
+      "叫",
+      "是",
+      "名字",
+      "老师",
+      "学生",
+      "人",
+      "中国",
+      "美国",
+      "呢",
+      "什么",
+      "谁",
+      "哪",
+      "哪国人",
+      "吗",
+      "很",
+      "好",
+      "高兴",
+      "认识",
+      "也",
+      "一",
+      "二",
+      "三",
+      "四",
+      "五",
+      "六",
+      "七",
+      "八",
+      "九",
+      "十",
+      "个",
+      "号",
+      "十一",
+      "二十",
+      "百",
+      "岁",
+      "年",
+      "月",
+      "日",
+      "星期",
+      "今天",
+      "点",
+      "分",
+      "现在",
+      "半",
+      "刻"
+    ],
+    "turns": 4
+  },
+  "timer": {
+    "review": 5,
+    "vocab": 8,
+    "grammar": 8,
+    "talk": 5,
+    "ai": 4
+  }
+}

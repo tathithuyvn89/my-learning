@@ -1,0 +1,233 @@
+{
+  "id": 23,
+  "week": 4,
+  "hsk": 1,
+  "theme": "Muốn",
+  "kind": "learn",
+  "vocab": [
+    {
+      "han": "想",
+      "pinyin": "xiǎng",
+      "vi": "Muốn (dự định)",
+      "example": {
+        "han": "我想喝茶。",
+        "pinyin": "Wǒ xiǎng hē chá.",
+        "vi": "Tôi muốn uống trà."
+      }
+    },
+    {
+      "han": "要",
+      "pinyin": "yào",
+      "vi": "Muốn / lấy",
+      "example": {
+        "han": "我要水。",
+        "pinyin": "Wǒ yào shuǐ.",
+        "vi": "Tôi muốn nước."
+      }
+    },
+    {
+      "han": "杯子",
+      "pinyin": "bēizi",
+      "vi": "Cốc / ly",
+      "example": {
+        "han": "一个杯子。",
+        "pinyin": "Yī gè bēizi.",
+        "vi": "Một cái cốc."
+      }
+    },
+    {
+      "han": "菜",
+      "pinyin": "cài",
+      "vi": "Món / thức ăn",
+      "example": {
+        "han": "一个菜。",
+        "pinyin": "Yī gè cài.",
+        "vi": "Một món."
+      }
+    },
+    {
+      "han": "请",
+      "pinyin": "qǐng",
+      "vi": "Xin / mời (ôn)",
+      "example": {
+        "han": "请喝茶。",
+        "pinyin": "Qǐng hē chá.",
+        "vi": "Mời uống trà."
+      }
+    }
+  ],
+  "grammar": {
+    "title": "想 / 要",
+    "pattern": "想 / 要 + V / N",
+    "explainVi": "想 + động từ (muốn làm). 要 + món (muốn lấy). 我想喝茶；我要水.",
+    "drills": [
+      {
+        "prompt": "Dịch: Tôi muốn uống nước.",
+        "answer": "我想喝水。"
+      },
+      {
+        "prompt": "Dịch: Tôi muốn trà.",
+        "answer": "我要茶。"
+      },
+      {
+        "prompt": "Dịch: Một cái cốc.",
+        "answer": "一个杯子。"
+      },
+      {
+        "prompt": "Dịch: Tôi muốn một món.",
+        "answer": "我要一个菜。"
+      }
+    ]
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "han": "你想喝什么？",
+      "pinyin": "Nǐ xiǎng hē shénme?",
+      "vi": "Bạn muốn uống gì?"
+    },
+    {
+      "speaker": "B",
+      "han": "我想喝水。",
+      "pinyin": "Wǒ xiǎng hē shuǐ.",
+      "vi": "Tôi muốn uống nước."
+    },
+    {
+      "speaker": "A",
+      "han": "你要茶吗？",
+      "pinyin": "Nǐ yào chá ma?",
+      "vi": "Bạn muốn trà không?"
+    },
+    {
+      "speaker": "B",
+      "han": "我要一个杯子。",
+      "pinyin": "Wǒ yào yī gè bēizi.",
+      "vi": "Tôi muốn một cái cốc."
+    },
+    {
+      "speaker": "A",
+      "han": "请。",
+      "pinyin": "Qǐng.",
+      "vi": "Mời."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "write",
+      "prompt": "Tự viết: Tôi muốn uống nước.",
+      "answer": "我想喝水。"
+    },
+    {
+      "type": "write",
+      "prompt": "Tự viết: Tôi muốn trà.",
+      "answer": "我要茶。"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Muốn uống nước. Chỉ dùng từ đến ngày 23.",
+    "system": "Bạn là bạn nói tiếng Trung trình độ HSK 1. Chỉ dùng các từ: 你好, 您, 谢谢, 不客气, 请, 我, 你, 他, 她, 叫, 是, 名字, 老师, 学生, 人, 中国, 美国, 呢, 什么, 谁, 哪, 哪国人, 吗, 很, 好, 高兴, 认识, 也, 一, 二, 三, 四, 五, 六, 七, 八, 九, 十, 个, 号, 十一, 二十, 百, 岁, 年, 月, 日, 星期, 今天, 点, 分, 现在, 半, 刻, 昨天, 明天, 上午, 下午, 时候, 有, 没有, 家, 口, 几, 爸爸, 妈妈, 哥哥, 姐姐, 这, 的, 弟弟, 妹妹, 儿子, 女儿, 爱, 的, 朋友, 同学, 猫, 狗, 都, 和, 两, 照片, 吃, 喝, 米饭, 水, 茶, 想, 要, 杯子, 菜. Mỗi lượt 1–2 câu ngắn. Viết Hán + pinyin. Nếu học viên sai, sửa nhẹ bằng tiếng Việt rồi hỏi lại. Không thêm từ mới. Bắt đầu bằng: 我想喝水。",
+    "allowedWords": [
+      "你好",
+      "您",
+      "谢谢",
+      "不客气",
+      "请",
+      "我",
+      "你",
+      "他",
+      "她",
+      "叫",
+      "是",
+      "名字",
+      "老师",
+      "学生",
+      "人",
+      "中国",
+      "美国",
+      "呢",
+      "什么",
+      "谁",
+      "哪",
+      "哪国人",
+      "吗",
+      "很",
+      "好",
+      "高兴",
+      "认识",
+      "也",
+      "一",
+      "二",
+      "三",
+      "四",
+      "五",
+      "六",
+      "七",
+      "八",
+      "九",
+      "十",
+      "个",
+      "号",
+      "十一",
+      "二十",
+      "百",
+      "岁",
+      "年",
+      "月",
+      "日",
+      "星期",
+      "今天",
+      "点",
+      "分",
+      "现在",
+      "半",
+      "刻",
+      "昨天",
+      "明天",
+      "上午",
+      "下午",
+      "时候",
+      "有",
+      "没有",
+      "家",
+      "口",
+      "几",
+      "爸爸",
+      "妈妈",
+      "哥哥",
+      "姐姐",
+      "这",
+      "的",
+      "弟弟",
+      "妹妹",
+      "儿子",
+      "女儿",
+      "爱",
+      "的",
+      "朋友",
+      "同学",
+      "猫",
+      "狗",
+      "都",
+      "和",
+      "两",
+      "照片",
+      "吃",
+      "喝",
+      "米饭",
+      "水",
+      "茶",
+      "想",
+      "要",
+      "杯子",
+      "菜"
+    ],
+    "turns": 4
+  },
+  "timer": {
+    "review": 5,
+    "vocab": 8,
+    "grammar": 8,
+    "talk": 5,
+    "ai": 4
+  }
+}

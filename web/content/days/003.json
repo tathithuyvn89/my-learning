@@ -1,0 +1,74 @@
+{
+  "id": 3,
+  "week": 1,
+  "hsk": 1,
+  "theme": "Người và nghề",
+  "kind": "learn",
+  "vocab": [
+    {
+      "han": "老师",
+      "pinyin": "lǎoshī",
+      "vi": "Giáo viên",
+      "example": { "han": "我是老师。", "pinyin": "Wǒ shì lǎoshī.", "vi": "Tôi là giáo viên." }
+    },
+    {
+      "han": "学生",
+      "pinyin": "xuésheng",
+      "vi": "Học sinh",
+      "example": { "han": "他是学生。", "pinyin": "Tā shì xuésheng.", "vi": "Anh ấy là học sinh." }
+    },
+    {
+      "han": "人",
+      "pinyin": "rén",
+      "vi": "Người",
+      "example": { "han": "我是中国人。", "pinyin": "Wǒ shì Zhōngguó rén.", "vi": "Tôi là người Trung Quốc." }
+    },
+    {
+      "han": "中国",
+      "pinyin": "Zhōngguó",
+      "vi": "Trung Quốc",
+      "example": { "han": "她是中国人。", "pinyin": "Tā shì Zhōngguó rén.", "vi": "Cô ấy là người Trung Quốc." }
+    },
+    {
+      "han": "美国",
+      "pinyin": "Měiguó",
+      "vi": "Mỹ",
+      "example": { "han": "我是美国人。", "pinyin": "Wǒ shì Měiguó rén.", "vi": "Tôi là người Mỹ." }
+    },
+    {
+      "han": "呢",
+      "pinyin": "ne",
+      "vi": "Còn… thì sao?",
+      "example": { "han": "你呢？", "pinyin": "Nǐ ne?", "vi": "Còn bạn thì sao?" }
+    }
+  ],
+  "grammar": {
+    "title": "A 呢?",
+    "pattern": "A 呢？",
+    "explainVi": "呢 hỏi lại người kia, thường sau khi mình vừa nói về mình. 你呢？ = còn bạn thì sao?",
+    "drills": [
+      { "prompt": "Dịch: Còn bạn thì sao?", "answer": "你呢？" },
+      { "prompt": "Dịch: Tôi là giáo viên. Còn bạn?", "answer": "我是老师。你呢？" },
+      { "prompt": "Dịch: Anh ấy là học sinh à? (dùng 吗)", "answer": "他是学生吗？" },
+      { "prompt": "Dịch: Cô ấy là người Trung Quốc. Còn bạn?", "answer": "她是中国人。你呢？" }
+    ]
+  },
+  "dialogue": [
+    { "speaker": "A", "han": "你好！你是老师吗？", "pinyin": "Nǐ hǎo! Nǐ shì lǎoshī ma?", "vi": "Xin chào! Bạn là giáo viên à?" },
+    { "speaker": "B", "han": "我是学生。你呢？", "pinyin": "Wǒ shì xuésheng. Nǐ ne?", "vi": "Tôi là học sinh. Còn bạn?" },
+    { "speaker": "A", "han": "我是老师。", "pinyin": "Wǒ shì lǎoshī.", "vi": "Tôi là giáo viên." },
+    { "speaker": "B", "han": "你是中国人吗？", "pinyin": "Nǐ shì Zhōngguó rén ma?", "vi": "Bạn là người Trung Quốc à?" },
+    { "speaker": "A", "han": "我是美国人。", "pinyin": "Wǒ shì Měiguó rén.", "vi": "Tôi là người Mỹ." }
+  ],
+  "exercises": [
+    { "type": "write", "prompt": "Tự viết: Tôi là học sinh. Còn bạn?", "answer": "我是学生。你呢？" },
+    { "type": "write", "prompt": "Tự viết: Bạn là giáo viên à?", "answer": "你是老师吗？" }
+  ],
+  "aiPrompt": {
+    "scenario": "Hỏi nghề: giáo viên hay học sinh. Chỉ dùng từ đến ngày 3.",
+    "system": "Bạn là bạn nói tiếng Trung trình độ HSK 1. Chỉ dùng các từ: 你好, 您, 谢谢, 不客气, 请, 我, 你, 他, 她, 叫, 是, 名字, 老师, 学生, 人, 中国, 美国, 呢. Mỗi lượt 1–2 câu ngắn. Viết Hán + pinyin. Nếu học viên sai, sửa nhẹ bằng tiếng Việt rồi hỏi lại. Không thêm từ mới. Bắt đầu bằng: 你是老师吗？",
+    "allowedWords": ["你好", "您", "谢谢", "不客气", "请", "我", "你", "他", "她", "叫", "是", "名字", "老师", "学生", "人", "中国", "美国", "呢"],
+    "turns": 4
+  },
+  "timer": { "review": 5, "vocab": 8, "grammar": 8, "talk": 5, "ai": 4 }
+}

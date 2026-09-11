@@ -1,0 +1,68 @@
+{
+  "id": 4,
+  "week": 1,
+  "hsk": 1,
+  "theme": "Câu hỏi",
+  "kind": "learn",
+  "vocab": [
+    {
+      "han": "什么",
+      "pinyin": "shénme",
+      "vi": "Cái gì",
+      "example": { "han": "你叫什么名字？", "pinyin": "Nǐ jiào shénme míngzi?", "vi": "Bạn tên gì?" }
+    },
+    {
+      "han": "谁",
+      "pinyin": "shéi",
+      "vi": "Ai",
+      "example": { "han": "他是谁？", "pinyin": "Tā shì shéi?", "vi": "Anh ấy là ai?" }
+    },
+    {
+      "han": "哪",
+      "pinyin": "nǎ",
+      "vi": "Nào",
+      "example": { "han": "你是哪国人？", "pinyin": "Nǐ shì nǎ guó rén?", "vi": "Bạn là người nước nào?" }
+    },
+    {
+      "han": "哪国人",
+      "pinyin": "nǎ guó rén",
+      "vi": "Người nước nào",
+      "example": { "han": "您是哪国人？", "pinyin": "Nín shì nǎ guó rén?", "vi": "Bạn là người nước nào? (lịch sự)" }
+    },
+    {
+      "han": "吗",
+      "pinyin": "ma",
+      "vi": "Trợ từ hỏi yes/no",
+      "example": { "han": "你是学生吗？", "pinyin": "Nǐ shì xuésheng ma?", "vi": "Bạn là học sinh à?" }
+    }
+  ],
+  "grammar": {
+    "title": "什么 / 谁 / 哪",
+    "pattern": "什么 / 谁 / 哪……？",
+    "explainVi": "什么 = cái gì; 谁 = ai; 哪 = nào. 哪国人 hỏi quốc tịch. 吗 vẫn dùng cho câu hỏi yes/no.",
+    "drills": [
+      { "prompt": "Dịch: Bạn tên gì?", "answer": "你叫什么名字？" },
+      { "prompt": "Dịch: Anh ấy là ai?", "answer": "他是谁？" },
+      { "prompt": "Dịch: Bạn là người nước nào?", "answer": "你是哪国人？" },
+      { "prompt": "Dịch: Cô ấy là giáo viên à?", "answer": "她是老师吗？" }
+    ]
+  },
+  "dialogue": [
+    { "speaker": "A", "han": "你好！你叫什么名字？", "pinyin": "Nǐ hǎo! Nǐ jiào shénme míngzi?", "vi": "Xin chào! Bạn tên gì?" },
+    { "speaker": "B", "han": "我叫李明。你呢？", "pinyin": "Wǒ jiào Lǐ Míng. Nǐ ne?", "vi": "Tôi tên là Lý Minh. Còn bạn?" },
+    { "speaker": "A", "han": "我叫王明。您是哪国人？", "pinyin": "Wǒ jiào Wáng Míng. Nín shì nǎ guó rén?", "vi": "Tôi tên là Vương Minh. Bạn là người nước nào?" },
+    { "speaker": "B", "han": "我是中国人。你呢？", "pinyin": "Wǒ shì Zhōngguó rén. Nǐ ne?", "vi": "Tôi là người Trung Quốc. Còn bạn?" },
+    { "speaker": "A", "han": "我是美国人。", "pinyin": "Wǒ shì Měiguó rén.", "vi": "Tôi là người Mỹ." }
+  ],
+  "exercises": [
+    { "type": "write", "prompt": "Tự viết: Bạn là người nước nào?", "answer": "你是哪国人？" },
+    { "type": "write", "prompt": "Tự viết: Cô ấy là ai?", "answer": "她是谁？" }
+  ],
+  "aiPrompt": {
+    "scenario": "Hỏi tên và quốc tịch. Chỉ dùng từ đến ngày 4.",
+    "system": "Bạn là bạn nói tiếng Trung trình độ HSK 1. Chỉ dùng các từ: 你好, 您, 谢谢, 不客气, 请, 我, 你, 他, 她, 叫, 是, 名字, 老师, 学生, 人, 中国, 美国, 呢, 什么, 谁, 哪, 哪国人, 吗. Mỗi lượt 1–2 câu ngắn. Viết Hán + pinyin. Nếu học viên sai, sửa nhẹ bằng tiếng Việt rồi hỏi lại. Không thêm từ mới. Bắt đầu bằng: 你叫什么名字？",
+    "allowedWords": ["你好", "您", "谢谢", "不客气", "请", "我", "你", "他", "她", "叫", "是", "名字", "老师", "学生", "人", "中国", "美国", "呢", "什么", "谁", "哪", "哪国人", "吗"],
+    "turns": 4
+  },
+  "timer": { "review": 5, "vocab": 8, "grammar": 8, "talk": 5, "ai": 4 }
+}

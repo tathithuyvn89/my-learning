@@ -1,0 +1,260 @@
+{
+  "id": 34,
+  "week": 5,
+  "hsk": 1,
+  "theme": "Ở cửa hàng",
+  "kind": "review",
+  "vocab": [
+    {
+      "han": "买",
+      "pinyin": "mǎi",
+      "vi": "Mua (ôn)",
+      "example": {
+        "han": "我买苹果。",
+        "pinyin": "Wǒ mǎi píngguǒ.",
+        "vi": "Tôi mua táo."
+      }
+    },
+    {
+      "han": "水",
+      "pinyin": "shuǐ",
+      "vi": "Nước (ôn)",
+      "example": {
+        "han": "我要水。",
+        "pinyin": "Wǒ yào shuǐ.",
+        "vi": "Tôi muốn nước."
+      }
+    },
+    {
+      "han": "多少",
+      "pinyin": "duōshao",
+      "vi": "Bao nhiêu (ôn)",
+      "example": {
+        "han": "多少钱？",
+        "pinyin": "Duōshao qián?",
+        "vi": "Bao nhiêu tiền?"
+      }
+    },
+    {
+      "han": "一共",
+      "pinyin": "yī gòng",
+      "vi": "Tổng cộng (ôn)",
+      "example": {
+        "han": "一共十块。",
+        "pinyin": "Yī gòng shí kuài.",
+        "vi": "Tổng cộng mười khối."
+      }
+    },
+    {
+      "han": "苹果",
+      "pinyin": "píngguǒ",
+      "vi": "Táo (ôn)",
+      "example": {
+        "han": "我要苹果。",
+        "pinyin": "Wǒ yào píngguǒ.",
+        "vi": "Tôi muốn táo."
+      }
+    }
+  ],
+  "grammar": {
+    "title": "Hỏi giá + mua",
+    "pattern": "要 + món；多少钱；一共",
+    "explainVi": "Ôn mua sắm: mua táo và nước, hỏi giá, cộng tiền.",
+    "drills": [
+      {
+        "prompt": "Dịch: Tôi mua táo.",
+        "answer": "我买苹果。"
+      },
+      {
+        "prompt": "Dịch: Tôi muốn nước.",
+        "answer": "我要水。"
+      },
+      {
+        "prompt": "Dịch: Cái này bao nhiêu tiền?",
+        "answer": "这个多少钱？"
+      },
+      {
+        "prompt": "Dịch: Tổng cộng mười khối.",
+        "answer": "一共十块。"
+      }
+    ]
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "han": "我要买苹果。",
+      "pinyin": "Wǒ yào mǎi píngguǒ.",
+      "vi": "Tôi muốn mua táo."
+    },
+    {
+      "speaker": "B",
+      "han": "这个多少钱？",
+      "pinyin": "Zhège duōshao qián?",
+      "vi": "Cái này bao nhiêu tiền?"
+    },
+    {
+      "speaker": "A",
+      "han": "五块。我要水。",
+      "pinyin": "Wǔ kuài. Wǒ yào shuǐ.",
+      "vi": "Năm khối. Tôi muốn nước."
+    },
+    {
+      "speaker": "B",
+      "han": "一共十块。",
+      "pinyin": "Yī gòng shí kuài.",
+      "vi": "Tổng cộng mười khối."
+    },
+    {
+      "speaker": "A",
+      "han": "我付钱。谢谢！",
+      "pinyin": "Wǒ fù qián. Xièxie!",
+      "vi": "Tôi trả tiền. Cảm ơn!"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "write",
+      "prompt": "Tự viết: Tôi mua táo.",
+      "answer": "我买苹果。"
+    },
+    {
+      "type": "write",
+      "prompt": "Tự viết: Tổng cộng mười khối.",
+      "answer": "一共十块。"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Mua táo và nước ở cửa hàng. Không thêm từ mới.",
+    "system": "Bạn là bạn nói tiếng Trung trình độ HSK 1. Chỉ dùng các từ: 你好, 您, 谢谢, 不客气, 请, 我, 你, 他, 她, 叫, 是, 名字, 老师, 学生, 人, 中国, 美国, 呢, 什么, 谁, 哪, 哪国人, 吗, 很, 好, 高兴, 认识, 也, 一, 二, 三, 四, 五, 六, 七, 八, 九, 十, 个, 号, 十一, 二十, 百, 岁, 年, 月, 日, 星期, 今天, 点, 分, 现在, 半, 刻, 昨天, 明天, 上午, 下午, 时候, 有, 没有, 家, 口, 几, 爸爸, 妈妈, 哥哥, 姐姐, 这, 的, 弟弟, 妹妹, 儿子, 女儿, 爱, 朋友, 同学, 猫, 狗, 都, 和, 两, 照片, 吃, 喝, 米饭, 水, 茶, 想, 要, 杯子, 菜, 水果, 苹果, 面条, 杯, 好吃, 饭店, 菜单, 服务员, 喜欢, 不, 太, 了, 买, 东西, 商店, 这个, 那个, 钱, 块, 元, 多少, 便宜, 贵, 可以, 些, 付钱, 找, 一共. Mỗi lượt 1–2 câu ngắn. Viết Hán + pinyin. Nếu học viên sai, sửa nhẹ bằng tiếng Việt rồi hỏi lại. Không thêm từ mới. Bắt đầu bằng: 我要买苹果。",
+    "allowedWords": [
+      "你好",
+      "您",
+      "谢谢",
+      "不客气",
+      "请",
+      "我",
+      "你",
+      "他",
+      "她",
+      "叫",
+      "是",
+      "名字",
+      "老师",
+      "学生",
+      "人",
+      "中国",
+      "美国",
+      "呢",
+      "什么",
+      "谁",
+      "哪",
+      "哪国人",
+      "吗",
+      "很",
+      "好",
+      "高兴",
+      "认识",
+      "也",
+      "一",
+      "二",
+      "三",
+      "四",
+      "五",
+      "六",
+      "七",
+      "八",
+      "九",
+      "十",
+      "个",
+      "号",
+      "十一",
+      "二十",
+      "百",
+      "岁",
+      "年",
+      "月",
+      "日",
+      "星期",
+      "今天",
+      "点",
+      "分",
+      "现在",
+      "半",
+      "刻",
+      "昨天",
+      "明天",
+      "上午",
+      "下午",
+      "时候",
+      "有",
+      "没有",
+      "家",
+      "口",
+      "几",
+      "爸爸",
+      "妈妈",
+      "哥哥",
+      "姐姐",
+      "这",
+      "的",
+      "弟弟",
+      "妹妹",
+      "儿子",
+      "女儿",
+      "爱",
+      "朋友",
+      "同学",
+      "猫",
+      "狗",
+      "都",
+      "和",
+      "两",
+      "照片",
+      "吃",
+      "喝",
+      "米饭",
+      "水",
+      "茶",
+      "想",
+      "要",
+      "杯子",
+      "菜",
+      "水果",
+      "苹果",
+      "面条",
+      "杯",
+      "好吃",
+      "饭店",
+      "菜单",
+      "服务员",
+      "喜欢",
+      "不",
+      "太",
+      "了",
+      "买",
+      "东西",
+      "商店",
+      "这个",
+      "那个",
+      "钱",
+      "块",
+      "元",
+      "多少",
+      "便宜",
+      "贵",
+      "可以",
+      "些",
+      "付钱",
+      "找",
+      "一共"
+    ],
+    "turns": 5
+  },
+  "timer": {
+    "review": 5,
+    "vocab": 8,
+    "grammar": 8,
+    "talk": 5,
+    "ai": 4
+  }
+}

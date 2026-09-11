@@ -1,0 +1,80 @@
+{
+  "id": 2,
+  "week": 1,
+  "hsk": 1,
+  "theme": "Tên tôi",
+  "kind": "learn",
+  "vocab": [
+    {
+      "han": "我",
+      "pinyin": "wǒ",
+      "vi": "Tôi",
+      "example": { "han": "我叫李明。", "pinyin": "Wǒ jiào Lǐ Míng.", "vi": "Tôi tên là Lý Minh." }
+    },
+    {
+      "han": "你",
+      "pinyin": "nǐ",
+      "vi": "Bạn",
+      "example": { "han": "你好！", "pinyin": "Nǐ hǎo!", "vi": "Xin chào!" }
+    },
+    {
+      "han": "他",
+      "pinyin": "tā",
+      "vi": "Anh ấy",
+      "example": { "han": "他是李明。", "pinyin": "Tā shì Lǐ Míng.", "vi": "Anh ấy là Lý Minh." }
+    },
+    {
+      "han": "她",
+      "pinyin": "tā",
+      "vi": "Cô ấy",
+      "example": { "han": "她是王明。", "pinyin": "Tā shì Wáng Míng.", "vi": "Cô ấy là Vương Minh." }
+    },
+    {
+      "han": "叫",
+      "pinyin": "jiào",
+      "vi": "Tên là / gọi",
+      "example": { "han": "我叫李明。", "pinyin": "Wǒ jiào Lǐ Míng.", "vi": "Tôi tên là Lý Minh." }
+    },
+    {
+      "han": "是",
+      "pinyin": "shì",
+      "vi": "Là",
+      "example": { "han": "我是李明。", "pinyin": "Wǒ shì Lǐ Míng.", "vi": "Tôi là Lý Minh." }
+    },
+    {
+      "han": "名字",
+      "pinyin": "míngzi",
+      "vi": "Tên",
+      "example": { "han": "我叫李明。", "pinyin": "Wǒ jiào Lǐ Míng.", "vi": "Tên tôi là Lý Minh." }
+    }
+  ],
+  "grammar": {
+    "title": "A 是 B",
+    "pattern": "A 是 B",
+    "explainVi": "A 是 B nghĩa là A là B. Tự giới thiệu: 我叫 + tên, hoặc 我是 + tên.",
+    "drills": [
+      { "prompt": "Dịch: Tôi là Lý Minh.", "answer": "我是李明。" },
+      { "prompt": "Dịch: Tôi tên là Vương Minh.", "answer": "我叫王明。" },
+      { "prompt": "Dịch: Anh ấy là Lý Minh.", "answer": "他是李明。" },
+      { "prompt": "Dịch: Cô ấy tên là Vương Minh.", "answer": "她叫王明。" }
+    ]
+  },
+  "dialogue": [
+    { "speaker": "A", "han": "你好！", "pinyin": "Nǐ hǎo!", "vi": "Xin chào!" },
+    { "speaker": "B", "han": "你好！我叫李明。", "pinyin": "Nǐ hǎo! Wǒ jiào Lǐ Míng.", "vi": "Xin chào! Tôi tên là Lý Minh." },
+    { "speaker": "A", "han": "我叫王明。", "pinyin": "Wǒ jiào Wáng Míng.", "vi": "Tôi tên là Vương Minh." },
+    { "speaker": "B", "han": "她是李明。", "pinyin": "Tā shì Lǐ Míng.", "vi": "Cô ấy là Lý Minh." },
+    { "speaker": "A", "han": "谢谢！", "pinyin": "Xièxie!", "vi": "Cảm ơn!" }
+  ],
+  "exercises": [
+    { "type": "write", "prompt": "Tự viết: Tôi tên là Lý Minh.", "answer": "我叫李明。" },
+    { "type": "write", "prompt": "Tự viết: Anh ấy là Vương Minh.", "answer": "他是王明。" }
+  ],
+  "aiPrompt": {
+    "scenario": "Tự giới thiệu tên. Chỉ dùng từ ngày 1–2.",
+    "system": "Bạn là bạn nói tiếng Trung trình độ HSK 1. Chỉ dùng các từ: 你好, 您, 谢谢, 不客气, 请, 我, 你, 他, 她, 叫, 是, 名字. Mỗi lượt 1–2 câu ngắn. Viết Hán + pinyin. Nếu học viên sai, sửa nhẹ bằng tiếng Việt rồi hỏi lại. Không thêm từ mới. Bắt đầu bằng: 你好！我叫李明。",
+    "allowedWords": ["你好", "您", "谢谢", "不客气", "请", "我", "你", "他", "她", "叫", "是", "名字"],
+    "turns": 4
+  },
+  "timer": { "review": 5, "vocab": 8, "grammar": 8, "talk": 5, "ai": 4 }
+}

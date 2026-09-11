@@ -1,0 +1,257 @@
+{
+  "id": 32,
+  "week": 5,
+  "hsk": 1,
+  "theme": "Số lượng mua",
+  "kind": "learn",
+  "vocab": [
+    {
+      "han": "几",
+      "pinyin": "jǐ",
+      "vi": "Mấy (ôn)",
+      "example": {
+        "han": "几个？",
+        "pinyin": "Jǐ gè?",
+        "vi": "Mấy cái?"
+      }
+    },
+    {
+      "han": "个",
+      "pinyin": "gè",
+      "vi": "Cái (ôn)",
+      "example": {
+        "han": "两个。",
+        "pinyin": "Liǎng gè.",
+        "vi": "Hai cái."
+      }
+    },
+    {
+      "han": "些",
+      "pinyin": "xiē",
+      "vi": "Một ít / vài",
+      "example": {
+        "han": "一些苹果。",
+        "pinyin": "Yī xiē píngguǒ.",
+        "vi": "Một ít táo."
+      }
+    },
+    {
+      "han": "要",
+      "pinyin": "yào",
+      "vi": "Muốn (ôn)",
+      "example": {
+        "han": "我要两个。",
+        "pinyin": "Wǒ yào liǎng gè.",
+        "vi": "Tôi muốn hai cái."
+      }
+    },
+    {
+      "han": "两",
+      "pinyin": "liǎng",
+      "vi": "Hai (ôn)",
+      "example": {
+        "han": "两个。",
+        "pinyin": "Liǎng gè.",
+        "vi": "Hai cái."
+      }
+    }
+  ],
+  "grammar": {
+    "title": "几 + lượng từ",
+    "pattern": "要 + số / 几 + 个",
+    "explainVi": "Hỏi số lượng: 你要几个？ Hai cái dùng 两, không dùng 二: 两个.",
+    "drills": [
+      {
+        "prompt": "Dịch: Tôi muốn hai cái.",
+        "answer": "我要两个。"
+      },
+      {
+        "prompt": "Dịch: Mấy cái?",
+        "answer": "几个？"
+      },
+      {
+        "prompt": "Dịch: Một ít táo.",
+        "answer": "一些苹果。"
+      },
+      {
+        "prompt": "Dịch: Tôi muốn hai quả táo.",
+        "answer": "我要两个苹果。"
+      }
+    ]
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "han": "你要几个？",
+      "pinyin": "Nǐ yào jǐ gè?",
+      "vi": "Bạn muốn mấy cái?"
+    },
+    {
+      "speaker": "B",
+      "han": "我要两个。",
+      "pinyin": "Wǒ yào liǎng gè.",
+      "vi": "Tôi muốn hai cái."
+    },
+    {
+      "speaker": "A",
+      "han": "要一些吗？",
+      "pinyin": "Yào yī xiē ma?",
+      "vi": "Muốn một ít à?"
+    },
+    {
+      "speaker": "B",
+      "han": "要两个苹果。",
+      "pinyin": "Yào liǎng gè píngguǒ.",
+      "vi": "Muốn hai quả táo."
+    },
+    {
+      "speaker": "A",
+      "han": "好。",
+      "pinyin": "Hǎo.",
+      "vi": "Được."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "write",
+      "prompt": "Tự viết: Tôi muốn hai cái.",
+      "answer": "我要两个。"
+    },
+    {
+      "type": "write",
+      "prompt": "Tự viết: Một ít táo.",
+      "answer": "一些苹果。"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Mua số lượng: tôi muốn hai cái.",
+    "system": "Bạn là bạn nói tiếng Trung trình độ HSK 1. Chỉ dùng các từ: 你好, 您, 谢谢, 不客气, 请, 我, 你, 他, 她, 叫, 是, 名字, 老师, 学生, 人, 中国, 美国, 呢, 什么, 谁, 哪, 哪国人, 吗, 很, 好, 高兴, 认识, 也, 一, 二, 三, 四, 五, 六, 七, 八, 九, 十, 个, 号, 十一, 二十, 百, 岁, 年, 月, 日, 星期, 今天, 点, 分, 现在, 半, 刻, 昨天, 明天, 上午, 下午, 时候, 有, 没有, 家, 口, 几, 爸爸, 妈妈, 哥哥, 姐姐, 这, 的, 弟弟, 妹妹, 儿子, 女儿, 爱, 朋友, 同学, 猫, 狗, 都, 和, 两, 照片, 吃, 喝, 米饭, 水, 茶, 想, 要, 杯子, 菜, 水果, 苹果, 面条, 杯, 好吃, 饭店, 菜单, 服务员, 喜欢, 不, 太, 了, 买, 东西, 商店, 这个, 那个, 钱, 块, 元, 多少, 便宜, 贵, 可以, 些. Mỗi lượt 1–2 câu ngắn. Viết Hán + pinyin. Nếu học viên sai, sửa nhẹ bằng tiếng Việt rồi hỏi lại. Không thêm từ mới. Bắt đầu bằng: 你要几个？",
+    "allowedWords": [
+      "你好",
+      "您",
+      "谢谢",
+      "不客气",
+      "请",
+      "我",
+      "你",
+      "他",
+      "她",
+      "叫",
+      "是",
+      "名字",
+      "老师",
+      "学生",
+      "人",
+      "中国",
+      "美国",
+      "呢",
+      "什么",
+      "谁",
+      "哪",
+      "哪国人",
+      "吗",
+      "很",
+      "好",
+      "高兴",
+      "认识",
+      "也",
+      "一",
+      "二",
+      "三",
+      "四",
+      "五",
+      "六",
+      "七",
+      "八",
+      "九",
+      "十",
+      "个",
+      "号",
+      "十一",
+      "二十",
+      "百",
+      "岁",
+      "年",
+      "月",
+      "日",
+      "星期",
+      "今天",
+      "点",
+      "分",
+      "现在",
+      "半",
+      "刻",
+      "昨天",
+      "明天",
+      "上午",
+      "下午",
+      "时候",
+      "有",
+      "没有",
+      "家",
+      "口",
+      "几",
+      "爸爸",
+      "妈妈",
+      "哥哥",
+      "姐姐",
+      "这",
+      "的",
+      "弟弟",
+      "妹妹",
+      "儿子",
+      "女儿",
+      "爱",
+      "朋友",
+      "同学",
+      "猫",
+      "狗",
+      "都",
+      "和",
+      "两",
+      "照片",
+      "吃",
+      "喝",
+      "米饭",
+      "水",
+      "茶",
+      "想",
+      "要",
+      "杯子",
+      "菜",
+      "水果",
+      "苹果",
+      "面条",
+      "杯",
+      "好吃",
+      "饭店",
+      "菜单",
+      "服务员",
+      "喜欢",
+      "不",
+      "太",
+      "了",
+      "买",
+      "东西",
+      "商店",
+      "这个",
+      "那个",
+      "钱",
+      "块",
+      "元",
+      "多少",
+      "便宜",
+      "贵",
+      "可以",
+      "些"
+    ],
+    "turns": 4
+  },
+  "timer": {
+    "review": 5,
+    "vocab": 8,
+    "grammar": 8,
+    "talk": 5,
+    "ai": 4
+  }
+}

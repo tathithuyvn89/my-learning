@@ -1,0 +1,189 @@
+{
+  "id": 10,
+  "week": 2,
+  "hsk": 1,
+  "theme": "Ngày tháng",
+  "kind": "learn",
+  "vocab": [
+    {
+      "han": "月",
+      "pinyin": "yuè",
+      "vi": "Tháng",
+      "example": {
+        "han": "五月。",
+        "pinyin": "Wǔ yuè.",
+        "vi": "Tháng năm."
+      }
+    },
+    {
+      "han": "日",
+      "pinyin": "rì",
+      "vi": "Ngày",
+      "example": {
+        "han": "一日。",
+        "pinyin": "Yī rì.",
+        "vi": "Ngày mùng một."
+      }
+    },
+    {
+      "han": "星期",
+      "pinyin": "xīngqī",
+      "vi": "Tuần / thứ",
+      "example": {
+        "han": "星期一。",
+        "pinyin": "Xīngqī yī.",
+        "vi": "Thứ hai."
+      }
+    },
+    {
+      "han": "今天",
+      "pinyin": "jīntiān",
+      "vi": "Hôm nay",
+      "example": {
+        "han": "今天星期一。",
+        "pinyin": "Jīntiān xīngqī yī.",
+        "vi": "Hôm nay thứ hai."
+      }
+    },
+    {
+      "han": "号",
+      "pinyin": "hào",
+      "vi": "Mùng (ôn)",
+      "example": {
+        "han": "今天一号。",
+        "pinyin": "Jīntiān yī hào.",
+        "vi": "Hôm nay mùng một."
+      }
+    }
+  ],
+  "grammar": {
+    "title": "Năm-tháng-ngày",
+    "pattern": "月 + 日 / 号；今天 + 星期",
+    "explainVi": "Thứ tự: tháng rồi ngày. 今天五月一日. 星期 + số: 星期一 đến 星期日 (日 = chủ nhật).",
+    "drills": [
+      {
+        "prompt": "Dịch: Tháng năm.",
+        "answer": "五月。"
+      },
+      {
+        "prompt": "Dịch: Hôm nay thứ hai.",
+        "answer": "今天星期一。"
+      },
+      {
+        "prompt": "Dịch: Hôm nay mùng một.",
+        "answer": "今天一号。"
+      },
+      {
+        "prompt": "Dịch: Tháng năm ngày một.",
+        "answer": "五月一日。"
+      }
+    ]
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "han": "今天星期一吗？",
+      "pinyin": "Jīntiān xīngqī yī ma?",
+      "vi": "Hôm nay thứ hai à?"
+    },
+    {
+      "speaker": "B",
+      "han": "今天星期一。",
+      "pinyin": "Jīntiān xīngqī yī.",
+      "vi": "Hôm nay thứ hai."
+    },
+    {
+      "speaker": "A",
+      "han": "今天一号吗？",
+      "pinyin": "Jīntiān yī hào ma?",
+      "vi": "Hôm nay mùng một à?"
+    },
+    {
+      "speaker": "B",
+      "han": "今天一号。",
+      "pinyin": "Jīntiān yī hào.",
+      "vi": "Hôm nay mùng một."
+    },
+    {
+      "speaker": "A",
+      "han": "谢谢！",
+      "pinyin": "Xièxie!",
+      "vi": "Cảm ơn!"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "write",
+      "prompt": "Tự viết: Hôm nay thứ hai.",
+      "answer": "今天星期一。"
+    },
+    {
+      "type": "write",
+      "prompt": "Tự viết: Tháng năm ngày một.",
+      "answer": "五月一日。"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Hỏi hôm nay thứ mấy, mùng mấy. Chỉ dùng từ đến ngày 10.",
+    "system": "Bạn là bạn nói tiếng Trung trình độ HSK 1. Chỉ dùng các từ: 你好, 您, 谢谢, 不客气, 请, 我, 你, 他, 她, 叫, 是, 名字, 老师, 学生, 人, 中国, 美国, 呢, 什么, 谁, 哪, 哪国人, 吗, 很, 好, 高兴, 认识, 也, 一, 二, 三, 四, 五, 六, 七, 八, 九, 十, 个, 号, 十一, 二十, 百, 岁, 年, 月, 日, 星期, 今天. Mỗi lượt 1–2 câu ngắn. Viết Hán + pinyin. Nếu học viên sai, sửa nhẹ bằng tiếng Việt rồi hỏi lại. Không thêm từ mới. Bắt đầu bằng: 今天星期一。",
+    "allowedWords": [
+      "你好",
+      "您",
+      "谢谢",
+      "不客气",
+      "请",
+      "我",
+      "你",
+      "他",
+      "她",
+      "叫",
+      "是",
+      "名字",
+      "老师",
+      "学生",
+      "人",
+      "中国",
+      "美国",
+      "呢",
+      "什么",
+      "谁",
+      "哪",
+      "哪国人",
+      "吗",
+      "很",
+      "好",
+      "高兴",
+      "认识",
+      "也",
+      "一",
+      "二",
+      "三",
+      "四",
+      "五",
+      "六",
+      "七",
+      "八",
+      "九",
+      "十",
+      "个",
+      "号",
+      "十一",
+      "二十",
+      "百",
+      "岁",
+      "年",
+      "月",
+      "日",
+      "星期",
+      "今天"
+    ],
+    "turns": 4
+  },
+  "timer": {
+    "review": 5,
+    "vocab": 8,
+    "grammar": 8,
+    "talk": 5,
+    "ai": 4
+  }
+}

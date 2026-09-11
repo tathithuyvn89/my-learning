@@ -1,0 +1,199 @@
+{
+  "id": 14,
+  "week": 2,
+  "hsk": 1,
+  "theme": "Đặt lịch gặp giáo viên",
+  "kind": "review",
+  "vocab": [
+    {
+      "han": "老师",
+      "pinyin": "lǎoshī",
+      "vi": "Giáo viên (ôn)",
+      "example": {
+        "han": "我是老师。",
+        "pinyin": "Wǒ shì lǎoshī.",
+        "vi": "Tôi là giáo viên."
+      }
+    },
+    {
+      "han": "今天",
+      "pinyin": "jīntiān",
+      "vi": "Hôm nay (ôn)",
+      "example": {
+        "han": "今天星期二。",
+        "pinyin": "Jīntiān xīngqī èr.",
+        "vi": "Hôm nay thứ ba."
+      }
+    },
+    {
+      "han": "明天",
+      "pinyin": "míngtiān",
+      "vi": "Ngày mai (ôn)",
+      "example": {
+        "han": "明天星期三。",
+        "pinyin": "Míngtiān xīngqī sān.",
+        "vi": "Mai thứ tư."
+      }
+    },
+    {
+      "han": "点",
+      "pinyin": "diǎn",
+      "vi": "Giờ (ôn)",
+      "example": {
+        "han": "三点。",
+        "pinyin": "Sān diǎn.",
+        "vi": "Ba giờ."
+      }
+    },
+    {
+      "han": "请",
+      "pinyin": "qǐng",
+      "vi": "Xin / mời (ôn)",
+      "example": {
+        "han": "请。",
+        "pinyin": "Qǐng.",
+        "vi": "Mời."
+      }
+    }
+  ],
+  "grammar": {
+    "title": "Chỉ hỏi giờ và ngày",
+    "pattern": "今天 / 明天 + 点",
+    "explainVi": "Khoá từ tuần 1–2. Chỉ hỏi giờ và ngày khi đặt lịch gặp giáo viên.",
+    "drills": [
+      {
+        "prompt": "Dịch: Hôm nay thứ ba.",
+        "answer": "今天星期二。"
+      },
+      {
+        "prompt": "Dịch: Mai ba giờ.",
+        "answer": "明天三点。"
+      },
+      {
+        "prompt": "Dịch: Bạn là giáo viên à?",
+        "answer": "你是老师吗？"
+      },
+      {
+        "prompt": "Dịch: Mai chiều ba giờ, được không?",
+        "answer": "明天下午三点，好吗？"
+      }
+    ]
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "han": "老师，你好！",
+      "pinyin": "Lǎoshī, nǐ hǎo!",
+      "vi": "Thầy/cô ơi, xin chào!"
+    },
+    {
+      "speaker": "B",
+      "han": "你好！明天三点，好吗？",
+      "pinyin": "Nǐ hǎo! Míngtiān sān diǎn, hǎo ma?",
+      "vi": "Xin chào! Mai ba giờ được không?"
+    },
+    {
+      "speaker": "A",
+      "han": "明天下午三点。",
+      "pinyin": "Míngtiān xiàwǔ sān diǎn.",
+      "vi": "Mai chiều ba giờ."
+    },
+    {
+      "speaker": "B",
+      "han": "好。明天下午三点。",
+      "pinyin": "Hǎo. Míngtiān xiàwǔ sān diǎn.",
+      "vi": "Được. Mai chiều ba giờ."
+    },
+    {
+      "speaker": "A",
+      "han": "谢谢老师！",
+      "pinyin": "Xièxie lǎoshī!",
+      "vi": "Cảm ơn thầy/cô!"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "write",
+      "prompt": "Tự viết: Mai ba giờ, được không?",
+      "answer": "明天三点，好吗？"
+    },
+    {
+      "type": "write",
+      "prompt": "Tự viết: Hôm nay thứ ba.",
+      "answer": "今天星期二。"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Đặt lịch gặp giáo viên: chỉ hỏi giờ và ngày.",
+    "system": "Bạn là bạn nói tiếng Trung trình độ HSK 1. Chỉ dùng các từ: 你好, 您, 谢谢, 不客气, 请, 我, 你, 他, 她, 叫, 是, 名字, 老师, 学生, 人, 中国, 美国, 呢, 什么, 谁, 哪, 哪国人, 吗, 很, 好, 高兴, 认识, 也, 一, 二, 三, 四, 五, 六, 七, 八, 九, 十, 个, 号, 十一, 二十, 百, 岁, 年, 月, 日, 星期, 今天, 点, 分, 现在, 半, 刻, 昨天, 明天, 上午, 下午, 时候. Mỗi lượt 1–2 câu ngắn. Viết Hán + pinyin. Nếu học viên sai, sửa nhẹ bằng tiếng Việt rồi hỏi lại. Không thêm từ mới. Bắt đầu bằng: 老师，明天三点，好吗？",
+    "allowedWords": [
+      "你好",
+      "您",
+      "谢谢",
+      "不客气",
+      "请",
+      "我",
+      "你",
+      "他",
+      "她",
+      "叫",
+      "是",
+      "名字",
+      "老师",
+      "学生",
+      "人",
+      "中国",
+      "美国",
+      "呢",
+      "什么",
+      "谁",
+      "哪",
+      "哪国人",
+      "吗",
+      "很",
+      "好",
+      "高兴",
+      "认识",
+      "也",
+      "一",
+      "二",
+      "三",
+      "四",
+      "五",
+      "六",
+      "七",
+      "八",
+      "九",
+      "十",
+      "个",
+      "号",
+      "十一",
+      "二十",
+      "百",
+      "岁",
+      "年",
+      "月",
+      "日",
+      "星期",
+      "今天",
+      "点",
+      "分",
+      "现在",
+      "半",
+      "刻",
+      "昨天",
+      "明天",
+      "上午",
+      "下午",
+      "时候"
+    ],
+    "turns": 5
+  },
+  "timer": {
+    "review": 5,
+    "vocab": 8,
+    "grammar": 8,
+    "talk": 5,
+    "ai": 4
+  }
+}

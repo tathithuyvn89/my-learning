@@ -1,0 +1,245 @@
+{
+  "id": 26,
+  "week": 4,
+  "hsk": 1,
+  "theme": "Thích ăn",
+  "kind": "learn",
+  "vocab": [
+    {
+      "han": "喜欢",
+      "pinyin": "xǐhuan",
+      "vi": "Thích",
+      "example": {
+        "han": "我喜欢茶。",
+        "pinyin": "Wǒ xǐhuan chá.",
+        "vi": "Tôi thích trà."
+      }
+    },
+    {
+      "han": "不",
+      "pinyin": "bù",
+      "vi": "Không",
+      "example": {
+        "han": "我不喝茶。",
+        "pinyin": "Wǒ bù hē chá.",
+        "vi": "Tôi không uống trà."
+      }
+    },
+    {
+      "han": "太",
+      "pinyin": "tài",
+      "vi": "Quá",
+      "example": {
+        "han": "太好喝了。",
+        "pinyin": "Tài hǎo hē le.",
+        "vi": "Uống ngon quá."
+      }
+    },
+    {
+      "han": "了",
+      "pinyin": "le",
+      "vi": "Rồi / trợ từ",
+      "example": {
+        "han": "太好吃了。",
+        "pinyin": "Tài hǎochī le.",
+        "vi": "Ngon quá."
+      }
+    },
+    {
+      "han": "好吃",
+      "pinyin": "hǎochī",
+      "vi": "Ngon (ôn)",
+      "example": {
+        "han": "苹果很好吃。",
+        "pinyin": "Píngguǒ hěn hǎochī.",
+        "vi": "Táo rất ngon."
+      }
+    }
+  ],
+  "grammar": {
+    "title": "不 / 太…了",
+    "pattern": "不 + V；太 + tính từ + 了",
+    "explainVi": "Không thích: 我不喜欢. 太…了 = quá. 不太 = không lắm.",
+    "drills": [
+      {
+        "prompt": "Dịch: Tôi thích trà.",
+        "answer": "我喜欢茶。"
+      },
+      {
+        "prompt": "Dịch: Tôi không thích cà phê. (dùng 茶 nếu chưa có cà phê: 我不喜欢茶)",
+        "answer": "我不喜欢茶。"
+      },
+      {
+        "prompt": "Dịch: Ngon quá.",
+        "answer": "太好吃了。"
+      },
+      {
+        "prompt": "Dịch: Tôi không uống nước.",
+        "answer": "我不喝水。"
+      }
+    ]
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "han": "你喜欢茶吗？",
+      "pinyin": "Nǐ xǐhuan chá ma?",
+      "vi": "Bạn thích trà không?"
+    },
+    {
+      "speaker": "B",
+      "han": "我喜欢茶。很好喝。",
+      "pinyin": "Wǒ xǐhuan chá. Hěn hǎo hē.",
+      "vi": "Tôi thích trà. Uống ngon."
+    },
+    {
+      "speaker": "A",
+      "han": "你喜欢面条吗？",
+      "pinyin": "Nǐ xǐhuan miàntiáo ma?",
+      "vi": "Bạn thích mì không?"
+    },
+    {
+      "speaker": "B",
+      "han": "不太喜欢。",
+      "pinyin": "Bú tài xǐhuan.",
+      "vi": "Không thích lắm."
+    },
+    {
+      "speaker": "A",
+      "han": "米饭太好吃了。",
+      "pinyin": "Mǐfàn tài hǎochī le.",
+      "vi": "Cơm ngon quá."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "write",
+      "prompt": "Tự viết: Tôi thích trà.",
+      "answer": "我喜欢茶。"
+    },
+    {
+      "type": "write",
+      "prompt": "Tự viết: Ngon quá.",
+      "answer": "太好吃了。"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Nói thích / không thích món. Không thêm cà phê nếu chưa học: dùng 茶 / 面条.",
+    "system": "Bạn là bạn nói tiếng Trung trình độ HSK 1. Chỉ dùng các từ: 你好, 您, 谢谢, 不客气, 请, 我, 你, 他, 她, 叫, 是, 名字, 老师, 学生, 人, 中国, 美国, 呢, 什么, 谁, 哪, 哪国人, 吗, 很, 好, 高兴, 认识, 也, 一, 二, 三, 四, 五, 六, 七, 八, 九, 十, 个, 号, 十一, 二十, 百, 岁, 年, 月, 日, 星期, 今天, 点, 分, 现在, 半, 刻, 昨天, 明天, 上午, 下午, 时候, 有, 没有, 家, 口, 几, 爸爸, 妈妈, 哥哥, 姐姐, 这, 的, 弟弟, 妹妹, 儿子, 女儿, 爱, 的, 朋友, 同学, 猫, 狗, 都, 和, 两, 照片, 吃, 喝, 米饭, 水, 茶, 想, 要, 杯子, 菜, 水果, 苹果, 面条, 杯, 好吃, 饭店, 菜单, 服务员, 喜欢, 不, 太, 了. Mỗi lượt 1–2 câu ngắn. Viết Hán + pinyin. Nếu học viên sai, sửa nhẹ bằng tiếng Việt rồi hỏi lại. Không thêm từ mới. Bắt đầu bằng: 你喜欢茶吗？",
+    "allowedWords": [
+      "你好",
+      "您",
+      "谢谢",
+      "不客气",
+      "请",
+      "我",
+      "你",
+      "他",
+      "她",
+      "叫",
+      "是",
+      "名字",
+      "老师",
+      "学生",
+      "人",
+      "中国",
+      "美国",
+      "呢",
+      "什么",
+      "谁",
+      "哪",
+      "哪国人",
+      "吗",
+      "很",
+      "好",
+      "高兴",
+      "认识",
+      "也",
+      "一",
+      "二",
+      "三",
+      "四",
+      "五",
+      "六",
+      "七",
+      "八",
+      "九",
+      "十",
+      "个",
+      "号",
+      "十一",
+      "二十",
+      "百",
+      "岁",
+      "年",
+      "月",
+      "日",
+      "星期",
+      "今天",
+      "点",
+      "分",
+      "现在",
+      "半",
+      "刻",
+      "昨天",
+      "明天",
+      "上午",
+      "下午",
+      "时候",
+      "有",
+      "没有",
+      "家",
+      "口",
+      "几",
+      "爸爸",
+      "妈妈",
+      "哥哥",
+      "姐姐",
+      "这",
+      "的",
+      "弟弟",
+      "妹妹",
+      "儿子",
+      "女儿",
+      "爱",
+      "的",
+      "朋友",
+      "同学",
+      "猫",
+      "狗",
+      "都",
+      "和",
+      "两",
+      "照片",
+      "吃",
+      "喝",
+      "米饭",
+      "水",
+      "茶",
+      "想",
+      "要",
+      "杯子",
+      "菜",
+      "水果",
+      "苹果",
+      "面条",
+      "杯",
+      "好吃",
+      "饭店",
+      "菜单",
+      "服务员",
+      "喜欢",
+      "不",
+      "太",
+      "了"
+    ],
+    "turns": 4
+  },
+  "timer": {
+    "review": 5,
+    "vocab": 8,
+    "grammar": 8,
+    "talk": 5,
+    "ai": 4
+  }
+}

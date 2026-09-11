@@ -1,0 +1,230 @@
+{
+  "id": 20,
+  "week": 3,
+  "hsk": 1,
+  "theme": "Tổng hợp gia đình",
+  "kind": "review",
+  "vocab": [
+    {
+      "han": "家",
+      "pinyin": "jiā",
+      "vi": "Nhà (ôn)",
+      "example": {
+        "han": "我家有四口人。",
+        "pinyin": "Wǒ jiā yǒu sì kǒu rén.",
+        "vi": "Nhà tôi có bốn người."
+      }
+    },
+    {
+      "han": "的",
+      "pinyin": "de",
+      "vi": "Của (ôn)",
+      "example": {
+        "han": "我的妈妈。",
+        "pinyin": "Wǒ de māma.",
+        "vi": "Mẹ của tôi."
+      }
+    },
+    {
+      "han": "照片",
+      "pinyin": "zhàopiàn",
+      "vi": "Ảnh (ôn)",
+      "example": {
+        "han": "这是照片。",
+        "pinyin": "Zhè shì zhàopiàn.",
+        "vi": "Đây là ảnh."
+      }
+    },
+    {
+      "han": "爸爸",
+      "pinyin": "bàba",
+      "vi": "Bố (ôn)",
+      "example": {
+        "han": "这是我爸爸。",
+        "pinyin": "Zhè shì wǒ bàba.",
+        "vi": "Đây là bố tôi."
+      }
+    },
+    {
+      "han": "妈妈",
+      "pinyin": "māma",
+      "vi": "Mẹ (ôn)",
+      "example": {
+        "han": "这是我妈妈。",
+        "pinyin": "Zhè shì wǒ māma.",
+        "vi": "Đây là mẹ tôi."
+      }
+    }
+  ],
+  "grammar": {
+    "title": "有 + 的",
+    "pattern": "有 / 的 khi chỉ ảnh gia đình",
+    "explainVi": "Ôn tuần 3: chỉ ảnh, nói đây là ai, nhà có mấy người.",
+    "drills": [
+      {
+        "prompt": "Dịch: Đây là ảnh.",
+        "answer": "这是照片。"
+      },
+      {
+        "prompt": "Dịch: Đây là mẹ tôi.",
+        "answer": "这是我妈妈。"
+      },
+      {
+        "prompt": "Dịch: Nhà có bốn người.",
+        "answer": "家有四口人。"
+      },
+      {
+        "prompt": "Dịch: Bố và mẹ.",
+        "answer": "爸爸和妈妈。"
+      }
+    ]
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "han": "这是照片吗？",
+      "pinyin": "Zhè shì zhàopiàn ma?",
+      "vi": "Đây là ảnh à?"
+    },
+    {
+      "speaker": "B",
+      "han": "是。这是我的家。",
+      "pinyin": "Shì. Zhè shì wǒ de jiā.",
+      "vi": "Phải. Đây là nhà tôi."
+    },
+    {
+      "speaker": "A",
+      "han": "这是谁？",
+      "pinyin": "Zhè shì shéi?",
+      "vi": "Đây là ai?"
+    },
+    {
+      "speaker": "B",
+      "han": "这是我爸爸和妈妈。",
+      "pinyin": "Zhè shì wǒ bàba hé māma.",
+      "vi": "Đây là bố và mẹ tôi."
+    },
+    {
+      "speaker": "A",
+      "han": "你家有几口人？",
+      "pinyin": "Nǐ jiā yǒu jǐ kǒu rén?",
+      "vi": "Nhà bạn có mấy người?"
+    },
+    {
+      "speaker": "B",
+      "han": "四口人。",
+      "pinyin": "Sì kǒu rén.",
+      "vi": "Bốn người."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "write",
+      "prompt": "Tự viết: Đây là ảnh.",
+      "answer": "这是照片。"
+    },
+    {
+      "type": "write",
+      "prompt": "Tự viết: Đây là bố và mẹ tôi.",
+      "answer": "这是我爸爸和妈妈。"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Chỉ ảnh gia đình. Không thêm từ mới.",
+    "system": "Bạn là bạn nói tiếng Trung trình độ HSK 1. Chỉ dùng các từ: 你好, 您, 谢谢, 不客气, 请, 我, 你, 他, 她, 叫, 是, 名字, 老师, 学生, 人, 中国, 美国, 呢, 什么, 谁, 哪, 哪国人, 吗, 很, 好, 高兴, 认识, 也, 一, 二, 三, 四, 五, 六, 七, 八, 九, 十, 个, 号, 十一, 二十, 百, 岁, 年, 月, 日, 星期, 今天, 点, 分, 现在, 半, 刻, 昨天, 明天, 上午, 下午, 时候, 有, 没有, 家, 口, 几, 爸爸, 妈妈, 哥哥, 姐姐, 这, 的, 弟弟, 妹妹, 儿子, 女儿, 爱, 的, 朋友, 同学, 猫, 狗, 都, 和, 两, 照片. Mỗi lượt 1–2 câu ngắn. Viết Hán + pinyin. Nếu học viên sai, sửa nhẹ bằng tiếng Việt rồi hỏi lại. Không thêm từ mới. Bắt đầu bằng: 这是照片。这是我的家。",
+    "allowedWords": [
+      "你好",
+      "您",
+      "谢谢",
+      "不客气",
+      "请",
+      "我",
+      "你",
+      "他",
+      "她",
+      "叫",
+      "是",
+      "名字",
+      "老师",
+      "学生",
+      "人",
+      "中国",
+      "美国",
+      "呢",
+      "什么",
+      "谁",
+      "哪",
+      "哪国人",
+      "吗",
+      "很",
+      "好",
+      "高兴",
+      "认识",
+      "也",
+      "一",
+      "二",
+      "三",
+      "四",
+      "五",
+      "六",
+      "七",
+      "八",
+      "九",
+      "十",
+      "个",
+      "号",
+      "十一",
+      "二十",
+      "百",
+      "岁",
+      "年",
+      "月",
+      "日",
+      "星期",
+      "今天",
+      "点",
+      "分",
+      "现在",
+      "半",
+      "刻",
+      "昨天",
+      "明天",
+      "上午",
+      "下午",
+      "时候",
+      "有",
+      "没有",
+      "家",
+      "口",
+      "几",
+      "爸爸",
+      "妈妈",
+      "哥哥",
+      "姐姐",
+      "这",
+      "的",
+      "弟弟",
+      "妹妹",
+      "儿子",
+      "女儿",
+      "爱",
+      "的",
+      "朋友",
+      "同学",
+      "猫",
+      "狗",
+      "都",
+      "和",
+      "两",
+      "照片"
+    ],
+    "turns": 5
+  },
+  "timer": {
+    "review": 5,
+    "vocab": 8,
+    "grammar": 8,
+    "talk": 5,
+    "ai": 4
+  }
+}

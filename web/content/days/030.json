@@ -1,0 +1,254 @@
+{
+  "id": 30,
+  "week": 5,
+  "hsk": 1,
+  "theme": "Tiền",
+  "kind": "learn",
+  "vocab": [
+    {
+      "han": "钱",
+      "pinyin": "qián",
+      "vi": "Tiền",
+      "example": {
+        "han": "有钱。",
+        "pinyin": "Yǒu qián.",
+        "vi": "Có tiền."
+      }
+    },
+    {
+      "han": "块",
+      "pinyin": "kuài",
+      "vi": "Khối (đơn vị tiền)",
+      "example": {
+        "han": "十块。",
+        "pinyin": "Shí kuài.",
+        "vi": "Mười khối."
+      }
+    },
+    {
+      "han": "元",
+      "pinyin": "yuán",
+      "vi": "Đồng (đơn vị tiền)",
+      "example": {
+        "han": "十元。",
+        "pinyin": "Shí yuán.",
+        "vi": "Mười đồng."
+      }
+    },
+    {
+      "han": "多少",
+      "pinyin": "duōshao",
+      "vi": "Bao nhiêu",
+      "example": {
+        "han": "多少钱？",
+        "pinyin": "Duōshao qián?",
+        "vi": "Bao nhiêu tiền?"
+      }
+    },
+    {
+      "han": "便宜",
+      "pinyin": "piányi",
+      "vi": "Rẻ",
+      "example": {
+        "han": "很便宜。",
+        "pinyin": "Hěn piányi.",
+        "vi": "Rất rẻ."
+      }
+    }
+  ],
+  "grammar": {
+    "title": "多少钱",
+    "pattern": "这个 + 多少钱？",
+    "explainVi": "Hỏi giá: 这个多少钱？ Trả lời số + 块 / 元.",
+    "drills": [
+      {
+        "prompt": "Dịch: Cái này bao nhiêu tiền?",
+        "answer": "这个多少钱？"
+      },
+      {
+        "prompt": "Dịch: Mười khối.",
+        "answer": "十块。"
+      },
+      {
+        "prompt": "Dịch: Rất rẻ.",
+        "answer": "很便宜。"
+      },
+      {
+        "prompt": "Dịch: Năm đồng.",
+        "answer": "五元。"
+      }
+    ]
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "han": "这个多少钱？",
+      "pinyin": "Zhège duōshao qián?",
+      "vi": "Cái này bao nhiêu tiền?"
+    },
+    {
+      "speaker": "B",
+      "han": "十块。",
+      "pinyin": "Shí kuài.",
+      "vi": "Mười khối."
+    },
+    {
+      "speaker": "A",
+      "han": "便宜吗？",
+      "pinyin": "Piányi ma?",
+      "vi": "Rẻ không?"
+    },
+    {
+      "speaker": "B",
+      "han": "便宜。五元。",
+      "pinyin": "Piányi. Wǔ yuán.",
+      "vi": "Rẻ. Năm đồng."
+    },
+    {
+      "speaker": "A",
+      "han": "好。谢谢！",
+      "pinyin": "Hǎo. Xièxie!",
+      "vi": "Được. Cảm ơn!"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "write",
+      "prompt": "Tự viết: Cái này bao nhiêu tiền?",
+      "answer": "这个多少钱？"
+    },
+    {
+      "type": "write",
+      "prompt": "Tự viết: Mười khối.",
+      "answer": "十块。"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Hỏi giá: cái này bao nhiêu tiền?",
+    "system": "Bạn là bạn nói tiếng Trung trình độ HSK 1. Chỉ dùng các từ: 你好, 您, 谢谢, 不客气, 请, 我, 你, 他, 她, 叫, 是, 名字, 老师, 学生, 人, 中国, 美国, 呢, 什么, 谁, 哪, 哪国人, 吗, 很, 好, 高兴, 认识, 也, 一, 二, 三, 四, 五, 六, 七, 八, 九, 十, 个, 号, 十一, 二十, 百, 岁, 年, 月, 日, 星期, 今天, 点, 分, 现在, 半, 刻, 昨天, 明天, 上午, 下午, 时候, 有, 没有, 家, 口, 几, 爸爸, 妈妈, 哥哥, 姐姐, 这, 的, 弟弟, 妹妹, 儿子, 女儿, 爱, 朋友, 同学, 猫, 狗, 都, 和, 两, 照片, 吃, 喝, 米饭, 水, 茶, 想, 要, 杯子, 菜, 水果, 苹果, 面条, 杯, 好吃, 饭店, 菜单, 服务员, 喜欢, 不, 太, 了, 买, 东西, 商店, 这个, 那个, 钱, 块, 元, 多少, 便宜. Mỗi lượt 1–2 câu ngắn. Viết Hán + pinyin. Nếu học viên sai, sửa nhẹ bằng tiếng Việt rồi hỏi lại. Không thêm từ mới. Bắt đầu bằng: 这个多少钱？",
+    "allowedWords": [
+      "你好",
+      "您",
+      "谢谢",
+      "不客气",
+      "请",
+      "我",
+      "你",
+      "他",
+      "她",
+      "叫",
+      "是",
+      "名字",
+      "老师",
+      "学生",
+      "人",
+      "中国",
+      "美国",
+      "呢",
+      "什么",
+      "谁",
+      "哪",
+      "哪国人",
+      "吗",
+      "很",
+      "好",
+      "高兴",
+      "认识",
+      "也",
+      "一",
+      "二",
+      "三",
+      "四",
+      "五",
+      "六",
+      "七",
+      "八",
+      "九",
+      "十",
+      "个",
+      "号",
+      "十一",
+      "二十",
+      "百",
+      "岁",
+      "年",
+      "月",
+      "日",
+      "星期",
+      "今天",
+      "点",
+      "分",
+      "现在",
+      "半",
+      "刻",
+      "昨天",
+      "明天",
+      "上午",
+      "下午",
+      "时候",
+      "有",
+      "没有",
+      "家",
+      "口",
+      "几",
+      "爸爸",
+      "妈妈",
+      "哥哥",
+      "姐姐",
+      "这",
+      "的",
+      "弟弟",
+      "妹妹",
+      "儿子",
+      "女儿",
+      "爱",
+      "朋友",
+      "同学",
+      "猫",
+      "狗",
+      "都",
+      "和",
+      "两",
+      "照片",
+      "吃",
+      "喝",
+      "米饭",
+      "水",
+      "茶",
+      "想",
+      "要",
+      "杯子",
+      "菜",
+      "水果",
+      "苹果",
+      "面条",
+      "杯",
+      "好吃",
+      "饭店",
+      "菜单",
+      "服务员",
+      "喜欢",
+      "不",
+      "太",
+      "了",
+      "买",
+      "东西",
+      "商店",
+      "这个",
+      "那个",
+      "钱",
+      "块",
+      "元",
+      "多少",
+      "便宜"
+    ],
+    "turns": 4
+  },
+  "timer": {
+    "review": 5,
+    "vocab": 8,
+    "grammar": 8,
+    "talk": 5,
+    "ai": 4
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "id": 19,
+  "week": 3,
+  "hsk": 1,
+  "theme": "Hỏi gia đình",
+  "kind": "learn",
+  "vocab": [
+    {
+      "han": "都",
+      "pinyin": "dōu",
+      "vi": "Đều",
+      "example": {
+        "han": "爸爸和妈妈都很好。",
+        "pinyin": "Bàba hé māma dōu hěn hǎo.",
+        "vi": "Bố và mẹ đều khỏe."
+      }
+    },
+    {
+      "han": "和",
+      "pinyin": "hé",
+      "vi": "Và",
+      "example": {
+        "han": "爸爸和妈妈。",
+        "pinyin": "Bàba hé māma.",
+        "vi": "Bố và mẹ."
+      }
+    },
+    {
+      "han": "两",
+      "pinyin": "liǎng",
+      "vi": "Hai",
+      "example": {
+        "han": "两口人。",
+        "pinyin": "Liǎng kǒu rén.",
+        "vi": "Hai người."
+      }
+    },
+    {
+      "han": "照片",
+      "pinyin": "zhàopiàn",
+      "vi": "Ảnh",
+      "example": {
+        "han": "这是照片。",
+        "pinyin": "Zhè shì zhàopiàn.",
+        "vi": "Đây là ảnh."
+      }
+    }
+  ],
+  "grammar": {
+    "title": "A 和 B",
+    "pattern": "A 和 B + 都",
+    "explainVi": "和 = và. 都 = đều. 爸爸和妈妈都很好.",
+    "drills": [
+      {
+        "prompt": "Dịch: Bố và mẹ.",
+        "answer": "爸爸和妈妈。"
+      },
+      {
+        "prompt": "Dịch: Bố và mẹ đều tốt.",
+        "answer": "爸爸和妈妈都很好。"
+      },
+      {
+        "prompt": "Dịch: Hai người.",
+        "answer": "两口人。"
+      },
+      {
+        "prompt": "Dịch: Đây là ảnh.",
+        "answer": "这是照片。"
+      }
+    ]
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "han": "这是什么？",
+      "pinyin": "Zhè shì shénme?",
+      "vi": "Đây là gì?"
+    },
+    {
+      "speaker": "B",
+      "han": "这是照片。这是我爸爸和妈妈。",
+      "pinyin": "Zhè shì zhàopiàn. Zhè shì wǒ bàba hé māma.",
+      "vi": "Đây là ảnh. Đây là bố và mẹ tôi."
+    },
+    {
+      "speaker": "A",
+      "han": "都很好吗？",
+      "pinyin": "Dōu hěn hǎo ma?",
+      "vi": "Đều khỏe à?"
+    },
+    {
+      "speaker": "B",
+      "han": "都很好。",
+      "pinyin": "Dōu hěn hǎo.",
+      "vi": "Đều khỏe."
+    },
+    {
+      "speaker": "A",
+      "han": "你家有两口人吗？",
+      "pinyin": "Nǐ jiā yǒu liǎng kǒu rén ma?",
+      "vi": "Nhà bạn có hai người à?"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "write",
+      "prompt": "Tự viết: Bố và mẹ.",
+      "answer": "爸爸和妈妈。"
+    },
+    {
+      "type": "write",
+      "prompt": "Tự viết: Bố và mẹ đều khỏe. (dùng 都)",
+      "answer": "爸爸和妈妈都很好。"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Nói bố và mẹ đều khỏe. Chỉ dùng từ tuần 1–3.",
+    "system": "Bạn là bạn nói tiếng Trung trình độ HSK 1. Chỉ dùng các từ: 你好, 您, 谢谢, 不客气, 请, 我, 你, 他, 她, 叫, 是, 名字, 老师, 学生, 人, 中国, 美国, 呢, 什么, 谁, 哪, 哪国人, 吗, 很, 好, 高兴, 认识, 也, 一, 二, 三, 四, 五, 六, 七, 八, 九, 十, 个, 号, 十一, 二十, 百, 岁, 年, 月, 日, 星期, 今天, 点, 分, 现在, 半, 刻, 昨天, 明天, 上午, 下午, 时候, 有, 没有, 家, 口, 几, 爸爸, 妈妈, 哥哥, 姐姐, 这, 的, 弟弟, 妹妹, 儿子, 女儿, 爱, 的, 朋友, 同学, 猫, 狗, 都, 和, 两, 照片. Mỗi lượt 1–2 câu ngắn. Viết Hán + pinyin. Nếu học viên sai, sửa nhẹ bằng tiếng Việt rồi hỏi lại. Không thêm từ mới. Bắt đầu bằng: 这是我爸爸和妈妈。",
+    "allowedWords": [
+      "你好",
+      "您",
+      "谢谢",
+      "不客气",
+      "请",
+      "我",
+      "你",
+      "他",
+      "她",
+      "叫",
+      "是",
+      "名字",
+      "老师",
+      "学生",
+      "人",
+      "中国",
+      "美国",
+      "呢",
+      "什么",
+      "谁",
+      "哪",
+      "哪国人",
+      "吗",
+      "很",
+      "好",
+      "高兴",
+      "认识",
+      "也",
+      "一",
+      "二",
+      "三",
+      "四",
+      "五",
+      "六",
+      "七",
+      "八",
+      "九",
+      "十",
+      "个",
+      "号",
+      "十一",
+      "二十",
+      "百",
+      "岁",
+      "年",
+      "月",
+      "日",
+      "星期",
+      "今天",
+      "点",
+      "分",
+      "现在",
+      "半",
+      "刻",
+      "昨天",
+      "明天",
+      "上午",
+      "下午",
+      "时候",
+      "有",
+      "没有",
+      "家",
+      "口",
+      "几",
+      "爸爸",
+      "妈妈",
+      "哥哥",
+      "姐姐",
+      "这",
+      "的",
+      "弟弟",
+      "妹妹",
+      "儿子",
+      "女儿",
+      "爱",
+      "的",
+      "朋友",
+      "同学",
+      "猫",
+      "狗",
+      "都",
+      "和",
+      "两",
+      "照片"
+    ],
+    "turns": 4
+  },
+  "timer": {
+    "review": 5,
+    "vocab": 8,
+    "grammar": 8,
+    "talk": 5,
+    "ai": 4
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "id": 8,
+  "week": 2,
+  "hsk": 1,
+  "theme": "Số 1–10",
+  "kind": "learn",
+  "vocab": [
+    {
+      "han": "一",
+      "pinyin": "yī",
+      "vi": "Một",
+      "example": {
+        "han": "一个。",
+        "pinyin": "Yī gè.",
+        "vi": "Một cái."
+      }
+    },
+    {
+      "han": "二",
+      "pinyin": "èr",
+      "vi": "Hai",
+      "example": {
+        "han": "二号。",
+        "pinyin": "Èr hào.",
+        "vi": "Mùng hai."
+      }
+    },
+    {
+      "han": "三",
+      "pinyin": "sān",
+      "vi": "Ba",
+      "example": {
+        "han": "三个。",
+        "pinyin": "Sān gè.",
+        "vi": "Ba cái."
+      }
+    },
+    {
+      "han": "四",
+      "pinyin": "sì",
+      "vi": "Bốn",
+      "example": {
+        "han": "四个。",
+        "pinyin": "Sì gè.",
+        "vi": "Bốn cái."
+      }
+    },
+    {
+      "han": "五",
+      "pinyin": "wǔ",
+      "vi": "Năm",
+      "example": {
+        "han": "五个。",
+        "pinyin": "Wǔ gè.",
+        "vi": "Năm cái."
+      }
+    },
+    {
+      "han": "六",
+      "pinyin": "liù",
+      "vi": "Sáu",
+      "example": {
+        "han": "六个。",
+        "pinyin": "Liù gè.",
+        "vi": "Sáu cái."
+      }
+    },
+    {
+      "han": "七",
+      "pinyin": "qī",
+      "vi": "Bảy",
+      "example": {
+        "han": "七个。",
+        "pinyin": "Qī gè.",
+        "vi": "Bảy cái."
+      }
+    },
+    {
+      "han": "八",
+      "pinyin": "bā",
+      "vi": "Tám",
+      "example": {
+        "han": "八个。",
+        "pinyin": "Bā gè.",
+        "vi": "Tám cái."
+      }
+    },
+    {
+      "han": "九",
+      "pinyin": "jiǔ",
+      "vi": "Chín",
+      "example": {
+        "han": "九个。",
+        "pinyin": "Jiǔ gè.",
+        "vi": "Chín cái."
+      }
+    },
+    {
+      "han": "十",
+      "pinyin": "shí",
+      "vi": "Mười",
+      "example": {
+        "han": "十个。",
+        "pinyin": "Shí gè.",
+        "vi": "Mười cái."
+      }
+    },
+    {
+      "han": "个",
+      "pinyin": "gè",
+      "vi": "Cái (lượng từ)",
+      "example": {
+        "han": "三个学生。",
+        "pinyin": "Sān gè xuésheng.",
+        "vi": "Ba học sinh."
+      }
+    },
+    {
+      "han": "号",
+      "pinyin": "hào",
+      "vi": "Số (ngày/số nhà)",
+      "example": {
+        "han": "一号。",
+        "pinyin": "Yī hào.",
+        "vi": "Mùng một."
+      }
+    }
+  ],
+  "grammar": {
+    "title": "Số + lượng từ",
+    "pattern": "số + 个 + danh từ",
+    "explainVi": "Đếm người/đồ dùng 个. 一号 là mùng 1. Hai cái thường nói 两个, không phải 二个.",
+    "drills": [
+      {
+        "prompt": "Dịch: Ba cái.",
+        "answer": "三个。"
+      },
+      {
+        "prompt": "Dịch: Mười học sinh.",
+        "answer": "十个学生。"
+      },
+      {
+        "prompt": "Dịch: Mùng một.",
+        "answer": "一号。"
+      },
+      {
+        "prompt": "Dịch: Năm giáo viên.",
+        "answer": "五个老师。"
+      }
+    ]
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "han": "一、二、三。",
+      "pinyin": "Yī, èr, sān.",
+      "vi": "Một, hai, ba."
+    },
+    {
+      "speaker": "B",
+      "han": "四、五、六。",
+      "pinyin": "Sì, wǔ, liù.",
+      "vi": "Bốn, năm, sáu."
+    },
+    {
+      "speaker": "A",
+      "han": "七、八、九、十。",
+      "pinyin": "Qī, bā, jiǔ, shí.",
+      "vi": "Bảy, tám, chín, mười."
+    },
+    {
+      "speaker": "B",
+      "han": "三个学生。",
+      "pinyin": "Sān gè xuésheng.",
+      "vi": "Ba học sinh."
+    },
+    {
+      "speaker": "A",
+      "han": "谢谢！",
+      "pinyin": "Xièxie!",
+      "vi": "Cảm ơn!"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "write",
+      "prompt": "Tự viết: Tám cái.",
+      "answer": "八个。"
+    },
+    {
+      "type": "write",
+      "prompt": "Tự viết: Mùng hai.",
+      "answer": "二号。"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Đếm số 1–10. Chỉ dùng từ đến ngày 8.",
+    "system": "Bạn là bạn nói tiếng Trung trình độ HSK 1. Chỉ dùng các từ: 你好, 您, 谢谢, 不客气, 请, 我, 你, 他, 她, 叫, 是, 名字, 老师, 学生, 人, 中国, 美国, 呢, 什么, 谁, 哪, 哪国人, 吗, 很, 好, 高兴, 认识, 也, 一, 二, 三, 四, 五, 六, 七, 八, 九, 十, 个, 号. Mỗi lượt 1–2 câu ngắn. Viết Hán + pinyin. Nếu học viên sai, sửa nhẹ bằng tiếng Việt rồi hỏi lại. Không thêm từ mới. Bắt đầu bằng: 一、二、三。",
+    "allowedWords": [
+      "你好",
+      "您",
+      "谢谢",
+      "不客气",
+      "请",
+      "我",
+      "你",
+      "他",
+      "她",
+      "叫",
+      "是",
+      "名字",
+      "老师",
+      "学生",
+      "人",
+      "中国",
+      "美国",
+      "呢",
+      "什么",
+      "谁",
+      "哪",
+      "哪国人",
+      "吗",
+      "很",
+      "好",
+      "高兴",
+      "认识",
+      "也",
+      "一",
+      "二",
+      "三",
+      "四",
+      "五",
+      "六",
+      "七",
+      "八",
+      "九",
+      "十",
+      "个",
+      "号"
+    ],
+    "turns": 4
+  },
+  "timer": {
+    "review": 5,
+    "vocab": 8,
+    "grammar": 8,
+    "talk": 5,
+    "ai": 4
+  }
+}

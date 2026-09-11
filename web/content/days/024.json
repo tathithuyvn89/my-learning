@@ -1,0 +1,238 @@
+{
+  "id": 24,
+  "week": 4,
+  "hsk": 1,
+  "theme": "Thức ăn",
+  "kind": "learn",
+  "vocab": [
+    {
+      "han": "水果",
+      "pinyin": "shuǐguǒ",
+      "vi": "Trái cây",
+      "example": {
+        "han": "我要水果。",
+        "pinyin": "Wǒ yào shuǐguǒ.",
+        "vi": "Tôi muốn trái cây."
+      }
+    },
+    {
+      "han": "苹果",
+      "pinyin": "píngguǒ",
+      "vi": "Táo",
+      "example": {
+        "han": "一个苹果。",
+        "pinyin": "Yī gè píngguǒ.",
+        "vi": "Một quả táo."
+      }
+    },
+    {
+      "han": "面条",
+      "pinyin": "miàntiáo",
+      "vi": "Mì",
+      "example": {
+        "han": "我吃面条。",
+        "pinyin": "Wǒ chī miàntiáo.",
+        "vi": "Tôi ăn mì."
+      }
+    },
+    {
+      "han": "杯",
+      "pinyin": "bēi",
+      "vi": "Ly (lượng từ)",
+      "example": {
+        "han": "一杯茶。",
+        "pinyin": "Yī bēi chá.",
+        "vi": "Một ly trà."
+      }
+    },
+    {
+      "han": "好吃",
+      "pinyin": "hǎochī",
+      "vi": "Ngon",
+      "example": {
+        "han": "米饭很好吃。",
+        "pinyin": "Mǐfàn hěn hǎochī.",
+        "vi": "Cơm rất ngon."
+      }
+    }
+  ],
+  "grammar": {
+    "title": "Lượng từ 个 / 杯",
+    "pattern": "số + 个 / 杯 + món",
+    "explainVi": "Táo, cốc: 个. Trà, nước: 杯. 一杯茶、一个苹果.",
+    "drills": [
+      {
+        "prompt": "Dịch: Một ly trà.",
+        "answer": "一杯茶。"
+      },
+      {
+        "prompt": "Dịch: Một quả táo.",
+        "answer": "一个苹果。"
+      },
+      {
+        "prompt": "Dịch: Tôi ăn mì.",
+        "answer": "我吃面条。"
+      },
+      {
+        "prompt": "Dịch: Cơm rất ngon.",
+        "answer": "米饭很好吃。"
+      }
+    ]
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "han": "你要什么？",
+      "pinyin": "Nǐ yào shénme?",
+      "vi": "Bạn muốn gì?"
+    },
+    {
+      "speaker": "B",
+      "han": "我要一杯茶。",
+      "pinyin": "Wǒ yào yī bēi chá.",
+      "vi": "Tôi muốn một ly trà."
+    },
+    {
+      "speaker": "A",
+      "han": "你要苹果吗？",
+      "pinyin": "Nǐ yào píngguǒ ma?",
+      "vi": "Bạn muốn táo không?"
+    },
+    {
+      "speaker": "B",
+      "han": "我要一个苹果。",
+      "pinyin": "Wǒ yào yī gè píngguǒ.",
+      "vi": "Tôi muốn một quả táo."
+    },
+    {
+      "speaker": "A",
+      "han": "面条很好吃。",
+      "pinyin": "Miàntiáo hěn hǎochī.",
+      "vi": "Mì rất ngon."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "write",
+      "prompt": "Tự viết: Một ly trà.",
+      "answer": "一杯茶。"
+    },
+    {
+      "type": "write",
+      "prompt": "Tự viết: Một quả táo.",
+      "answer": "一个苹果。"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Gọi một ly trà và một quả táo.",
+    "system": "Bạn là bạn nói tiếng Trung trình độ HSK 1. Chỉ dùng các từ: 你好, 您, 谢谢, 不客气, 请, 我, 你, 他, 她, 叫, 是, 名字, 老师, 学生, 人, 中国, 美国, 呢, 什么, 谁, 哪, 哪国人, 吗, 很, 好, 高兴, 认识, 也, 一, 二, 三, 四, 五, 六, 七, 八, 九, 十, 个, 号, 十一, 二十, 百, 岁, 年, 月, 日, 星期, 今天, 点, 分, 现在, 半, 刻, 昨天, 明天, 上午, 下午, 时候, 有, 没有, 家, 口, 几, 爸爸, 妈妈, 哥哥, 姐姐, 这, 的, 弟弟, 妹妹, 儿子, 女儿, 爱, 的, 朋友, 同学, 猫, 狗, 都, 和, 两, 照片, 吃, 喝, 米饭, 水, 茶, 想, 要, 杯子, 菜, 水果, 苹果, 面条, 杯, 好吃. Mỗi lượt 1–2 câu ngắn. Viết Hán + pinyin. Nếu học viên sai, sửa nhẹ bằng tiếng Việt rồi hỏi lại. Không thêm từ mới. Bắt đầu bằng: 我要一杯茶。",
+    "allowedWords": [
+      "你好",
+      "您",
+      "谢谢",
+      "不客气",
+      "请",
+      "我",
+      "你",
+      "他",
+      "她",
+      "叫",
+      "是",
+      "名字",
+      "老师",
+      "学生",
+      "人",
+      "中国",
+      "美国",
+      "呢",
+      "什么",
+      "谁",
+      "哪",
+      "哪国人",
+      "吗",
+      "很",
+      "好",
+      "高兴",
+      "认识",
+      "也",
+      "一",
+      "二",
+      "三",
+      "四",
+      "五",
+      "六",
+      "七",
+      "八",
+      "九",
+      "十",
+      "个",
+      "号",
+      "十一",
+      "二十",
+      "百",
+      "岁",
+      "年",
+      "月",
+      "日",
+      "星期",
+      "今天",
+      "点",
+      "分",
+      "现在",
+      "半",
+      "刻",
+      "昨天",
+      "明天",
+      "上午",
+      "下午",
+      "时候",
+      "有",
+      "没有",
+      "家",
+      "口",
+      "几",
+      "爸爸",
+      "妈妈",
+      "哥哥",
+      "姐姐",
+      "这",
+      "的",
+      "弟弟",
+      "妹妹",
+      "儿子",
+      "女儿",
+      "爱",
+      "的",
+      "朋友",
+      "同学",
+      "猫",
+      "狗",
+      "都",
+      "和",
+      "两",
+      "照片",
+      "吃",
+      "喝",
+      "米饭",
+      "水",
+      "茶",
+      "想",
+      "要",
+      "杯子",
+      "菜",
+      "水果",
+      "苹果",
+      "面条",
+      "杯",
+      "好吃"
+    ],
+    "turns": 4
+  },
+  "timer": {
+    "review": 5,
+    "vocab": 8,
+    "grammar": 8,
+    "talk": 5,
+    "ai": 4
+  }
+}

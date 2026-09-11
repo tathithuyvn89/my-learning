@@ -1,0 +1,68 @@
+{
+  "id": 5,
+  "week": 1,
+  "hsk": 1,
+  "theme": "Gặp mặt",
+  "kind": "learn",
+  "vocab": [
+    {
+      "han": "很",
+      "pinyin": "hěn",
+      "vi": "Rất",
+      "example": { "han": "我很好。", "pinyin": "Wǒ hěn hǎo.", "vi": "Tôi rất khỏe." }
+    },
+    {
+      "han": "好",
+      "pinyin": "hǎo",
+      "vi": "Tốt / khỏe",
+      "example": { "han": "你好吗？", "pinyin": "Nǐ hǎo ma?", "vi": "Bạn khỏe không?" }
+    },
+    {
+      "han": "高兴",
+      "pinyin": "gāoxìng",
+      "vi": "Vui / vui mừng",
+      "example": { "han": "我很高兴。", "pinyin": "Wǒ hěn gāoxìng.", "vi": "Tôi rất vui." }
+    },
+    {
+      "han": "认识",
+      "pinyin": "rènshi",
+      "vi": "Quen / được gặp",
+      "example": { "han": "很高兴认识你。", "pinyin": "Hěn gāoxìng rènshi nǐ.", "vi": "Rất vui được gặp bạn." }
+    },
+    {
+      "han": "也",
+      "pinyin": "yě",
+      "vi": "Cũng",
+      "example": { "han": "我也很高兴。", "pinyin": "Wǒ yě hěn gāoxìng.", "vi": "Tôi cũng rất vui." }
+    }
+  ],
+  "grammar": {
+    "title": "很 + tính từ",
+    "pattern": "很 + tính từ",
+    "explainVi": "很 đứng trước tính từ: 很好, 很高兴. 也 = cũng, đặt trước 很: 也很高兴.",
+    "drills": [
+      { "prompt": "Dịch: Tôi rất khỏe.", "answer": "我很好。" },
+      { "prompt": "Dịch: Rất vui được gặp bạn.", "answer": "很高兴认识你。" },
+      { "prompt": "Dịch: Tôi cũng rất vui.", "answer": "我也很高兴。" },
+      { "prompt": "Dịch: Cô ấy cũng rất tốt.", "answer": "她也很好。" }
+    ]
+  },
+  "dialogue": [
+    { "speaker": "A", "han": "你好！", "pinyin": "Nǐ hǎo!", "vi": "Xin chào!" },
+    { "speaker": "B", "han": "你好！很高兴认识你。", "pinyin": "Nǐ hǎo! Hěn gāoxìng rènshi nǐ.", "vi": "Xin chào! Rất vui được gặp bạn." },
+    { "speaker": "A", "han": "我也很高兴。", "pinyin": "Wǒ yě hěn gāoxìng.", "vi": "Tôi cũng rất vui." },
+    { "speaker": "B", "han": "你很好。", "pinyin": "Nǐ hěn hǎo.", "vi": "Bạn rất tốt." },
+    { "speaker": "A", "han": "谢谢！", "pinyin": "Xièxie!", "vi": "Cảm ơn!" }
+  ],
+  "exercises": [
+    { "type": "write", "prompt": "Tự viết: Rất vui được gặp bạn.", "answer": "很高兴认识你。" },
+    { "type": "write", "prompt": "Tự viết: Tôi cũng rất vui.", "answer": "我也很高兴。" }
+  ],
+  "aiPrompt": {
+    "scenario": "Gặp mặt: nói rất vui được quen. Chỉ dùng từ đến ngày 5.",
+    "system": "Bạn là bạn nói tiếng Trung trình độ HSK 1. Chỉ dùng các từ: 你好, 您, 谢谢, 不客气, 请, 我, 你, 他, 她, 叫, 是, 名字, 老师, 学生, 人, 中国, 美国, 呢, 什么, 谁, 哪, 哪国人, 吗, 很, 好, 高兴, 认识, 也. Mỗi lượt 1–2 câu ngắn. Viết Hán + pinyin. Nếu học viên sai, sửa nhẹ bằng tiếng Việt rồi hỏi lại. Không thêm từ mới. Bắt đầu bằng: 很高兴认识你。",
+    "allowedWords": ["你好", "您", "谢谢", "不客气", "请", "我", "你", "他", "她", "叫", "是", "名字", "老师", "学生", "人", "中国", "美国", "呢", "什么", "谁", "哪", "哪国人", "吗", "很", "好", "高兴", "认识", "也"],
+    "turns": 4
+  },
+  "timer": { "review": 5, "vocab": 8, "grammar": 8, "talk": 5, "ai": 4 }
+}

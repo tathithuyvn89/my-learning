@@ -1,0 +1,204 @@
+{
+  "id": 15,
+  "week": 3,
+  "hsk": 1,
+  "theme": "Có / không có",
+  "kind": "learn",
+  "vocab": [
+    {
+      "han": "有",
+      "pinyin": "yǒu",
+      "vi": "Có",
+      "example": {
+        "han": "我有家。",
+        "pinyin": "Wǒ yǒu jiā.",
+        "vi": "Tôi có nhà."
+      }
+    },
+    {
+      "han": "没有",
+      "pinyin": "méiyǒu",
+      "vi": "Không có",
+      "example": {
+        "han": "我没有家。",
+        "pinyin": "Wǒ méiyǒu jiā.",
+        "vi": "Tôi không có nhà."
+      }
+    },
+    {
+      "han": "家",
+      "pinyin": "jiā",
+      "vi": "Nhà / gia đình",
+      "example": {
+        "han": "我家。",
+        "pinyin": "Wǒ jiā.",
+        "vi": "Nhà tôi."
+      }
+    },
+    {
+      "han": "口",
+      "pinyin": "kǒu",
+      "vi": "Miệng (đếm người trong nhà)",
+      "example": {
+        "han": "三口人。",
+        "pinyin": "Sān kǒu rén.",
+        "vi": "Ba người."
+      }
+    },
+    {
+      "han": "几",
+      "pinyin": "jǐ",
+      "vi": "Mấy",
+      "example": {
+        "han": "几口人？",
+        "pinyin": "Jǐ kǒu rén?",
+        "vi": "Mấy người?"
+      }
+    }
+  ],
+  "grammar": {
+    "title": "有 / 没有",
+    "pattern": "有 / 没有 + danh từ",
+    "explainVi": "有 = có; 没有 = không có. 家有几口人？ hỏi nhà có mấy người.",
+    "drills": [
+      {
+        "prompt": "Dịch: Tôi có nhà.",
+        "answer": "我有家。"
+      },
+      {
+        "prompt": "Dịch: Tôi không có.",
+        "answer": "我没有。"
+      },
+      {
+        "prompt": "Dịch: Nhà có mấy người?",
+        "answer": "家有几口人？"
+      },
+      {
+        "prompt": "Dịch: Ba người.",
+        "answer": "三口人。"
+      }
+    ]
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "han": "你家有几口人？",
+      "pinyin": "Nǐ jiā yǒu jǐ kǒu rén?",
+      "vi": "Nhà bạn có mấy người?"
+    },
+    {
+      "speaker": "B",
+      "han": "我家有三口人。",
+      "pinyin": "Wǒ jiā yǒu sān kǒu rén.",
+      "vi": "Nhà tôi có ba người."
+    },
+    {
+      "speaker": "A",
+      "han": "你有家吗？",
+      "pinyin": "Nǐ yǒu jiā ma?",
+      "vi": "Bạn có nhà à?"
+    },
+    {
+      "speaker": "B",
+      "han": "我有。你呢？",
+      "pinyin": "Wǒ yǒu. Nǐ ne?",
+      "vi": "Tôi có. Còn bạn?"
+    },
+    {
+      "speaker": "A",
+      "han": "我也有。",
+      "pinyin": "Wǒ yě yǒu.",
+      "vi": "Tôi cũng có."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "write",
+      "prompt": "Tự viết: Tôi có một nhà.",
+      "answer": "我有家。"
+    },
+    {
+      "type": "write",
+      "prompt": "Tự viết: Nhà có mấy người?",
+      "answer": "家有几口人？"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Hỏi nhà có mấy người. Chỉ dùng từ đến ngày 15.",
+    "system": "Bạn là bạn nói tiếng Trung trình độ HSK 1. Chỉ dùng các từ: 你好, 您, 谢谢, 不客气, 请, 我, 你, 他, 她, 叫, 是, 名字, 老师, 学生, 人, 中国, 美国, 呢, 什么, 谁, 哪, 哪国人, 吗, 很, 好, 高兴, 认识, 也, 一, 二, 三, 四, 五, 六, 七, 八, 九, 十, 个, 号, 十一, 二十, 百, 岁, 年, 月, 日, 星期, 今天, 点, 分, 现在, 半, 刻, 昨天, 明天, 上午, 下午, 时候, 有, 没有, 家, 口, 几. Mỗi lượt 1–2 câu ngắn. Viết Hán + pinyin. Nếu học viên sai, sửa nhẹ bằng tiếng Việt rồi hỏi lại. Không thêm từ mới. Bắt đầu bằng: 你家有几口人？",
+    "allowedWords": [
+      "你好",
+      "您",
+      "谢谢",
+      "不客气",
+      "请",
+      "我",
+      "你",
+      "他",
+      "她",
+      "叫",
+      "是",
+      "名字",
+      "老师",
+      "学生",
+      "人",
+      "中国",
+      "美国",
+      "呢",
+      "什么",
+      "谁",
+      "哪",
+      "哪国人",
+      "吗",
+      "很",
+      "好",
+      "高兴",
+      "认识",
+      "也",
+      "一",
+      "二",
+      "三",
+      "四",
+      "五",
+      "六",
+      "七",
+      "八",
+      "九",
+      "十",
+      "个",
+      "号",
+      "十一",
+      "二十",
+      "百",
+      "岁",
+      "年",
+      "月",
+      "日",
+      "星期",
+      "今天",
+      "点",
+      "分",
+      "现在",
+      "半",
+      "刻",
+      "昨天",
+      "明天",
+      "上午",
+      "下午",
+      "时候",
+      "有",
+      "没有",
+      "家",
+      "口",
+      "几"
+    ],
+    "turns": 4
+  },
+  "timer": {
+    "review": 5,
+    "vocab": 8,
+    "grammar": 8,
+    "talk": 5,
+    "ai": 4
+  }
+}

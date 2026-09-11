@@ -1,0 +1,241 @@
+{
+  "id": 25,
+  "week": 4,
+  "hsk": 1,
+  "theme": "Nhà hàng",
+  "kind": "learn",
+  "vocab": [
+    {
+      "han": "饭店",
+      "pinyin": "fàndiàn",
+      "vi": "Nhà hàng",
+      "example": {
+        "han": "这是饭店。",
+        "pinyin": "Zhè shì fàndiàn.",
+        "vi": "Đây là nhà hàng."
+      }
+    },
+    {
+      "han": "菜单",
+      "pinyin": "càidān",
+      "vi": "Thực đơn",
+      "example": {
+        "han": "请给我菜单。",
+        "pinyin": "Qǐng gěi wǒ càidān.",
+        "vi": "Làm ơn cho tôi menu."
+      }
+    },
+    {
+      "han": "服务员",
+      "pinyin": "fúwùyuán",
+      "vi": "Nhân viên phục vụ",
+      "example": {
+        "han": "服务员！",
+        "pinyin": "Fúwùyuán!",
+        "vi": "Nhân viên ơi!"
+      }
+    },
+    {
+      "han": "谢谢",
+      "pinyin": "xièxie",
+      "vi": "Cảm ơn (ôn)",
+      "example": {
+        "han": "谢谢！",
+        "pinyin": "Xièxie!",
+        "vi": "Cảm ơn!"
+      }
+    },
+    {
+      "han": "请",
+      "pinyin": "qǐng",
+      "vi": "Xin hãy (ôn)",
+      "example": {
+        "han": "请给我菜单。",
+        "pinyin": "Qǐng gěi wǒ càidān.",
+        "vi": "Làm ơn cho menu."
+      }
+    }
+  ],
+  "grammar": {
+    "title": "请 + V",
+    "pattern": "请 + động từ",
+    "explainVi": "Nhờ lịch sự: 请给我菜单. Gọi nhân viên: 服务员！",
+    "drills": [
+      {
+        "prompt": "Dịch: Làm ơn cho menu.",
+        "answer": "请给我菜单。"
+      },
+      {
+        "prompt": "Dịch: Đây là nhà hàng.",
+        "answer": "这是饭店。"
+      },
+      {
+        "prompt": "Dịch: Nhân viên ơi!",
+        "answer": "服务员！"
+      },
+      {
+        "prompt": "Dịch: Cảm ơn.",
+        "answer": "谢谢。"
+      }
+    ]
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "han": "服务员！",
+      "pinyin": "Fúwùyuán!",
+      "vi": "Nhân viên ơi!"
+    },
+    {
+      "speaker": "B",
+      "han": "你好！请。",
+      "pinyin": "Nǐ hǎo! Qǐng.",
+      "vi": "Xin chào! Mời."
+    },
+    {
+      "speaker": "A",
+      "han": "请给我菜单。",
+      "pinyin": "Qǐng gěi wǒ càidān.",
+      "vi": "Làm ơn cho tôi menu."
+    },
+    {
+      "speaker": "B",
+      "han": "好。",
+      "pinyin": "Hǎo.",
+      "vi": "Được."
+    },
+    {
+      "speaker": "A",
+      "han": "谢谢！",
+      "pinyin": "Xièxie!",
+      "vi": "Cảm ơn!"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "write",
+      "prompt": "Tự viết: Làm ơn cho menu.",
+      "answer": "请给我菜单。"
+    },
+    {
+      "type": "write",
+      "prompt": "Tự viết: Đây là nhà hàng.",
+      "answer": "这是饭店。"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Ở nhà hàng, xin menu.",
+    "system": "Bạn là bạn nói tiếng Trung trình độ HSK 1. Chỉ dùng các từ: 你好, 您, 谢谢, 不客气, 请, 我, 你, 他, 她, 叫, 是, 名字, 老师, 学生, 人, 中国, 美国, 呢, 什么, 谁, 哪, 哪国人, 吗, 很, 好, 高兴, 认识, 也, 一, 二, 三, 四, 五, 六, 七, 八, 九, 十, 个, 号, 十一, 二十, 百, 岁, 年, 月, 日, 星期, 今天, 点, 分, 现在, 半, 刻, 昨天, 明天, 上午, 下午, 时候, 有, 没有, 家, 口, 几, 爸爸, 妈妈, 哥哥, 姐姐, 这, 的, 弟弟, 妹妹, 儿子, 女儿, 爱, 的, 朋友, 同学, 猫, 狗, 都, 和, 两, 照片, 吃, 喝, 米饭, 水, 茶, 想, 要, 杯子, 菜, 水果, 苹果, 面条, 杯, 好吃, 饭店, 菜单, 服务员. Mỗi lượt 1–2 câu ngắn. Viết Hán + pinyin. Nếu học viên sai, sửa nhẹ bằng tiếng Việt rồi hỏi lại. Không thêm từ mới. Bắt đầu bằng: 服务员！请给我菜单。",
+    "allowedWords": [
+      "你好",
+      "您",
+      "谢谢",
+      "不客气",
+      "请",
+      "我",
+      "你",
+      "他",
+      "她",
+      "叫",
+      "是",
+      "名字",
+      "老师",
+      "学生",
+      "人",
+      "中国",
+      "美国",
+      "呢",
+      "什么",
+      "谁",
+      "哪",
+      "哪国人",
+      "吗",
+      "很",
+      "好",
+      "高兴",
+      "认识",
+      "也",
+      "一",
+      "二",
+      "三",
+      "四",
+      "五",
+      "六",
+      "七",
+      "八",
+      "九",
+      "十",
+      "个",
+      "号",
+      "十一",
+      "二十",
+      "百",
+      "岁",
+      "年",
+      "月",
+      "日",
+      "星期",
+      "今天",
+      "点",
+      "分",
+      "现在",
+      "半",
+      "刻",
+      "昨天",
+      "明天",
+      "上午",
+      "下午",
+      "时候",
+      "有",
+      "没有",
+      "家",
+      "口",
+      "几",
+      "爸爸",
+      "妈妈",
+      "哥哥",
+      "姐姐",
+      "这",
+      "的",
+      "弟弟",
+      "妹妹",
+      "儿子",
+      "女儿",
+      "爱",
+      "的",
+      "朋友",
+      "同学",
+      "猫",
+      "狗",
+      "都",
+      "和",
+      "两",
+      "照片",
+      "吃",
+      "喝",
+      "米饭",
+      "水",
+      "茶",
+      "想",
+      "要",
+      "杯子",
+      "菜",
+      "水果",
+      "苹果",
+      "面条",
+      "杯",
+      "好吃",
+      "饭店",
+      "菜单",
+      "服务员"
+    ],
+    "turns": 4
+  },
+  "timer": {
+    "review": 5,
+    "vocab": 8,
+    "grammar": 8,
+    "talk": 5,
+    "ai": 4
+  }
+}

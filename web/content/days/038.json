@@ -1,0 +1,272 @@
+{
+  "id": 38,
+  "week": 6,
+  "hsk": 1,
+  "theme": "Hướng",
+  "kind": "learn",
+  "vocab": [
+    {
+      "han": "前面",
+      "pinyin": "qiánmiàn",
+      "vi": "Phía trước",
+      "example": {
+        "han": "商店在前面。",
+        "pinyin": "Shāngdiàn zài qiánmiàn.",
+        "vi": "Cửa hàng ở phía trước."
+      }
+    },
+    {
+      "han": "后面",
+      "pinyin": "hòumiàn",
+      "vi": "Phía sau",
+      "example": {
+        "han": "学校在后面。",
+        "pinyin": "Xuéxiào zài hòumiàn.",
+        "vi": "Trường ở phía sau."
+      }
+    },
+    {
+      "han": "上",
+      "pinyin": "shàng",
+      "vi": "Trên",
+      "example": {
+        "han": "杯子在上。",
+        "pinyin": "Bēizi zài shàng.",
+        "vi": "Cốc ở trên."
+      }
+    },
+    {
+      "han": "下",
+      "pinyin": "xià",
+      "vi": "Dưới",
+      "example": {
+        "han": "在下。",
+        "pinyin": "Zài xià.",
+        "vi": "Ở dưới."
+      }
+    },
+    {
+      "han": "里",
+      "pinyin": "lǐ",
+      "vi": "Trong",
+      "example": {
+        "han": "人在学校里。",
+        "pinyin": "Rén zài xuéxiào lǐ.",
+        "vi": "Người ở trong trường."
+      }
+    }
+  ],
+  "grammar": {
+    "title": "Vị trí",
+    "pattern": "N 在 + 前面 / 后面 / 里",
+    "explainVi": "Nơi + 在 + hướng. 商店在前面. 里 = trong (学校里).",
+    "drills": [
+      {
+        "prompt": "Dịch: Cửa hàng ở phía trước.",
+        "answer": "商店在前面。"
+      },
+      {
+        "prompt": "Dịch: Trường ở phía sau.",
+        "answer": "学校在后面。"
+      },
+      {
+        "prompt": "Dịch: Ở trong trường.",
+        "answer": "在学校里。"
+      },
+      {
+        "prompt": "Dịch: Bệnh viện ở phía trước.",
+        "answer": "医院在前面。"
+      }
+    ]
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "han": "商店在哪儿？",
+      "pinyin": "Shāngdiàn zài nǎr?",
+      "vi": "Cửa hàng ở đâu?"
+    },
+    {
+      "speaker": "B",
+      "han": "商店在前面。",
+      "pinyin": "Shāngdiàn zài qiánmiàn.",
+      "vi": "Cửa hàng ở phía trước."
+    },
+    {
+      "speaker": "A",
+      "han": "学校在后面吗？",
+      "pinyin": "Xuéxiào zài hòumiàn ma?",
+      "vi": "Trường ở phía sau à?"
+    },
+    {
+      "speaker": "B",
+      "han": "学校在前面。",
+      "pinyin": "Xuéxiào zài qiánmiàn.",
+      "vi": "Trường ở phía trước."
+    },
+    {
+      "speaker": "A",
+      "han": "老师在学校里。",
+      "pinyin": "Lǎoshī zài xuéxiào lǐ.",
+      "vi": "Thầy/cô ở trong trường."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "write",
+      "prompt": "Tự viết: Cửa hàng ở phía trước.",
+      "answer": "商店在前面。"
+    },
+    {
+      "type": "write",
+      "prompt": "Tự viết: Ở trong trường.",
+      "answer": "在学校里。"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Hỏi cửa hàng ở phía trước hay sau.",
+    "system": "Bạn là bạn nói tiếng Trung trình độ HSK 1. Chỉ dùng các từ: 你好, 您, 谢谢, 不客气, 请, 我, 你, 他, 她, 叫, 是, 名字, 老师, 学生, 人, 中国, 美国, 呢, 什么, 谁, 哪, 哪国人, 吗, 很, 好, 高兴, 认识, 也, 一, 二, 三, 四, 五, 六, 七, 八, 九, 十, 个, 号, 十一, 二十, 百, 岁, 年, 月, 日, 星期, 今天, 点, 分, 现在, 半, 刻, 昨天, 明天, 上午, 下午, 时候, 有, 没有, 家, 口, 几, 爸爸, 妈妈, 哥哥, 姐姐, 这, 的, 弟弟, 妹妹, 儿子, 女儿, 爱, 朋友, 同学, 猫, 狗, 都, 和, 两, 照片, 吃, 喝, 米饭, 水, 茶, 想, 要, 杯子, 菜, 水果, 苹果, 面条, 杯, 好吃, 饭店, 菜单, 服务员, 喜欢, 不, 太, 了, 买, 东西, 商店, 这个, 那个, 钱, 块, 元, 多少, 便宜, 贵, 可以, 些, 付钱, 找, 一共, 在, 哪儿, 这里, 那里, 学校, 去, 医院, 前面, 后面, 上, 下, 里. Mỗi lượt 1–2 câu ngắn. Viết Hán + pinyin. Nếu học viên sai, sửa nhẹ bằng tiếng Việt rồi hỏi lại. Không thêm từ mới. Bắt đầu bằng: 商店在哪儿？",
+    "allowedWords": [
+      "你好",
+      "您",
+      "谢谢",
+      "不客气",
+      "请",
+      "我",
+      "你",
+      "他",
+      "她",
+      "叫",
+      "是",
+      "名字",
+      "老师",
+      "学生",
+      "人",
+      "中国",
+      "美国",
+      "呢",
+      "什么",
+      "谁",
+      "哪",
+      "哪国人",
+      "吗",
+      "很",
+      "好",
+      "高兴",
+      "认识",
+      "也",
+      "一",
+      "二",
+      "三",
+      "四",
+      "五",
+      "六",
+      "七",
+      "八",
+      "九",
+      "十",
+      "个",
+      "号",
+      "十一",
+      "二十",
+      "百",
+      "岁",
+      "年",
+      "月",
+      "日",
+      "星期",
+      "今天",
+      "点",
+      "分",
+      "现在",
+      "半",
+      "刻",
+      "昨天",
+      "明天",
+      "上午",
+      "下午",
+      "时候",
+      "有",
+      "没有",
+      "家",
+      "口",
+      "几",
+      "爸爸",
+      "妈妈",
+      "哥哥",
+      "姐姐",
+      "这",
+      "的",
+      "弟弟",
+      "妹妹",
+      "儿子",
+      "女儿",
+      "爱",
+      "朋友",
+      "同学",
+      "猫",
+      "狗",
+      "都",
+      "和",
+      "两",
+      "照片",
+      "吃",
+      "喝",
+      "米饭",
+      "水",
+      "茶",
+      "想",
+      "要",
+      "杯子",
+      "菜",
+      "水果",
+      "苹果",
+      "面条",
+      "杯",
+      "好吃",
+      "饭店",
+      "菜单",
+      "服务员",
+      "喜欢",
+      "不",
+      "太",
+      "了",
+      "买",
+      "东西",
+      "商店",
+      "这个",
+      "那个",
+      "钱",
+      "块",
+      "元",
+      "多少",
+      "便宜",
+      "贵",
+      "可以",
+      "些",
+      "付钱",
+      "找",
+      "一共",
+      "在",
+      "哪儿",
+      "这里",
+      "那里",
+      "学校",
+      "去",
+      "医院",
+      "前面",
+      "后面",
+      "上",
+      "下",
+      "里"
+    ],
+    "turns": 4
+  },
+  "timer": {
+    "review": 5,
+    "vocab": 8,
+    "grammar": 8,
+    "talk": 5,
+    "ai": 4
+  }
+}

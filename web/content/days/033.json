@@ -1,0 +1,260 @@
+{
+  "id": 33,
+  "week": 5,
+  "hsk": 1,
+  "theme": "Thanh toán",
+  "kind": "learn",
+  "vocab": [
+    {
+      "han": "付钱",
+      "pinyin": "fù qián",
+      "vi": "Trả tiền",
+      "example": {
+        "han": "我付钱。",
+        "pinyin": "Wǒ fù qián.",
+        "vi": "Tôi trả tiền."
+      }
+    },
+    {
+      "han": "谢谢",
+      "pinyin": "xièxie",
+      "vi": "Cảm ơn (ôn)",
+      "example": {
+        "han": "谢谢！",
+        "pinyin": "Xièxie!",
+        "vi": "Cảm ơn!"
+      }
+    },
+    {
+      "han": "找",
+      "pinyin": "zhǎo",
+      "vi": "Trả lại (tiền thừa)",
+      "example": {
+        "han": "找十块。",
+        "pinyin": "Zhǎo shí kuài.",
+        "vi": "Trả lại mười khối."
+      }
+    },
+    {
+      "han": "一共",
+      "pinyin": "yī gòng",
+      "vi": "Tổng cộng",
+      "example": {
+        "han": "一共二十块。",
+        "pinyin": "Yī gòng èrshí kuài.",
+        "vi": "Tổng cộng hai mươi khối."
+      }
+    },
+    {
+      "han": "块",
+      "pinyin": "kuài",
+      "vi": "Khối (ôn)",
+      "example": {
+        "han": "二十块。",
+        "pinyin": "Èrshí kuài.",
+        "vi": "Hai mươi khối."
+      }
+    }
+  ],
+  "grammar": {
+    "title": "一共",
+    "pattern": "一共 + số + 块",
+    "explainVi": "Tổng cộng: 一共二十块. Trả tiền: 我付钱. Tiền thừa: 找十块.",
+    "drills": [
+      {
+        "prompt": "Dịch: Tổng cộng hai mươi khối.",
+        "answer": "一共二十块。"
+      },
+      {
+        "prompt": "Dịch: Tôi trả tiền.",
+        "answer": "我付钱。"
+      },
+      {
+        "prompt": "Dịch: Trả lại mười khối.",
+        "answer": "找十块。"
+      },
+      {
+        "prompt": "Dịch: Cảm ơn.",
+        "answer": "谢谢。"
+      }
+    ]
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "han": "一共多少钱？",
+      "pinyin": "Yī gòng duōshao qián?",
+      "vi": "Tổng cộng bao nhiêu tiền?"
+    },
+    {
+      "speaker": "B",
+      "han": "一共二十块。",
+      "pinyin": "Yī gòng èrshí kuài.",
+      "vi": "Tổng cộng hai mươi khối."
+    },
+    {
+      "speaker": "A",
+      "han": "我付钱。",
+      "pinyin": "Wǒ fù qián.",
+      "vi": "Tôi trả tiền."
+    },
+    {
+      "speaker": "B",
+      "han": "找十块。",
+      "pinyin": "Zhǎo shí kuài.",
+      "vi": "Trả lại mười khối."
+    },
+    {
+      "speaker": "A",
+      "han": "谢谢！",
+      "pinyin": "Xièxie!",
+      "vi": "Cảm ơn!"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "write",
+      "prompt": "Tự viết: Tổng cộng hai mươi khối.",
+      "answer": "一共二十块。"
+    },
+    {
+      "type": "write",
+      "prompt": "Tự viết: Tôi trả tiền.",
+      "answer": "我付钱。"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Thanh toán: tổng cộng và trả tiền.",
+    "system": "Bạn là bạn nói tiếng Trung trình độ HSK 1. Chỉ dùng các từ: 你好, 您, 谢谢, 不客气, 请, 我, 你, 他, 她, 叫, 是, 名字, 老师, 学生, 人, 中国, 美国, 呢, 什么, 谁, 哪, 哪国人, 吗, 很, 好, 高兴, 认识, 也, 一, 二, 三, 四, 五, 六, 七, 八, 九, 十, 个, 号, 十一, 二十, 百, 岁, 年, 月, 日, 星期, 今天, 点, 分, 现在, 半, 刻, 昨天, 明天, 上午, 下午, 时候, 有, 没有, 家, 口, 几, 爸爸, 妈妈, 哥哥, 姐姐, 这, 的, 弟弟, 妹妹, 儿子, 女儿, 爱, 朋友, 同学, 猫, 狗, 都, 和, 两, 照片, 吃, 喝, 米饭, 水, 茶, 想, 要, 杯子, 菜, 水果, 苹果, 面条, 杯, 好吃, 饭店, 菜单, 服务员, 喜欢, 不, 太, 了, 买, 东西, 商店, 这个, 那个, 钱, 块, 元, 多少, 便宜, 贵, 可以, 些, 付钱, 找, 一共. Mỗi lượt 1–2 câu ngắn. Viết Hán + pinyin. Nếu học viên sai, sửa nhẹ bằng tiếng Việt rồi hỏi lại. Không thêm từ mới. Bắt đầu bằng: 一共多少钱？",
+    "allowedWords": [
+      "你好",
+      "您",
+      "谢谢",
+      "不客气",
+      "请",
+      "我",
+      "你",
+      "他",
+      "她",
+      "叫",
+      "是",
+      "名字",
+      "老师",
+      "学生",
+      "人",
+      "中国",
+      "美国",
+      "呢",
+      "什么",
+      "谁",
+      "哪",
+      "哪国人",
+      "吗",
+      "很",
+      "好",
+      "高兴",
+      "认识",
+      "也",
+      "一",
+      "二",
+      "三",
+      "四",
+      "五",
+      "六",
+      "七",
+      "八",
+      "九",
+      "十",
+      "个",
+      "号",
+      "十一",
+      "二十",
+      "百",
+      "岁",
+      "年",
+      "月",
+      "日",
+      "星期",
+      "今天",
+      "点",
+      "分",
+      "现在",
+      "半",
+      "刻",
+      "昨天",
+      "明天",
+      "上午",
+      "下午",
+      "时候",
+      "有",
+      "没有",
+      "家",
+      "口",
+      "几",
+      "爸爸",
+      "妈妈",
+      "哥哥",
+      "姐姐",
+      "这",
+      "的",
+      "弟弟",
+      "妹妹",
+      "儿子",
+      "女儿",
+      "爱",
+      "朋友",
+      "同学",
+      "猫",
+      "狗",
+      "都",
+      "和",
+      "两",
+      "照片",
+      "吃",
+      "喝",
+      "米饭",
+      "水",
+      "茶",
+      "想",
+      "要",
+      "杯子",
+      "菜",
+      "水果",
+      "苹果",
+      "面条",
+      "杯",
+      "好吃",
+      "饭店",
+      "菜单",
+      "服务员",
+      "喜欢",
+      "不",
+      "太",
+      "了",
+      "买",
+      "东西",
+      "商店",
+      "这个",
+      "那个",
+      "钱",
+      "块",
+      "元",
+      "多少",
+      "便宜",
+      "贵",
+      "可以",
+      "些",
+      "付钱",
+      "找",
+      "一共"
+    ],
+    "turns": 4
+  },
+  "timer": {
+    "review": 5,
+    "vocab": 8,
+    "grammar": 8,
+    "talk": 5,
+    "ai": 4
+  }
+}

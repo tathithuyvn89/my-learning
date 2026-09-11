@@ -1,0 +1,220 @@
+{
+  "id": 16,
+  "week": 3,
+  "hsk": 1,
+  "theme": "Người thân 1",
+  "kind": "learn",
+  "vocab": [
+    {
+      "han": "爸爸",
+      "pinyin": "bàba",
+      "vi": "Bố",
+      "example": {
+        "han": "这是我爸爸。",
+        "pinyin": "Zhè shì wǒ bàba.",
+        "vi": "Đây là bố tôi."
+      }
+    },
+    {
+      "han": "妈妈",
+      "pinyin": "māma",
+      "vi": "Mẹ",
+      "example": {
+        "han": "这是我妈妈。",
+        "pinyin": "Zhè shì wǒ māma.",
+        "vi": "Đây là mẹ tôi."
+      }
+    },
+    {
+      "han": "哥哥",
+      "pinyin": "gēge",
+      "vi": "Anh trai",
+      "example": {
+        "han": "我有哥哥。",
+        "pinyin": "Wǒ yǒu gēge.",
+        "vi": "Tôi có anh trai."
+      }
+    },
+    {
+      "han": "姐姐",
+      "pinyin": "jiějie",
+      "vi": "Chị gái",
+      "example": {
+        "han": "我有姐姐。",
+        "pinyin": "Wǒ yǒu jiějie.",
+        "vi": "Tôi có chị."
+      }
+    },
+    {
+      "han": "这",
+      "pinyin": "zhè",
+      "vi": "Đây",
+      "example": {
+        "han": "这是我妈妈。",
+        "pinyin": "Zhè shì wǒ māma.",
+        "vi": "Đây là mẹ tôi."
+      }
+    },
+    {
+      "han": "的",
+      "pinyin": "de",
+      "vi": "Của",
+      "example": {
+        "han": "我的妈妈。",
+        "pinyin": "Wǒ de māma.",
+        "vi": "Mẹ của tôi."
+      }
+    }
+  ],
+  "grammar": {
+    "title": "N 的 N",
+    "pattern": "đại từ + 的 + người thân",
+    "explainVi": "这是我的妈妈. 的 nối sở hữu. Có thể nói 我妈妈 (bỏ 的 với người thân).",
+    "drills": [
+      {
+        "prompt": "Dịch: Đây là mẹ tôi.",
+        "answer": "这是我妈妈。"
+      },
+      {
+        "prompt": "Dịch: Bố của tôi.",
+        "answer": "我的爸爸。"
+      },
+      {
+        "prompt": "Dịch: Tôi có chị.",
+        "answer": "我有姐姐。"
+      },
+      {
+        "prompt": "Dịch: Anh ấy là anh trai tôi.",
+        "answer": "他是我哥哥。"
+      }
+    ]
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "han": "这是谁？",
+      "pinyin": "Zhè shì shéi?",
+      "vi": "Đây là ai?"
+    },
+    {
+      "speaker": "B",
+      "han": "这是我妈妈。",
+      "pinyin": "Zhè shì wǒ māma.",
+      "vi": "Đây là mẹ tôi."
+    },
+    {
+      "speaker": "A",
+      "han": "这是你爸爸吗？",
+      "pinyin": "Zhè shì nǐ bàba ma?",
+      "vi": "Đây là bố bạn à?"
+    },
+    {
+      "speaker": "B",
+      "han": "是。这是我爸爸。",
+      "pinyin": "Shì. Zhè shì wǒ bàba.",
+      "vi": "Phải. Đây là bố tôi."
+    },
+    {
+      "speaker": "A",
+      "han": "很高兴认识您。",
+      "pinyin": "Hěn gāoxìng rènshi nín.",
+      "vi": "Rất vui được gặp bạn."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "write",
+      "prompt": "Tự viết: Đây là mẹ tôi.",
+      "answer": "这是我妈妈。"
+    },
+    {
+      "type": "write",
+      "prompt": "Tự viết: Tôi có anh trai.",
+      "answer": "我有哥哥。"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Chỉ mẹ/bố. Chỉ dùng từ đến ngày 16.",
+    "system": "Bạn là bạn nói tiếng Trung trình độ HSK 1. Chỉ dùng các từ: 你好, 您, 谢谢, 不客气, 请, 我, 你, 他, 她, 叫, 是, 名字, 老师, 学生, 人, 中国, 美国, 呢, 什么, 谁, 哪, 哪国人, 吗, 很, 好, 高兴, 认识, 也, 一, 二, 三, 四, 五, 六, 七, 八, 九, 十, 个, 号, 十一, 二十, 百, 岁, 年, 月, 日, 星期, 今天, 点, 分, 现在, 半, 刻, 昨天, 明天, 上午, 下午, 时候, 有, 没有, 家, 口, 几, 爸爸, 妈妈, 哥哥, 姐姐, 这, 的. Mỗi lượt 1–2 câu ngắn. Viết Hán + pinyin. Nếu học viên sai, sửa nhẹ bằng tiếng Việt rồi hỏi lại. Không thêm từ mới. Bắt đầu bằng: 这是我妈妈。",
+    "allowedWords": [
+      "你好",
+      "您",
+      "谢谢",
+      "不客气",
+      "请",
+      "我",
+      "你",
+      "他",
+      "她",
+      "叫",
+      "是",
+      "名字",
+      "老师",
+      "学生",
+      "人",
+      "中国",
+      "美国",
+      "呢",
+      "什么",
+      "谁",
+      "哪",
+      "哪国人",
+      "吗",
+      "很",
+      "好",
+      "高兴",
+      "认识",
+      "也",
+      "一",
+      "二",
+      "三",
+      "四",
+      "五",
+      "六",
+      "七",
+      "八",
+      "九",
+      "十",
+      "个",
+      "号",
+      "十一",
+      "二十",
+      "百",
+      "岁",
+      "年",
+      "月",
+      "日",
+      "星期",
+      "今天",
+      "点",
+      "分",
+      "现在",
+      "半",
+      "刻",
+      "昨天",
+      "明天",
+      "上午",
+      "下午",
+      "时候",
+      "有",
+      "没有",
+      "家",
+      "口",
+      "几",
+      "爸爸",
+      "妈妈",
+      "哥哥",
+      "姐姐",
+      "这",
+      "的"
+    ],
+    "turns": 4
+  },
+  "timer": {
+    "review": 5,
+    "vocab": 8,
+    "grammar": 8,
+    "talk": 5,
+    "ai": 4
+  }
+}

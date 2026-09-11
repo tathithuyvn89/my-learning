@@ -1,0 +1,245 @@
+{
+  "id": 27,
+  "week": 4,
+  "hsk": 1,
+  "theme": "Gọi món",
+  "kind": "review",
+  "vocab": [
+    {
+      "han": "要",
+      "pinyin": "yào",
+      "vi": "Muốn (ôn)",
+      "example": {
+        "han": "我要米饭。",
+        "pinyin": "Wǒ yào mǐfàn.",
+        "vi": "Tôi muốn cơm."
+      }
+    },
+    {
+      "han": "茶",
+      "pinyin": "chá",
+      "vi": "Trà (ôn)",
+      "example": {
+        "han": "一杯茶。",
+        "pinyin": "Yī bēi chá.",
+        "vi": "Một ly trà."
+      }
+    },
+    {
+      "han": "米饭",
+      "pinyin": "mǐfàn",
+      "vi": "Cơm (ôn)",
+      "example": {
+        "han": "我吃米饭。",
+        "pinyin": "Wǒ chī mǐfàn.",
+        "vi": "Tôi ăn cơm."
+      }
+    },
+    {
+      "han": "菜单",
+      "pinyin": "càidān",
+      "vi": "Menu (ôn)",
+      "example": {
+        "han": "请给我菜单。",
+        "pinyin": "Qǐng gěi wǒ càidān.",
+        "vi": "Cho tôi menu."
+      }
+    },
+    {
+      "han": "杯",
+      "pinyin": "bēi",
+      "vi": "Ly (ôn)",
+      "example": {
+        "han": "一杯水。",
+        "pinyin": "Yī bēi shuǐ.",
+        "vi": "Một ly nước."
+      }
+    }
+  ],
+  "grammar": {
+    "title": "Ghép order",
+    "pattern": "我要 + số + lượng từ + món",
+    "explainVi": "Ôn ăn uống: gọi cơm và trà.",
+    "drills": [
+      {
+        "prompt": "Dịch: Tôi muốn cơm.",
+        "answer": "我要米饭。"
+      },
+      {
+        "prompt": "Dịch: Một ly trà.",
+        "answer": "一杯茶。"
+      },
+      {
+        "prompt": "Dịch: Làm ơn cho menu.",
+        "answer": "请给我菜单。"
+      },
+      {
+        "prompt": "Dịch: Tôi muốn một ly nước.",
+        "answer": "我要一杯水。"
+      }
+    ]
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "han": "请给我菜单。",
+      "pinyin": "Qǐng gěi wǒ càidān.",
+      "vi": "Làm ơn cho menu."
+    },
+    {
+      "speaker": "B",
+      "han": "你要什么？",
+      "pinyin": "Nǐ yào shénme?",
+      "vi": "Bạn muốn gì?"
+    },
+    {
+      "speaker": "A",
+      "han": "我要米饭。",
+      "pinyin": "Wǒ yào mǐfàn.",
+      "vi": "Tôi muốn cơm."
+    },
+    {
+      "speaker": "B",
+      "han": "你要茶吗？",
+      "pinyin": "Nǐ yào chá ma?",
+      "vi": "Bạn muốn trà không?"
+    },
+    {
+      "speaker": "A",
+      "han": "要。一杯茶。谢谢！",
+      "pinyin": "Yào. Yī bēi chá. Xièxie!",
+      "vi": "Muốn. Một ly trà. Cảm ơn!"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "write",
+      "prompt": "Tự viết: Tôi muốn cơm.",
+      "answer": "我要米饭。"
+    },
+    {
+      "type": "write",
+      "prompt": "Tự viết: Một ly trà.",
+      "answer": "一杯茶。"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Gọi cơm và trà. Không thêm từ mới.",
+    "system": "Bạn là bạn nói tiếng Trung trình độ HSK 1. Chỉ dùng các từ: 你好, 您, 谢谢, 不客气, 请, 我, 你, 他, 她, 叫, 是, 名字, 老师, 学生, 人, 中国, 美国, 呢, 什么, 谁, 哪, 哪国人, 吗, 很, 好, 高兴, 认识, 也, 一, 二, 三, 四, 五, 六, 七, 八, 九, 十, 个, 号, 十一, 二十, 百, 岁, 年, 月, 日, 星期, 今天, 点, 分, 现在, 半, 刻, 昨天, 明天, 上午, 下午, 时候, 有, 没有, 家, 口, 几, 爸爸, 妈妈, 哥哥, 姐姐, 这, 的, 弟弟, 妹妹, 儿子, 女儿, 爱, 的, 朋友, 同学, 猫, 狗, 都, 和, 两, 照片, 吃, 喝, 米饭, 水, 茶, 想, 要, 杯子, 菜, 水果, 苹果, 面条, 杯, 好吃, 饭店, 菜单, 服务员, 喜欢, 不, 太, 了. Mỗi lượt 1–2 câu ngắn. Viết Hán + pinyin. Nếu học viên sai, sửa nhẹ bằng tiếng Việt rồi hỏi lại. Không thêm từ mới. Bắt đầu bằng: 我要米饭。一杯茶。",
+    "allowedWords": [
+      "你好",
+      "您",
+      "谢谢",
+      "不客气",
+      "请",
+      "我",
+      "你",
+      "他",
+      "她",
+      "叫",
+      "是",
+      "名字",
+      "老师",
+      "学生",
+      "人",
+      "中国",
+      "美国",
+      "呢",
+      "什么",
+      "谁",
+      "哪",
+      "哪国人",
+      "吗",
+      "很",
+      "好",
+      "高兴",
+      "认识",
+      "也",
+      "一",
+      "二",
+      "三",
+      "四",
+      "五",
+      "六",
+      "七",
+      "八",
+      "九",
+      "十",
+      "个",
+      "号",
+      "十一",
+      "二十",
+      "百",
+      "岁",
+      "年",
+      "月",
+      "日",
+      "星期",
+      "今天",
+      "点",
+      "分",
+      "现在",
+      "半",
+      "刻",
+      "昨天",
+      "明天",
+      "上午",
+      "下午",
+      "时候",
+      "有",
+      "没有",
+      "家",
+      "口",
+      "几",
+      "爸爸",
+      "妈妈",
+      "哥哥",
+      "姐姐",
+      "这",
+      "的",
+      "弟弟",
+      "妹妹",
+      "儿子",
+      "女儿",
+      "爱",
+      "的",
+      "朋友",
+      "同学",
+      "猫",
+      "狗",
+      "都",
+      "和",
+      "两",
+      "照片",
+      "吃",
+      "喝",
+      "米饭",
+      "水",
+      "茶",
+      "想",
+      "要",
+      "杯子",
+      "菜",
+      "水果",
+      "苹果",
+      "面条",
+      "杯",
+      "好吃",
+      "饭店",
+      "菜单",
+      "服务员",
+      "喜欢",
+      "不",
+      "太",
+      "了"
+    ],
+    "turns": 5
+  },
+  "timer": {
+    "review": 5,
+    "vocab": 8,
+    "grammar": 8,
+    "talk": 5,
+    "ai": 4
+  }
+}

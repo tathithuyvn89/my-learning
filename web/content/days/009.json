@@ -1,0 +1,185 @@
+{
+  "id": 9,
+  "week": 2,
+  "hsk": 1,
+  "theme": "Số 11–100, tuổi",
+  "kind": "learn",
+  "vocab": [
+    {
+      "han": "十一",
+      "pinyin": "shíyī",
+      "vi": "Mười một",
+      "example": {
+        "han": "十一岁。",
+        "pinyin": "Shíyī suì.",
+        "vi": "Mười một tuổi."
+      }
+    },
+    {
+      "han": "二十",
+      "pinyin": "èrshí",
+      "vi": "Hai mươi",
+      "example": {
+        "han": "二十岁。",
+        "pinyin": "Èrshí suì.",
+        "vi": "Hai mươi tuổi."
+      }
+    },
+    {
+      "han": "百",
+      "pinyin": "bǎi",
+      "vi": "Trăm",
+      "example": {
+        "han": "一百。",
+        "pinyin": "Yī bǎi.",
+        "vi": "Một trăm."
+      }
+    },
+    {
+      "han": "岁",
+      "pinyin": "suì",
+      "vi": "Tuổi",
+      "example": {
+        "han": "我二十岁。",
+        "pinyin": "Wǒ èrshí suì.",
+        "vi": "Tôi hai mươi tuổi."
+      }
+    },
+    {
+      "han": "年",
+      "pinyin": "nián",
+      "vi": "Năm",
+      "example": {
+        "han": "一年。",
+        "pinyin": "Yī nián.",
+        "vi": "Một năm."
+      }
+    }
+  ],
+  "grammar": {
+    "title": "N 岁",
+    "pattern": "số + 岁",
+    "explainVi": "Nói tuổi: 我二十岁. Hỏi: 你二十岁吗？ (chưa học 几 thì hỏi yes/no).",
+    "drills": [
+      {
+        "prompt": "Dịch: Tôi hai mươi tuổi.",
+        "answer": "我二十岁。"
+      },
+      {
+        "prompt": "Dịch: Cô ấy mười một tuổi.",
+        "answer": "她十一岁。"
+      },
+      {
+        "prompt": "Dịch: Bạn hai mươi tuổi à?",
+        "answer": "你二十岁吗？"
+      },
+      {
+        "prompt": "Dịch: Một trăm.",
+        "answer": "一百。"
+      }
+    ]
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "han": "你好！你二十岁吗？",
+      "pinyin": "Nǐ hǎo! Nǐ èrshí suì ma?",
+      "vi": "Xin chào! Bạn hai mươi tuổi à?"
+    },
+    {
+      "speaker": "B",
+      "han": "我二十岁。你呢？",
+      "pinyin": "Wǒ èrshí suì. Nǐ ne?",
+      "vi": "Tôi hai mươi tuổi. Còn bạn?"
+    },
+    {
+      "speaker": "A",
+      "han": "我十一岁。",
+      "pinyin": "Wǒ shíyī suì.",
+      "vi": "Tôi mười một tuổi."
+    },
+    {
+      "speaker": "B",
+      "han": "他二十岁吗？",
+      "pinyin": "Tā èrshí suì ma?",
+      "vi": "Anh ấy hai mươi tuổi à?"
+    },
+    {
+      "speaker": "A",
+      "han": "他二十岁。",
+      "pinyin": "Tā èrshí suì.",
+      "vi": "Anh ấy hai mươi tuổi."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "write",
+      "prompt": "Tự viết: Tôi mười một tuổi.",
+      "answer": "我十一岁。"
+    },
+    {
+      "type": "write",
+      "prompt": "Tự viết: Bạn hai mươi tuổi à?",
+      "answer": "你二十岁吗？"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Hỏi tuổi. Chỉ dùng từ đến ngày 9.",
+    "system": "Bạn là bạn nói tiếng Trung trình độ HSK 1. Chỉ dùng các từ: 你好, 您, 谢谢, 不客气, 请, 我, 你, 他, 她, 叫, 是, 名字, 老师, 学生, 人, 中国, 美国, 呢, 什么, 谁, 哪, 哪国人, 吗, 很, 好, 高兴, 认识, 也, 一, 二, 三, 四, 五, 六, 七, 八, 九, 十, 个, 号, 十一, 二十, 百, 岁, 年. Mỗi lượt 1–2 câu ngắn. Viết Hán + pinyin. Nếu học viên sai, sửa nhẹ bằng tiếng Việt rồi hỏi lại. Không thêm từ mới. Bắt đầu bằng: 你二十岁吗？",
+    "allowedWords": [
+      "你好",
+      "您",
+      "谢谢",
+      "不客气",
+      "请",
+      "我",
+      "你",
+      "他",
+      "她",
+      "叫",
+      "是",
+      "名字",
+      "老师",
+      "学生",
+      "人",
+      "中国",
+      "美国",
+      "呢",
+      "什么",
+      "谁",
+      "哪",
+      "哪国人",
+      "吗",
+      "很",
+      "好",
+      "高兴",
+      "认识",
+      "也",
+      "一",
+      "二",
+      "三",
+      "四",
+      "五",
+      "六",
+      "七",
+      "八",
+      "九",
+      "十",
+      "个",
+      "号",
+      "十一",
+      "二十",
+      "百",
+      "岁",
+      "年"
+    ],
+    "turns": 4
+  },
+  "timer": {
+    "review": 5,
+    "vocab": 8,
+    "grammar": 8,
+    "talk": 5,
+    "ai": 4
+  }
+}

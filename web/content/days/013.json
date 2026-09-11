@@ -1,0 +1,199 @@
+{
+  "id": 13,
+  "week": 2,
+  "hsk": 1,
+  "theme": "Hẹn giờ",
+  "kind": "review",
+  "vocab": [
+    {
+      "han": "现在",
+      "pinyin": "xiànzài",
+      "vi": "Bây giờ (ôn)",
+      "example": {
+        "han": "现在两点。",
+        "pinyin": "Xiànzài liǎng diǎn.",
+        "vi": "Bây giờ hai giờ."
+      }
+    },
+    {
+      "han": "明天",
+      "pinyin": "míngtiān",
+      "vi": "Ngày mai (ôn)",
+      "example": {
+        "han": "明天三点。",
+        "pinyin": "Míngtiān sān diǎn.",
+        "vi": "Mai ba giờ."
+      }
+    },
+    {
+      "han": "下午",
+      "pinyin": "xiàwǔ",
+      "vi": "Buổi chiều (ôn)",
+      "example": {
+        "han": "下午两点。",
+        "pinyin": "Xiàwǔ liǎng diǎn.",
+        "vi": "Chiều hai giờ."
+      }
+    },
+    {
+      "han": "点",
+      "pinyin": "diǎn",
+      "vi": "Giờ (ôn)",
+      "example": {
+        "han": "两点。",
+        "pinyin": "Liǎng diǎn.",
+        "vi": "Hai giờ."
+      }
+    },
+    {
+      "han": "半",
+      "pinyin": "bàn",
+      "vi": "Rưỡi (ôn)",
+      "example": {
+        "han": "两点半。",
+        "pinyin": "Liǎng diǎn bàn.",
+        "vi": "Hai giờ rưỡi."
+      }
+    }
+  ],
+  "grammar": {
+    "title": "Ghép câu hẹn",
+    "pattern": "明天下午 + giờ",
+    "explainVi": "Ôn số + giờ. Hẹn cà phê: 明天下午两点.",
+    "drills": [
+      {
+        "prompt": "Dịch: Chiều hai giờ.",
+        "answer": "下午两点。"
+      },
+      {
+        "prompt": "Dịch: Mai chiều hai giờ.",
+        "answer": "明天下午两点。"
+      },
+      {
+        "prompt": "Dịch: Bây giờ hai giờ rưỡi.",
+        "answer": "现在两点半。"
+      },
+      {
+        "prompt": "Dịch: Hôm nay thứ hai.",
+        "answer": "今天星期一。"
+      }
+    ]
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "han": "明天下午两点，好吗？",
+      "pinyin": "Míngtiān xiàwǔ liǎng diǎn, hǎo ma?",
+      "vi": "Mai chiều hai giờ, được không?"
+    },
+    {
+      "speaker": "B",
+      "han": "好。两点半吗？",
+      "pinyin": "Hǎo. Liǎng diǎn bàn ma?",
+      "vi": "Được. Hai rưỡi à?"
+    },
+    {
+      "speaker": "A",
+      "han": "两点。",
+      "pinyin": "Liǎng diǎn.",
+      "vi": "Hai giờ."
+    },
+    {
+      "speaker": "B",
+      "han": "好。明天下午两点。",
+      "pinyin": "Hǎo. Míngtiān xiàwǔ liǎng diǎn.",
+      "vi": "Được. Mai chiều hai giờ."
+    },
+    {
+      "speaker": "A",
+      "han": "谢谢！",
+      "pinyin": "Xièxie!",
+      "vi": "Cảm ơn!"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "write",
+      "prompt": "Tự viết: Mai chiều hai giờ.",
+      "answer": "明天下午两点。"
+    },
+    {
+      "type": "write",
+      "prompt": "Tự viết: Bây giờ hai giờ rưỡi.",
+      "answer": "现在两点半。"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Hẹn cà phê 2 giờ chiều. Không thêm từ mới.",
+    "system": "Bạn là bạn nói tiếng Trung trình độ HSK 1. Chỉ dùng các từ: 你好, 您, 谢谢, 不客气, 请, 我, 你, 他, 她, 叫, 是, 名字, 老师, 学生, 人, 中国, 美国, 呢, 什么, 谁, 哪, 哪国人, 吗, 很, 好, 高兴, 认识, 也, 一, 二, 三, 四, 五, 六, 七, 八, 九, 十, 个, 号, 十一, 二十, 百, 岁, 年, 月, 日, 星期, 今天, 点, 分, 现在, 半, 刻, 昨天, 明天, 上午, 下午, 时候. Mỗi lượt 1–2 câu ngắn. Viết Hán + pinyin. Nếu học viên sai, sửa nhẹ bằng tiếng Việt rồi hỏi lại. Không thêm từ mới. Bắt đầu bằng: 明天下午两点，好吗？",
+    "allowedWords": [
+      "你好",
+      "您",
+      "谢谢",
+      "不客气",
+      "请",
+      "我",
+      "你",
+      "他",
+      "她",
+      "叫",
+      "是",
+      "名字",
+      "老师",
+      "学生",
+      "人",
+      "中国",
+      "美国",
+      "呢",
+      "什么",
+      "谁",
+      "哪",
+      "哪国人",
+      "吗",
+      "很",
+      "好",
+      "高兴",
+      "认识",
+      "也",
+      "一",
+      "二",
+      "三",
+      "四",
+      "五",
+      "六",
+      "七",
+      "八",
+      "九",
+      "十",
+      "个",
+      "号",
+      "十一",
+      "二十",
+      "百",
+      "岁",
+      "年",
+      "月",
+      "日",
+      "星期",
+      "今天",
+      "点",
+      "分",
+      "现在",
+      "半",
+      "刻",
+      "昨天",
+      "明天",
+      "上午",
+      "下午",
+      "时候"
+    ],
+    "turns": 5
+  },
+  "timer": {
+    "review": 5,
+    "vocab": 8,
+    "grammar": 8,
+    "talk": 5,
+    "ai": 4
+  }
+}

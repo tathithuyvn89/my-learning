@@ -1,0 +1,224 @@
+{
+  "id": 21,
+  "week": 3,
+  "hsk": 1,
+  "theme": "Xem ảnh gia đình cùng bạn",
+  "kind": "review",
+  "vocab": [
+    {
+      "han": "朋友",
+      "pinyin": "péngyou",
+      "vi": "Bạn (ôn)",
+      "example": {
+        "han": "我的朋友。",
+        "pinyin": "Wǒ de péngyou.",
+        "vi": "Bạn của tôi."
+      }
+    },
+    {
+      "han": "照片",
+      "pinyin": "zhàopiàn",
+      "vi": "Ảnh (ôn)",
+      "example": {
+        "han": "这是照片。",
+        "pinyin": "Zhè shì zhàopiàn.",
+        "vi": "Đây là ảnh."
+      }
+    },
+    {
+      "han": "爱",
+      "pinyin": "ài",
+      "vi": "Yêu (ôn)",
+      "example": {
+        "han": "我爱我的家。",
+        "pinyin": "Wǒ ài wǒ de jiā.",
+        "vi": "Tôi yêu nhà tôi."
+      }
+    },
+    {
+      "han": "都",
+      "pinyin": "dōu",
+      "vi": "Đều (ôn)",
+      "example": {
+        "han": "都很好。",
+        "pinyin": "Dōu hěn hǎo.",
+        "vi": "Đều khỏe."
+      }
+    },
+    {
+      "han": "和",
+      "pinyin": "hé",
+      "vi": "Và (ôn)",
+      "example": {
+        "han": "哥哥和姐姐。",
+        "pinyin": "Gēge hé jiějie.",
+        "vi": "Anh và chị."
+      }
+    }
+  ],
+  "grammar": {
+    "title": "Chỉ nói về nhà",
+    "pattern": "有 / 的 / 和",
+    "explainVi": "Khoá từ đến tuần 3. Roleplay xem ảnh cùng bạn.",
+    "drills": [
+      {
+        "prompt": "Dịch: Đây là ảnh.",
+        "answer": "这是照片。"
+      },
+      {
+        "prompt": "Dịch: Tôi yêu nhà tôi.",
+        "answer": "我爱我的家。"
+      },
+      {
+        "prompt": "Dịch: Anh và chị.",
+        "answer": "哥哥和姐姐。"
+      },
+      {
+        "prompt": "Dịch: Họ đều khỏe.",
+        "answer": "都很好。"
+      }
+    ]
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "han": "请。这是照片。",
+      "pinyin": "Qǐng. Zhè shì zhàopiàn.",
+      "vi": "Mời. Đây là ảnh."
+    },
+    {
+      "speaker": "B",
+      "han": "这是你的家吗？",
+      "pinyin": "Zhè shì nǐ de jiā ma?",
+      "vi": "Đây là nhà bạn à?"
+    },
+    {
+      "speaker": "A",
+      "han": "是。这是我爸爸和妈妈。",
+      "pinyin": "Shì. Zhè shì wǒ bàba hé māma.",
+      "vi": "Phải. Đây là bố và mẹ tôi."
+    },
+    {
+      "speaker": "B",
+      "han": "都很好。",
+      "pinyin": "Dōu hěn hǎo.",
+      "vi": "Đều khỏe."
+    },
+    {
+      "speaker": "A",
+      "han": "我爱我的家。",
+      "pinyin": "Wǒ ài wǒ de jiā.",
+      "vi": "Tôi yêu nhà tôi."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "write",
+      "prompt": "Tự viết: Đây là nhà bạn à?",
+      "answer": "这是你的家吗？"
+    },
+    {
+      "type": "write",
+      "prompt": "Tự viết: Tôi yêu nhà tôi.",
+      "answer": "我爱我的家。"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Xem ảnh gia đình cùng bạn. Không thêm từ mới.",
+    "system": "Bạn là bạn nói tiếng Trung trình độ HSK 1. Chỉ dùng các từ: 你好, 您, 谢谢, 不客气, 请, 我, 你, 他, 她, 叫, 是, 名字, 老师, 学生, 人, 中国, 美国, 呢, 什么, 谁, 哪, 哪国人, 吗, 很, 好, 高兴, 认识, 也, 一, 二, 三, 四, 五, 六, 七, 八, 九, 十, 个, 号, 十一, 二十, 百, 岁, 年, 月, 日, 星期, 今天, 点, 分, 现在, 半, 刻, 昨天, 明天, 上午, 下午, 时候, 有, 没有, 家, 口, 几, 爸爸, 妈妈, 哥哥, 姐姐, 这, 的, 弟弟, 妹妹, 儿子, 女儿, 爱, 的, 朋友, 同学, 猫, 狗, 都, 和, 两, 照片. Mỗi lượt 1–2 câu ngắn. Viết Hán + pinyin. Nếu học viên sai, sửa nhẹ bằng tiếng Việt rồi hỏi lại. Không thêm từ mới. Bắt đầu bằng: 请。这是照片。",
+    "allowedWords": [
+      "你好",
+      "您",
+      "谢谢",
+      "不客气",
+      "请",
+      "我",
+      "你",
+      "他",
+      "她",
+      "叫",
+      "是",
+      "名字",
+      "老师",
+      "学生",
+      "人",
+      "中国",
+      "美国",
+      "呢",
+      "什么",
+      "谁",
+      "哪",
+      "哪国人",
+      "吗",
+      "很",
+      "好",
+      "高兴",
+      "认识",
+      "也",
+      "一",
+      "二",
+      "三",
+      "四",
+      "五",
+      "六",
+      "七",
+      "八",
+      "九",
+      "十",
+      "个",
+      "号",
+      "十一",
+      "二十",
+      "百",
+      "岁",
+      "年",
+      "月",
+      "日",
+      "星期",
+      "今天",
+      "点",
+      "分",
+      "现在",
+      "半",
+      "刻",
+      "昨天",
+      "明天",
+      "上午",
+      "下午",
+      "时候",
+      "有",
+      "没有",
+      "家",
+      "口",
+      "几",
+      "爸爸",
+      "妈妈",
+      "哥哥",
+      "姐姐",
+      "这",
+      "的",
+      "弟弟",
+      "妹妹",
+      "儿子",
+      "女儿",
+      "爱",
+      "的",
+      "朋友",
+      "同学",
+      "猫",
+      "狗",
+      "都",
+      "和",
+      "两",
+      "照片"
+    ],
+    "turns": 5
+  },
+  "timer": {
+    "review": 5,
+    "vocab": 8,
+    "grammar": 8,
+    "talk": 5,
+    "ai": 4
+  }
+}

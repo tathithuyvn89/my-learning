@@ -1,0 +1,260 @@
+{
+  "id": 35,
+  "week": 5,
+  "hsk": 1,
+  "theme": "Mặc cả nhẹ ở chợ",
+  "kind": "review",
+  "vocab": [
+    {
+      "han": "贵",
+      "pinyin": "guì",
+      "vi": "Đắt (ôn)",
+      "example": {
+        "han": "太贵了。",
+        "pinyin": "Tài guì le.",
+        "vi": "Đắt quá."
+      }
+    },
+    {
+      "han": "便宜",
+      "pinyin": "piányi",
+      "vi": "Rẻ (ôn)",
+      "example": {
+        "han": "便宜吗？",
+        "pinyin": "Piányi ma?",
+        "vi": "Rẻ không?"
+      }
+    },
+    {
+      "han": "可以",
+      "pinyin": "kěyǐ",
+      "vi": "Được (ôn)",
+      "example": {
+        "han": "十块可以吗？",
+        "pinyin": "Shí kuài kěyǐ ma?",
+        "vi": "Mười khối được không?"
+      }
+    },
+    {
+      "han": "这个",
+      "pinyin": "zhège",
+      "vi": "Cái này (ôn)",
+      "example": {
+        "han": "我买这个。",
+        "pinyin": "Wǒ mǎi zhège.",
+        "vi": "Tôi mua cái này."
+      }
+    },
+    {
+      "han": "钱",
+      "pinyin": "qián",
+      "vi": "Tiền (ôn)",
+      "example": {
+        "han": "多少钱？",
+        "pinyin": "Duōshao qián?",
+        "vi": "Bao nhiêu tiền?"
+      }
+    }
+  ],
+  "grammar": {
+    "title": "Chỉ hỏi giá / mua",
+    "pattern": "多少钱 / 太贵了 / 可以吗",
+    "explainVi": "Khoá từ đến tuần 5. Roleplay mặc cả nhẹ: hỏi giá, nói đắt, hỏi giá khác.",
+    "drills": [
+      {
+        "prompt": "Dịch: Cái này bao nhiêu tiền?",
+        "answer": "这个多少钱？"
+      },
+      {
+        "prompt": "Dịch: Đắt quá.",
+        "answer": "太贵了。"
+      },
+      {
+        "prompt": "Dịch: Mười khối được không?",
+        "answer": "十块可以吗？"
+      },
+      {
+        "prompt": "Dịch: Tôi mua cái này.",
+        "answer": "我买这个。"
+      }
+    ]
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "han": "这个多少钱？",
+      "pinyin": "Zhège duōshao qián?",
+      "vi": "Cái này bao nhiêu tiền?"
+    },
+    {
+      "speaker": "B",
+      "han": "二十块。",
+      "pinyin": "Èrshí kuài.",
+      "vi": "Hai mươi khối."
+    },
+    {
+      "speaker": "A",
+      "han": "太贵了。十块可以吗？",
+      "pinyin": "Tài guì le. Shí kuài kěyǐ ma?",
+      "vi": "Đắt quá. Mười khối được không?"
+    },
+    {
+      "speaker": "B",
+      "han": "十五块可以。",
+      "pinyin": "Shíwǔ kuài kěyǐ.",
+      "vi": "Mười lăm khối được."
+    },
+    {
+      "speaker": "A",
+      "han": "好。我买这个。谢谢！",
+      "pinyin": "Hǎo. Wǒ mǎi zhège. Xièxie!",
+      "vi": "Được. Tôi mua cái này. Cảm ơn!"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "write",
+      "prompt": "Tự viết: Đắt quá. Mười khối được không?",
+      "answer": "太贵了。十块可以吗？"
+    },
+    {
+      "type": "write",
+      "prompt": "Tự viết: Tôi mua cái này.",
+      "answer": "我买这个。"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Mặc cả nhẹ ở chợ: chỉ hỏi giá và mua.",
+    "system": "Bạn là bạn nói tiếng Trung trình độ HSK 1. Chỉ dùng các từ: 你好, 您, 谢谢, 不客气, 请, 我, 你, 他, 她, 叫, 是, 名字, 老师, 学生, 人, 中国, 美国, 呢, 什么, 谁, 哪, 哪国人, 吗, 很, 好, 高兴, 认识, 也, 一, 二, 三, 四, 五, 六, 七, 八, 九, 十, 个, 号, 十一, 二十, 百, 岁, 年, 月, 日, 星期, 今天, 点, 分, 现在, 半, 刻, 昨天, 明天, 上午, 下午, 时候, 有, 没有, 家, 口, 几, 爸爸, 妈妈, 哥哥, 姐姐, 这, 的, 弟弟, 妹妹, 儿子, 女儿, 爱, 朋友, 同学, 猫, 狗, 都, 和, 两, 照片, 吃, 喝, 米饭, 水, 茶, 想, 要, 杯子, 菜, 水果, 苹果, 面条, 杯, 好吃, 饭店, 菜单, 服务员, 喜欢, 不, 太, 了, 买, 东西, 商店, 这个, 那个, 钱, 块, 元, 多少, 便宜, 贵, 可以, 些, 付钱, 找, 一共. Mỗi lượt 1–2 câu ngắn. Viết Hán + pinyin. Nếu học viên sai, sửa nhẹ bằng tiếng Việt rồi hỏi lại. Không thêm từ mới. Bắt đầu bằng: 这个多少钱？",
+    "allowedWords": [
+      "你好",
+      "您",
+      "谢谢",
+      "不客气",
+      "请",
+      "我",
+      "你",
+      "他",
+      "她",
+      "叫",
+      "是",
+      "名字",
+      "老师",
+      "学生",
+      "人",
+      "中国",
+      "美国",
+      "呢",
+      "什么",
+      "谁",
+      "哪",
+      "哪国人",
+      "吗",
+      "很",
+      "好",
+      "高兴",
+      "认识",
+      "也",
+      "一",
+      "二",
+      "三",
+      "四",
+      "五",
+      "六",
+      "七",
+      "八",
+      "九",
+      "十",
+      "个",
+      "号",
+      "十一",
+      "二十",
+      "百",
+      "岁",
+      "年",
+      "月",
+      "日",
+      "星期",
+      "今天",
+      "点",
+      "分",
+      "现在",
+      "半",
+      "刻",
+      "昨天",
+      "明天",
+      "上午",
+      "下午",
+      "时候",
+      "有",
+      "没有",
+      "家",
+      "口",
+      "几",
+      "爸爸",
+      "妈妈",
+      "哥哥",
+      "姐姐",
+      "这",
+      "的",
+      "弟弟",
+      "妹妹",
+      "儿子",
+      "女儿",
+      "爱",
+      "朋友",
+      "同学",
+      "猫",
+      "狗",
+      "都",
+      "和",
+      "两",
+      "照片",
+      "吃",
+      "喝",
+      "米饭",
+      "水",
+      "茶",
+      "想",
+      "要",
+      "杯子",
+      "菜",
+      "水果",
+      "苹果",
+      "面条",
+      "杯",
+      "好吃",
+      "饭店",
+      "菜单",
+      "服务员",
+      "喜欢",
+      "不",
+      "太",
+      "了",
+      "买",
+      "东西",
+      "商店",
+      "这个",
+      "那个",
+      "钱",
+      "块",
+      "元",
+      "多少",
+      "便宜",
+      "贵",
+      "可以",
+      "些",
+      "付钱",
+      "找",
+      "一共"
+    ],
+    "turns": 5
+  },
+  "timer": {
+    "review": 5,
+    "vocab": 8,
+    "grammar": 8,
+    "talk": 5,
+    "ai": 4
+  }
+}

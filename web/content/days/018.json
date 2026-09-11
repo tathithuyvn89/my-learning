@@ -1,0 +1,220 @@
+{
+  "id": 18,
+  "week": 3,
+  "hsk": 1,
+  "theme": "Sở hữu",
+  "kind": "learn",
+  "vocab": [
+    {
+      "han": "的",
+      "pinyin": "de",
+      "vi": "Của",
+      "example": {
+        "han": "我的朋友。",
+        "pinyin": "Wǒ de péngyou.",
+        "vi": "Bạn của tôi."
+      }
+    },
+    {
+      "han": "朋友",
+      "pinyin": "péngyou",
+      "vi": "Bạn bè",
+      "example": {
+        "han": "他是我的朋友。",
+        "pinyin": "Tā shì wǒ de péngyou.",
+        "vi": "Anh ấy là bạn tôi."
+      }
+    },
+    {
+      "han": "同学",
+      "pinyin": "tóngxué",
+      "vi": "Bạn học",
+      "example": {
+        "han": "她是我的同学。",
+        "pinyin": "Tā shì wǒ de tóngxué.",
+        "vi": "Cô ấy là bạn học tôi."
+      }
+    },
+    {
+      "han": "猫",
+      "pinyin": "māo",
+      "vi": "Mèo",
+      "example": {
+        "han": "我有猫。",
+        "pinyin": "Wǒ yǒu māo.",
+        "vi": "Tôi có mèo."
+      }
+    },
+    {
+      "han": "狗",
+      "pinyin": "gǒu",
+      "vi": "Chó",
+      "example": {
+        "han": "我没有狗。",
+        "pinyin": "Wǒ méiyǒu gǒu.",
+        "vi": "Tôi không có chó."
+      }
+    }
+  ],
+  "grammar": {
+    "title": "Đại từ + 的",
+    "pattern": "我的 / 你的 + N",
+    "explainVi": "这是我的朋友. 的 bắt buộc với 朋友 / 同学 / 猫 / 狗.",
+    "drills": [
+      {
+        "prompt": "Dịch: Đây là bạn tôi.",
+        "answer": "这是我的朋友。"
+      },
+      {
+        "prompt": "Dịch: Bạn học của tôi.",
+        "answer": "我的同学。"
+      },
+      {
+        "prompt": "Dịch: Tôi có mèo.",
+        "answer": "我有猫。"
+      },
+      {
+        "prompt": "Dịch: Tôi không có chó.",
+        "answer": "我没有狗。"
+      }
+    ]
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "han": "这是谁？",
+      "pinyin": "Zhè shì shéi?",
+      "vi": "Đây là ai?"
+    },
+    {
+      "speaker": "B",
+      "han": "这是我的朋友。",
+      "pinyin": "Zhè shì wǒ de péngyou.",
+      "vi": "Đây là bạn tôi."
+    },
+    {
+      "speaker": "A",
+      "han": "她是你的同学吗？",
+      "pinyin": "Tā shì nǐ de tóngxué ma?",
+      "vi": "Cô ấy là bạn học bạn à?"
+    },
+    {
+      "speaker": "B",
+      "han": "是。我有猫。",
+      "pinyin": "Shì. Wǒ yǒu māo.",
+      "vi": "Phải. Tôi có mèo."
+    },
+    {
+      "speaker": "A",
+      "han": "我没有狗。",
+      "pinyin": "Wǒ méiyǒu gǒu.",
+      "vi": "Tôi không có chó."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "write",
+      "prompt": "Tự viết: Đây là bạn tôi.",
+      "answer": "这是我的朋友。"
+    },
+    {
+      "type": "write",
+      "prompt": "Tự viết: Tôi có mèo.",
+      "answer": "我有猫。"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Giới thiệu bạn. Chỉ dùng từ đến ngày 18.",
+    "system": "Bạn là bạn nói tiếng Trung trình độ HSK 1. Chỉ dùng các từ: 你好, 您, 谢谢, 不客气, 请, 我, 你, 他, 她, 叫, 是, 名字, 老师, 学生, 人, 中国, 美国, 呢, 什么, 谁, 哪, 哪国人, 吗, 很, 好, 高兴, 认识, 也, 一, 二, 三, 四, 五, 六, 七, 八, 九, 十, 个, 号, 十一, 二十, 百, 岁, 年, 月, 日, 星期, 今天, 点, 分, 现在, 半, 刻, 昨天, 明天, 上午, 下午, 时候, 有, 没有, 家, 口, 几, 爸爸, 妈妈, 哥哥, 姐姐, 这, 的, 弟弟, 妹妹, 儿子, 女儿, 爱, 的, 朋友, 同学, 猫, 狗. Mỗi lượt 1–2 câu ngắn. Viết Hán + pinyin. Nếu học viên sai, sửa nhẹ bằng tiếng Việt rồi hỏi lại. Không thêm từ mới. Bắt đầu bằng: 这是我的朋友。",
+    "allowedWords": [
+      "你好",
+      "您",
+      "谢谢",
+      "不客气",
+      "请",
+      "我",
+      "你",
+      "他",
+      "她",
+      "叫",
+      "是",
+      "名字",
+      "老师",
+      "学生",
+      "人",
+      "中国",
+      "美国",
+      "呢",
+      "什么",
+      "谁",
+      "哪",
+      "哪国人",
+      "吗",
+      "很",
+      "好",
+      "高兴",
+      "认识",
+      "也",
+      "一",
+      "二",
+      "三",
+      "四",
+      "五",
+      "六",
+      "七",
+      "八",
+      "九",
+      "十",
+      "个",
+      "号",
+      "十一",
+      "二十",
+      "百",
+      "岁",
+      "年",
+      "月",
+      "日",
+      "星期",
+      "今天",
+      "点",
+      "分",
+      "现在",
+      "半",
+      "刻",
+      "昨天",
+      "明天",
+      "上午",
+      "下午",
+      "时候",
+      "有",
+      "没有",
+      "家",
+      "口",
+      "几",
+      "爸爸",
+      "妈妈",
+      "哥哥",
+      "姐姐",
+      "这",
+      "的",
+      "弟弟",
+      "妹妹",
+      "儿子",
+      "女儿",
+      "爱",
+      "的",
+      "朋友",
+      "同学",
+      "猫",
+      "狗"
+    ],
+    "turns": 4
+  },
+  "timer": {
+    "review": 5,
+    "vocab": 8,
+    "grammar": 8,
+    "talk": 5,
+    "ai": 4
+  }
+}
