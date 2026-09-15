@@ -42,6 +42,9 @@ function writerOptions() {
     outlineColor: OUTLINE_COLOR,
     drawingColor: STROKE_COLOR,
     highlightColor: HIGHLIGHT_COLOR,
+    strokeWidth: 4,
+    outlineWidth: 3,
+    drawingWidth: 12,
   };
 }
 
