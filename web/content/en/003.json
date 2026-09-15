@@ -1,0 +1,214 @@
+{
+  "id": 3,
+  "week": 1,
+  "theme": "Xin giúp",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "Could you take a look?",
+      "note": "Nhờ xem giúp. Lịch sự hơn Can you look?",
+      "vi": "Bạn xem giúp được không?",
+      "example": {
+        "en": "Could you take a look at this PR?",
+        "vi": "Bạn xem giúp PR này được không?"
+      }
+    },
+    {
+      "en": "I'm stuck on…",
+      "note": "Nói đang kẹt, không nói I don't know anything.",
+      "vi": "Mình đang kẹt ở…",
+      "example": {
+        "en": "I'm stuck on this flaky test.",
+        "vi": "Mình đang kẹt ở test bị flaky."
+      },
+      "slot": "I'm stuck on ___"
+    },
+    {
+      "en": "When you have a minute",
+      "note": "Không khẩn. Tránh ping rồi im.",
+      "vi": "Khi bạn rảnh một chút",
+      "example": {
+        "en": "When you have a minute, could you take a look?",
+        "vi": "Khi bạn rảnh, xem giúp mình với."
+      }
+    },
+    {
+      "en": "No rush",
+      "note": "Giảm áp lực cho người nhận.",
+      "vi": "Không gấp",
+      "example": {
+        "en": "No rush — whenever you can.",
+        "vi": "Không gấp — lúc nào tiện cũng được."
+      }
+    },
+    {
+      "en": "Thanks in advance",
+      "note": "Kết tin nhờ việc. Không lặp thank you 3 lần.",
+      "vi": "Cảm ơn trước",
+      "example": {
+        "en": "No rush. Thanks in advance.",
+        "vi": "Không gấp. Cảm ơn trước."
+      }
+    }
+  ],
+  "pattern": {
+    "title": "Soft request",
+    "pattern": "I'm stuck on… / Could you take a look? / When you have a minute. No rush.",
+    "explainVi": "Nhờ giúp: nói đang kẹt ở đâu, nhờ look, giảm áp lực (When you have a minute / No rush). Không nói I know nothing.",
+    "drills": [
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Bạn xem giúp được không?",
+        "answer": "Could you take a look?"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: I'm stuck on ___",
+        "answer": "I'm stuck on…"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Khi bạn rảnh một chút",
+        "answer": "When you have a minute"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Không gấp",
+        "answer": "No rush"
+      }
+    ]
+  },
+  "listen": {
+    "title": "DM nhờ giúp, người kia nói nhanh",
+    "video": null,
+    "unseen": [
+      {
+        "speaker": "A",
+        "en": "I'm stuck on the staging deploy script.",
+        "vi": "Mình kẹt script deploy staging."
+      },
+      {
+        "speaker": "B",
+        "en": "Could you take a look when you have a minute? Wait — I can look at 2:30.",
+        "vi": "Rảnh thì xem giúp? Khoan — 2:30 mình xem được."
+      },
+      {
+        "speaker": "A",
+        "en": "2:30 works. No rush.",
+        "vi": "2:30 được. Không gấp."
+      },
+      {
+        "speaker": "B",
+        "en": "Is it the npm token or the Docker tag?",
+        "vi": "Là npm token hay Docker tag?"
+      },
+      {
+        "speaker": "A",
+        "en": "Docker tag. It still points at latest.",
+        "vi": "Docker tag. Vẫn trỏ latest."
+      },
+      {
+        "speaker": "B",
+        "en": "Okay, I'll ping you in-thread.",
+        "vi": "Ok, mình ping trong thread."
+      },
+      {
+        "speaker": "A",
+        "en": "Thanks in advance.",
+        "vi": "Cảm ơn trước."
+      },
+      {
+        "speaker": "B",
+        "en": "Anytime.",
+        "vi": "Không sao."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Người nhờ đang kẹt việc gì?",
+        "answer": "Staging deploy script / Docker tag"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Họ hẹn giờ nào?",
+        "answer": "2:30"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Nguyên nhân nghi ngờ là gì?",
+        "answer": "Docker tag vẫn trỏ latest"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "en": "Hey — I'm stuck on this flaky test.",
+      "vi": "Ê — mình kẹt test flaky."
+    },
+    {
+      "speaker": "A",
+      "en": "When you have a minute, could you take a look?",
+      "vi": "Lúc rảnh bạn xem giúp với?"
+    },
+    {
+      "speaker": "B",
+      "en": "Sure. Which file — payment.spec or cart.spec?",
+      "vi": "Được. File nào — payment.spec hay cart.spec?"
+    },
+    {
+      "speaker": "A",
+      "en": "payment.spec, the retry case.",
+      "vi": "payment.spec, case retry."
+    },
+    {
+      "speaker": "B",
+      "en": "No rush on your side?",
+      "vi": "Bên bạn không gấp chứ?"
+    },
+    {
+      "speaker": "A",
+      "en": "No rush. Thanks in advance.",
+      "vi": "Không gấp. Cảm ơn trước."
+    },
+    {
+      "speaker": "B",
+      "en": "I'll check after standup and drop a thread.",
+      "vi": "Standup xong mình xem rồi để thread."
+    },
+    {
+      "speaker": "A",
+      "en": "Perfect.",
+      "vi": "Được luôn."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Bạn xem giúp được không?",
+      "answer": "Could you take a look?"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: I'm stuck on ___",
+      "answer": "I'm stuck on…"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "You DM a teammate because you are stuck on a real ticket. Stay calm and specific.",
+    "system": "You are a friendly teammate (or interviewer) at a software company. Speak natural meeting English. Keep each turn to 1–2 short sentences. You MAY use extra workplace English so the learner practices listening. Nudge the learner to use these phrases: Could you take a look?; I'm stuck on…; When you have a minute; No rush; Thanks in advance. If they ask you to slow down or repeat, do that. Ask one concrete detail about their real work (ticket, bug, PR, or project). Wait for the learner to reply. Scenario: You DM a teammate because you are stuck on a real ticket. Stay calm and specific.",
+    "allowedPhrases": [
+      "Could you take a look?",
+      "I'm stuck on…",
+      "When you have a minute",
+      "No rush",
+      "Thanks in advance"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

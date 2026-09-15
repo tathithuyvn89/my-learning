@@ -1,0 +1,215 @@
+{
+  "id": 19,
+  "week": 3,
+  "theme": "Lương",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "I'm targeting…",
+      "note": "Band lương. Số của bạn, đừng bịa trên app.",
+      "vi": "Mình targeting…",
+      "example": {
+        "en": "I'm targeting 2.4 to 2.8 billion VND total.",
+        "vi": "Mình targeting 2.4–2.8 tỷ total."
+      },
+      "slot": "I'm targeting ___."
+    },
+    {
+      "en": "What's the range for this level?",
+      "note": "Hỏi band. Lịch sự.",
+      "vi": "Range level này là sao ạ?",
+      "example": {
+        "en": "What's the range for this level in Vietnam / remote?",
+        "vi": "Range level này ở VN / remote sao ạ?"
+      }
+    },
+    {
+      "en": "Notice period is…",
+      "note": "Số tuần thật.",
+      "vi": "Notice period là…",
+      "example": {
+        "en": "Notice period is 30 days.",
+        "vi": "Notice 30 ngày."
+      },
+      "slot": "Notice period is ___."
+    },
+    {
+      "en": "I'm flexible on title",
+      "note": "Title vs scope. Một câu.",
+      "vi": "Title mình linh hoạt",
+      "example": {
+        "en": "I'm flexible on title if the scope is right.",
+        "vi": "Title linh hoạt nếu scope đúng."
+      }
+    },
+    {
+      "en": "Total comp, not just base",
+      "note": "Nhắc equity/bonus. Không hỏi sớm vòng 1 trừ khi họ hỏi.",
+      "vi": "Total comp, không chỉ base",
+      "example": {
+        "en": "I care about total comp, not just base.",
+        "vi": "Mình nhìn total, không chỉ base."
+      }
+    }
+  ],
+  "pattern": {
+    "title": "Comp in one breath",
+    "pattern": "I'm targeting… What's the range for this level? Notice period is… Total comp, not just base",
+    "explainVi": "Lương: band của bạn, hỏi range, notice, title linh hoạt, nhìn total. Điền số thật. Không mặc cả vòng 1 trừ khi họ hỏi.",
+    "drills": [
+      {
+        "prompt": "Nói việc thật hôm nay: I'm targeting ___.",
+        "answer": "I'm targeting…"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Range level này là sao ạ?",
+        "answer": "What's the range for this level?"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: Notice period is ___.",
+        "answer": "Notice period is…"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Title mình linh hoạt",
+        "answer": "I'm flexible on title"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Recruiter hỏi comp",
+    "video": null,
+    "unseen": [
+      {
+        "speaker": "B",
+        "en": "What's your current and target?",
+        "vi": "Hiện tại và target?"
+      },
+      {
+        "speaker": "A",
+        "en": "I'm targeting a 15 to 20 percent bump on total.",
+        "vi": "Targeting tăng 15–20% total."
+      },
+      {
+        "speaker": "A",
+        "en": "What's the range for this level?",
+        "vi": "Range level này sao ạ?"
+      },
+      {
+        "speaker": "B",
+        "en": "Depends on equity. When can you start?",
+        "vi": "Tuỳ equity. Khi nào onboard?"
+      },
+      {
+        "speaker": "A",
+        "en": "Notice period is 30 days.",
+        "vi": "Notice 30 ngày."
+      },
+      {
+        "speaker": "A",
+        "en": "I'm flexible on title.",
+        "vi": "Title linh hoạt."
+      },
+      {
+        "speaker": "A",
+        "en": "Total comp, not just base — equity matters.",
+        "vi": "Total, không chỉ base — equity cũng tính."
+      },
+      {
+        "speaker": "B",
+        "en": "Understood.",
+        "vi": "Rõ."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Target tăng khoảng bao nhiêu?",
+        "answer": "15–20% total"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Notice bao lâu?",
+        "answer": "30 days"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Ngoài base họ nhắc gì?",
+        "answer": "Equity / total comp"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "B",
+      "en": "Comp expectations?",
+      "vi": "Kỳ vọng lương?"
+    },
+    {
+      "speaker": "A",
+      "en": "I'm targeting 2.4 to 2.8 billion VND total.",
+      "vi": "Targeting 2.4–2.8 tỷ total."
+    },
+    {
+      "speaker": "A",
+      "en": "What's the range for this level in Vietnam / remote?",
+      "vi": "Range level này ở VN / remote sao ạ?"
+    },
+    {
+      "speaker": "B",
+      "en": "I can't share a number yet. Notice?",
+      "vi": "Chưa share số. Notice?"
+    },
+    {
+      "speaker": "A",
+      "en": "Notice period is 30 days.",
+      "vi": "Notice 30 ngày."
+    },
+    {
+      "speaker": "A",
+      "en": "I'm flexible on title if the scope is right.",
+      "vi": "Title linh hoạt nếu scope đúng."
+    },
+    {
+      "speaker": "A",
+      "en": "I care about total comp, not just base.",
+      "vi": "Nhìn total, không chỉ base."
+    },
+    {
+      "speaker": "B",
+      "en": "We'll come back with a band.",
+      "vi": "Lát mình gửi band."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: I'm targeting ___.",
+      "answer": "I'm targeting…"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Range level này là sao ạ?",
+      "answer": "What's the range for this level?"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Recruiter asks for comp. Learner uses THEIR real band and notice. Don't invent a number in the prompt.",
+    "system": "You are a software interviewer at a foreign company. Speak natural interview English. Keep each turn to 1–2 short sentences. You MAY use extra interview English so the learner practices listening. Interrupt with a follow-up. Nudge the learner to use these phrases: I'm targeting…; What's the range for this level?; Notice period is…; I'm flexible on title; Total comp, not just base. Ask about their real experience. Wait for the learner to reply. Scenario: Recruiter asks for comp. Learner uses THEIR real band and notice. Don't invent a number in the prompt.",
+    "allowedPhrases": [
+      "I'm targeting…",
+      "What's the range for this level?",
+      "Notice period is…",
+      "I'm flexible on title",
+      "Total comp, not just base"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

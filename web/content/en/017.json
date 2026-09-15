@@ -1,0 +1,217 @@
+{
+  "id": 17,
+  "week": 3,
+  "theme": "Giải thích PR",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "This PR…",
+      "note": "Mở 45 giây. Một câu mục đích.",
+      "vi": "PR này…",
+      "example": {
+        "en": "This PR adds retry on payments.",
+        "vi": "PR này thêm retry thanh toán."
+      },
+      "slot": "This PR ___"
+    },
+    {
+      "en": "The main change is…",
+      "note": "Phần người review cần nhìn.",
+      "vi": "Thay đổi chính là…",
+      "example": {
+        "en": "The main change is in PaymentService.",
+        "vi": "Thay đổi chính nằm ở PaymentService."
+      },
+      "slot": "The main change is ___"
+    },
+    {
+      "en": "The risk is…",
+      "note": "Nói risk thật, không This is safe I think.",
+      "vi": "Rủi ro là…",
+      "example": {
+        "en": "The risk is double charges if retry races.",
+        "vi": "Rủi ro là charge hai lần nếu retry đua."
+      },
+      "slot": "The risk is ___"
+    },
+    {
+      "en": "Please review the…",
+      "note": "Chỉ đúng chỗ cần mắt người.",
+      "vi": "Nhờ review phần…",
+      "example": {
+        "en": "Please review the timeout logic.",
+        "vi": "Nhờ review logic timeout."
+      },
+      "slot": "Please review the ___"
+    },
+    {
+      "en": "Ready to merge if LGTM",
+      "note": "Chốt. Không cầu xin merge gấp.",
+      "vi": "LGTM thì merge được",
+      "example": {
+        "en": "Ready to merge if LGTM.",
+        "vi": "LGTM thì merge được."
+      }
+    }
+  ],
+  "pattern": {
+    "title": "PR walkthrough",
+    "pattern": "This PR… The main change is… The risk is… Please review the… Ready to merge if LGTM",
+    "explainVi": "45 giây trước khi người ta mở diff: mục đích, chỗ chính, risk, nhờ đúng chỗ.",
+    "drills": [
+      {
+        "prompt": "Nói việc thật hôm nay: This PR ___",
+        "answer": "This PR…"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: The main change is ___",
+        "answer": "The main change is…"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: The risk is ___",
+        "answer": "The risk is…"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: Please review the ___",
+        "answer": "Please review the…"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Walkthrough PR 45 giây",
+    "video": null,
+    "unseen": [
+      {
+        "speaker": "A",
+        "en": "This PR adds a circuit breaker on export.",
+        "vi": "PR này thêm circuit breaker cho export."
+      },
+      {
+        "speaker": "A",
+        "en": "The main change is in ExportWorker.",
+        "vi": "Thay đổi chính ở ExportWorker."
+      },
+      {
+        "speaker": "A",
+        "en": "The risk is jobs getting stuck open if the breaker never resets.",
+        "vi": "Rủi ro là job kẹt mở nếu breaker không reset."
+      },
+      {
+        "speaker": "A",
+        "en": "Please review the reset timer.",
+        "vi": "Nhờ review timer reset."
+      },
+      {
+        "speaker": "B",
+        "en": "Is there a metric for open vs closed?",
+        "vi": "Có metric open vs closed không?"
+      },
+      {
+        "speaker": "A",
+        "en": "Not yet — follow-up. Ready to merge if LGTM on the timer.",
+        "vi": "Chưa — follow-up. Timer LGTM thì merge."
+      },
+      {
+        "speaker": "B",
+        "en": "I'll comment in 20 minutes.",
+        "vi": "20 phút nữa mình comment."
+      },
+      {
+        "speaker": "A",
+        "en": "Thanks.",
+        "vi": "Cảm ơn."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "PR này thêm gì?",
+        "answer": "Circuit breaker on export"
+      },
+      {
+        "type": "cloze",
+        "prompt": "File/class chính là gì?",
+        "answer": "ExportWorker"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Risk là gì?",
+        "answer": "Jobs stuck open if breaker never resets"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "en": "This PR adds retry on payments.",
+      "vi": "PR này thêm retry thanh toán."
+    },
+    {
+      "speaker": "A",
+      "en": "The main change is in PaymentService.",
+      "vi": "Thay đổi chính ở PaymentService."
+    },
+    {
+      "speaker": "A",
+      "en": "The risk is double charges if retry races.",
+      "vi": "Rủi ro là charge hai lần nếu retry đua."
+    },
+    {
+      "speaker": "A",
+      "en": "Please review the timeout logic.",
+      "vi": "Nhờ review logic timeout."
+    },
+    {
+      "speaker": "B",
+      "en": "Will do. Tests in the same PR?",
+      "vi": "Ok mình xem. Test nằm cùng PR chứ?"
+    },
+    {
+      "speaker": "A",
+      "en": "Yes. Ready to merge if LGTM.",
+      "vi": "Có. LGTM thì merge được."
+    },
+    {
+      "speaker": "B",
+      "en": "I'll look at PaymentService first.",
+      "vi": "Mình xem PaymentService trước."
+    },
+    {
+      "speaker": "A",
+      "en": "Thanks — comment on the race, please.",
+      "vi": "Cảm ơn — comment chỗ race giúp."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: This PR ___",
+      "answer": "This PR…"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: The main change is ___",
+      "answer": "The main change is…"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Walk a teammate through your real PR in 45 seconds.",
+    "system": "You are a friendly teammate (or interviewer) at a software company. Speak natural meeting English. Keep each turn to 1–2 short sentences. You MAY use extra workplace English so the learner practices listening. Nudge the learner to use these phrases: This PR…; The main change is…; The risk is…; Please review the…; Ready to merge if LGTM. If they ask you to slow down or repeat, do that. Ask one concrete detail about their real work (ticket, bug, PR, or project). Wait for the learner to reply. Scenario: Walk a teammate through your real PR in 45 seconds.",
+    "allowedPhrases": [
+      "This PR…",
+      "The main change is…",
+      "The risk is…",
+      "Please review the…",
+      "Ready to merge if LGTM"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

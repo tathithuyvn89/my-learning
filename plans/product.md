@@ -1,6 +1,6 @@
 # Sản phẩm
 
-Web tĩnh để học tiếng Trung **30 phút/ngày**, trình độ tương đương **HSK 1 rồi HSK 2 rồi HSK 3 rồi HSK 4** (chữ giản thể, pinyin, khoảng 620 từ core).
+Web tĩnh để học tiếng Trung **30 phút/ngày**, trình độ tương đương **HSK 1 rồi HSK 2 rồi HSK 3 rồi HSK 4 rồi HSK 5 rồi HSK 6** (chữ giản thể, pinyin, khoảng 970 từ core).
 
 ## Mục tiêu người dùng
 
@@ -12,7 +12,7 @@ Web tĩnh để học tiếng Trung **30 phút/ngày**, trình độ tương đ�
 
 - Giao diện: tiếng Việt.
 - Chữ: giản thể. Không phồn thể ở bản 1.
-- Thời lượng khoá: 32 tuần = 224 bài. Tuần 8, 16, 24 và 32 chỉ ôn, không thêm từ mới.
+- Thời lượng khoá: 48 tuần = 336 bài. Tuần 8, 16, 24, 32, 40 và 48 chỉ ôn, không thêm từ mới.
 - Không backend, không tài khoản.
 - Tiến độ: `localStorage`.
 - Âm thanh bản 1: Web Speech API `zh-CN` (không file audio).

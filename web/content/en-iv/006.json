@@ -1,0 +1,220 @@
+{
+  "id": 6,
+  "week": 1,
+  "theme": "Tổng hợp tuần 1",
+  "kind": "review",
+  "phrases": [
+    {
+      "en": "Let me restate the problem",
+      "note": "Clarify: nói lại đề trước khi gõ. Không nhảy vào code.",
+      "vi": "Mình restated đề nhé",
+      "example": {
+        "en": "Let me restate the problem in my own words.",
+        "vi": "Mình restated đề bằng lời mình."
+      }
+    },
+    {
+      "en": "Let me think out loud",
+      "note": "Báo sẽ nghĩ to. Đừng gõ im 3 phút.",
+      "vi": "Mình nghĩ to nhé",
+      "example": {
+        "en": "Let me think out loud for a bit.",
+        "vi": "Mình nghĩ to một chút."
+      }
+    },
+    {
+      "en": "Time is O(…)",
+      "note": "Nói big-O time. Điền n / n log n.",
+      "vi": "Time là O(…)",
+      "example": {
+        "en": "Time is O(n log n) after the sort.",
+        "vi": "Time là O(n log n) sau sort."
+      },
+      "slot": "Time is O(___)."
+    },
+    {
+      "en": "Let me trace this",
+      "note": "Dry-run trước khi tuyên bố xong.",
+      "vi": "Mình trace cái này",
+      "example": {
+        "en": "Let me trace this on the example.",
+        "vi": "Mình trace trên ví dụ."
+      }
+    },
+    {
+      "en": "I'm not sure yet",
+      "note": "Kẹt. Nói thật, đừng bịa.",
+      "vi": "Mình chưa chắc",
+      "example": {
+        "en": "I'm not sure yet — give me a second.",
+        "vi": "Mình chưa chắc — cho mình giây lát."
+      }
+    }
+  ],
+  "pattern": {
+    "title": "Một vòng coding nói",
+    "pattern": "Restate → brute force → time/space → trace",
+    "explainVi": "Ghép tuần 1: clarify, nghĩ to, complexity, dry-run. Không thêm cụm mới.",
+    "drills": [
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình restated đề nhé",
+        "answer": "Let me restate the problem"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình nghĩ to nhé",
+        "answer": "Let me think out loud"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: Time is O(___).",
+        "answer": "Time is O(…)"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình trace cái này",
+        "answer": "Let me trace this"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Ghép một vòng coding",
+    "video": {
+      "title": "How to: Work at Google — Example Coding/Engineering Interview",
+      "url": "https://www.youtube.com/watch?v=XKu_SEDKoi8",
+      "watchFrom": "0:00",
+      "watchTo": "2:00",
+      "whyVi": "Coding interview mở bài. Nghe cách restatement và nghĩ to, không gõ im lặng."
+    },
+    "unseen": [
+      {
+        "speaker": "A",
+        "en": "Let me restate the problem.",
+        "vi": "Mình restated đề."
+      },
+      {
+        "speaker": "A",
+        "en": "I'll start with a brute force.",
+        "vi": "Mình brute force trước."
+      },
+      {
+        "speaker": "B",
+        "en": "Complexity of that?",
+        "vi": "Độ phức tạp cái đó?"
+      },
+      {
+        "speaker": "A",
+        "en": "That would TLE if n is huge. Time is O(n) after the map.",
+        "vi": "TLE nếu n lớn. Time O(n) sau map."
+      },
+      {
+        "speaker": "A",
+        "en": "Let me trace this.",
+        "vi": "Mình trace."
+      },
+      {
+        "speaker": "A",
+        "en": "That's an off-by-one. Fixed.",
+        "vi": "Off-by-one. Sửa rồi."
+      },
+      {
+        "speaker": "B",
+        "en": "Stuck on anything?",
+        "vi": "Kẹt gì không?"
+      },
+      {
+        "speaker": "A",
+        "en": "I'm not sure yet on duplicates. Give me 20 seconds.",
+        "vi": "Chưa chắc phần trùng. 20 giây."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Video 0:00–2:00: candidate nói hay im lúc đầu?",
+        "answer": "Nói / hỏi / think out loud (tuỳ clip)"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Brute force TLE khi nào?",
+        "answer": "n huge / n lớn"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Kẹt ở điểm nào?",
+        "answer": "Duplicates / trùng"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "en": "Let me restate the problem. Two indices, one target.",
+      "vi": "Mình restated. Hai index, một target."
+    },
+    {
+      "speaker": "A",
+      "en": "What are the constraints?",
+      "vi": "Constraint?"
+    },
+    {
+      "speaker": "B",
+      "en": "n is 10^5.",
+      "vi": "n 10^5."
+    },
+    {
+      "speaker": "A",
+      "en": "I'll start with a brute force, then I'd optimize.",
+      "vi": "Brute rồi optimize."
+    },
+    {
+      "speaker": "A",
+      "en": "Time is O(n). Space is O(n).",
+      "vi": "Time O(n). Space O(n)."
+    },
+    {
+      "speaker": "A",
+      "en": "Let me trace this on the example.",
+      "vi": "Mình trace ví dụ."
+    },
+    {
+      "speaker": "A",
+      "en": "That matches the expected output.",
+      "vi": "Khớp output."
+    },
+    {
+      "speaker": "B",
+      "en": "If you get stuck, say so.",
+      "vi": "Kẹt thì nói."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Mình restated đề nhé",
+      "answer": "Let me restate the problem"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Mình nghĩ to nhé",
+      "answer": "Let me think out loud"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Full coding opener: restate, brute force, complexity, trace. Use a problem the learner actually knows.",
+    "system": "You are a software interviewer at a foreign company. Speak natural interview English. Keep each turn to 1–2 short sentences. You MAY use extra interview English so the learner practices listening. Interrupt with a follow-up. Nudge the learner to use these phrases: Let me restate the problem; Let me think out loud; Time is O(…); Let me trace this; I'm not sure yet. Ask about their real experience. Wait for the learner to reply. Scenario: Full coding opener: restate, brute force, complexity, trace. Use a problem the learner actually knows.",
+    "allowedPhrases": [
+      "Let me restate the problem",
+      "Let me think out loud",
+      "Time is O(…)",
+      "Let me trace this",
+      "I'm not sure yet"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

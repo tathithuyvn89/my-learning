@@ -1,0 +1,218 @@
+{
+  "id": 24,
+  "week": 4,
+  "theme": "STAR",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "The situation was…",
+      "note": "STAR S: bối cảnh 1 câu.",
+      "vi": "Tình huống là…",
+      "example": {
+        "en": "The situation was a Friday incident.",
+        "vi": "Tình huống là incident thứ Sáu."
+      },
+      "slot": "The situation was ___"
+    },
+    {
+      "en": "My task was…",
+      "note": "STAR T: việc mình phải làm.",
+      "vi": "Task của mình là…",
+      "example": {
+        "en": "My task was to restore checkout.",
+        "vi": "Task mình là khôi phục checkout."
+      },
+      "slot": "My task was ___"
+    },
+    {
+      "en": "I did…",
+      "note": "STAR A: 2 hành động cụ thể.",
+      "vi": "Mình đã…",
+      "example": {
+        "en": "I did a rollback, then added a guard.",
+        "vi": "Mình rollback, rồi thêm guard."
+      },
+      "slot": "I did ___"
+    },
+    {
+      "en": "The result was…",
+      "note": "STAR R: impact.",
+      "vi": "Kết quả là…",
+      "example": {
+        "en": "The result was we recovered in 20 minutes.",
+        "vi": "Kết quả là khôi phục trong 20 phút."
+      },
+      "slot": "The result was ___"
+    },
+    {
+      "en": "What I learned…",
+      "note": "Một câu học. Không I learned to work harder.",
+      "vi": "Mình học được…",
+      "example": {
+        "en": "What I learned is to page earlier.",
+        "vi": "Mình học được là page sớm hơn."
+      },
+      "slot": "What I learned ___"
+    }
+  ],
+  "pattern": {
+    "title": "STAR ngắn",
+    "pattern": "Situation → Task → I did… → Result → What I learned",
+    "explainVi": "Deadline hoặc incident: mỗi chữ STAR một câu. Không kể 5 phút.",
+    "drills": [
+      {
+        "prompt": "Nói việc thật hôm nay: The situation was ___",
+        "answer": "The situation was…"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: My task was ___",
+        "answer": "My task was…"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: I did ___",
+        "answer": "I did…"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: The result was ___",
+        "answer": "The result was…"
+      }
+    ]
+  },
+  "listen": {
+    "title": "STAR incident — bắt số phút",
+    "video": null,
+    "unseen": [
+      {
+        "speaker": "B",
+        "en": "Tell me about an incident, STAR please.",
+        "vi": "Kể một incident, dùng STAR."
+      },
+      {
+        "speaker": "A",
+        "en": "The situation was a Saturday deploy that broke search.",
+        "vi": "Tình huống: deploy thứ Bảy làm hỏng search."
+      },
+      {
+        "speaker": "A",
+        "en": "My task was to restore search without a full rollback if possible.",
+        "vi": "Task: khôi phục search, tránh rollback hết nếu được."
+      },
+      {
+        "speaker": "A",
+        "en": "I did a config revert, then isolated the query planner change.",
+        "vi": "Mình revert config, rồi isolate thay đổi query planner."
+      },
+      {
+        "speaker": "A",
+        "en": "The result was we recovered in 12 minutes. Traffic came back.",
+        "vi": "Kết quả khôi phục 12 phút. Traffic trở lại."
+      },
+      {
+        "speaker": "A",
+        "en": "What I learned is to canary DDL.",
+        "vi": "Mình học được là canary DDL."
+      },
+      {
+        "speaker": "B",
+        "en": "12 minutes from detect or from start of fix?",
+        "vi": "12 phút từ lúc detect hay lúc bắt đầu fix?"
+      },
+      {
+        "speaker": "A",
+        "en": "From detect. Fix itself was about six.",
+        "vi": "Từ lúc detect. Fix khoảng sáu phút."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Incident làm hỏng gì?",
+        "answer": "Search after a Saturday deploy"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Recover trong bao lâu kể từ detect?",
+        "answer": "12 minutes"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Bài học là gì?",
+        "answer": "Canary DDL"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "B",
+      "en": "Tell me about a tight deadline.",
+      "vi": "Kể một deadline căng."
+    },
+    {
+      "speaker": "A",
+      "en": "The situation was a Friday incident.",
+      "vi": "Tình huống là incident thứ Sáu."
+    },
+    {
+      "speaker": "A",
+      "en": "My task was to restore checkout.",
+      "vi": "Task mình là khôi phục checkout."
+    },
+    {
+      "speaker": "A",
+      "en": "I did a rollback, then added a guard.",
+      "vi": "Mình rollback, rồi thêm guard."
+    },
+    {
+      "speaker": "A",
+      "en": "The result was we recovered in 20 minutes.",
+      "vi": "Kết quả khôi phục trong 20 phút."
+    },
+    {
+      "speaker": "A",
+      "en": "What I learned is to page earlier.",
+      "vi": "Mình học được là page sớm hơn."
+    },
+    {
+      "speaker": "B",
+      "en": "Who did you page?",
+      "vi": "Bạn page ai?"
+    },
+    {
+      "speaker": "A",
+      "en": "The on-call plus the PM. What I learned is to page earlier.",
+      "vi": "On-call và PM. Học được là page sớm hơn."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: The situation was ___",
+      "answer": "The situation was…"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: My task was ___",
+      "answer": "My task was…"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "A short STAR story about a real incident or deadline of yours.",
+    "system": "You are a friendly teammate (or interviewer) at a software company. Speak natural meeting English. Keep each turn to 1–2 short sentences. You MAY use extra workplace English so the learner practices listening. Nudge the learner to use these phrases: The situation was…; My task was…; I did…; The result was…; What I learned…. If they ask you to slow down or repeat, do that. Ask one concrete detail about their real work (ticket, bug, PR, or project). Wait for the learner to reply. Scenario: A short STAR story about a real incident or deadline of yours.",
+    "allowedPhrases": [
+      "The situation was…",
+      "My task was…",
+      "I did…",
+      "The result was…",
+      "What I learned…"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

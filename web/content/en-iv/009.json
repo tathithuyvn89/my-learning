@@ -1,0 +1,216 @@
+{
+  "id": 9,
+  "week": 2,
+  "theme": "High-level",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "I'd sketch this first",
+      "note": "Báo sẽ vẽ high-level.",
+      "vi": "Mình sketch cái này trước",
+      "example": {
+        "en": "I'd sketch this first, four boxes.",
+        "vi": "Mình sketch bốn hộp trước."
+      }
+    },
+    {
+      "en": "Clients talk to…",
+      "note": "Entry: client → API.",
+      "vi": "Client nói chuyện với…",
+      "example": {
+        "en": "Clients talk to an API gateway.",
+        "vi": "Client nói với API gateway."
+      },
+      "slot": "Clients talk to ___"
+    },
+    {
+      "en": "I'd draw an API layer",
+      "note": "Hộp API. Đừng nhảy DB.",
+      "vi": "Mình vẽ lớp API",
+      "example": {
+        "en": "I'd draw an API layer in front of the service.",
+        "vi": "Mình vẽ API trước service."
+      }
+    },
+    {
+      "en": "Store goes in…",
+      "note": "Chỗ lưu. Một câu.",
+      "vi": "Phần lưu nằm ở…",
+      "example": {
+        "en": "Store goes in a key-value store.",
+        "vi": "Lưu ở key-value store."
+      },
+      "slot": "Store goes in ___"
+    },
+    {
+      "en": "High-level, we have…",
+      "note": "Tóm 3–4 hộp.",
+      "vi": "High-level mình có…",
+      "example": {
+        "en": "High-level, we have clients, API, store, cache.",
+        "vi": "High-level: client, API, store, cache."
+      },
+      "slot": "High-level, we have ___"
+    }
+  ],
+  "pattern": {
+    "title": "Four boxes out loud",
+    "pattern": "I'd sketch this first → Clients talk to… → API → Store goes in…",
+    "explainVi": "Vẽ 4 hộp bằng lời: client, API, store, (cache). Đừng deep-dive một hộp quá sớm.",
+    "drills": [
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình sketch cái này trước",
+        "answer": "I'd sketch this first"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: Clients talk to ___",
+        "answer": "Clients talk to…"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình vẽ lớp API",
+        "answer": "I'd draw an API layer"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: Store goes in ___",
+        "answer": "Store goes in…"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Sketch high-level bị cắt",
+    "video": null,
+    "unseen": [
+      {
+        "speaker": "A",
+        "en": "I'd sketch this first.",
+        "vi": "Mình sketch trước."
+      },
+      {
+        "speaker": "A",
+        "en": "Clients talk to the API.",
+        "vi": "Client nói với API."
+      },
+      {
+        "speaker": "B",
+        "en": "One service or two?",
+        "vi": "Một service hay hai?"
+      },
+      {
+        "speaker": "A",
+        "en": "I'd draw an API layer, then a write service and a redirect service.",
+        "vi": "Vẽ API, rồi service ghi và service redirect."
+      },
+      {
+        "speaker": "A",
+        "en": "Store goes in Redis plus Postgres for durable mapping.",
+        "vi": "Lưu Redis cộng Postgres cho mapping bền."
+      },
+      {
+        "speaker": "B",
+        "en": "That's two stores already.",
+        "vi": "Hai store rồi đó."
+      },
+      {
+        "speaker": "A",
+        "en": "High-level, we have clients, API, KV, cache. Postgres only if we need analytics.",
+        "vi": "High-level: client, API, KV, cache. Postgres chỉ khi cần analytics."
+      },
+      {
+        "speaker": "B",
+        "en": "Keep v1 to one store.",
+        "vi": "V1 giữ một store."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "V1 interviewer muốn bao nhiêu store?",
+        "answer": "Một"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Hai service được nêu là gì?",
+        "answer": "Write và redirect"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Cache nằm trên path nào?",
+        "answer": "Read"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "en": "I'd sketch this first, four boxes.",
+      "vi": "Mình sketch bốn hộp trước."
+    },
+    {
+      "speaker": "A",
+      "en": "Clients talk to an API gateway.",
+      "vi": "Client nói với API gateway."
+    },
+    {
+      "speaker": "A",
+      "en": "I'd draw an API layer in front of the service.",
+      "vi": "Mình vẽ API trước service."
+    },
+    {
+      "speaker": "A",
+      "en": "Store goes in a key-value store.",
+      "vi": "Lưu ở key-value store."
+    },
+    {
+      "speaker": "A",
+      "en": "High-level, we have clients, API, store, cache.",
+      "vi": "High-level: client, API, store, cache."
+    },
+    {
+      "speaker": "B",
+      "en": "Where does the cache sit?",
+      "vi": "Cache nằm đâu?"
+    },
+    {
+      "speaker": "A",
+      "en": "In front of the store, on the read path.",
+      "vi": "Trước store, trên đường đọc."
+    },
+    {
+      "speaker": "B",
+      "en": "Good. Don't drill into hash IDs yet.",
+      "vi": "Ổn. Đừng đào hash ID vội."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Mình sketch cái này trước",
+      "answer": "I'd sketch this first"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: Clients talk to ___",
+      "answer": "Clients talk to…"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Describe four boxes for a system the learner knows. Stop them if they dive into one box.",
+    "system": "You are a software interviewer at a foreign company. Speak natural interview English. Keep each turn to 1–2 short sentences. You MAY use extra interview English so the learner practices listening. Interrupt with a follow-up. Nudge the learner to use these phrases: I'd sketch this first; Clients talk to…; I'd draw an API layer; Store goes in…; High-level, we have…. Ask about their real experience. Wait for the learner to reply. Scenario: Describe four boxes for a system the learner knows. Stop them if they dive into one box.",
+    "allowedPhrases": [
+      "I'd sketch this first",
+      "Clients talk to…",
+      "I'd draw an API layer",
+      "Store goes in…",
+      "High-level, we have…"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

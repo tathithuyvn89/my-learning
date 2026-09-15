@@ -1,0 +1,214 @@
+{
+  "id": 10,
+  "week": 2,
+  "theme": "Xin nói chậm",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "Could you repeat that?",
+      "note": "Không nghe kịp. Lịch sự hơn What?",
+      "vi": "Bạn nhắc lại được không?",
+      "example": {
+        "en": "Could you repeat that? I missed the name.",
+        "vi": "Nhắc lại được không? Mình miss cái tên."
+      }
+    },
+    {
+      "en": "Could you slow down a bit?",
+      "note": "Accent / tốc độ. Không xin lỗi vì tiếng Anh.",
+      "vi": "Bạn nói chậm hơn một chút được không?",
+      "example": {
+        "en": "Could you slow down a bit? I want to catch the numbers.",
+        "vi": "Nói chậm hơn chút được không? Mình muốn bắt kịp số."
+      }
+    },
+    {
+      "en": "What I heard is…",
+      "note": "Lặp lại để confirm. Tránh hiểu sai.",
+      "vi": "Mình nghe là…",
+      "example": {
+        "en": "What I heard is we ship on Friday.",
+        "vi": "Mình nghe là mình ship thứ Sáu."
+      },
+      "slot": "What I heard is ___"
+    },
+    {
+      "en": "I missed the last part",
+      "note": "Cụ thể phần miss, đừng nói I don't understand everything.",
+      "vi": "Mình miss đoạn cuối",
+      "example": {
+        "en": "I missed the last part — the owner of the ticket.",
+        "vi": "Mình miss đoạn cuối — ai owner ticket."
+      }
+    },
+    {
+      "en": "Thanks, that helps",
+      "note": "Sau khi người ta nhắc. Đóng loop.",
+      "vi": "Cảm ơn, rõ rồi",
+      "example": {
+        "en": "Ah, got it. Thanks, that helps.",
+        "vi": "À, rõ rồi. Cảm ơn."
+      }
+    }
+  ],
+  "pattern": {
+    "title": "Repair",
+    "pattern": "Could you repeat that? / slow down a bit / What I heard is… / I missed the last part",
+    "explainVi": "Không bắt kịp: xin nhắc, xin chậm, lặp lại điều mình nghe. Không xin lỗi vì tiếng Anh kém.",
+    "drills": [
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Bạn nhắc lại được không?",
+        "answer": "Could you repeat that?"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Bạn nói chậm hơn một chút được không?",
+        "answer": "Could you slow down a bit?"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: What I heard is ___",
+        "answer": "What I heard is…"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình miss đoạn cuối",
+        "answer": "I missed the last part"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Teammate nói nhanh: số, vùng, tên",
+    "video": null,
+    "unseen": [
+      {
+        "speaker": "B",
+        "en": "We cut over EU at 09:00 UTC, US at 14:00, then APAC Monday.",
+        "vi": "Cắt EU 09:00 UTC, US 14:00, APAC thứ Hai."
+      },
+      {
+        "speaker": "A",
+        "en": "Could you slow down a bit? I missed the last part.",
+        "vi": "Nói chậm hơn? Mình miss đoạn cuối."
+      },
+      {
+        "speaker": "B",
+        "en": "APAC Monday. Not Tuesday.",
+        "vi": "APAC thứ Hai. Không phải thứ Ba."
+      },
+      {
+        "speaker": "A",
+        "en": "What I heard is EU 09:00 UTC, US 14:00, APAC Monday.",
+        "vi": "Mình nghe EU 09:00 UTC, US 14:00, APAC thứ Hai."
+      },
+      {
+        "speaker": "B",
+        "en": "Yes. On-call is Minh until 18:00.",
+        "vi": "Đúng. On-call là Minh đến 18:00."
+      },
+      {
+        "speaker": "A",
+        "en": "Could you repeat the on-call name?",
+        "vi": "Nhắc lại tên on-call?"
+      },
+      {
+        "speaker": "B",
+        "en": "Minh, until 18:00.",
+        "vi": "Minh, đến 18:00."
+      },
+      {
+        "speaker": "A",
+        "en": "Thanks, that helps.",
+        "vi": "Cảm ơn, rõ rồi."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "APAC cắt khi nào?",
+        "answer": "Monday / thứ Hai"
+      },
+      {
+        "type": "cloze",
+        "prompt": "EU cắt lúc mấy giờ UTC?",
+        "answer": "09:00"
+      },
+      {
+        "type": "repair",
+        "prompt": "Viết đúng một câu xin nhắc owner/on-call.",
+        "answer": "Could you repeat that? / Could you repeat the on-call name?"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "B",
+      "en": "We'll roll this out to EU first, then US next week, then APAC on the 21st.",
+      "vi": "Roll EU trước, rồi US tuần sau, APAC ngày 21."
+    },
+    {
+      "speaker": "A",
+      "en": "Could you slow down a bit? I missed the last part.",
+      "vi": "Nói chậm hơn chút? Mình miss đoạn cuối."
+    },
+    {
+      "speaker": "B",
+      "en": "EU first. US next week. APAC on the 21st.",
+      "vi": "EU trước. US tuần sau. APAC ngày 21."
+    },
+    {
+      "speaker": "A",
+      "en": "What I heard is EU first, then US next week, APAC on the 21st.",
+      "vi": "Mình nghe là EU trước, US tuần sau, APAC ngày 21."
+    },
+    {
+      "speaker": "B",
+      "en": "Exactly. Owner is Priya.",
+      "vi": "Đúng. Owner là Priya."
+    },
+    {
+      "speaker": "A",
+      "en": "Could you repeat that — the owner?",
+      "vi": "Nhắc lại owner được không?"
+    },
+    {
+      "speaker": "B",
+      "en": "Priya.",
+      "vi": "Priya."
+    },
+    {
+      "speaker": "A",
+      "en": "Thanks, that helps.",
+      "vi": "Cảm ơn, rõ rồi."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Bạn nhắc lại được không?",
+      "answer": "Could you repeat that?"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Bạn nói chậm hơn một chút được không?",
+      "answer": "Could you slow down a bit?"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "A fast-speaking teammate in a meeting. Repair without apologizing for your English.",
+    "system": "You are a friendly teammate (or interviewer) at a software company. Speak natural meeting English. Keep each turn to 1–2 short sentences. You MAY use extra workplace English so the learner practices listening. Nudge the learner to use these phrases: Could you repeat that?; Could you slow down a bit?; What I heard is…; I missed the last part; Thanks, that helps. If they ask you to slow down or repeat, do that. Ask one concrete detail about their real work (ticket, bug, PR, or project). Wait for the learner to reply. Scenario: A fast-speaking teammate in a meeting. Repair without apologizing for your English.",
+    "allowedPhrases": [
+      "Could you repeat that?",
+      "Could you slow down a bit?",
+      "What I heard is…",
+      "I missed the last part",
+      "Thanks, that helps"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

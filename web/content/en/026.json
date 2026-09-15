@@ -1,0 +1,213 @@
+{
+  "id": 26,
+  "week": 4,
+  "theme": "Câu hỏi ngược",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "What's the team like?",
+      "note": "Hỏi ngược: người, không hỏi lương trước.",
+      "vi": "Team như thế nào ạ?",
+      "example": {
+        "en": "What's the team like day to day?",
+        "vi": "Team ngày thường như thế nào ạ?"
+      }
+    },
+    {
+      "en": "How do you measure success?",
+      "note": "Hỏi kỳ vọng role. Nghe trưởng thành.",
+      "vi": "Bạn đo success thế nào?",
+      "example": {
+        "en": "How do you measure success in this role?",
+        "vi": "Role này đo success thế nào ạ?"
+      }
+    },
+    {
+      "en": "What does the first 90 days look like?",
+      "note": "Onboarding. Thực tế hơn What's the culture?",
+      "vi": "90 ngày đầu trông thế nào?",
+      "example": {
+        "en": "What does the first 90 days look like?",
+        "vi": "90 ngày đầu trông thế nào ạ?"
+      }
+    },
+    {
+      "en": "How do you handle on-call?",
+      "note": "IT: trực. Hỏi thẳng, lịch sự.",
+      "vi": "On-call bên mình thế nào?",
+      "example": {
+        "en": "How do you handle on-call and incidents?",
+        "vi": "On-call và incident bên mình thế nào ạ?"
+      }
+    },
+    {
+      "en": "What are you hoping this hire owns?",
+      "note": "Ownership. Tốt hơn What tech stack?",
+      "vi": "Bạn mong hire này own phần nào?",
+      "example": {
+        "en": "What are you hoping this hire owns in six months?",
+        "vi": "Sáu tháng nữa bạn mong người này own gì ạ?"
+      }
+    }
+  ],
+  "pattern": {
+    "title": "Ask back",
+    "pattern": "What's the team like? How do you measure success? First 90 days? On-call? What should this hire own?",
+    "explainVi": "Ba câu đủ. Chọn team / success / 90 ngày / on-call / ownership. Đừng hỏi What's the stack? trước.",
+    "drills": [
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Team như thế nào ạ?",
+        "answer": "What's the team like?"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Bạn đo success thế nào?",
+        "answer": "How do you measure success?"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: 90 ngày đầu trông thế nào?",
+        "answer": "What does the first 90 days look like?"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: On-call bên mình thế nào?",
+        "answer": "How do you handle on-call?"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Hỏi ngược — nghe câu trả lời có số",
+    "video": null,
+    "unseen": [
+      {
+        "speaker": "B",
+        "en": "Do you have questions for us?",
+        "vi": "Bạn có hỏi gì không?"
+      },
+      {
+        "speaker": "A",
+        "en": "What's the team like day to day?",
+        "vi": "Team ngày thường thế nào ạ?"
+      },
+      {
+        "speaker": "B",
+        "en": "Eight people, two time zones, pairing on Tuesdays.",
+        "vi": "Tám người, hai múi giờ, pair thứ Ba."
+      },
+      {
+        "speaker": "A",
+        "en": "How do you measure success in this role?",
+        "vi": "Role này đo success thế nào ạ?"
+      },
+      {
+        "speaker": "B",
+        "en": "Time-to-detect under 10 minutes, and two shipped bets a quarter.",
+        "vi": "Time-to-detect dưới 10 phút, và hai bet ship mỗi quý."
+      },
+      {
+        "speaker": "A",
+        "en": "What does the first 90 days look like?",
+        "vi": "90 ngày đầu trông thế nào ạ?"
+      },
+      {
+        "speaker": "B",
+        "en": "On-call shadow in month two.",
+        "vi": "Tháng hai thì shadow on-call."
+      },
+      {
+        "speaker": "A",
+        "en": "What are you hoping this hire owns in six months?",
+        "vi": "Sáu tháng nữa mong own gì ạ?"
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Team lớn cỡ nào / bao nhiêu múi giờ?",
+        "answer": "Eight people, two time zones"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Time-to-detect mục tiêu?",
+        "answer": "Under 10 minutes"
+      },
+      {
+        "type": "cloze",
+        "prompt": "On-call shadow vào tháng nào?",
+        "answer": "Month two / tháng hai"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "B",
+      "en": "Do you have questions for us?",
+      "vi": "Bạn có hỏi gì không?"
+    },
+    {
+      "speaker": "A",
+      "en": "What's the team like day to day?",
+      "vi": "Team ngày thường như thế nào ạ?"
+    },
+    {
+      "speaker": "B",
+      "en": "Small, lots of pairing. Six people.",
+      "vi": "Nhỏ, pair nhiều. Sáu người."
+    },
+    {
+      "speaker": "A",
+      "en": "How do you measure success in this role?",
+      "vi": "Role này đo success thế nào ạ?"
+    },
+    {
+      "speaker": "A",
+      "en": "What does the first 90 days look like?",
+      "vi": "90 ngày đầu trông thế nào ạ?"
+    },
+    {
+      "speaker": "A",
+      "en": "How do you handle on-call?",
+      "vi": "On-call bên mình thế nào ạ?"
+    },
+    {
+      "speaker": "B",
+      "en": "Week-long primary, then a week backup.",
+      "vi": "Một tuần primary, rồi một tuần backup."
+    },
+    {
+      "speaker": "A",
+      "en": "What are you hoping this hire owns in six months?",
+      "vi": "Sáu tháng nữa bạn mong người này own gì ạ?"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Team như thế nào ạ?",
+      "answer": "What's the team like?"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Bạn đo success thế nào?",
+      "answer": "How do you measure success?"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Ask three thoughtful questions at the end of an interview. Listen to the answers.",
+    "system": "You are a friendly teammate (or interviewer) at a software company. Speak natural meeting English. Keep each turn to 1–2 short sentences. You MAY use extra workplace English so the learner practices listening. Nudge the learner to use these phrases: What's the team like?; How do you measure success?; What does the first 90 days look like?; How do you handle on-call?; What are you hoping this hire owns?. If they ask you to slow down or repeat, do that. Ask one concrete detail about their real work (ticket, bug, PR, or project). Wait for the learner to reply. Scenario: Ask three thoughtful questions at the end of an interview. Listen to the answers.",
+    "allowedPhrases": [
+      "What's the team like?",
+      "How do you measure success?",
+      "What does the first 90 days look like?",
+      "How do you handle on-call?",
+      "What are you hoping this hire owns?"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

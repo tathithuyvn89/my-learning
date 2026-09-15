@@ -234,6 +234,90 @@ describe("loadLesson", () => {
       }
     }
   });
+
+  it("loads days 225–280 with valid HSK 5 schema", () => {
+    const weekOf = (n: number) => Math.ceil(n / 7);
+    const reviewDays = new Set([
+      230, 231, 237, 238, 244, 245, 251, 252, 258, 259, 265, 266, 272, 273,
+      274, 275, 276, 277, 278, 279, 280,
+    ]);
+    for (let n = 225; n <= 280; n++) {
+      const lesson = loadLesson(n);
+      expect(lesson.id).toBe(n);
+      expect(lesson.week).toBe(weekOf(n));
+      expect(lesson.hsk).toBe(5);
+      expect(lesson.vocab.length).toBeGreaterThanOrEqual(4);
+      expect(lesson.dialogue.length).toBeGreaterThanOrEqual(4);
+      expect(lesson.timer).toEqual({
+        review: 5,
+        vocab: 8,
+        grammar: 8,
+        talk: 5,
+        ai: 4,
+      });
+      expect(lesson.kind).toBe(reviewDays.has(n) ? "review" : "learn");
+    }
+    expect(loadLesson(225).theme).toBe("Sự nghiệp");
+    expect(loadLesson(232).theme).toBe("Xã hội");
+    expect(loadLesson(239).theme).toBe("Giáo dục");
+    expect(loadLesson(280).theme).toBe("AI tốt nghiệp");
+  });
+
+  it("locks week 40 to words known by week 39", () => {
+    const allowed = new Set(loadLesson(273).aiPrompt.allowedWords);
+    expect(allowed.size).toBeGreaterThanOrEqual(700);
+    for (let n = 274; n <= 280; n++) {
+      const lesson = loadLesson(n);
+      expect(lesson.kind).toBe("review");
+      expect(lesson.week).toBe(40);
+      expect(lesson.aiPrompt.allowedWords.length).toBe(allowed.size);
+      for (const item of lesson.vocab) {
+        expect(allowed.has(item.han)).toBe(true);
+      }
+    }
+  });
+
+  it("loads days 281–336 with valid HSK 6 schema", () => {
+    const weekOf = (n: number) => Math.ceil(n / 7);
+    const reviewDays = new Set([
+      286, 287, 293, 294, 300, 301, 307, 308, 314, 315, 321, 322, 328, 329,
+      330, 331, 332, 333, 334, 335, 336,
+    ]);
+    for (let n = 281; n <= 336; n++) {
+      const lesson = loadLesson(n);
+      expect(lesson.id).toBe(n);
+      expect(lesson.week).toBe(weekOf(n));
+      expect(lesson.hsk).toBe(6);
+      expect(lesson.vocab.length).toBeGreaterThanOrEqual(4);
+      expect(lesson.dialogue.length).toBeGreaterThanOrEqual(4);
+      expect(lesson.timer).toEqual({
+        review: 5,
+        vocab: 8,
+        grammar: 8,
+        talk: 5,
+        ai: 4,
+      });
+      expect(lesson.kind).toBe(reviewDays.has(n) ? "review" : "learn");
+    }
+    expect(loadLesson(281).theme).toBe("Công lý");
+    expect(loadLesson(288).theme).toBe("Triết học");
+    expect(loadLesson(295).theme).toBe("Ngoại giao");
+    expect(loadLesson(336).theme).toBe("AI tốt nghiệp");
+  });
+
+  it("locks week 48 to words known by week 47", () => {
+    const allowed = new Set(loadLesson(329).aiPrompt.allowedWords);
+    expect(allowed.size).toBeGreaterThanOrEqual(850);
+    for (let n = 330; n <= 336; n++) {
+      const lesson = loadLesson(n);
+      expect(lesson.kind).toBe("review");
+      expect(lesson.week).toBe(48);
+      expect(lesson.aiPrompt.allowedWords.length).toBe(allowed.size);
+      for (const item of lesson.vocab) {
+        expect(allowed.has(item.han)).toBe(true);
+      }
+    }
+  });
 });
 
 describe("parseLesson", () => {

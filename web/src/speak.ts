@@ -6,17 +6,82 @@ export function canSpeak(): boolean {
   );
 }
 
-export function speakZh(text: string): SpeechSynthesisUtterance | null {
+function utterance(
+  text: string,
+  lang: string,
+  rate: number,
+): SpeechSynthesisUtterance {
+  const utter = new SpeechSynthesisUtterance(text);
+  utter.lang = lang;
+  utter.rate = rate;
+  return utter;
+}
+
+export function speak(
+  text: string,
+  lang = "zh-CN",
+  rate = 1,
+): SpeechSynthesisUtterance | null {
   if (!canSpeak()) return null;
   try {
     window.speechSynthesis.cancel();
-    const utter = new SpeechSynthesisUtterance(text);
-    utter.lang = "zh-CN";
+    const utter = utterance(text, lang, rate);
     window.speechSynthesis.speak(utter);
     return utter;
   } catch {
-    // Trình duyệt không hỗ trợ: không crash.
     return null;
+  }
+}
+
+export function speakZh(text: string): SpeechSynthesisUtterance | null {
+  return speak(text, "zh-CN");
+}
+
+export function speakEn(text: string): SpeechSynthesisUtterance | null {
+  return speak(text, "en-US");
+}
+
+export function speakQueue(
+  texts: string[],
+  lang = "en-US",
+  rate = 1,
+  onDone?: () => void,
+): boolean {
+  if (!canSpeak() || texts.length === 0) {
+    onDone?.();
+    return false;
+  }
+  try {
+    window.speechSynthesis.cancel();
+    let index = 0;
+    const playNext = (): void => {
+      if (index >= texts.length) {
+        onDone?.();
+        return;
+      }
+      const utter = utterance(texts[index], lang, rate);
+      utter.addEventListener(
+        "end",
+        () => {
+          index += 1;
+          playNext();
+        },
+        { once: true },
+      );
+      utter.addEventListener(
+        "error",
+        () => {
+          onDone?.();
+        },
+        { once: true },
+      );
+      window.speechSynthesis.speak(utter);
+    };
+    playNext();
+    return true;
+  } catch {
+    onDone?.();
+    return false;
   }
 }
 
@@ -31,13 +96,20 @@ const SPEAKER_SVG = `
 
 let playingBtn: HTMLButtonElement | null = null;
 
-export function listenButton(han: string): HTMLButtonElement {
+export function listenButton(
+  text: string,
+  lang = "zh-CN",
+  rate = 1,
+): HTMLButtonElement {
   const btn = document.createElement("button");
   btn.type = "button";
   btn.className = "listen";
   btn.innerHTML = SPEAKER_SVG;
-  btn.setAttribute("aria-label", `Nghe ${han}`);
-  btn.title = "Nghe";
+  btn.setAttribute(
+    "aria-label",
+    rate < 1 ? `Nghe chậm ${text}` : `Nghe ${text}`,
+  );
+  btn.title = rate < 1 ? "Nghe chậm" : "Nghe";
   if (!canSpeak()) {
     btn.disabled = true;
     btn.title = "Trình duyệt không hỗ trợ phát âm";
@@ -47,7 +119,7 @@ export function listenButton(han: string): HTMLButtonElement {
     if (playingBtn && playingBtn !== btn) {
       playingBtn.classList.remove("is-playing");
     }
-    const utter = speakZh(han);
+    const utter = speak(text, lang, rate);
     if (!utter) return;
     playingBtn = btn;
     btn.classList.add("is-playing");

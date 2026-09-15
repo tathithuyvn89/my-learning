@@ -1,0 +1,218 @@
+{
+  "id": 11,
+  "week": 2,
+  "theme": "Bottleneck",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "This breaks when…",
+      "note": "Nói điều kiện vỡ. Có số thì tốt.",
+      "vi": "Cái này vỡ khi…",
+      "example": {
+        "en": "This breaks when writes hit one shard.",
+        "vi": "Vỡ khi write dồn một shard."
+      },
+      "slot": "This breaks when ___"
+    },
+    {
+      "en": "The bottleneck is…",
+      "note": "Chỉ bottleneck, đừng liệt kê 8 cái.",
+      "vi": "Bottleneck là…",
+      "example": {
+        "en": "The bottleneck is the redirect read path.",
+        "vi": "Bottleneck là đường đọc redirect."
+      },
+      "slot": "The bottleneck is ___"
+    },
+    {
+      "en": "I'd cache…",
+      "note": "Một lớp cache, nói key.",
+      "vi": "Mình sẽ cache…",
+      "example": {
+        "en": "I'd cache the short-to-long mapping.",
+        "vi": "Mình cache map short → long."
+      },
+      "slot": "I'd cache ___"
+    },
+    {
+      "en": "We'd shard by…",
+      "note": "Shard key. Đừng nói shard xong im.",
+      "vi": "Mình shard theo…",
+      "example": {
+        "en": "We'd shard by the short key hash.",
+        "vi": "Shard theo hash của short key."
+      },
+      "slot": "We'd shard by ___"
+    },
+    {
+      "en": "To scale reads…",
+      "note": "Đọc nhiều hơn ghi.",
+      "vi": "Để scale read…",
+      "example": {
+        "en": "To scale reads, add replicas and a cache.",
+        "vi": "Scale read: replica + cache."
+      },
+      "slot": "To scale reads ___"
+    }
+  ],
+  "pattern": {
+    "title": "Name the break point",
+    "pattern": "This breaks when… The bottleneck is… I'd cache… / We'd shard by…",
+    "explainVi": "Nói chỗ vỡ, bottleneck, một cách scale (cache hoặc shard). Có số thì tốt.",
+    "drills": [
+      {
+        "prompt": "Nói việc thật hôm nay: This breaks when ___",
+        "answer": "This breaks when…"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: The bottleneck is ___",
+        "answer": "The bottleneck is…"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: I'd cache ___",
+        "answer": "I'd cache…"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: We'd shard by ___",
+        "answer": "We'd shard by…"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Scale follow-up",
+    "video": null,
+    "unseen": [
+      {
+        "speaker": "B",
+        "en": "Ten times the QPS. What dies first?",
+        "vi": "QPS x10. Chết trước?"
+      },
+      {
+        "speaker": "A",
+        "en": "The bottleneck is the single primary on writes.",
+        "vi": "Bottleneck là một primary lúc write."
+      },
+      {
+        "speaker": "A",
+        "en": "This breaks when the cache misses stampede the store.",
+        "vi": "Vỡ khi cache miss dồn store."
+      },
+      {
+        "speaker": "A",
+        "en": "I'd cache aggressively with a short TTL.",
+        "vi": "Cache mạnh, TTL ngắn."
+      },
+      {
+        "speaker": "A",
+        "en": "We'd shard by user ID if writes grow.",
+        "vi": "Write tăng thì shard theo user ID."
+      },
+      {
+        "speaker": "B",
+        "en": "Reads?",
+        "vi": "Read?"
+      },
+      {
+        "speaker": "A",
+        "en": "To scale reads, read replicas plus the cache.",
+        "vi": "Scale read: replica + cache."
+      },
+      {
+        "speaker": "B",
+        "en": "Good enough.",
+        "vi": "Đủ."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Write chết ở đâu trước?",
+        "answer": "Single primary"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Cache miss gây gì?",
+        "answer": "Stampede store"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Shard write theo gì nếu tăng?",
+        "answer": "User ID"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "B",
+      "en": "This dies at 10x traffic. Where?",
+      "vi": "Traffic x10 thì chết. Ở đâu?"
+    },
+    {
+      "speaker": "A",
+      "en": "This breaks when writes hit one shard.",
+      "vi": "Vỡ khi write dồn một shard."
+    },
+    {
+      "speaker": "A",
+      "en": "The bottleneck is the redirect read path.",
+      "vi": "Bottleneck là đường đọc redirect."
+    },
+    {
+      "speaker": "A",
+      "en": "I'd cache the short-to-long mapping.",
+      "vi": "Mình cache map short → long."
+    },
+    {
+      "speaker": "A",
+      "en": "We'd shard by the short key hash.",
+      "vi": "Shard theo hash short key."
+    },
+    {
+      "speaker": "A",
+      "en": "To scale reads, add replicas and a cache.",
+      "vi": "Scale read: replica + cache."
+    },
+    {
+      "speaker": "B",
+      "en": "Hot key?",
+      "vi": "Hot key?"
+    },
+    {
+      "speaker": "A",
+      "en": "This breaks when one celebrity link is cached poorly. Replicate that key.",
+      "vi": "Vỡ khi một link hot cache kém. Replicate key đó."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: This breaks when ___",
+      "answer": "This breaks when…"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: The bottleneck is ___",
+      "answer": "The bottleneck is…"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Ask where the design breaks at 10x. They must name bottleneck plus cache or shard.",
+    "system": "You are a software interviewer at a foreign company. Speak natural interview English. Keep each turn to 1–2 short sentences. You MAY use extra interview English so the learner practices listening. Interrupt with a follow-up. Nudge the learner to use these phrases: This breaks when…; The bottleneck is…; I'd cache…; We'd shard by…; To scale reads…. Ask about their real experience. Wait for the learner to reply. Scenario: Ask where the design breaks at 10x. They must name bottleneck plus cache or shard.",
+    "allowedPhrases": [
+      "This breaks when…",
+      "The bottleneck is…",
+      "I'd cache…",
+      "We'd shard by…",
+      "To scale reads…"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

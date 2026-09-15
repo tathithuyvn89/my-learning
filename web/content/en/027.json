@@ -1,0 +1,222 @@
+{
+  "id": 27,
+  "week": 4,
+  "theme": "Ôn cụm phỏng vấn",
+  "kind": "review",
+  "phrases": [
+    {
+      "en": "I'm a software engineer",
+      "note": "60s intro: câu 1. Role, không đọc CV.",
+      "vi": "Mình là software engineer",
+      "example": {
+        "en": "I'm a software engineer focused on backend.",
+        "vi": "Mình là software engineer, thiên backend."
+      },
+      "slot": "I'm a software engineer focused on ___."
+    },
+    {
+      "en": "The problem was…",
+      "note": "Kể project: vấn đề user / business, không We used React.",
+      "vi": "Vấn đề là…",
+      "example": {
+        "en": "The problem was checkout failing at peak.",
+        "vi": "Vấn đề là checkout fail giờ cao điểm."
+      },
+      "slot": "The problem was ___"
+    },
+    {
+      "en": "The situation was…",
+      "note": "STAR S: bối cảnh 1 câu.",
+      "vi": "Tình huống là…",
+      "example": {
+        "en": "The situation was a Friday incident.",
+        "vi": "Tình huống là incident thứ Sáu."
+      },
+      "slot": "The situation was ___"
+    },
+    {
+      "en": "I'd start by reproducing it",
+      "note": "Debug speaking: bước 1. Không đoán linh tinh.",
+      "vi": "Mình sẽ bắt đầu bằng reproduce",
+      "example": {
+        "en": "I'd start by reproducing it locally.",
+        "vi": "Mình bắt đầu bằng reproduce local."
+      }
+    },
+    {
+      "en": "What's the team like?",
+      "note": "Hỏi ngược: người, không hỏi lương trước.",
+      "vi": "Team như thế nào ạ?",
+      "example": {
+        "en": "What's the team like day to day?",
+        "vi": "Team ngày thường như thế nào ạ?"
+      }
+    }
+  ],
+  "pattern": {
+    "title": "Intro + STAR",
+    "pattern": "60s intro, then one STAR",
+    "explainVi": "Nói lại intro và một STAR. Không thêm cụm.",
+    "drills": [
+      {
+        "prompt": "Nói việc thật hôm nay: I'm a software engineer focused on ___.",
+        "answer": "I'm a software engineer"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: The problem was ___",
+        "answer": "The problem was…"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: The situation was ___",
+        "answer": "The situation was…"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình sẽ bắt đầu bằng reproduce",
+        "answer": "I'd start by reproducing it"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Ôn intro + STAR",
+    "video": {
+      "title": "How successful software engineers answer Tell me about yourself",
+      "url": "https://www.youtube.com/watch?v=0PN_W-7fBRo",
+      "watchFrom": "0:00",
+      "watchTo": "2:00",
+      "whyVi": "Intro phỏng vấn engineer. Chép Present → Past → Future, rồi nói bản của bạn, không đọc CV mẫu."
+    },
+    "unseen": [
+      {
+        "speaker": "B",
+        "en": "Sixty seconds, then one STAR.",
+        "vi": "60 giây, rồi một STAR."
+      },
+      {
+        "speaker": "A",
+        "en": "I'm a software engineer. I currently work on routing.",
+        "vi": "Mình là engineer. Hiện làm routing."
+      },
+      {
+        "speaker": "A",
+        "en": "I enjoy debugging messy production issues. I'm looking for more ownership.",
+        "vi": "Thích debug prod. Tìm ownership hơn."
+      },
+      {
+        "speaker": "A",
+        "en": "Happy to dive into a project.",
+        "vi": "Sẵn sàng kể project."
+      },
+      {
+        "speaker": "A",
+        "en": "The situation was a Saturday search outage. My task was to restore it.",
+        "vi": "Outage search thứ Bảy. Task: khôi phục."
+      },
+      {
+        "speaker": "A",
+        "en": "I did a config revert. The result was 12 minutes.",
+        "vi": "Revert config. Kết quả 12 phút."
+      },
+      {
+        "speaker": "A",
+        "en": "What I learned is to canary DDL.",
+        "vi": "Học được là canary DDL."
+      },
+      {
+        "speaker": "B",
+        "en": "Present past future, then STAR. Good.",
+        "vi": "Hiện tại quá khứ tương lai, rồi STAR. Ổn."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Video: chép 1 ý từ phần đầu, rồi nói intro CỦA BẠN (không đọc mẫu).",
+        "answer": "Ghi 1 ý Present/Past/Future rồi nói bản thân"
+      },
+      {
+        "type": "cloze",
+        "prompt": "STAR này recover trong bao lâu?",
+        "answer": "12 minutes"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Bài học STAR?",
+        "answer": "Canary DDL"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "B",
+      "en": "Tell me about yourself, then one incident.",
+      "vi": "Giới thiệu, rồi một incident."
+    },
+    {
+      "speaker": "A",
+      "en": "I'm a software engineer. I currently work on payments.",
+      "vi": "Mình là engineer. Hiện làm payments."
+    },
+    {
+      "speaker": "A",
+      "en": "I'm looking for more ownership. Happy to dive into a project.",
+      "vi": "Mình tìm ownership hơn. Sẵn sàng kể project."
+    },
+    {
+      "speaker": "A",
+      "en": "The situation was a Friday incident. My task was to restore checkout.",
+      "vi": "Incident thứ Sáu. Task: khôi phục checkout."
+    },
+    {
+      "speaker": "A",
+      "en": "I did a rollback. The result was 20 minutes.",
+      "vi": "Mình rollback. Kết quả 20 phút."
+    },
+    {
+      "speaker": "A",
+      "en": "What I learned is to page earlier.",
+      "vi": "Học được là page sớm hơn."
+    },
+    {
+      "speaker": "B",
+      "en": "If I did it again — what would you change?",
+      "vi": "Nếu làm lại — bạn đổi gì?"
+    },
+    {
+      "speaker": "A",
+      "en": "If I did it again, I'd add a feature flag first.",
+      "vi": "Nếu làm lại, mình gắn feature flag trước."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: I'm a software engineer focused on ___.",
+      "answer": "I'm a software engineer"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: The problem was ___",
+      "answer": "The problem was…"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Rehearse YOUR intro plus one STAR. Interviewer only cues.",
+    "system": "You are a friendly teammate (or interviewer) at a software company. Speak natural meeting English. Keep each turn to 1–2 short sentences. You MAY use extra workplace English so the learner practices listening. Nudge the learner to use these phrases: I'm a software engineer; The problem was…; The situation was…; I'd start by reproducing it; What's the team like?. If they ask you to slow down or repeat, do that. Ask one concrete detail about their real work (ticket, bug, PR, or project). Wait for the learner to reply. Scenario: Rehearse YOUR intro plus one STAR. Interviewer only cues.",
+    "allowedPhrases": [
+      "I'm a software engineer",
+      "The problem was…",
+      "The situation was…",
+      "I'd start by reproducing it",
+      "What's the team like?"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

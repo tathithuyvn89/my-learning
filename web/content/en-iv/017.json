@@ -1,0 +1,217 @@
+{
+  "id": 17,
+  "week": 3,
+  "theme": "Why us / leave",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "I'm looking for…",
+      "note": "Why us: cụ thể, không growth.",
+      "vi": "Mình đang tìm…",
+      "example": {
+        "en": "I'm looking for more ownership on backend.",
+        "vi": "Mình tìm ownership backend nhiều hơn."
+      },
+      "slot": "I'm looking for ___"
+    },
+    {
+      "en": "This role…",
+      "note": "Gắn JD. Một điểm.",
+      "vi": "Role này…",
+      "example": {
+        "en": "This role owns payments, which matches what I do.",
+        "vi": "Role này own payments, khớp việc mình làm."
+      },
+      "slot": "This role ___"
+    },
+    {
+      "en": "Why I'm leaving is…",
+      "note": "Không chê sếp. Hướng tới.",
+      "vi": "Lý do mình đi là…",
+      "example": {
+        "en": "Why I'm leaving is I've hit the ceiling on scope.",
+        "vi": "Mình đi vì scope đã chạm trần."
+      },
+      "slot": "Why I'm leaving is ___"
+    },
+    {
+      "en": "What I want next is…",
+      "note": "Mục tiêu 12–18 tháng.",
+      "vi": "Mình muốn tiếp theo là…",
+      "example": {
+        "en": "What I want next is to own a service end to end.",
+        "vi": "Tiếp theo mình muốn own một service end to end."
+      },
+      "slot": "What I want next is ___"
+    },
+    {
+      "en": "That's why I applied",
+      "note": "Chốt. Một hơi.",
+      "vi": "Vì vậy mình apply",
+      "example": {
+        "en": "That's why I applied to this team.",
+        "vi": "Vì vậy mình apply team này."
+      }
+    }
+  ],
+  "pattern": {
+    "title": "Toward, not away",
+    "pattern": "I'm looking for… This role… Why I'm leaving is… That's why I applied",
+    "explainVi": "Why us / why leave: hướng tới (ownership, scope), gắn JD, không chê sếp. Chốt that's why I applied.",
+    "drills": [
+      {
+        "prompt": "Nói việc thật hôm nay: I'm looking for ___",
+        "answer": "I'm looking for…"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: This role ___",
+        "answer": "This role…"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: Why I'm leaving is ___",
+        "answer": "Why I'm leaving is…"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: What I want next is ___",
+        "answer": "What I want next is…"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Hiring manager hỏi why us",
+    "video": null,
+    "unseen": [
+      {
+        "speaker": "B",
+        "en": "Why us over the other offer?",
+        "vi": "Sao mình hơn offer kia?"
+      },
+      {
+        "speaker": "A",
+        "en": "I'm looking for a smaller team where I can own a slice.",
+        "vi": "Tìm team nhỏ để own một slice."
+      },
+      {
+        "speaker": "A",
+        "en": "This role has on-call on a product I already understand.",
+        "vi": "Role này on-call product mình đã hiểu."
+      },
+      {
+        "speaker": "B",
+        "en": "Why leave a stable job?",
+        "vi": "Sao bỏ việc ổn?"
+      },
+      {
+        "speaker": "A",
+        "en": "Why I'm leaving is I've hit the ceiling on scope.",
+        "vi": "Đi vì scope chạm trần."
+      },
+      {
+        "speaker": "A",
+        "en": "What I want next is more production ownership.",
+        "vi": "Muốn ownership prod nhiều hơn."
+      },
+      {
+        "speaker": "A",
+        "en": "That's why I applied.",
+        "vi": "Vì vậy mình apply."
+      },
+      {
+        "speaker": "B",
+        "en": "Good. Skip culture-fit poetry.",
+        "vi": "Ổn. Bỏ thơ culture-fit."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Lý do đi là gì, không phải người?",
+        "answer": "Ceiling on scope"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Tìm team kiểu gì?",
+        "answer": "Smaller / own a slice"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Câu chốt?",
+        "answer": "That's why I applied"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "B",
+      "en": "Why this company, and why leave?",
+      "vi": "Sao công ty này, sao đi?"
+    },
+    {
+      "speaker": "A",
+      "en": "I'm looking for more ownership on backend.",
+      "vi": "Mình tìm ownership backend nhiều hơn."
+    },
+    {
+      "speaker": "A",
+      "en": "This role owns payments, which matches what I do.",
+      "vi": "Role này own payments, khớp việc mình."
+    },
+    {
+      "speaker": "A",
+      "en": "Why I'm leaving is I've hit the ceiling on scope.",
+      "vi": "Đi vì scope đã chạm trần."
+    },
+    {
+      "speaker": "A",
+      "en": "What I want next is to own a service end to end.",
+      "vi": "Tiếp theo muốn own một service end to end."
+    },
+    {
+      "speaker": "A",
+      "en": "That's why I applied to this team.",
+      "vi": "Vì vậy apply team này."
+    },
+    {
+      "speaker": "B",
+      "en": "Anything about your manager?",
+      "vi": "Còn sếp cũ?"
+    },
+    {
+      "speaker": "A",
+      "en": "No complaints. Why I'm leaving is scope, not people.",
+      "vi": "Không than. Đi vì scope, không vì người."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: I'm looking for ___",
+      "answer": "I'm looking for…"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: This role ___",
+      "answer": "This role…"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Why this role and why leave — using the learner's real situation. Stop them if they trash a manager.",
+    "system": "You are a software interviewer at a foreign company. Speak natural interview English. Keep each turn to 1–2 short sentences. You MAY use extra interview English so the learner practices listening. Interrupt with a follow-up. Nudge the learner to use these phrases: I'm looking for…; This role…; Why I'm leaving is…; What I want next is…; That's why I applied. Ask about their real experience. Wait for the learner to reply. Scenario: Why this role and why leave — using the learner's real situation. Stop them if they trash a manager.",
+    "allowedPhrases": [
+      "I'm looking for…",
+      "This role…",
+      "Why I'm leaving is…",
+      "What I want next is…",
+      "That's why I applied"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

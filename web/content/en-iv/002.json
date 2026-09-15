@@ -1,0 +1,214 @@
+{
+  "id": 2,
+  "week": 1,
+  "theme": "Think out loud",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "Let me think out loud",
+      "note": "Báo sẽ nghĩ to. Đừng gõ im 3 phút.",
+      "vi": "Mình nghĩ to nhé",
+      "example": {
+        "en": "Let me think out loud for a bit.",
+        "vi": "Mình nghĩ to một chút."
+      }
+    },
+    {
+      "en": "I'll start with a brute force",
+      "note": "Luôn có phương án 1. Dù xấu.",
+      "vi": "Mình bắt đầu bằng brute force",
+      "example": {
+        "en": "I'll start with a brute force, then optimize.",
+        "vi": "Mình brute force trước, rồi optimize."
+      }
+    },
+    {
+      "en": "Then I'd optimize",
+      "note": "Bước 2 sau brute force.",
+      "vi": "Rồi mình optimize",
+      "example": {
+        "en": "Then I'd optimize with a hash map.",
+        "vi": "Rồi optimize bằng hash map."
+      }
+    },
+    {
+      "en": "First I'd…",
+      "note": "Bước nhỏ đầu. Một câu.",
+      "vi": "Đầu tiên mình sẽ…",
+      "example": {
+        "en": "First I'd scan once and count.",
+        "vi": "Đầu tiên mình scan một lượt rồi đếm."
+      },
+      "slot": "First I'd ___"
+    },
+    {
+      "en": "Does that approach make sense?",
+      "note": "Check với interviewer trước khi gõ nhiều.",
+      "vi": "Hướng đó ổn chứ ạ?",
+      "example": {
+        "en": "Does that approach make sense before I code?",
+        "vi": "Hướng này ổn trước khi mình code chứ ạ?"
+      }
+    }
+  ],
+  "pattern": {
+    "title": "Brute force then optimize",
+    "pattern": "Let me think out loud → I'll start with a brute force → Then I'd optimize → Does that approach make sense?",
+    "explainVi": "Nói hướng trước khi gõ: brute force, rồi optimize, hỏi interviewer có ổn không.",
+    "drills": [
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình nghĩ to nhé",
+        "answer": "Let me think out loud"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình bắt đầu bằng brute force",
+        "answer": "I'll start with a brute force"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Rồi mình optimize",
+        "answer": "Then I'd optimize"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: First I'd ___",
+        "answer": "First I'd…"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Interviewer cắt khi bạn nghĩ to",
+    "video": null,
+    "unseen": [
+      {
+        "speaker": "A",
+        "en": "Let me think out loud. Nested loops first.",
+        "vi": "Mình nghĩ to. Nested loop trước."
+      },
+      {
+        "speaker": "B",
+        "en": "That's fine. What's the next step?",
+        "vi": "Được. Bước tiếp?"
+      },
+      {
+        "speaker": "A",
+        "en": "I'll start with a brute force, then I'd optimize.",
+        "vi": "Brute force rồi optimize."
+      },
+      {
+        "speaker": "B",
+        "en": "How?",
+        "vi": "Bằng gì?"
+      },
+      {
+        "speaker": "A",
+        "en": "Then I'd optimize with a set of seen values.",
+        "vi": "Optimize bằng set các giá trị đã thấy."
+      },
+      {
+        "speaker": "A",
+        "en": "First I'd walk left to right.",
+        "vi": "Đầu tiên đi trái sang phải."
+      },
+      {
+        "speaker": "B",
+        "en": "Does that approach make sense on duplicates?",
+        "vi": "Hướng đó ổn với trùng không?"
+      },
+      {
+        "speaker": "A",
+        "en": "I'd store counts, not just presence. Does that approach make sense?",
+        "vi": "Mình lưu count, không chỉ có/không. Ổn chứ ạ?"
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Phương án 2 dùng gì?",
+        "answer": "Set / hash của giá trị đã thấy, rồi counts khi trùng"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Interviewer cắt ở điểm nào?",
+        "answer": "Duplicates / trùng"
+      },
+      {
+        "type": "repair",
+        "prompt": "Nếu miss follow-up, bạn nói gì?",
+        "answer": "Could you repeat that? / Let me think out loud"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "en": "Let me think out loud for a bit.",
+      "vi": "Mình nghĩ to một chút."
+    },
+    {
+      "speaker": "A",
+      "en": "I'll start with a brute force: check every pair.",
+      "vi": "Brute force: kiểm mọi cặp."
+    },
+    {
+      "speaker": "B",
+      "en": "Okay — then what?",
+      "vi": "Ok — rồi sao?"
+    },
+    {
+      "speaker": "A",
+      "en": "Then I'd optimize with a hash map of value to index.",
+      "vi": "Rồi optimize bằng map value → index."
+    },
+    {
+      "speaker": "A",
+      "en": "First I'd scan once and store what I need.",
+      "vi": "Đầu tiên scan một lượt, lưu cái cần."
+    },
+    {
+      "speaker": "A",
+      "en": "Does that approach make sense before I code?",
+      "vi": "Hướng này ổn trước khi code chứ ạ?"
+    },
+    {
+      "speaker": "B",
+      "en": "Yes. Watch duplicates.",
+      "vi": "Ừ. Coi trùng."
+    },
+    {
+      "speaker": "A",
+      "en": "Got it — I'll skip using the same index twice.",
+      "vi": "Rõ — không dùng cùng index hai lần."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Mình nghĩ to nhé",
+      "answer": "Let me think out loud"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Mình bắt đầu bằng brute force",
+      "answer": "I'll start with a brute force"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "You explain brute force then optimize on a problem you actually know. The interviewer interrupts once.",
+    "system": "You are a software interviewer at a foreign company. Speak natural interview English. Keep each turn to 1–2 short sentences. You MAY use extra interview English so the learner practices listening. Interrupt with a follow-up. Nudge the learner to use these phrases: Let me think out loud; I'll start with a brute force; Then I'd optimize; First I'd…; Does that approach make sense?. Ask about their real experience. Wait for the learner to reply. Scenario: You explain brute force then optimize on a problem you actually know. The interviewer interrupts once.",
+    "allowedPhrases": [
+      "Let me think out loud",
+      "I'll start with a brute force",
+      "Then I'd optimize",
+      "First I'd…",
+      "Does that approach make sense?"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

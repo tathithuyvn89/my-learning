@@ -1,0 +1,215 @@
+{
+  "id": 4,
+  "week": 1,
+  "theme": "Hỏi lại ticket",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "Just to confirm",
+      "note": "Mở câu hỏi lại ticket, không nghe như cãi.",
+      "vi": "Chỉ để xác nhận",
+      "example": {
+        "en": "Just to confirm: we ship Friday, right?",
+        "vi": "Xác nhận lại: mình ship thứ Sáu chứ?"
+      }
+    },
+    {
+      "en": "Do you mean…?",
+      "note": "Hỏi lại ý, không hỏi What? cộc lốc.",
+      "vi": "Ý bạn là…?",
+      "example": {
+        "en": "Do you mean the old endpoint?",
+        "vi": "Ý bạn là endpoint cũ à?"
+      },
+      "slot": "Do you mean ___?"
+    },
+    {
+      "en": "What's the expected behavior?",
+      "note": "Hỏi AC. Dùng khi ticket mơ hồ.",
+      "vi": "Hành vi kỳ vọng là gì?",
+      "example": {
+        "en": "What's the expected behavior on empty search?",
+        "vi": "Search rỗng thì kỳ vọng thế nào?"
+      }
+    },
+    {
+      "en": "So the next step is…",
+      "note": "Chốt hiểu xong. Lặp lại bước tiếp.",
+      "vi": "Vậy bước tiếp theo là…",
+      "example": {
+        "en": "So the next step is to update the copy.",
+        "vi": "Vậy bước tiếp là sửa copy."
+      },
+      "slot": "So the next step is ___"
+    },
+    {
+      "en": "Got it, thanks",
+      "note": "Chốt đã hiểu. Kết thread.",
+      "vi": "Rõ rồi, cảm ơn",
+      "example": {
+        "en": "Got it, thanks. I'll update the ticket.",
+        "vi": "Rõ rồi, cảm ơn. Mình cập nhật ticket."
+      }
+    }
+  ],
+  "pattern": {
+    "title": "Confirm + clarify",
+    "pattern": "Just to confirm… / Do you mean…? / What's the expected behavior? So the next step is…",
+    "explainVi": "Ticket mơ hồ: xác nhận, hỏi lại ý, hỏi expected, rồi chốt next step. Đừng bắt đầu code khi chưa rõ.",
+    "drills": [
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Chỉ để xác nhận",
+        "answer": "Just to confirm"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: Do you mean ___?",
+        "answer": "Do you mean…?"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Hành vi kỳ vọng là gì?",
+        "answer": "What's the expected behavior?"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: So the next step is ___",
+        "answer": "So the next step is…"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Ticket mơ hồ, PM nói nhanh",
+    "video": null,
+    "unseen": [
+      {
+        "speaker": "B",
+        "en": "Just to confirm we ship the empty state Friday, not Thursday.",
+        "vi": "Xác nhận mình ship empty state thứ Sáu, không phải thứ Năm."
+      },
+      {
+        "speaker": "A",
+        "en": "Do you mean production Friday or staging Friday?",
+        "vi": "Ý bạn là prod thứ Sáu hay staging thứ Sáu?"
+      },
+      {
+        "speaker": "B",
+        "en": "Staging Thursday. Production Friday after QA sign-off.",
+        "vi": "Staging thứ Năm. Prod thứ Sáu sau QA ký."
+      },
+      {
+        "speaker": "A",
+        "en": "What's the expected behavior on zero results?",
+        "vi": "Zero results thì kỳ vọng gì?"
+      },
+      {
+        "speaker": "B",
+        "en": "A hint plus a search-again button. No toast.",
+        "vi": "Một hint và nút search lại. Không toast."
+      },
+      {
+        "speaker": "A",
+        "en": "So the next step is to update the copy in the ticket.",
+        "vi": "Vậy bước tiếp là cập nhật copy trong ticket."
+      },
+      {
+        "speaker": "B",
+        "en": "Yep. Got it, thanks.",
+        "vi": "Ừ. Rõ, cảm ơn."
+      },
+      {
+        "speaker": "A",
+        "en": "I'll post the AC in the thread.",
+        "vi": "Mình post AC trong thread."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Prod ship ngày nào?",
+        "answer": "Thứ Sáu, sau QA sign-off"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Staging ship ngày nào?",
+        "answer": "Thứ Năm"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Zero results thì KHÔNG được hiện gì?",
+        "answer": "Toast"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "en": "Just to confirm: this is only for empty search, right?",
+      "vi": "Xác nhận: chỉ cho search rỗng thôi chứ?"
+    },
+    {
+      "speaker": "B",
+      "en": "Do you mean the search box on home or on orders?",
+      "vi": "Ý bạn là ô search trang chủ hay trang orders?"
+    },
+    {
+      "speaker": "A",
+      "en": "Home. What's the expected behavior?",
+      "vi": "Trang chủ. Kỳ vọng là gì?"
+    },
+    {
+      "speaker": "B",
+      "en": "Show a hint, don't crash. Copy from design ticket 441.",
+      "vi": "Hiện hint, đừng crash. Copy từ ticket design 441."
+    },
+    {
+      "speaker": "A",
+      "en": "So the next step is to add the empty state.",
+      "vi": "Vậy bước tiếp là thêm empty state."
+    },
+    {
+      "speaker": "B",
+      "en": "Yes — and skip the spinner.",
+      "vi": "Ừ — và bỏ spinner."
+    },
+    {
+      "speaker": "A",
+      "en": "Got it, thanks. I'll update the ticket.",
+      "vi": "Rõ, cảm ơn. Mình cập nhật ticket."
+    },
+    {
+      "speaker": "B",
+      "en": "Ping me if 441 is stale.",
+      "vi": "Ticket 441 cũ thì ping mình."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Chỉ để xác nhận",
+      "answer": "Just to confirm"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: Do you mean ___?",
+      "answer": "Do you mean…?"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Clarify a vague ticket with the PM before you code. Use a real ticket if the learner has one.",
+    "system": "You are a friendly teammate (or interviewer) at a software company. Speak natural meeting English. Keep each turn to 1–2 short sentences. You MAY use extra workplace English so the learner practices listening. Nudge the learner to use these phrases: Just to confirm; Do you mean…?; What's the expected behavior?; So the next step is…; Got it, thanks. If they ask you to slow down or repeat, do that. Ask one concrete detail about their real work (ticket, bug, PR, or project). Wait for the learner to reply. Scenario: Clarify a vague ticket with the PM before you code. Use a real ticket if the learner has one.",
+    "allowedPhrases": [
+      "Just to confirm",
+      "Do you mean…?",
+      "What's the expected behavior?",
+      "So the next step is…",
+      "Got it, thanks"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

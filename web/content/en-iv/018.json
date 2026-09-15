@@ -1,0 +1,215 @@
+{
+  "id": 18,
+  "week": 3,
+  "theme": "Gap stack",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "I haven't used X in prod",
+      "note": "Gap stack. Điền tool thật.",
+      "vi": "Mình chưa dùng X trên prod",
+      "example": {
+        "en": "I haven't used Kubernetes in prod.",
+        "vi": "Mình chưa dùng Kubernetes trên prod."
+      },
+      "slot": "I haven't used ___ in prod."
+    },
+    {
+      "en": "I've used something similar",
+      "note": "Cầu nối. Đừng fake.",
+      "vi": "Mình đã dùng cái tương tự",
+      "example": {
+        "en": "I've used something similar — Docker Compose and ECS.",
+        "vi": "Mình dùng cái tương tự — Compose và ECS."
+      }
+    },
+    {
+      "en": "I'd ramp by…",
+      "note": "Kế hoạch 30 ngày. Cụ thể.",
+      "vi": "Mình ramp bằng…",
+      "example": {
+        "en": "I'd ramp by pairing on on-call the first month.",
+        "vi": "Ramp: pair on-call tháng đầu."
+      },
+      "slot": "I'd ramp by ___"
+    },
+    {
+      "en": "Give me a week on the docs",
+      "note": "Xin thời gian học, có hạn.",
+      "vi": "Cho mình một tuần với docs",
+      "example": {
+        "en": "Give me a week on the docs and I'll be useful.",
+        "vi": "Một tuần với docs là mình hữu ích."
+      }
+    },
+    {
+      "en": "I'm honest about the gap",
+      "note": "Chốt. Interviewer ghét bluff.",
+      "vi": "Mình nói thẳng gap",
+      "example": {
+        "en": "I'm honest about the gap — I haven't run k8s.",
+        "vi": "Nói thẳng — mình chưa chạy k8s."
+      }
+    }
+  ],
+  "pattern": {
+    "title": "Name the gap and the ramp",
+    "pattern": "I haven't used X in prod → I've used something similar → I'd ramp by… / Give me a week on the docs",
+    "explainVi": "Gap stack: nói chưa dùng prod, cầu nối tool tương tự, kế hoạch ramp. Không bluff Kafka/k8s.",
+    "drills": [
+      {
+        "prompt": "Nói việc thật hôm nay: I haven't used ___ in prod.",
+        "answer": "I haven't used X in prod"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình đã dùng cái tương tự",
+        "answer": "I've used something similar"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: I'd ramp by ___",
+        "answer": "I'd ramp by…"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Cho mình một tuần với docs",
+        "answer": "Give me a week on the docs"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Hỏi stack chưa dùng",
+    "video": null,
+    "unseen": [
+      {
+        "speaker": "B",
+        "en": "Kafka in production — yes or no?",
+        "vi": "Kafka trên prod — có hay không?"
+      },
+      {
+        "speaker": "A",
+        "en": "I haven't used Kafka in prod.",
+        "vi": "Mình chưa dùng Kafka trên prod."
+      },
+      {
+        "speaker": "A",
+        "en": "I've used something similar — SQS and a worker.",
+        "vi": "Cái tương tự — SQS và worker."
+      },
+      {
+        "speaker": "B",
+        "en": "How fast can you ramp?",
+        "vi": "Ramp nhanh cỡ nào?"
+      },
+      {
+        "speaker": "A",
+        "en": "I'd ramp by reading the consumer lag dashboard with a teammate.",
+        "vi": "Ramp: đọc dashboard consumer lag với teammate."
+      },
+      {
+        "speaker": "A",
+        "en": "Give me a week on the docs.",
+        "vi": "Cho mình một tuần với docs."
+      },
+      {
+        "speaker": "A",
+        "en": "I'm honest about the gap.",
+        "vi": "Mình nói thẳng gap."
+      },
+      {
+        "speaker": "B",
+        "en": "That's better than a fake cluster story.",
+        "vi": "Tốt hơn chuyện cluster giả."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Learner đã chạy Kafka prod chưa?",
+        "answer": "Chưa"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Cầu nối tool nào?",
+        "answer": "SQS / worker"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Xin bao lâu với docs?",
+        "answer": "A week / một tuần"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "B",
+      "en": "We run Kubernetes. Have you?",
+      "vi": "Bên mình k8s. Bạn đã chạy chưa?"
+    },
+    {
+      "speaker": "A",
+      "en": "I haven't used Kubernetes in prod.",
+      "vi": "Mình chưa dùng Kubernetes trên prod."
+    },
+    {
+      "speaker": "A",
+      "en": "I've used something similar — Docker Compose and ECS.",
+      "vi": "Mình dùng cái tương tự — Compose và ECS."
+    },
+    {
+      "speaker": "A",
+      "en": "I'd ramp by pairing on on-call the first month.",
+      "vi": "Ramp: pair on-call tháng đầu."
+    },
+    {
+      "speaker": "A",
+      "en": "Give me a week on the docs and I'll be useful.",
+      "vi": "Một tuần với docs là mình hữu ích."
+    },
+    {
+      "speaker": "A",
+      "en": "I'm honest about the gap — I haven't run k8s.",
+      "vi": "Nói thẳng — mình chưa chạy k8s."
+    },
+    {
+      "speaker": "B",
+      "en": "Will you be lost in week one?",
+      "vi": "Tuần 1 có lạc không?"
+    },
+    {
+      "speaker": "A",
+      "en": "On YAML, maybe. I'd ramp by pairing, not by pretending.",
+      "vi": "YAML thì có. Ramp bằng pair, không giả vờ."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: I haven't used ___ in prod.",
+      "answer": "I haven't used X in prod"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Mình đã dùng cái tương tự",
+      "answer": "I've used something similar"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Ask about a tool on the JD the learner has not used in prod. Demand a ramp plan, not a bluff.",
+    "system": "You are a software interviewer at a foreign company. Speak natural interview English. Keep each turn to 1–2 short sentences. You MAY use extra interview English so the learner practices listening. Interrupt with a follow-up. Nudge the learner to use these phrases: I haven't used X in prod; I've used something similar; I'd ramp by…; Give me a week on the docs; I'm honest about the gap. Ask about their real experience. Wait for the learner to reply. Scenario: Ask about a tool on the JD the learner has not used in prod. Demand a ramp plan, not a bluff.",
+    "allowedPhrases": [
+      "I haven't used X in prod",
+      "I've used something similar",
+      "I'd ramp by…",
+      "Give me a week on the docs",
+      "I'm honest about the gap"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

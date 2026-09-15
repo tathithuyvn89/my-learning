@@ -1,0 +1,223 @@
+{
+  "id": 20,
+  "week": 3,
+  "theme": "Ôn tuần 3",
+  "kind": "review",
+  "phrases": [
+    {
+      "en": "I disagreed",
+      "note": "Conflict: nói thẳng đã không đồng ý.",
+      "vi": "Mình không đồng ý",
+      "example": {
+        "en": "I disagreed with shipping without a flag.",
+        "vi": "Mình không đồng ý ship khi chưa có flag."
+      }
+    },
+    {
+      "en": "What I missed was…",
+      "note": "Failure: miss của mình, không họ.",
+      "vi": "Mình miss…",
+      "example": {
+        "en": "What I missed was the null path in retry.",
+        "vi": "Mình miss nhánh null lúc retry."
+      },
+      "slot": "What I missed was ___"
+    },
+    {
+      "en": "I'm looking for…",
+      "note": "Why us: cụ thể, không growth.",
+      "vi": "Mình đang tìm…",
+      "example": {
+        "en": "I'm looking for more ownership on backend.",
+        "vi": "Mình tìm ownership backend nhiều hơn."
+      },
+      "slot": "I'm looking for ___"
+    },
+    {
+      "en": "I haven't used X in prod",
+      "note": "Gap stack. Điền tool thật.",
+      "vi": "Mình chưa dùng X trên prod",
+      "example": {
+        "en": "I haven't used Kubernetes in prod.",
+        "vi": "Mình chưa dùng Kubernetes trên prod."
+      },
+      "slot": "I haven't used ___ in prod."
+    },
+    {
+      "en": "I'm targeting…",
+      "note": "Band lương. Số của bạn, đừng bịa trên app.",
+      "vi": "Mình targeting…",
+      "example": {
+        "en": "I'm targeting 2.4 to 2.8 billion VND total.",
+        "vi": "Mình targeting 2.4–2.8 tỷ total."
+      },
+      "slot": "I'm targeting ___."
+    }
+  ],
+  "pattern": {
+    "title": "Conflict + why + lương",
+    "pattern": "I disagreed… I'm looking for… I'm targeting…",
+    "explainVi": "Ôn tuần 3: một STAR conflict, why us, band lương. Không thêm cụm.",
+    "drills": [
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình không đồng ý",
+        "answer": "I disagreed"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: What I missed was ___",
+        "answer": "What I missed was…"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: I'm looking for ___",
+        "answer": "I'm looking for…"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: I haven't used ___ in prod.",
+        "answer": "I haven't used X in prod"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Behavioral + lương",
+    "video": {
+      "title": "How successful software engineers answer Tell me about yourself",
+      "url": "https://www.youtube.com/watch?v=0PN_W-7fBRo",
+      "watchFrom": "0:00",
+      "watchTo": "2:00",
+      "whyVi": "Intro/behavioral. Chép Present → Past → Future rồi nói bản của bạn, không đọc CV mẫu."
+    },
+    "unseen": [
+      {
+        "speaker": "A",
+        "en": "I disagreed. I pushed back because we had no rollback.",
+        "vi": "Không đồng ý. Push back vì chưa rollback."
+      },
+      {
+        "speaker": "A",
+        "en": "What I missed later was a test. I owned the miss.",
+        "vi": "Sau đó miss test. Mình nhận."
+      },
+      {
+        "speaker": "A",
+        "en": "I'm looking for this role's scope.",
+        "vi": "Tìm scope của role này."
+      },
+      {
+        "speaker": "A",
+        "en": "I haven't used Kubernetes in prod. I'd ramp by pairing.",
+        "vi": "Chưa k8s prod. Ramp bằng pair."
+      },
+      {
+        "speaker": "B",
+        "en": "Numbers on comp?",
+        "vi": "Số lương?"
+      },
+      {
+        "speaker": "A",
+        "en": "I'm targeting total comp, not just base.",
+        "vi": "Targeting total, không chỉ base."
+      },
+      {
+        "speaker": "A",
+        "en": "What's the range for this level?",
+        "vi": "Range level này?"
+      },
+      {
+        "speaker": "A",
+        "en": "Notice period is 30 days.",
+        "vi": "Notice 30 ngày."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Video: intro ngắn hay đọc CV?",
+        "answer": "Ngắn / present-past-future (tuỳ clip)"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Gap stack nêu tool nào?",
+        "answer": "Kubernetes"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Notice?",
+        "answer": "30 days"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "en": "I disagreed with a Friday ship. I stated the risk.",
+      "vi": "Không đồng ý ship thứ Sáu. Nêu risk."
+    },
+    {
+      "speaker": "A",
+      "en": "We aligned on Monday. In the end we delayed one day.",
+      "vi": "Thống nhất thứ Hai. Delay một ngày."
+    },
+    {
+      "speaker": "B",
+      "en": "Why us?",
+      "vi": "Sao bên mình?"
+    },
+    {
+      "speaker": "A",
+      "en": "I'm looking for more ownership. That's why I applied.",
+      "vi": "Tìm ownership. Vì vậy apply."
+    },
+    {
+      "speaker": "B",
+      "en": "Comp?",
+      "vi": "Lương?"
+    },
+    {
+      "speaker": "A",
+      "en": "I'm targeting a range I already thought about. What's the range for this level?",
+      "vi": "Mình có band. Range level này sao ạ?"
+    },
+    {
+      "speaker": "A",
+      "en": "Notice period is 30 days. I'm flexible on title.",
+      "vi": "Notice 30 ngày. Title linh hoạt."
+    },
+    {
+      "speaker": "B",
+      "en": "Thanks.",
+      "vi": "Cảm ơn."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Mình không đồng ý",
+      "answer": "I disagreed"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: What I missed was ___",
+      "answer": "What I missed was…"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Recap week 3: one conflict STAR, why this role, honest stack gap, then comp. Use the learner's real stories.",
+    "system": "You are a software interviewer at a foreign company. Speak natural interview English. Keep each turn to 1–2 short sentences. You MAY use extra interview English so the learner practices listening. Interrupt with a follow-up. Nudge the learner to use these phrases: I disagreed; What I missed was…; I'm looking for…; I haven't used X in prod; I'm targeting…. Ask about their real experience. Wait for the learner to reply. Scenario: Recap week 3: one conflict STAR, why this role, honest stack gap, then comp. Use the learner's real stories.",
+    "allowedPhrases": [
+      "I disagreed",
+      "What I missed was…",
+      "I'm looking for…",
+      "I haven't used X in prod",
+      "I'm targeting…"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

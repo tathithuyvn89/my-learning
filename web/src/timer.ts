@@ -1,11 +1,11 @@
 export type BlockId = "review" | "vocab" | "grammar" | "talk" | "ai";
 
 export type TimerSpec = {
-  review: 5;
-  vocab: 8;
-  grammar: 8;
-  talk: 5;
-  ai: 4;
+  review: number;
+  vocab: number;
+  grammar: number;
+  talk: number;
+  ai: number;
 };
 
 export type SessionBlock = {
@@ -31,37 +31,48 @@ const HINTS: Record<BlockId, string> = {
   ai: "Hết 30 phút.",
 };
 
-export function createSessionTimer(spec: TimerSpec): SessionTimer {
+export const EN_TIMER_HINTS: Record<BlockId, string> = {
+  review: "Hết khối ôn. Chuyển sang tab Cụm nói.",
+  vocab: "Hết khối cụm nói. Chuyển sang tab Nghe.",
+  grammar: "Hết khối nghe. Chuyển sang tab Hội thoại.",
+  talk: "Hết khối hội thoại. Chuyển sang tab Prompt AI.",
+  ai: "Hết 30 phút.",
+};
+
+export function createSessionTimer(
+  spec: TimerSpec,
+  hints: Record<BlockId, string> = HINTS,
+): SessionTimer {
   const blocks: SessionBlock[] = [
     {
       id: "review",
       minutes: spec.review,
       seconds: spec.review * 60,
-      hintOnEnd: HINTS.review,
+      hintOnEnd: hints.review,
     },
     {
       id: "vocab",
       minutes: spec.vocab,
       seconds: spec.vocab * 60,
-      hintOnEnd: HINTS.vocab,
+      hintOnEnd: hints.vocab,
     },
     {
       id: "grammar",
       minutes: spec.grammar,
       seconds: spec.grammar * 60,
-      hintOnEnd: HINTS.grammar,
+      hintOnEnd: hints.grammar,
     },
     {
       id: "talk",
       minutes: spec.talk,
       seconds: spec.talk * 60,
-      hintOnEnd: HINTS.talk,
+      hintOnEnd: hints.talk,
     },
     {
       id: "ai",
       minutes: spec.ai,
       seconds: spec.ai * 60,
-      hintOnEnd: HINTS.ai,
+      hintOnEnd: hints.ai,
     },
   ];
   return {

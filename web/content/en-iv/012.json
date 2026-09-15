@@ -1,0 +1,213 @@
+{
+  "id": 12,
+  "week": 2,
+  "theme": "Honest gap",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "I haven't operated this in prod",
+      "note": "Gap thật. Không bịa Kafka cluster.",
+      "vi": "Mình chưa vận hành cái này trên prod",
+      "example": {
+        "en": "I haven't operated Kafka in prod.",
+        "vi": "Mình chưa vận hành Kafka trên prod."
+      }
+    },
+    {
+      "en": "I'd ask the team",
+      "note": "Khi không chắc ops.",
+      "vi": "Mình sẽ hỏi team",
+      "example": {
+        "en": "I'd ask the team how they page on this.",
+        "vi": "Mình hỏi team họ page việc này thế nào."
+      }
+    },
+    {
+      "en": "I know the idea, not the ops",
+      "note": "Tách kiến thức sách / thực chiến.",
+      "vi": "Mình biết ý tưởng, chưa biết ops",
+      "example": {
+        "en": "I know the idea, not the ops of sharding.",
+        "vi": "Mình biết ý sharding, chưa biết ops."
+      }
+    },
+    {
+      "en": "I'd read the runbook first",
+      "note": "Khi oncall phần lạ.",
+      "vi": "Mình đọc runbook trước",
+      "example": {
+        "en": "I'd read the runbook first, then change anything.",
+        "vi": "Mình đọc runbook trước, rồi mới đụng."
+      }
+    },
+    {
+      "en": "I'm not an expert here",
+      "note": "Một câu, rồi vẫn đề xuất hướng.",
+      "vi": "Mình không phải expert phần này",
+      "example": {
+        "en": "I'm not an expert here, but I'd start with metrics.",
+        "vi": "Không expert, nhưng mình bắt đầu từ metric."
+      }
+    }
+  ],
+  "pattern": {
+    "title": "Don't bluff ops",
+    "pattern": "I haven't operated this in prod → I know the idea, not the ops → I'd ask the team / I'd read the runbook first",
+    "explainVi": "Phần lạ: nói chưa vận hành prod, biết ý tưởng chứ chưa ops, hỏi team hoặc đọc runbook. Vẫn đề xuất hướng.",
+    "drills": [
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình chưa vận hành cái này trên prod",
+        "answer": "I haven't operated this in prod"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình sẽ hỏi team",
+        "answer": "I'd ask the team"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình biết ý tưởng, chưa biết ops",
+        "answer": "I know the idea, not the ops"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình đọc runbook trước",
+        "answer": "I'd read the runbook first"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Câu hỏi ops ngoài comfort zone",
+    "video": null,
+    "unseen": [
+      {
+        "speaker": "B",
+        "en": "Walk me through multi-region failover.",
+        "vi": "Kể failover đa region."
+      },
+      {
+        "speaker": "A",
+        "en": "I haven't operated this in prod.",
+        "vi": "Mình chưa vận hành cái này trên prod."
+      },
+      {
+        "speaker": "A",
+        "en": "I know the idea, not the ops — active-active is hard.",
+        "vi": "Biết ý, chưa biết ops — active-active khó."
+      },
+      {
+        "speaker": "A",
+        "en": "I'd read the runbook first.",
+        "vi": "Mình đọc runbook trước."
+      },
+      {
+        "speaker": "B",
+        "en": "No runbook. You're on-call.",
+        "vi": "Không có runbook. Bạn đang on-call."
+      },
+      {
+        "speaker": "A",
+        "en": "I'd ask the team who last did a failover.",
+        "vi": "Mình hỏi ai failover gần nhất."
+      },
+      {
+        "speaker": "A",
+        "en": "I'm not an expert here, but I'd start with metrics and traffic drain.",
+        "vi": "Không expert, bắt đầu metric và drain traffic."
+      },
+      {
+        "speaker": "B",
+        "en": "That's honest. Good.",
+        "vi": "Thành thật. Ổn."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Learner có giả vờ expert không?",
+        "answer": "Không — nói chưa vận hành prod"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Không có runbook thì hỏi ai?",
+        "answer": "Team / người failover gần nhất"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Bắt đầu từ gì?",
+        "answer": "Metrics / traffic drain"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "B",
+      "en": "How would you operate Kafka here?",
+      "vi": "Kafka ở đây vận hành thế nào?"
+    },
+    {
+      "speaker": "A",
+      "en": "I haven't operated Kafka in prod.",
+      "vi": "Mình chưa vận hành Kafka trên prod."
+    },
+    {
+      "speaker": "A",
+      "en": "I know the idea, not the ops of consumer lag.",
+      "vi": "Mình biết ý, chưa biết ops consumer lag."
+    },
+    {
+      "speaker": "A",
+      "en": "I'd ask the team how they page on this.",
+      "vi": "Mình hỏi team họ page việc này thế nào."
+    },
+    {
+      "speaker": "A",
+      "en": "I'd read the runbook first, then change anything.",
+      "vi": "Đọc runbook trước, rồi mới đụng."
+    },
+    {
+      "speaker": "A",
+      "en": "I'm not an expert here, but I'd start with metrics.",
+      "vi": "Không expert, nhưng bắt đầu từ metric."
+    },
+    {
+      "speaker": "B",
+      "en": "Which metric?",
+      "vi": "Metric nào?"
+    },
+    {
+      "speaker": "A",
+      "en": "Consumer lag and error rate. Then I'd ask the team.",
+      "vi": "Consumer lag và error rate. Rồi hỏi team."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Mình chưa vận hành cái này trên prod",
+      "answer": "I haven't operated this in prod"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Mình sẽ hỏi team",
+      "answer": "I'd ask the team"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Ask about a tool the learner has NOT run in prod. They must not bluff.",
+    "system": "You are a software interviewer at a foreign company. Speak natural interview English. Keep each turn to 1–2 short sentences. You MAY use extra interview English so the learner practices listening. Interrupt with a follow-up. Nudge the learner to use these phrases: I haven't operated this in prod; I'd ask the team; I know the idea, not the ops; I'd read the runbook first; I'm not an expert here. Ask about their real experience. Wait for the learner to reply. Scenario: Ask about a tool the learner has NOT run in prod. They must not bluff.",
+    "allowedPhrases": [
+      "I haven't operated this in prod",
+      "I'd ask the team",
+      "I know the idea, not the ops",
+      "I'd read the runbook first",
+      "I'm not an expert here"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

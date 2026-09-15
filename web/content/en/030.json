@@ -1,0 +1,216 @@
+{
+  "id": 30,
+  "week": 5,
+  "theme": "Ôn phỏng vấn + prompt",
+  "kind": "review",
+  "phrases": [
+    {
+      "en": "Act as a senior engineer",
+      "note": "Mở prompt. Gán vai, đừng viết Please help me.",
+      "vi": "Hãy đóng vai senior engineer",
+      "example": {
+        "en": "Act as a senior engineer reviewing this diff.",
+        "vi": "Đóng vai senior engineer review diff này."
+      }
+    },
+    {
+      "en": "This PR…",
+      "note": "Mở 45 giây. Một câu mục đích.",
+      "vi": "PR này…",
+      "example": {
+        "en": "This PR adds retry on payments.",
+        "vi": "PR này thêm retry thanh toán."
+      },
+      "slot": "This PR ___"
+    },
+    {
+      "en": "I'm a software engineer",
+      "note": "60s intro: câu 1. Role, không đọc CV.",
+      "vi": "Mình là software engineer",
+      "example": {
+        "en": "I'm a software engineer focused on backend.",
+        "vi": "Mình là software engineer, thiên backend."
+      },
+      "slot": "I'm a software engineer focused on ___."
+    },
+    {
+      "en": "The situation was…",
+      "note": "STAR S: bối cảnh 1 câu.",
+      "vi": "Tình huống là…",
+      "example": {
+        "en": "The situation was a Friday incident.",
+        "vi": "Tình huống là incident thứ Sáu."
+      },
+      "slot": "The situation was ___"
+    },
+    {
+      "en": "What's the team like?",
+      "note": "Hỏi ngược: người, không hỏi lương trước.",
+      "vi": "Team như thế nào ạ?",
+      "example": {
+        "en": "What's the team like day to day?",
+        "vi": "Team ngày thường như thế nào ạ?"
+      }
+    }
+  ],
+  "pattern": {
+    "title": "Intro + 1 prompt",
+    "pattern": "60s intro, one STAR, one work prompt",
+    "explainVi": "Ôn nhẹ tuần 3–4: intro, một STAR, đọc một prompt. Không thêm cụm.",
+    "drills": [
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Hãy đóng vai senior engineer",
+        "answer": "Act as a senior engineer"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: This PR ___",
+        "answer": "This PR…"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: I'm a software engineer focused on ___.",
+        "answer": "I'm a software engineer"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: The situation was ___",
+        "answer": "The situation was…"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Ôn intro, STAR, đọc prompt",
+    "video": null,
+    "unseen": [
+      {
+        "speaker": "B",
+        "en": "Tell me about yourself, then speak one prompt.",
+        "vi": "Giới thiệu, rồi đọc một prompt."
+      },
+      {
+        "speaker": "A",
+        "en": "I'm a software engineer. I currently work on routing. I'm looking for more ownership.",
+        "vi": "Engineer. Hiện routing. Tìm ownership hơn."
+      },
+      {
+        "speaker": "A",
+        "en": "The situation was a search outage. I did a config revert. The result was 12 minutes.",
+        "vi": "Outage search. Revert config. 12 phút."
+      },
+      {
+        "speaker": "A",
+        "en": "Act as a senior engineer. Given this code, don't change unrelated files.",
+        "vi": "Đóng vai senior. Với code này, đừng sửa file lạ."
+      },
+      {
+        "speaker": "A",
+        "en": "Return only the patch. Be concise.",
+        "vi": "Chỉ trả patch. Ngắn."
+      },
+      {
+        "speaker": "A",
+        "en": "This PR adds a guard. The risk is dropping legit retries. Please review that.",
+        "vi": "PR thêm guard. Rủi ro bỏ retry hợp lệ. Nhờ review."
+      },
+      {
+        "speaker": "B",
+        "en": "Questions?",
+        "vi": "Hỏi gì không?"
+      },
+      {
+        "speaker": "A",
+        "en": "What are you hoping this hire owns in six months?",
+        "vi": "Sáu tháng nữa mong own gì ạ?"
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "STAR recover bao lâu?",
+        "answer": "12 minutes"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Prompt khóa output thế nào?",
+        "answer": "Return only the patch"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Risk của PR?",
+        "answer": "Dropping legit retries"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "B",
+      "en": "Tell me about yourself.",
+      "vi": "Kể về bạn đi."
+    },
+    {
+      "speaker": "A",
+      "en": "I'm a software engineer. I'm looking for more ownership.",
+      "vi": "Mình là engineer. Đang tìm ownership hơn."
+    },
+    {
+      "speaker": "A",
+      "en": "The situation was a Friday incident. The result was we recovered in 20 minutes.",
+      "vi": "Incident thứ Sáu. Khôi phục 20 phút."
+    },
+    {
+      "speaker": "A",
+      "en": "Act as a senior engineer. Given this code, return only the patch.",
+      "vi": "Đóng vai senior. Với code này, chỉ trả patch."
+    },
+    {
+      "speaker": "A",
+      "en": "This PR adds retry. Please review the timeout logic.",
+      "vi": "PR thêm retry. Nhờ review timeout."
+    },
+    {
+      "speaker": "A",
+      "en": "What does the first 90 days look like?",
+      "vi": "90 ngày đầu trông thế nào ạ?"
+    },
+    {
+      "speaker": "B",
+      "en": "On-call shadow in month two. Any other questions?",
+      "vi": "Tháng hai shadow on-call. Còn hỏi gì không?"
+    },
+    {
+      "speaker": "A",
+      "en": "How do you measure success in this role?",
+      "vi": "Role này đo success thế nào ạ?"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Hãy đóng vai senior engineer",
+      "answer": "Act as a senior engineer"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: This PR ___",
+      "answer": "This PR…"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Quiet review: YOUR intro, one STAR, then speak one prompt.",
+    "system": "You are a friendly teammate (or interviewer) at a software company. Speak natural meeting English. Keep each turn to 1–2 short sentences. You MAY use extra workplace English so the learner practices listening. Nudge the learner to use these phrases: Act as a senior engineer; This PR…; I'm a software engineer; The situation was…; What's the team like?. If they ask you to slow down or repeat, do that. Ask one concrete detail about their real work (ticket, bug, PR, or project). Wait for the learner to reply. Scenario: Quiet review: YOUR intro, one STAR, then speak one prompt.",
+    "allowedPhrases": [
+      "Act as a senior engineer",
+      "This PR…",
+      "I'm a software engineer",
+      "The situation was…",
+      "What's the team like?"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

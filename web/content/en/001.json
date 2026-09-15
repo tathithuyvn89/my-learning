@@ -1,0 +1,220 @@
+{
+  "id": 1,
+  "week": 1,
+  "theme": "Chào Slack",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "Morning, team",
+      "note": "Chào channel buổi sáng, không cần dài.",
+      "vi": "Chào team buổi sáng",
+      "example": {
+        "en": "Morning, team — I'll be in standup.",
+        "vi": "Chào team — lát nữa mình vào standup."
+      }
+    },
+    {
+      "en": "Hey everyone",
+      "note": "Informal hơn Morning. Dùng Slack nội bộ.",
+      "vi": "Chào mọi người",
+      "example": {
+        "en": "Hey everyone, quick question.",
+        "vi": "Chào mọi người, hỏi nhanh một chút."
+      }
+    },
+    {
+      "en": "How's it going?",
+      "note": "Hỏi thăm ngắn. Trả lời Okay / Pretty good là đủ.",
+      "vi": "Dạo này thế nào?",
+      "example": {
+        "en": "Hey, how's it going?",
+        "vi": "Ê, dạo này thế nào?"
+      }
+    },
+    {
+      "en": "Quick ping",
+      "note": "Báo sắp hỏi một việc nhỏ, không phải khẩn.",
+      "vi": "Ping nhanh",
+      "example": {
+        "en": "Quick ping — is the API up?",
+        "vi": "Ping nhanh — API còn sống không?"
+      },
+      "slot": "Quick ping — ___?"
+    },
+    {
+      "en": "Have a good one",
+      "note": "Kết Slack nhẹ cuối ngày / sau khi xong việc.",
+      "vi": "Chúc làm việc vui",
+      "example": {
+        "en": "Thanks, have a good one.",
+        "vi": "Cảm ơn, chúc làm việc vui."
+      }
+    }
+  ],
+  "pattern": {
+    "title": "Greeting + check-in",
+    "pattern": "Morning / Hey + (How's it going?) + Quick ping",
+    "explainVi": "Slack buổi sáng: một câu chào, hỏi thăm tối đa một câu, rồi mới ping việc. Không viết đoạn dài.",
+    "drills": [
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Chào team buổi sáng",
+        "answer": "Morning, team"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Chào mọi người",
+        "answer": "Hey everyone"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Dạo này thế nào?",
+        "answer": "How's it going?"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: Quick ping — ___?",
+        "answer": "Quick ping"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Chào buổi sáng trong office",
+    "video": {
+      "title": "BBC English at Work — box set ep. 0–5",
+      "url": "https://www.youtube.com/watch?v=PyL2HDKwR9E",
+      "watchFrom": "0:00",
+      "watchTo": "1:30",
+      "whyVi": "Office small talk thật: chào, hỏi thăm. Nghe giọng Anh-Anh, không TTS."
+    },
+    "unseen": [
+      {
+        "speaker": "B",
+        "en": "Morning. Standup's in five.",
+        "vi": "Chào. Standup còn năm phút."
+      },
+      {
+        "speaker": "A",
+        "en": "Hey. How's it going?",
+        "vi": "Chào. Dạo này thế nào?"
+      },
+      {
+        "speaker": "B",
+        "en": "Busy — the API flake came back overnight.",
+        "vi": "Bận — API flake lại xuất hiện lúc đêm."
+      },
+      {
+        "speaker": "A",
+        "en": "Quick ping: is the war room in Slack or Zoom?",
+        "vi": "Ping nhanh: war room ở Slack hay Zoom?"
+      },
+      {
+        "speaker": "B",
+        "en": "Slack first. Zoom only if it lasts past 10:15.",
+        "vi": "Slack trước. Zoom chỉ khi kéo quá 10:15."
+      },
+      {
+        "speaker": "A",
+        "en": "I'll drop a note in #backend.",
+        "vi": "Mình nhắn #backend."
+      },
+      {
+        "speaker": "B",
+        "en": "Thanks. Have a good one.",
+        "vi": "Cảm ơn. Chúc làm việc vui."
+      },
+      {
+        "speaker": "A",
+        "en": "You too.",
+        "vi": "Bạn cũng vậy."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Video 0:00–1:30: ghi 3 cụm chào / hỏi thăm bạn nghe được.",
+        "answer": "Morning / hello / how's it going (hoặc tương đương trong clip)"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Trong hội thoại lạ, war room diễn ra ở đâu trước?",
+        "answer": "Slack"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Zoom chỉ dùng khi nào?",
+        "answer": "Nếu kéo quá 10:15"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "en": "Morning, team",
+      "vi": "Chào team buổi sáng"
+    },
+    {
+      "speaker": "B",
+      "en": "Hey everyone. How's it going?",
+      "vi": "Chào mọi người. Dạo này thế nào?"
+    },
+    {
+      "speaker": "A",
+      "en": "Pretty good. Quick ping — is standup still at 10?",
+      "vi": "Ổn. Ping nhanh — standup vẫn 10 giờ chứ?"
+    },
+    {
+      "speaker": "B",
+      "en": "Yep, 10 sharp. Priya moved it from 9:30.",
+      "vi": "Ừ, đúng 10. Priya dời từ 9:30."
+    },
+    {
+      "speaker": "A",
+      "en": "Got it. I'll be there.",
+      "vi": "Rõ. Mình sẽ vào."
+    },
+    {
+      "speaker": "B",
+      "en": "Cool. Have a good one.",
+      "vi": "Ok. Chúc làm việc vui."
+    },
+    {
+      "speaker": "A",
+      "en": "You too — ping me if the API is down.",
+      "vi": "Bạn cũng vậy — API chết thì ping mình."
+    },
+    {
+      "speaker": "B",
+      "en": "Will do. See you in standup.",
+      "vi": "Ok. Gặp ở standup."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Chào team buổi sáng",
+      "answer": "Morning, team"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Chào mọi người",
+      "answer": "Hey everyone"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Morning Slack in the team channel. Ask the learner what they are actually working on today.",
+    "system": "You are a friendly teammate (or interviewer) at a software company. Speak natural meeting English. Keep each turn to 1–2 short sentences. You MAY use extra workplace English so the learner practices listening. Nudge the learner to use these phrases: Morning, team; Hey everyone; How's it going?; Quick ping; Have a good one. If they ask you to slow down or repeat, do that. Ask one concrete detail about their real work (ticket, bug, PR, or project). Wait for the learner to reply. Scenario: Morning Slack in the team channel. Ask the learner what they are actually working on today.",
+    "allowedPhrases": [
+      "Morning, team",
+      "Hey everyone",
+      "How's it going?",
+      "Quick ping",
+      "Have a good one"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

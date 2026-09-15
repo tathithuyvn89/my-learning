@@ -1,0 +1,217 @@
+{
+  "id": 10,
+  "week": 2,
+  "theme": "Trade-off",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "I'd pick X because…",
+      "note": "Chọn rồi nói lý do. Một lý do.",
+      "vi": "Mình chọn X vì…",
+      "example": {
+        "en": "I'd pick Postgres because we need joins.",
+        "vi": "Mình chọn Postgres vì cần join."
+      },
+      "slot": "I'd pick X because ___"
+    },
+    {
+      "en": "The downside is…",
+      "note": "Luôn có downside. Đừng bán hàng.",
+      "vi": "Nhược điểm là…",
+      "example": {
+        "en": "The downside is write throughput.",
+        "vi": "Nhược điểm là write throughput."
+      },
+      "slot": "The downside is ___"
+    },
+    {
+      "en": "We could also…",
+      "note": "Phương án 2, không defend forever.",
+      "vi": "Mình cũng có thể…",
+      "example": {
+        "en": "We could also use a key-value store.",
+        "vi": "Cũng có thể dùng key-value store."
+      },
+      "slot": "We could also ___"
+    },
+    {
+      "en": "Trade-off is…",
+      "note": "Nêu trục trade-off.",
+      "vi": "Trade-off là…",
+      "example": {
+        "en": "Trade-off is consistency vs availability.",
+        "vi": "Trade-off là consistency và availability."
+      },
+      "slot": "Trade-off is ___"
+    },
+    {
+      "en": "I'd rather keep it simple",
+      "note": "Khi over-design. Senior.",
+      "vi": "Mình nghiêng về giữ đơn giản",
+      "example": {
+        "en": "I'd rather keep it simple for v1.",
+        "vi": "V1 mình giữ đơn giản."
+      }
+    }
+  ],
+  "pattern": {
+    "title": "Pick and name the downside",
+    "pattern": "I'd pick X because… The downside is… We could also… I'd rather keep it simple",
+    "explainVi": "Chọn một hướng, nói lý do, nói downside, nêu phương án 2. V1 nghiêng đơn giản.",
+    "drills": [
+      {
+        "prompt": "Nói việc thật hôm nay: I'd pick X because ___",
+        "answer": "I'd pick X because…"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: The downside is ___",
+        "answer": "The downside is…"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: We could also ___",
+        "answer": "We could also…"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: Trade-off is ___",
+        "answer": "Trade-off is…"
+      }
+    ]
+  },
+  "listen": {
+    "title": "SQL vs NoSQL, nói nhanh",
+    "video": null,
+    "unseen": [
+      {
+        "speaker": "B",
+        "en": "Why not Cassandra?",
+        "vi": "Sao không Cassandra?"
+      },
+      {
+        "speaker": "A",
+        "en": "I'd pick Redis because we need very low latency reads.",
+        "vi": "Chọn Redis vì đọc phải rất nhanh."
+      },
+      {
+        "speaker": "A",
+        "en": "The downside is persistence and memory cost.",
+        "vi": "Nhược: persistence và RAM."
+      },
+      {
+        "speaker": "A",
+        "en": "We could also put the mapping in DynamoDB.",
+        "vi": "Cũng có thể DynamoDB."
+      },
+      {
+        "speaker": "B",
+        "en": "Consistency?",
+        "vi": "Consistency?"
+      },
+      {
+        "speaker": "A",
+        "en": "Trade-off is consistency vs availability. Redirects can be eventually consistent.",
+        "vi": "Trade-off consistency và availability. Redirect eventual được."
+      },
+      {
+        "speaker": "A",
+        "en": "I'd rather keep it simple. Redis plus nightly backup.",
+        "vi": "Giữ đơn giản. Redis + backup đêm."
+      },
+      {
+        "speaker": "B",
+        "en": "Fine for v1.",
+        "vi": "V1 được."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Vì sao chọn Redis?",
+        "answer": "Low latency reads / đọc nhanh"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Downside Redis?",
+        "answer": "Persistence / memory"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Redirect cần consistency kiểu gì?",
+        "answer": "Eventually consistent"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "B",
+      "en": "SQL or NoSQL for the mapping?",
+      "vi": "Mapping dùng SQL hay NoSQL?"
+    },
+    {
+      "speaker": "A",
+      "en": "I'd pick a key-value store because lookups are by key.",
+      "vi": "Mình chọn KV vì lookup theo key."
+    },
+    {
+      "speaker": "A",
+      "en": "The downside is we lose ad-hoc queries.",
+      "vi": "Nhược điểm là mất query linh tinh."
+    },
+    {
+      "speaker": "A",
+      "en": "We could also use Postgres with an index on the short key.",
+      "vi": "Cũng có thể Postgres + index short key."
+    },
+    {
+      "speaker": "A",
+      "en": "Trade-off is query flexibility vs simple lookups.",
+      "vi": "Trade-off: query linh hoạt với lookup đơn giản."
+    },
+    {
+      "speaker": "A",
+      "en": "I'd rather keep it simple for v1.",
+      "vi": "V1 mình giữ đơn giản."
+    },
+    {
+      "speaker": "B",
+      "en": "Why not both on day one?",
+      "vi": "Sao không cả hai ngày đầu?"
+    },
+    {
+      "speaker": "A",
+      "en": "Ops cost. One store until we need analytics.",
+      "vi": "Chi phí ops. Một store đến khi cần analytics."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: I'd pick X because ___",
+      "answer": "I'd pick X because…"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: The downside is ___",
+      "answer": "The downside is…"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Force one real trade-off (SQL vs KV, or cache vs source of truth). They must name a downside.",
+    "system": "You are a software interviewer at a foreign company. Speak natural interview English. Keep each turn to 1–2 short sentences. You MAY use extra interview English so the learner practices listening. Interrupt with a follow-up. Nudge the learner to use these phrases: I'd pick X because…; The downside is…; We could also…; Trade-off is…; I'd rather keep it simple. Ask about their real experience. Wait for the learner to reply. Scenario: Force one real trade-off (SQL vs KV, or cache vs source of truth). They must name a downside.",
+    "allowedPhrases": [
+      "I'd pick X because…",
+      "The downside is…",
+      "We could also…",
+      "Trade-off is…",
+      "I'd rather keep it simple"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

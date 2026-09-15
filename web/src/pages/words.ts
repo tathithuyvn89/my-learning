@@ -6,6 +6,7 @@ import {
   weeksOfHsk,
 } from "../course";
 import { listenButton } from "../speak";
+import { youglishHref } from "../youglish";
 import { vocabForHsk, type WeekFilter } from "../vocab-index";
 
 function textEl<K extends keyof HTMLElementTagNameMap>(
@@ -34,7 +35,13 @@ function wordList(hsk: HskLevel, week: WeekFilter): HTMLElement {
 
     const actions = document.createElement("div");
     actions.className = "word-actions";
-    actions.append(listenButton(item.han), source);
+    const youglish = document.createElement("a");
+    youglish.className = "youglish";
+    youglish.href = youglishHref(item.han, "chinese");
+    youglish.target = "_blank";
+    youglish.rel = "noopener noreferrer";
+    youglish.textContent = "YouGlish";
+    actions.append(listenButton(item.han), youglish, source);
 
     li.append(
       textEl("p", item.han, "han"),

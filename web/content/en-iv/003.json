@@ -1,0 +1,217 @@
+{
+  "id": 3,
+  "week": 1,
+  "theme": "Complexity",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "Time is O(…)",
+      "note": "Nói big-O time. Điền n / n log n.",
+      "vi": "Time là O(…)",
+      "example": {
+        "en": "Time is O(n log n) after the sort.",
+        "vi": "Time là O(n log n) sau sort."
+      },
+      "slot": "Time is O(___)."
+    },
+    {
+      "en": "Space is O(…)",
+      "note": "Nói extra space.",
+      "vi": "Space là O(…)",
+      "example": {
+        "en": "Space is O(n) for the map.",
+        "vi": "Space là O(n) cho map."
+      },
+      "slot": "Space is O(___)."
+    },
+    {
+      "en": "That would TLE if…",
+      "note": "Khi brute force không đủ.",
+      "vi": "Cái đó TLE nếu…",
+      "example": {
+        "en": "That would TLE if n is a million.",
+        "vi": "TLE nếu n một triệu."
+      },
+      "slot": "That would TLE if ___"
+    },
+    {
+      "en": "We can do better",
+      "note": "Chuyển sang phương án 2.",
+      "vi": "Mình làm tốt hơn được",
+      "example": {
+        "en": "We can do better than nested loops.",
+        "vi": "Tốt hơn nested loop được."
+      }
+    },
+    {
+      "en": "That's acceptable for n = …",
+      "note": "Khi O(n) là đủ.",
+      "vi": "Với n = … thì chấp nhận được",
+      "example": {
+        "en": "That's acceptable for n = 10^5.",
+        "vi": "n = 10^5 thì chấp nhận được."
+      },
+      "slot": "That's acceptable for n = ___"
+    }
+  ],
+  "pattern": {
+    "title": "Time and space out loud",
+    "pattern": "Time is O(…) · Space is O(…) · That would TLE if… / That's acceptable for n = …",
+    "explainVi": "Sau hướng: nói time, space, khi nào TLE, khi nào chấp nhận được. Điền n thật.",
+    "drills": [
+      {
+        "prompt": "Nói việc thật hôm nay: Time is O(___).",
+        "answer": "Time is O(…)"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: Space is O(___).",
+        "answer": "Space is O(…)"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: That would TLE if ___",
+        "answer": "That would TLE if…"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình làm tốt hơn được",
+        "answer": "We can do better"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Interviewer hỏi big-O nhanh",
+    "video": null,
+    "unseen": [
+      {
+        "speaker": "B",
+        "en": "Before you type — time and space.",
+        "vi": "Trước khi gõ — time và space."
+      },
+      {
+        "speaker": "A",
+        "en": "Time is O(n log n) if I sort first.",
+        "vi": "Time O(n log n) nếu sort trước."
+      },
+      {
+        "speaker": "A",
+        "en": "Space is O(1) extra if I sort in place.",
+        "vi": "Space O(1) extra nếu sort tại chỗ."
+      },
+      {
+        "speaker": "B",
+        "en": "And if n is 10^7?",
+        "vi": "n 10^7 thì sao?"
+      },
+      {
+        "speaker": "A",
+        "en": "That would TLE if we sort on a tight limit.",
+        "vi": "Sort sẽ TLE nếu limit chặt."
+      },
+      {
+        "speaker": "A",
+        "en": "We can do better with a linear scan.",
+        "vi": "Làm tốt hơn bằng scan tuyến tính."
+      },
+      {
+        "speaker": "B",
+        "en": "Is O(n) okay here?",
+        "vi": "O(n) ổn chứ?"
+      },
+      {
+        "speaker": "A",
+        "en": "That's acceptable for n = 10^5. I'd skip the sort.",
+        "vi": "n = 10^5 thì ổn. Mình bỏ sort."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Vì sao sort có thể TLE?",
+        "answer": "n lớn / 10^7 / limit chặt"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Space của sort in-place?",
+        "answer": "O(1) extra"
+      },
+      {
+        "type": "cloze",
+        "prompt": "n nào được nêu là chấp nhận O(n)?",
+        "answer": "10^5"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "B",
+      "en": "Complexity?",
+      "vi": "Độ phức tạp?"
+    },
+    {
+      "speaker": "A",
+      "en": "Time is O(n) after one pass.",
+      "vi": "Time O(n) một lượt."
+    },
+    {
+      "speaker": "A",
+      "en": "Space is O(n) for the map.",
+      "vi": "Space O(n) cho map."
+    },
+    {
+      "speaker": "B",
+      "en": "What about the nested version?",
+      "vi": "Còn bản nested?"
+    },
+    {
+      "speaker": "A",
+      "en": "That would TLE if n is a million.",
+      "vi": "TLE nếu n một triệu."
+    },
+    {
+      "speaker": "A",
+      "en": "We can do better than nested loops.",
+      "vi": "Tốt hơn nested loop được."
+    },
+    {
+      "speaker": "A",
+      "en": "That's acceptable for n = 10^5.",
+      "vi": "n = 10^5 thì chấp nhận được."
+    },
+    {
+      "speaker": "B",
+      "en": "Good. Code the linear one.",
+      "vi": "Ổn. Code bản tuyến tính."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: Time is O(___).",
+      "answer": "Time is O(…)"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: Space is O(___).",
+      "answer": "Space is O(…)"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Ask for time and space of the learner's last coding approach. Interrupt if they skip space.",
+    "system": "You are a software interviewer at a foreign company. Speak natural interview English. Keep each turn to 1–2 short sentences. You MAY use extra interview English so the learner practices listening. Interrupt with a follow-up. Nudge the learner to use these phrases: Time is O(…); Space is O(…); That would TLE if…; We can do better; That's acceptable for n = …. Ask about their real experience. Wait for the learner to reply. Scenario: Ask for time and space of the learner's last coding approach. Interrupt if they skip space.",
+    "allowedPhrases": [
+      "Time is O(…)",
+      "Space is O(…)",
+      "That would TLE if…",
+      "We can do better",
+      "That's acceptable for n = …"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "id": 21,
+  "week": 3,
+  "theme": "Mock loop AI",
+  "kind": "review",
+  "phrases": [
+    {
+      "en": "I'm a software engineer",
+      "note": "Tái dùng intro IT ngày 22. Câu 1, không đọc CV.",
+      "vi": "Mình là software engineer",
+      "example": {
+        "en": "I'm a software engineer focused on backend.",
+        "vi": "Mình là software engineer, thiên backend."
+      },
+      "slot": "I'm a software engineer focused on ___."
+    },
+    {
+      "en": "Let me restate the problem",
+      "note": "Clarify: nói lại đề trước khi gõ. Không nhảy vào code.",
+      "vi": "Mình restated đề nhé",
+      "example": {
+        "en": "Let me restate the problem in my own words.",
+        "vi": "Mình restated đề bằng lời mình."
+      }
+    },
+    {
+      "en": "I'll start with a brute force",
+      "note": "Luôn có phương án 1. Dù xấu.",
+      "vi": "Mình bắt đầu bằng brute force",
+      "example": {
+        "en": "I'll start with a brute force, then optimize.",
+        "vi": "Mình brute force trước, rồi optimize."
+      }
+    },
+    {
+      "en": "I disagreed",
+      "note": "Conflict: nói thẳng đã không đồng ý.",
+      "vi": "Mình không đồng ý",
+      "example": {
+        "en": "I disagreed with shipping without a flag.",
+        "vi": "Mình không đồng ý ship khi chưa có flag."
+      }
+    },
+    {
+      "en": "I'm targeting…",
+      "note": "Band lương. Số của bạn, đừng bịa trên app.",
+      "vi": "Mình targeting…",
+      "example": {
+        "en": "I'm targeting 2.4 to 2.8 billion VND total.",
+        "vi": "Mình targeting 2.4–2.8 tỷ total."
+      },
+      "slot": "I'm targeting ___."
+    }
+  ],
+  "pattern": {
+    "title": "Intro + coding + STAR + hỏi ngược",
+    "pattern": "60s intro (IT) → restate/brute force → I disagreed → I'm targeting / 2 questions",
+    "explainVi": "Loop ngắn: intro tái dùng IT ngày 22, một đoạn coding talk, một STAR, lương nếu họ hỏi, 2 câu hỏi ngược. Không thêm cụm mới.",
+    "drills": [
+      {
+        "prompt": "Nói việc thật hôm nay: I'm a software engineer focused on ___.",
+        "answer": "I'm a software engineer"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình restated đề nhé",
+        "answer": "Let me restate the problem"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình bắt đầu bằng brute force",
+        "answer": "I'll start with a brute force"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình không đồng ý",
+        "answer": "I disagreed"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Full loop ngắn, interviewer cắt",
+    "video": null,
+    "unseen": [
+      {
+        "speaker": "B",
+        "en": "Sixty seconds, then two-sum, then a conflict.",
+        "vi": "60 giây, rồi two-sum, rồi conflict."
+      },
+      {
+        "speaker": "A",
+        "en": "I'm a software engineer. I currently own payments.",
+        "vi": "Software engineer. Hiện own payments."
+      },
+      {
+        "speaker": "A",
+        "en": "Let me restate the problem. I'll start with a brute force.",
+        "vi": "Restated. Brute force trước."
+      },
+      {
+        "speaker": "B",
+        "en": "Time?",
+        "vi": "Time?"
+      },
+      {
+        "speaker": "A",
+        "en": "Time is O(n) with a map. Let me trace this — later if we need.",
+        "vi": "Time O(n) với map. Trace sau nếu cần."
+      },
+      {
+        "speaker": "A",
+        "en": "I disagreed on a Friday deploy. We aligned on a flag.",
+        "vi": "Không đồng ý deploy thứ Sáu. Thống nhất flag."
+      },
+      {
+        "speaker": "A",
+        "en": "I'm targeting total, not just base.",
+        "vi": "Targeting total, không chỉ base."
+      },
+      {
+        "speaker": "A",
+        "en": "What does success look like in six months, and what's the team like?",
+        "vi": "Success sáu tháng nữa thế nào, team ra sao ạ?"
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Loop gồm những phần nào?",
+        "answer": "Intro, coding, conflict STAR, comp, hỏi ngược"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Coding mở bằng cụm nào?",
+        "answer": "Let me restate / brute force"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Hai câu hỏi ngược về gì?",
+        "answer": "Success / team"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "B",
+      "en": "Tell me about yourself, then a short coding warm-up, then a story.",
+      "vi": "Giới thiệu, coding ấm, rồi một story."
+    },
+    {
+      "speaker": "A",
+      "en": "I'm a software engineer focused on backend.",
+      "vi": "Mình là software engineer, thiên backend."
+    },
+    {
+      "speaker": "A",
+      "en": "Let me restate the problem. I'll start with a brute force.",
+      "vi": "Restated đề. Brute force trước."
+    },
+    {
+      "speaker": "B",
+      "en": "A disagreement?",
+      "vi": "Một lần không đồng ý?"
+    },
+    {
+      "speaker": "A",
+      "en": "I disagreed with shipping without a flag. We aligned.",
+      "vi": "Không đồng ý ship không flag. Rồi thống nhất."
+    },
+    {
+      "speaker": "B",
+      "en": "Comp?",
+      "vi": "Lương?"
+    },
+    {
+      "speaker": "A",
+      "en": "I'm targeting a band I prepared. What's the range for this level?",
+      "vi": "Mình có band. Range level này sao ạ?"
+    },
+    {
+      "speaker": "A",
+      "en": "What's the team like, and how do you measure success?",
+      "vi": "Team thế nào, và đo success ra sao ạ?"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: I'm a software engineer focused on ___.",
+      "answer": "I'm a software engineer"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Mình restated đề nhé",
+      "answer": "Let me restate the problem"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Full short loop: 60s intro (learner's real one), coding talk, one STAR, comp if asked, two reverse questions.",
+    "system": "You are a software interviewer at a foreign company. Speak natural interview English. Keep each turn to 1–2 short sentences. You MAY use extra interview English so the learner practices listening. Interrupt with a follow-up. Nudge the learner to use these phrases: I'm a software engineer; Let me restate the problem; I'll start with a brute force; I disagreed; I'm targeting…. Ask about their real experience. Wait for the learner to reply. Scenario: Full short loop: 60s intro (learner's real one), coding talk, one STAR, comp if asked, two reverse questions. Also allow reverse questions: What's the team like?; How do you measure success?. Keep the loop moving.",
+    "allowedPhrases": [
+      "I'm a software engineer",
+      "Let me restate the problem",
+      "I'll start with a brute force",
+      "I disagreed",
+      "I'm targeting…"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

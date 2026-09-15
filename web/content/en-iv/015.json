@@ -1,0 +1,222 @@
+{
+  "id": 15,
+  "week": 3,
+  "theme": "Conflict STAR",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "I disagreed",
+      "note": "Conflict: nói thẳng đã không đồng ý.",
+      "vi": "Mình không đồng ý",
+      "example": {
+        "en": "I disagreed with shipping without a flag.",
+        "vi": "Mình không đồng ý ship khi chưa có flag."
+      }
+    },
+    {
+      "en": "I stated the risk",
+      "note": "STAR A: nói risk, không cá nhân.",
+      "vi": "Mình nêu risk",
+      "example": {
+        "en": "I stated the risk of a bad deploy on Friday.",
+        "vi": "Mình nêu risk deploy thứ Sáu."
+      }
+    },
+    {
+      "en": "We aligned on…",
+      "note": "Kết: không I won.",
+      "vi": "Hai bên thống nhất…",
+      "example": {
+        "en": "We aligned on a flag and a Monday ship.",
+        "vi": "Thống nhất flag và ship thứ Hai."
+      },
+      "slot": "We aligned on ___"
+    },
+    {
+      "en": "I pushed back because…",
+      "note": "Lý do push-back. Một câu.",
+      "vi": "Mình push back vì…",
+      "example": {
+        "en": "I pushed back because we had no rollback.",
+        "vi": "Push back vì chưa có rollback."
+      },
+      "slot": "I pushed back because ___"
+    },
+    {
+      "en": "In the end we…",
+      "note": "Kết quả chung, không win/lose.",
+      "vi": "Cuối cùng mình…",
+      "example": {
+        "en": "In the end we delayed one day and it was fine.",
+        "vi": "Cuối cùng delay một ngày, ổn."
+      },
+      "slot": "In the end we ___"
+    }
+  ],
+  "pattern": {
+    "title": "Disagree without a fight",
+    "pattern": "I disagreed → I stated the risk → I pushed back because… → We aligned on… / In the end we…",
+    "explainVi": "Conflict: không đồng ý, nêu risk, push back vì lý do kỹ thuật, thống nhất. Không I won.",
+    "drills": [
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình không đồng ý",
+        "answer": "I disagreed"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình nêu risk",
+        "answer": "I stated the risk"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: We aligned on ___",
+        "answer": "We aligned on…"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: I pushed back because ___",
+        "answer": "I pushed back because…"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Behavioral conflict, interviewer cắt",
+    "video": {
+      "title": "How successful software engineers answer Tell me about yourself",
+      "url": "https://www.youtube.com/watch?v=0PN_W-7fBRo",
+      "watchFrom": "0:00",
+      "watchTo": "2:00",
+      "whyVi": "Intro/behavioral. Chép Present → Past → Future rồi nói bản của bạn, không đọc CV mẫu."
+    },
+    "unseen": [
+      {
+        "speaker": "B",
+        "en": "A time you disagreed with your lead.",
+        "vi": "Lần không đồng ý với lead."
+      },
+      {
+        "speaker": "A",
+        "en": "I disagreed on rewriting the service in a week.",
+        "vi": "Không đồng ý rewrite service trong một tuần."
+      },
+      {
+        "speaker": "A",
+        "en": "I stated the risk: we would miss the launch.",
+        "vi": "Nêu risk: miss launch."
+      },
+      {
+        "speaker": "B",
+        "en": "What did you actually say?",
+        "vi": "Bạn nói thật ra sao?"
+      },
+      {
+        "speaker": "A",
+        "en": "I pushed back because we had no tests on the old path.",
+        "vi": "Push back vì path cũ chưa có test."
+      },
+      {
+        "speaker": "A",
+        "en": "We aligned on a strangler change, not a rewrite.",
+        "vi": "Thống nhất strangler, không rewrite."
+      },
+      {
+        "speaker": "A",
+        "en": "In the end we shipped a slice and kept the old API.",
+        "vi": "Cuối cùng ship một slice, giữ API cũ."
+      },
+      {
+        "speaker": "B",
+        "en": "Good. Don't say I won.",
+        "vi": "Ổn. Đừng nói I won."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Video 0:00–2:00: intro có đọc CV dài không? Ghi 1 khung.",
+        "answer": "Present/past/future hoặc ngắn, không CV (tuỳ clip)"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Họ thống nhất cách nào, không rewrite?",
+        "answer": "Strangler / slice"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Risk nêu ra là gì?",
+        "answer": "Miss the launch"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "B",
+      "en": "Tell me about a time you disagreed with a decision.",
+      "vi": "Kể lần bạn không đồng ý một quyết định."
+    },
+    {
+      "speaker": "A",
+      "en": "I disagreed with shipping without a flag.",
+      "vi": "Mình không đồng ý ship khi chưa có flag."
+    },
+    {
+      "speaker": "A",
+      "en": "I stated the risk of a bad deploy on Friday.",
+      "vi": "Mình nêu risk deploy thứ Sáu."
+    },
+    {
+      "speaker": "A",
+      "en": "I pushed back because we had no rollback.",
+      "vi": "Push back vì chưa có rollback."
+    },
+    {
+      "speaker": "A",
+      "en": "We aligned on a flag and a Monday ship.",
+      "vi": "Thống nhất flag và ship thứ Hai."
+    },
+    {
+      "speaker": "A",
+      "en": "In the end we delayed one day and it was fine.",
+      "vi": "Cuối cùng delay một ngày, ổn."
+    },
+    {
+      "speaker": "B",
+      "en": "Did they think you were blocking?",
+      "vi": "Họ nghĩ bạn cản chứ?"
+    },
+    {
+      "speaker": "A",
+      "en": "I framed it as risk, not taste. We aligned.",
+      "vi": "Mình nói risk, không phải gu. Rồi thống nhất."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Mình không đồng ý",
+      "answer": "I disagreed"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Mình nêu risk",
+      "answer": "I stated the risk"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Behavioral: a REAL disagreement at work. Interrupt 'what did you actually say?'. No I won.",
+    "system": "You are a software interviewer at a foreign company. Speak natural interview English. Keep each turn to 1–2 short sentences. You MAY use extra interview English so the learner practices listening. Interrupt with a follow-up. Nudge the learner to use these phrases: I disagreed; I stated the risk; We aligned on…; I pushed back because…; In the end we…. Ask about their real experience. Wait for the learner to reply. Scenario: Behavioral: a REAL disagreement at work. Interrupt 'what did you actually say?'. No I won.",
+    "allowedPhrases": [
+      "I disagreed",
+      "I stated the risk",
+      "We aligned on…",
+      "I pushed back because…",
+      "In the end we…"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

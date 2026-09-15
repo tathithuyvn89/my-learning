@@ -1,0 +1,213 @@
+{
+  "id": 5,
+  "week": 1,
+  "theme": "Stuck",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "I'm not sure yet",
+      "note": "Kẹt. Nói thật, đừng bịa.",
+      "vi": "Mình chưa chắc",
+      "example": {
+        "en": "I'm not sure yet — give me a second.",
+        "vi": "Mình chưa chắc — cho mình giây lát."
+      }
+    },
+    {
+      "en": "Give me 20 seconds",
+      "note": "Xin thời gian nghĩ. Tốt hơn im.",
+      "vi": "Cho mình 20 giây",
+      "example": {
+        "en": "Give me 20 seconds to think.",
+        "vi": "Cho mình 20 giây nghĩ."
+      }
+    },
+    {
+      "en": "I'd look that up",
+      "note": "API / syntax. Không giả vờ nhớ.",
+      "vi": "Mình sẽ tra cái đó",
+      "example": {
+        "en": "I'd look that up — the exact map API.",
+        "vi": "Mình tra — đúng API của map."
+      }
+    },
+    {
+      "en": "Let me try a smaller case",
+      "note": "Thu nhỏ đề khi stuck.",
+      "vi": "Mình thử case nhỏ hơn",
+      "example": {
+        "en": "Let me try a smaller case, n = 2.",
+        "vi": "Mình thử case nhỏ, n = 2."
+      }
+    },
+    {
+      "en": "I might be missing something",
+      "note": "Mời interviewer gợi ý, không cầu cứu.",
+      "vi": "Mình có thể đang miss gì đó",
+      "example": {
+        "en": "I might be missing something on duplicates.",
+        "vi": "Mình có thể miss phần trùng."
+      }
+    }
+  ],
+  "pattern": {
+    "title": "Stuck without freezing",
+    "pattern": "I'm not sure yet → Give me 20 seconds → Let me try a smaller case / I'd look that up",
+    "explainVi": "Kẹt: nói chưa chắc, xin 20 giây, thử case nhỏ, hoặc nói sẽ tra. Không im, không bịa.",
+    "drills": [
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình chưa chắc",
+        "answer": "I'm not sure yet"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Cho mình 20 giây",
+        "answer": "Give me 20 seconds"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình sẽ tra cái đó",
+        "answer": "I'd look that up"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình thử case nhỏ hơn",
+        "answer": "Let me try a smaller case"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Kẹt khi interviewer follow-up",
+    "video": null,
+    "unseen": [
+      {
+        "speaker": "B",
+        "en": "Negative numbers?",
+        "vi": "Số âm?"
+      },
+      {
+        "speaker": "A",
+        "en": "I'm not sure yet.",
+        "vi": "Mình chưa chắc."
+      },
+      {
+        "speaker": "A",
+        "en": "Give me 20 seconds.",
+        "vi": "Cho mình 20 giây."
+      },
+      {
+        "speaker": "A",
+        "en": "Let me try a smaller case: [-1, 2], target 1.",
+        "vi": "Case nhỏ: [-1,2], target 1."
+      },
+      {
+        "speaker": "B",
+        "en": "What's the JavaScript map method you want?",
+        "vi": "Bạn muốn method map JS nào?"
+      },
+      {
+        "speaker": "A",
+        "en": "I'd look that up. I mean set vs object.",
+        "vi": "Mình tra. Ý là set với object."
+      },
+      {
+        "speaker": "A",
+        "en": "I might be missing something if zero is allowed.",
+        "vi": "Có thể miss nếu 0 được phép."
+      },
+      {
+        "speaker": "B",
+        "en": "Zero is allowed. Keep going.",
+        "vi": "0 được. Làm tiếp."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Learner xin gì khi kẹt?",
+        "answer": "20 seconds / case nhỏ / look up"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Case nhỏ dùng mảng nào?",
+        "answer": "[-1, 2]"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Zero có được phép không?",
+        "answer": "Có"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "B",
+      "en": "What if there are duplicates?",
+      "vi": "Nếu có trùng thì sao?"
+    },
+    {
+      "speaker": "A",
+      "en": "I'm not sure yet — give me a second.",
+      "vi": "Mình chưa chắc — cho mình giây lát."
+    },
+    {
+      "speaker": "A",
+      "en": "Give me 20 seconds to think.",
+      "vi": "Cho mình 20 giây nghĩ."
+    },
+    {
+      "speaker": "A",
+      "en": "Let me try a smaller case, n = 2.",
+      "vi": "Thử case nhỏ, n = 2."
+    },
+    {
+      "speaker": "B",
+      "en": "Map API?",
+      "vi": "API của map?"
+    },
+    {
+      "speaker": "A",
+      "en": "I'd look that up — the exact map API.",
+      "vi": "Mình tra — đúng API map."
+    },
+    {
+      "speaker": "A",
+      "en": "I might be missing something on duplicates.",
+      "vi": "Mình có thể miss phần trùng."
+    },
+    {
+      "speaker": "B",
+      "en": "Store counts. Then continue.",
+      "vi": "Lưu count. Rồi làm tiếp."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Mình chưa chắc",
+      "answer": "I'm not sure yet"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Cho mình 20 giây",
+      "answer": "Give me 20 seconds"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "The learner gets stuck on a follow-up. They must speak, not freeze. Use a real gap they have.",
+    "system": "You are a software interviewer at a foreign company. Speak natural interview English. Keep each turn to 1–2 short sentences. You MAY use extra interview English so the learner practices listening. Interrupt with a follow-up. Nudge the learner to use these phrases: I'm not sure yet; Give me 20 seconds; I'd look that up; Let me try a smaller case; I might be missing something. Ask about their real experience. Wait for the learner to reply. Scenario: The learner gets stuck on a follow-up. They must speak, not freeze. Use a real gap they have.",
+    "allowedPhrases": [
+      "I'm not sure yet",
+      "Give me 20 seconds",
+      "I'd look that up",
+      "Let me try a smaller case",
+      "I might be missing something"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

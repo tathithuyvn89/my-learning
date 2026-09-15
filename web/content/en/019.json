@@ -1,0 +1,220 @@
+{
+  "id": 19,
+  "week": 3,
+  "theme": "Share màn hình",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "You're looking at…",
+      "note": "Mở demo. Định vị màn hình.",
+      "vi": "Mọi người đang thấy…",
+      "example": {
+        "en": "You're looking at the staging dashboard.",
+        "vi": "Mọi người đang thấy dashboard staging."
+      },
+      "slot": "You're looking at ___"
+    },
+    {
+      "en": "I'll go top to bottom",
+      "note": "Báo cấu trúc demo. Người nghe dễ theo.",
+      "vi": "Mình đi từ trên xuống",
+      "example": {
+        "en": "I'll go top to bottom, then questions.",
+        "vi": "Mình đi từ trên xuống, rồi hỏi."
+      }
+    },
+    {
+      "en": "This part is new",
+      "note": "Chỉ đúng chỗ mới. Đừng đọc hết file.",
+      "vi": "Phần này là mới",
+      "example": {
+        "en": "This part is new — the retry badge.",
+        "vi": "Phần này mới — badge retry."
+      }
+    },
+    {
+      "en": "Any questions so far?",
+      "note": "Pause. Đừng demo 8 phút không thở.",
+      "vi": "Tới đây có hỏi gì không?",
+      "example": {
+        "en": "Any questions so far?",
+        "vi": "Tới đây có hỏi gì không?"
+      }
+    },
+    {
+      "en": "I'll pause here",
+      "note": "Dừng chủ động khi sắp hết giờ.",
+      "vi": "Mình pause ở đây",
+      "example": {
+        "en": "I'll pause here for questions.",
+        "vi": "Mình pause ở đây để hỏi."
+      }
+    }
+  ],
+  "pattern": {
+    "title": "Demo talk",
+    "pattern": "You're looking at… I'll go top to bottom. This part is new. Any questions so far? I'll pause here.",
+    "explainVi": "Demo 1 phút: định vị màn hình, đi có thứ tự, chỉ chỗ mới, pause hỏi.",
+    "drills": [
+      {
+        "prompt": "Nói việc thật hôm nay: You're looking at ___",
+        "answer": "You're looking at…"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình đi từ trên xuống",
+        "answer": "I'll go top to bottom"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Phần này là mới",
+        "answer": "This part is new"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Tới đây có hỏi gì không?",
+        "answer": "Any questions so far?"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Demo 1 phút, người nghe cắt ngang",
+    "video": {
+      "title": "Harvard CS50 — Lecture 0 opening",
+      "url": "https://www.youtube.com/watch?v=8mAITcNt710",
+      "watchFrom": "0:00",
+      "watchTo": "2:00",
+      "whyVi": "Giọng academic rõ. Nghe người ta giải thích vấn đề; ghi symptom / when / expected nếu nghe được."
+    },
+    "unseen": [
+      {
+        "speaker": "A",
+        "en": "You're looking at the local orders table.",
+        "vi": "Mọi người đang thấy bảng orders local."
+      },
+      {
+        "speaker": "A",
+        "en": "I'll go top to bottom. This part is new — the empty-state hint.",
+        "vi": "Mình đi từ trên xuống. Phần mới — hint empty state."
+      },
+      {
+        "speaker": "B",
+        "en": "Any questions so far? Wait, that's my line.",
+        "vi": "Tới đây có hỏi? Khoan, đó là câu của mình."
+      },
+      {
+        "speaker": "A",
+        "en": "Any questions so far?",
+        "vi": "Tới đây có hỏi gì không?"
+      },
+      {
+        "speaker": "B",
+        "en": "Does it show on mobile?",
+        "vi": "Mobile có hiện không?"
+      },
+      {
+        "speaker": "A",
+        "en": "Not yet. I'll pause here. That's a follow-up.",
+        "vi": "Chưa. Mình pause. Đó là follow-up."
+      },
+      {
+        "speaker": "B",
+        "en": "Okay, continue.",
+        "vi": "Ok, tiếp đi."
+      },
+      {
+        "speaker": "A",
+        "en": "Top to bottom: search, hint, then CTA.",
+        "vi": "Từ trên xuống: search, hint, rồi CTA."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Video: speaker đang giới thiệu chủ đề gì? Một câu.",
+        "answer": "CS50 / computer science (tuỳ đoạn 0:00–2:00)"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Phần mới trên màn hình là gì?",
+        "answer": "Empty-state hint"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Mobile đã có chưa?",
+        "answer": "Not yet"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "en": "You're looking at the staging dashboard.",
+      "vi": "Mọi người đang thấy dashboard staging."
+    },
+    {
+      "speaker": "A",
+      "en": "I'll go top to bottom, then questions.",
+      "vi": "Mình đi từ trên xuống, rồi hỏi."
+    },
+    {
+      "speaker": "A",
+      "en": "This part is new — the retry badge.",
+      "vi": "Phần này mới — badge retry."
+    },
+    {
+      "speaker": "A",
+      "en": "Any questions so far?",
+      "vi": "Tới đây có hỏi gì không?"
+    },
+    {
+      "speaker": "B",
+      "en": "Not yet. What does red mean?",
+      "vi": "Chưa. Đỏ nghĩa là gì?"
+    },
+    {
+      "speaker": "A",
+      "en": "Red is a failed retry. I'll pause here for questions.",
+      "vi": "Đỏ là retry fail. Mình pause để hỏi."
+    },
+    {
+      "speaker": "B",
+      "en": "How long before it goes green?",
+      "vi": "Bao lâu thì thành xanh?"
+    },
+    {
+      "speaker": "A",
+      "en": "Thirty seconds after a success.",
+      "vi": "30 giây sau lần thành công."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: You're looking at ___",
+      "answer": "You're looking at…"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Mình đi từ trên xuống",
+      "answer": "I'll go top to bottom"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "A one-minute screen-share demo of something you actually built.",
+    "system": "You are a friendly teammate (or interviewer) at a software company. Speak natural meeting English. Keep each turn to 1–2 short sentences. You MAY use extra workplace English so the learner practices listening. Nudge the learner to use these phrases: You're looking at…; I'll go top to bottom; This part is new; Any questions so far?; I'll pause here. If they ask you to slow down or repeat, do that. Ask one concrete detail about their real work (ticket, bug, PR, or project). Wait for the learner to reply. Scenario: A one-minute screen-share demo of something you actually built.",
+    "allowedPhrases": [
+      "You're looking at…",
+      "I'll go top to bottom",
+      "This part is new",
+      "Any questions so far?",
+      "I'll pause here"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

@@ -1,3 +1,4 @@
+import type { HskLevel } from "./course";
 import type { Lesson } from "./lesson";
 
 const lessonModules = import.meta.glob("../content/days/*.json", {
@@ -52,11 +53,17 @@ export function parseLesson(raw: unknown): Lesson {
   const id = num(obj.id, "id");
   const week = num(obj.week, "week");
   const hskRaw = num(obj.hsk, "hsk");
-  if (hskRaw !== 1 && hskRaw !== 2 && hskRaw !== 3 && hskRaw !== 4) {
+  if (
+    hskRaw !== 1 &&
+    hskRaw !== 2 &&
+    hskRaw !== 3 &&
+    hskRaw !== 4 &&
+    hskRaw !== 5 &&
+    hskRaw !== 6
+  ) {
     missing("hsk");
   }
-  const hsk: 1 | 2 | 3 | 4 =
-    hskRaw === 4 ? 4 : hskRaw === 3 ? 3 : hskRaw === 2 ? 2 : 1;
+  const hsk = hskRaw as HskLevel;
 
   const kind = str(obj.kind, "kind");
   if (kind !== "learn" && kind !== "review") missing("kind");

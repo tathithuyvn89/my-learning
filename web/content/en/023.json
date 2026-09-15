@@ -1,0 +1,218 @@
+{
+  "id": 23,
+  "week": 4,
+  "theme": "Walk through project",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "The problem was…",
+      "note": "Kể project: vấn đề user / business, không We used React.",
+      "vi": "Vấn đề là…",
+      "example": {
+        "en": "The problem was checkout failing at peak.",
+        "vi": "Vấn đề là checkout fail giờ cao điểm."
+      },
+      "slot": "The problem was ___"
+    },
+    {
+      "en": "My role was…",
+      "note": "Phần mình làm. Tránh we we we.",
+      "vi": "Role của mình là…",
+      "example": {
+        "en": "My role was owning the retry path.",
+        "vi": "Role mình là chịu trách nhiệm nhánh retry."
+      },
+      "slot": "My role was ___"
+    },
+    {
+      "en": "We used…",
+      "note": "Stack một hơi, không liệt kê 12 tool.",
+      "vi": "Mình dùng…",
+      "example": {
+        "en": "We used Node, Postgres, and Redis.",
+        "vi": "Mình dùng Node, Postgres và Redis."
+      },
+      "slot": "We used ___"
+    },
+    {
+      "en": "The outcome was…",
+      "note": "Số hoặc kết quả. Không It went well.",
+      "vi": "Kết quả là…",
+      "example": {
+        "en": "The outcome was 40% fewer failed payments.",
+        "vi": "Kết quả là giảm 40% thanh toán fail."
+      },
+      "slot": "The outcome was ___"
+    },
+    {
+      "en": "If I did it again…",
+      "note": "Một câu học được. Nghe senior hơn.",
+      "vi": "Nếu làm lại…",
+      "example": {
+        "en": "If I did it again, I'd add a feature flag first.",
+        "vi": "Nếu làm lại, mình sẽ gắn feature flag trước."
+      },
+      "slot": "If I did it again ___"
+    }
+  ],
+  "pattern": {
+    "title": "Project story",
+    "pattern": "The problem was… My role was… We used… The outcome was… If I did it again…",
+    "explainVi": "Một project: vấn đề, role, stack ngắn, outcome có số, một câu làm lại.",
+    "drills": [
+      {
+        "prompt": "Nói việc thật hôm nay: The problem was ___",
+        "answer": "The problem was…"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: My role was ___",
+        "answer": "My role was…"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: We used ___",
+        "answer": "We used…"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: The outcome was ___",
+        "answer": "The outcome was…"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Project story — số và role",
+    "video": null,
+    "unseen": [
+      {
+        "speaker": "B",
+        "en": "Walk me through a project that actually shipped.",
+        "vi": "Kể một project thực sự đã ship."
+      },
+      {
+        "speaker": "A",
+        "en": "The problem was drivers losing jobs on flaky GPS.",
+        "vi": "Vấn đề: tài xế mất việc vì GPS flake."
+      },
+      {
+        "speaker": "A",
+        "en": "My role was owning the fallback location service.",
+        "vi": "Role mình: own service fallback location."
+      },
+      {
+        "speaker": "A",
+        "en": "We used Go, Postgres, and Redis.",
+        "vi": "Dùng Go, Postgres và Redis."
+      },
+      {
+        "speaker": "A",
+        "en": "The outcome was 25% fewer dropped jobs in two weeks.",
+        "vi": "Kết quả: giảm 25% job rớt trong hai tuần."
+      },
+      {
+        "speaker": "A",
+        "en": "If I did it again, I'd add a shadow traffic test first.",
+        "vi": "Nếu làm lại, mình gắn shadow traffic trước."
+      },
+      {
+        "speaker": "B",
+        "en": "Who was on-call with you?",
+        "vi": "On-call với ai?"
+      },
+      {
+        "speaker": "A",
+        "en": "Two backend, one mobile.",
+        "vi": "Hai backend, một mobile."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Vấn đề user là gì?",
+        "answer": "Drivers losing jobs on flaky GPS"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Outcome số là bao nhiêu?",
+        "answer": "25% fewer dropped jobs"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Nếu làm lại sẽ thêm gì trước?",
+        "answer": "Shadow traffic test"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "B",
+      "en": "Walk me through a project.",
+      "vi": "Kể một project đi."
+    },
+    {
+      "speaker": "A",
+      "en": "The problem was checkout failing at peak.",
+      "vi": "Vấn đề là checkout fail giờ cao điểm."
+    },
+    {
+      "speaker": "A",
+      "en": "My role was owning the retry path.",
+      "vi": "Role mình là chịu trách nhiệm nhánh retry."
+    },
+    {
+      "speaker": "A",
+      "en": "We used Node, Postgres, and Redis.",
+      "vi": "Dùng Node, Postgres và Redis."
+    },
+    {
+      "speaker": "A",
+      "en": "The outcome was 40% fewer failed payments.",
+      "vi": "Kết quả giảm 40% thanh toán fail."
+    },
+    {
+      "speaker": "A",
+      "en": "If I did it again, I'd add a feature flag first.",
+      "vi": "Nếu làm lại, mình gắn feature flag trước."
+    },
+    {
+      "speaker": "B",
+      "en": "What was peak TPS?",
+      "vi": "Peak TPS là bao nhiêu?"
+    },
+    {
+      "speaker": "A",
+      "en": "Around 200. The outcome still held at 180.",
+      "vi": "Khoảng 200. Kết quả vẫn giữ ở 180."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: The problem was ___",
+      "answer": "The problem was…"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: My role was ___",
+      "answer": "My role was…"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Walk through one REAL project in five beats.",
+    "system": "You are a friendly teammate (or interviewer) at a software company. Speak natural meeting English. Keep each turn to 1–2 short sentences. You MAY use extra workplace English so the learner practices listening. Nudge the learner to use these phrases: The problem was…; My role was…; We used…; The outcome was…; If I did it again…. If they ask you to slow down or repeat, do that. Ask one concrete detail about their real work (ticket, bug, PR, or project). Wait for the learner to reply. Scenario: Walk through one REAL project in five beats.",
+    "allowedPhrases": [
+      "The problem was…",
+      "My role was…",
+      "We used…",
+      "The outcome was…",
+      "If I did it again…"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

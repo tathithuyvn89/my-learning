@@ -1,0 +1,214 @@
+{
+  "id": 25,
+  "week": 4,
+  "theme": "Debug speaking",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "I'd start by reproducing it",
+      "note": "Debug speaking: bước 1. Không đoán linh tinh.",
+      "vi": "Mình sẽ bắt đầu bằng reproduce",
+      "example": {
+        "en": "I'd start by reproducing it locally.",
+        "vi": "Mình bắt đầu bằng reproduce local."
+      }
+    },
+    {
+      "en": "I'd check the logs",
+      "note": "Bước 2: evidence.",
+      "vi": "Mình sẽ xem log",
+      "example": {
+        "en": "I'd check the logs around the timestamp.",
+        "vi": "Mình xem log quanh timestamp đó."
+      }
+    },
+    {
+      "en": "Then I'd isolate…",
+      "note": "Bước 3: thu hẹp.",
+      "vi": "Rồi mình isolate…",
+      "example": {
+        "en": "Then I'd isolate whether it's data or code.",
+        "vi": "Rồi isolate xem do data hay code."
+      },
+      "slot": "Then I'd isolate ___"
+    },
+    {
+      "en": "After that I'd fix and add a test",
+      "note": "Bước 4: fix + chặn tái phát.",
+      "vi": "Sau đó mình fix và thêm test",
+      "example": {
+        "en": "After that I'd fix and add a test.",
+        "vi": "Sau đó fix và thêm test."
+      }
+    },
+    {
+      "en": "That's my first pass",
+      "note": "Khi chưa đủ data. Không giả vờ biết hết.",
+      "vi": "Đó là hướng đầu tiên của mình",
+      "example": {
+        "en": "That's my first pass — I'd need the stack trace.",
+        "vi": "Đó là hướng đầu — mình cần stack trace."
+      }
+    }
+  ],
+  "pattern": {
+    "title": "Debug out loud",
+    "pattern": "I'd start by reproducing… check the logs… isolate… fix and add a test. That's my first pass.",
+    "explainVi": "Không leetcode. Nói quy trình debug. Nếu thiếu data: That's my first pass.",
+    "drills": [
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình sẽ bắt đầu bằng reproduce",
+        "answer": "I'd start by reproducing it"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình sẽ xem log",
+        "answer": "I'd check the logs"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: Then I'd isolate ___",
+        "answer": "Then I'd isolate…"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Sau đó mình fix và thêm test",
+        "answer": "After that I'd fix and add a test"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Debug out loud — interviewer cắt ngang",
+    "video": null,
+    "unseen": [
+      {
+        "speaker": "B",
+        "en": "Checkout 500s. Walk me through your first 10 minutes.",
+        "vi": "Checkout 500. 10 phút đầu bạn làm gì?"
+      },
+      {
+        "speaker": "A",
+        "en": "I'd start by reproducing it locally with the same payload.",
+        "vi": "Mình reproduce local với cùng payload."
+      },
+      {
+        "speaker": "A",
+        "en": "I'd check the logs around the timestamp, request id included.",
+        "vi": "Xem log quanh timestamp, kèm request id."
+      },
+      {
+        "speaker": "A",
+        "en": "Then I'd isolate whether it's payments or cart.",
+        "vi": "Rồi isolate payments hay cart."
+      },
+      {
+        "speaker": "B",
+        "en": "Logs are empty. Now what?",
+        "vi": "Log trống. Giờ sao?"
+      },
+      {
+        "speaker": "A",
+        "en": "That's my first pass — I'd enable debug on the gateway and try again.",
+        "vi": "Đó là hướng đầu — bật debug gateway rồi thử lại."
+      },
+      {
+        "speaker": "A",
+        "en": "After that I'd fix and add a test once I have a trace.",
+        "vi": "Có trace rồi thì fix và thêm test."
+      },
+      {
+        "speaker": "B",
+        "en": "Good. Don't jump to rewriting the client.",
+        "vi": "Ổn. Đừng nhảy sang viết lại client."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Bước 1 trong 10 phút đầu là gì?",
+        "answer": "Reproduce locally with the same payload"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Khi log trống, hướng đầu là gì?",
+        "answer": "Enable debug on the gateway and try again"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Không được nhảy sang làm gì?",
+        "answer": "Rewriting the client"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "B",
+      "en": "Users can't log in. How would you debug it?",
+      "vi": "User không login được. Bạn debug thế nào?"
+    },
+    {
+      "speaker": "A",
+      "en": "I'd start by reproducing it locally.",
+      "vi": "Mình bắt đầu bằng reproduce local."
+    },
+    {
+      "speaker": "A",
+      "en": "I'd check the logs around the timestamp.",
+      "vi": "Xem log quanh timestamp."
+    },
+    {
+      "speaker": "A",
+      "en": "Then I'd isolate whether it's data or code.",
+      "vi": "Rồi isolate data hay code."
+    },
+    {
+      "speaker": "A",
+      "en": "After that I'd fix and add a test.",
+      "vi": "Sau đó fix và thêm test."
+    },
+    {
+      "speaker": "A",
+      "en": "That's my first pass — I'd need the stack trace.",
+      "vi": "Đó là hướng đầu — mình cần stack trace."
+    },
+    {
+      "speaker": "B",
+      "en": "Assume you don't have a stack trace yet.",
+      "vi": "Giả sử chưa có stack trace."
+    },
+    {
+      "speaker": "A",
+      "en": "Then I'd check the logs and isolate auth vs network. That's my first pass.",
+      "vi": "Thì mình xem log và isolate auth vs network. Đó là hướng đầu."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Mình sẽ bắt đầu bằng reproduce",
+      "answer": "I'd start by reproducing it"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Mình sẽ xem log",
+      "answer": "I'd check the logs"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Speak your debug plan for a real-looking incident. No whiteboard algorithms.",
+    "system": "You are a friendly teammate (or interviewer) at a software company. Speak natural meeting English. Keep each turn to 1–2 short sentences. You MAY use extra workplace English so the learner practices listening. Nudge the learner to use these phrases: I'd start by reproducing it; I'd check the logs; Then I'd isolate…; After that I'd fix and add a test; That's my first pass. If they ask you to slow down or repeat, do that. Ask one concrete detail about their real work (ticket, bug, PR, or project). Wait for the learner to reply. Scenario: Speak your debug plan for a real-looking incident. No whiteboard algorithms.",
+    "allowedPhrases": [
+      "I'd start by reproducing it",
+      "I'd check the logs",
+      "Then I'd isolate…",
+      "After that I'd fix and add a test",
+      "That's my first pass"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

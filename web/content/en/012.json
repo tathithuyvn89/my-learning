@@ -1,0 +1,213 @@
+{
+  "id": 12,
+  "week": 2,
+  "theme": "Next steps",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "I'll follow up",
+      "note": "Nhận việc sau họp. Nêu kênh nếu được.",
+      "vi": "Mình sẽ follow up",
+      "example": {
+        "en": "I'll follow up in Slack after this.",
+        "vi": "Họp xong mình follow up trên Slack."
+      }
+    },
+    {
+      "en": "Let's sync tomorrow",
+      "note": "Hẹn check lại. Có ngày.",
+      "vi": "Mai mình sync nhé",
+      "example": {
+        "en": "Let's sync tomorrow on the rollout.",
+        "vi": "Mai sync về rollout nhé."
+      }
+    },
+    {
+      "en": "Action item for me",
+      "note": "Nhận action rõ. Tránh mọi người đều nghĩ người kia làm.",
+      "vi": "Việc này mình nhận",
+      "example": {
+        "en": "Action item for me: update the runbook.",
+        "vi": "Việc mình nhận: cập nhật runbook."
+      }
+    },
+    {
+      "en": "I'll send a recap",
+      "note": "Hứa gửi tóm tắt. Async-friendly.",
+      "vi": "Mình sẽ gửi recap",
+      "example": {
+        "en": "I'll send a recap with owners.",
+        "vi": "Mình gửi recap kèm owner."
+      }
+    },
+    {
+      "en": "Anything else before we jump?",
+      "note": "Đóng họp. Cho 5 giây hỏi.",
+      "vi": "Còn gì nữa trước khi kết không?",
+      "example": {
+        "en": "Anything else before we jump? Cool.",
+        "vi": "Còn gì nữa không? Ok."
+      }
+    }
+  ],
+  "pattern": {
+    "title": "Close the loop",
+    "pattern": "I'll follow up / Let's sync tomorrow / Action item for me / I'll send a recap / Anything else before we jump?",
+    "explainVi": "4 câu cuối họp: ai làm gì, bao giờ sync, recap, đóng cửa. Tránh họp tan mà không có owner.",
+    "drills": [
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình sẽ follow up",
+        "answer": "I'll follow up"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mai mình sync nhé",
+        "answer": "Let's sync tomorrow"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Việc này mình nhận",
+        "answer": "Action item for me"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình sẽ gửi recap",
+        "answer": "I'll send a recap"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Đóng họp: owner và deadline",
+    "video": null,
+    "unseen": [
+      {
+        "speaker": "B",
+        "en": "Action item for me: the rollback plan.",
+        "vi": "Việc mình: plan rollback."
+      },
+      {
+        "speaker": "A",
+        "en": "I'll follow up with QA after this.",
+        "vi": "Họp xong mình follow up QA."
+      },
+      {
+        "speaker": "B",
+        "en": "Let's sync tomorrow at 10:30 on the rollout.",
+        "vi": "Mai 10:30 sync rollout."
+      },
+      {
+        "speaker": "A",
+        "en": "I'll send a recap. Owners: you on rollback, me on QA.",
+        "vi": "Mình gửi recap. Owner: bạn rollback, mình QA."
+      },
+      {
+        "speaker": "B",
+        "en": "Anything else before we jump?",
+        "vi": "Còn gì nữa không?"
+      },
+      {
+        "speaker": "A",
+        "en": "If EU slips, page Priya, not the whole channel.",
+        "vi": "EU trễ thì page Priya, đừng page cả channel."
+      },
+      {
+        "speaker": "B",
+        "en": "Copy. Thanks.",
+        "vi": "Rõ. Cảm ơn."
+      },
+      {
+        "speaker": "A",
+        "en": "Let's lock that in.",
+        "vi": "Chốt vậy."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Ai nhận rollback, ai nhận QA?",
+        "answer": "B rollback; A / learner QA"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Sync mai lúc mấy giờ?",
+        "answer": "10:30"
+      },
+      {
+        "type": "cloze",
+        "prompt": "EU trễ thì page ai?",
+        "answer": "Priya"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "en": "Action item for me: update the runbook.",
+      "vi": "Việc mình nhận: cập nhật runbook."
+    },
+    {
+      "speaker": "B",
+      "en": "I'll follow up with design by Thursday.",
+      "vi": "Mình follow up design trước thứ Năm."
+    },
+    {
+      "speaker": "A",
+      "en": "Let's sync tomorrow on the rollout.",
+      "vi": "Mai sync về rollout nhé."
+    },
+    {
+      "speaker": "B",
+      "en": "I'll send a recap with owners.",
+      "vi": "Mình gửi recap kèm owner."
+    },
+    {
+      "speaker": "A",
+      "en": "Anything else before we jump?",
+      "vi": "Còn gì nữa trước khi kết không?"
+    },
+    {
+      "speaker": "B",
+      "en": "Nope. Thanks.",
+      "vi": "Không. Cảm ơn."
+    },
+    {
+      "speaker": "A",
+      "en": "I'll follow up in Slack if the flag slips.",
+      "vi": "Flag trễ thì mình follow up Slack."
+    },
+    {
+      "speaker": "B",
+      "en": "Let's lock that in.",
+      "vi": "Chốt vậy."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Mình sẽ follow up",
+      "answer": "I'll follow up"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Mai mình sync nhé",
+      "answer": "Let's sync tomorrow"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Close a 15-minute meeting with owners and a recap. Use a real meeting if you have one today.",
+    "system": "You are a friendly teammate (or interviewer) at a software company. Speak natural meeting English. Keep each turn to 1–2 short sentences. You MAY use extra workplace English so the learner practices listening. Nudge the learner to use these phrases: I'll follow up; Let's sync tomorrow; Action item for me; I'll send a recap; Anything else before we jump?. If they ask you to slow down or repeat, do that. Ask one concrete detail about their real work (ticket, bug, PR, or project). Wait for the learner to reply. Scenario: Close a 15-minute meeting with owners and a recap. Use a real meeting if you have one today.",
+    "allowedPhrases": [
+      "I'll follow up",
+      "Let's sync tomorrow",
+      "Action item for me",
+      "I'll send a recap",
+      "Anything else before we jump?"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

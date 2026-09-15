@@ -1,0 +1,221 @@
+{
+  "id": 1,
+  "week": 1,
+  "theme": "Clarify",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "Let me restate the problem",
+      "note": "Clarify: nói lại đề trước khi gõ. Không nhảy vào code.",
+      "vi": "Mình restated đề nhé",
+      "example": {
+        "en": "Let me restate the problem in my own words.",
+        "vi": "Mình restated đề bằng lời mình."
+      }
+    },
+    {
+      "en": "What are the constraints?",
+      "note": "Hỏi constraint: n, memory, sorted?.",
+      "vi": "Constraint là gì ạ?",
+      "example": {
+        "en": "What are the constraints on n?",
+        "vi": "n tối đa bao nhiêu ạ?"
+      }
+    },
+    {
+      "en": "Can I assume…?",
+      "note": "Xin giả định. Tốt hơn im rồi sai.",
+      "vi": "Mình giả định… được không?",
+      "example": {
+        "en": "Can I assume the array is unsorted?",
+        "vi": "Mình giả định mảng chưa sort được không?"
+      },
+      "slot": "Can I assume ___?"
+    },
+    {
+      "en": "Can I use an example?",
+      "note": "Xin 1 input mẫu nếu đề khô.",
+      "vi": "Mình lấy một ví dụ được không?",
+      "example": {
+        "en": "Can I use an example before I code?",
+        "vi": "Mình lấy ví dụ trước khi code được không?"
+      }
+    },
+    {
+      "en": "So the input is…",
+      "note": "Chốt input/output. Interviewer gật rồi mới code.",
+      "vi": "Vậy input là…",
+      "example": {
+        "en": "So the input is an array of ints, output is the index.",
+        "vi": "Input là mảng int, output là index."
+      },
+      "slot": "So the input is ___"
+    }
+  ],
+  "pattern": {
+    "title": "Restate then constraints",
+    "pattern": "Let me restate the problem → What are the constraints? / Can I assume…? → So the input is…",
+    "explainVi": "Trước khi gõ: restated đề, hỏi constraint, xin giả định, chốt input/output. Không nhảy vào code.",
+    "drills": [
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình restated đề nhé",
+        "answer": "Let me restate the problem"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Constraint là gì ạ?",
+        "answer": "What are the constraints?"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: Can I assume ___?",
+        "answer": "Can I assume…?"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình lấy một ví dụ được không?",
+        "answer": "Can I use an example?"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Interviewer mở bài coding",
+    "video": {
+      "title": "How to: Work at Google — Example Coding/Engineering Interview",
+      "url": "https://www.youtube.com/watch?v=XKu_SEDKoi8",
+      "watchFrom": "0:00",
+      "watchTo": "2:00",
+      "whyVi": "Coding interview mở bài. Nghe cách restatement và nghĩ to, không gõ im lặng."
+    },
+    "unseen": [
+      {
+        "speaker": "B",
+        "en": "You have 25 minutes. Two-sum variant, then follow-ups.",
+        "vi": "25 phút. Two-sum variant, rồi follow-up."
+      },
+      {
+        "speaker": "A",
+        "en": "Let me restate the problem. Find a pair that sums to target.",
+        "vi": "Mình restated. Tìm cặp cộng thành target."
+      },
+      {
+        "speaker": "B",
+        "en": "Right. What are the constraints?",
+        "vi": "Đúng. Constraint?"
+      },
+      {
+        "speaker": "A",
+        "en": "Can I assume n is up to a million?",
+        "vi": "n tới một triệu được không?"
+      },
+      {
+        "speaker": "B",
+        "en": "No — 10^4. Integers can be negative.",
+        "vi": "Không — 10^4. Int có thể âm."
+      },
+      {
+        "speaker": "A",
+        "en": "Can I use an example? [2, 7, 11] target 9.",
+        "vi": "Lấy ví dụ? [2,7,11] target 9."
+      },
+      {
+        "speaker": "B",
+        "en": "Yes. So the input is that array, output is indices 0 and 1.",
+        "vi": "Ừ. Input mảng đó, output index 0 và 1."
+      },
+      {
+        "speaker": "A",
+        "en": "Got it. I'll think out loud next.",
+        "vi": "Rõ. Lát mình nghĩ to."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Video 0:00–2:00: ghi 1 việc candidate làm trước khi gõ code.",
+        "answer": "Restate / clarify / ask questions (hoặc tương đương trong clip)"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Trong hội thoại lạ, n tối đa là bao nhiêu?",
+        "answer": "10^4"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Integer có được âm không?",
+        "answer": "Có"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "B",
+      "en": "Let's start with two-sum. Any questions?",
+      "vi": "Bắt đầu two-sum. Hỏi gì không?"
+    },
+    {
+      "speaker": "A",
+      "en": "Let me restate the problem in my own words.",
+      "vi": "Mình restated đề bằng lời mình."
+    },
+    {
+      "speaker": "A",
+      "en": "Return two indices that add up to a target.",
+      "vi": "Trả hai index cộng thành target."
+    },
+    {
+      "speaker": "A",
+      "en": "What are the constraints on n?",
+      "vi": "n tối đa bao nhiêu ạ?"
+    },
+    {
+      "speaker": "B",
+      "en": "Up to 10^5. Can be duplicates.",
+      "vi": "Tới 10^5. Có thể trùng."
+    },
+    {
+      "speaker": "A",
+      "en": "Can I assume the array is unsorted?",
+      "vi": "Giả định mảng chưa sort được không?"
+    },
+    {
+      "speaker": "B",
+      "en": "Yes. Unsorted.",
+      "vi": "Ừ. Chưa sort."
+    },
+    {
+      "speaker": "A",
+      "en": "So the input is an array of ints, output is the two indices. Can I use an example?",
+      "vi": "Input mảng int, output hai index. Lấy ví dụ được không?"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Mình restated đề nhé",
+      "answer": "Let me restate the problem"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Constraint là gì ạ?",
+      "answer": "What are the constraints?"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Coding interview opening. Push the learner to restate a REAL problem they know, then ask constraints.",
+    "system": "You are a software interviewer at a foreign company. Speak natural interview English. Keep each turn to 1–2 short sentences. You MAY use extra interview English so the learner practices listening. Interrupt with a follow-up. Nudge the learner to use these phrases: Let me restate the problem; What are the constraints?; Can I assume…?; Can I use an example?; So the input is…. Ask about their real experience. Wait for the learner to reply. Scenario: Coding interview opening. Push the learner to restate a REAL problem they know, then ask constraints.",
+    "allowedPhrases": [
+      "Let me restate the problem",
+      "What are the constraints?",
+      "Can I assume…?",
+      "Can I use an example?",
+      "So the input is…"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

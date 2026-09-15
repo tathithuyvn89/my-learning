@@ -1,0 +1,214 @@
+{
+  "id": 9,
+  "week": 2,
+  "theme": "Đồng ý / từ chối lịch sự",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "That works for me",
+      "note": "Đồng ý giờ / cách làm. Ngắn, rõ.",
+      "vi": "Mình ok với cái đó",
+      "example": {
+        "en": "3pm? That works for me.",
+        "vi": "3 giờ? Mình ok."
+      }
+    },
+    {
+      "en": "I'd prefer…",
+      "note": "Từ chối mềm. Đưa phương án khác.",
+      "vi": "Mình nghiêng về…",
+      "example": {
+        "en": "I'd prefer tomorrow morning.",
+        "vi": "Mình nghiêng về sáng mai."
+      },
+      "slot": "I'd prefer ___"
+    },
+    {
+      "en": "Can we push this to tomorrow?",
+      "note": "Dời họp. Hỏi, không ra lệnh.",
+      "vi": "Dời sang mai được không?",
+      "example": {
+        "en": "Can we push this to tomorrow? I have a deploy.",
+        "vi": "Dời mai được không? Mình có deploy."
+      }
+    },
+    {
+      "en": "I'm good either way",
+      "note": "Không có preference. Tránh kéo dài chọn giờ.",
+      "vi": "Sao cũng được",
+      "example": {
+        "en": "I'm good either way — you pick.",
+        "vi": "Sao cũng được — bạn chọn."
+      }
+    },
+    {
+      "en": "Let's lock that in",
+      "note": "Chốt giờ. Kết thread lịch.",
+      "vi": "Chốt vậy nhé",
+      "example": {
+        "en": "Tomorrow 10. Let's lock that in.",
+        "vi": "Mai 10 giờ. Chốt vậy nhé."
+      }
+    }
+  ],
+  "pattern": {
+    "title": "Soft yes / no",
+    "pattern": "That works for me / I'd prefer… / Can we push this to tomorrow? Let's lock that in.",
+    "explainVi": "Đồng ý ngắn. Từ chối thì đưa giờ khác. Chốt bằng Let's lock that in. Tránh Sorry sorry sorry.",
+    "drills": [
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình ok với cái đó",
+        "answer": "That works for me"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: I'd prefer ___",
+        "answer": "I'd prefer…"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Dời sang mai được không?",
+        "answer": "Can we push this to tomorrow?"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Sao cũng được",
+        "answer": "I'm good either way"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Dời họp, người kia nói giờ nhanh",
+    "video": null,
+    "unseen": [
+      {
+        "speaker": "B",
+        "en": "Can we do 3:45 today?",
+        "vi": "Hôm nay 3:45 được không?"
+      },
+      {
+        "speaker": "A",
+        "en": "I'd prefer tomorrow. I have a deploy at 4.",
+        "vi": "Mình nghiêng về mai. 4 giờ mình có deploy."
+      },
+      {
+        "speaker": "B",
+        "en": "Tomorrow 9:30 or 11?",
+        "vi": "Mai 9:30 hay 11?"
+      },
+      {
+        "speaker": "A",
+        "en": "11 works for me.",
+        "vi": "11 mình ok."
+      },
+      {
+        "speaker": "B",
+        "en": "I'm good either way — let's lock 11.",
+        "vi": "Sao cũng được — chốt 11."
+      },
+      {
+        "speaker": "A",
+        "en": "Can we push the design review to Wednesday if needed?",
+        "vi": "Design review dời thứ Tư nếu cần được không?"
+      },
+      {
+        "speaker": "B",
+        "en": "That works. I'll move the invite.",
+        "vi": "Được. Mình chuyển invite."
+      },
+      {
+        "speaker": "A",
+        "en": "Thanks. Let's lock that in.",
+        "vi": "Cảm ơn. Chốt vậy."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Họ chốt giờ nào cho cuộc họp chính?",
+        "answer": "11:00 tomorrow"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Vì sao không họp 3:45 hôm nay?",
+        "answer": "Có deploy lúc 4"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Design review có thể dời sang ngày nào?",
+        "answer": "Wednesday / thứ Tư"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "B",
+      "en": "Can we do 4pm?",
+      "vi": "4 giờ được không?"
+    },
+    {
+      "speaker": "A",
+      "en": "I'd prefer tomorrow morning.",
+      "vi": "Mình nghiêng về sáng mai."
+    },
+    {
+      "speaker": "B",
+      "en": "10am? Minh has a deploy at 9.",
+      "vi": "10 giờ? Minh có deploy lúc 9."
+    },
+    {
+      "speaker": "A",
+      "en": "That works for me.",
+      "vi": "Mình ok."
+    },
+    {
+      "speaker": "B",
+      "en": "I'm good either way.",
+      "vi": "Sao cũng được."
+    },
+    {
+      "speaker": "A",
+      "en": "Tomorrow 10. Let's lock that in.",
+      "vi": "Mai 10 giờ. Chốt vậy nhé."
+    },
+    {
+      "speaker": "B",
+      "en": "Can we push the Friday review if this slips?",
+      "vi": "Review thứ Sáu mà trễ thì dời được không?"
+    },
+    {
+      "speaker": "A",
+      "en": "Yes — I'd prefer Monday.",
+      "vi": "Được — mình nghiêng về thứ Hai."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Mình ok với cái đó",
+      "answer": "That works for me"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: I'd prefer ___",
+      "answer": "I'd prefer…"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Reschedule a meeting politely over Slack using a real calendar conflict.",
+    "system": "You are a friendly teammate (or interviewer) at a software company. Speak natural meeting English. Keep each turn to 1–2 short sentences. You MAY use extra workplace English so the learner practices listening. Nudge the learner to use these phrases: That works for me; I'd prefer…; Can we push this to tomorrow?; I'm good either way; Let's lock that in. If they ask you to slow down or repeat, do that. Ask one concrete detail about their real work (ticket, bug, PR, or project). Wait for the learner to reply. Scenario: Reschedule a meeting politely over Slack using a real calendar conflict.",
+    "allowedPhrases": [
+      "That works for me",
+      "I'd prefer…",
+      "Can we push this to tomorrow?",
+      "I'm good either way",
+      "Let's lock that in"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

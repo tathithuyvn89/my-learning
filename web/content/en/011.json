@@ -1,0 +1,214 @@
+{
+  "id": 11,
+  "week": 2,
+  "theme": "Code review",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "Looks good overall",
+      "note": "Mở review. Khen ngắn rồi mới nit.",
+      "vi": "Nhìn chung ổn",
+      "example": {
+        "en": "Looks good overall. One small nit.",
+        "vi": "Nhìn chung ổn. Một nit nhỏ."
+      }
+    },
+    {
+      "en": "Small nit",
+      "note": "Góp ý nhỏ, không blocker.",
+      "vi": "Nit nhỏ",
+      "example": {
+        "en": "Small nit: this name is a bit vague.",
+        "vi": "Nit nhỏ: tên này hơi mơ hồ."
+      }
+    },
+    {
+      "en": "Have you considered…?",
+      "note": "Gợi ý, không ra lệnh change this.",
+      "vi": "Bạn đã nghĩ tới… chưa?",
+      "example": {
+        "en": "Have you considered a feature flag?",
+        "vi": "Bạn đã nghĩ tới feature flag chưa?"
+      },
+      "slot": "Have you considered ___?"
+    },
+    {
+      "en": "I'd rename this",
+      "note": "Nói rõ mình đề xuất, không This is wrong.",
+      "vi": "Mình sẽ đổi tên cái này",
+      "example": {
+        "en": "I'd rename this to fetchUserById.",
+        "vi": "Mình sẽ đổi tên thành fetchUserById."
+      }
+    },
+    {
+      "en": "Happy to merge after that",
+      "note": "Chốt: không blocker lớn.",
+      "vi": "Sửa xong là merge được",
+      "example": {
+        "en": "Happy to merge after that nit.",
+        "vi": "Sửa nit đó xong là merge được."
+      }
+    }
+  ],
+  "pattern": {
+    "title": "Review comment",
+    "pattern": "Looks good overall. Small nit / Have you considered…? I'd rename this. Happy to merge after that.",
+    "explainVi": "Nói và viết comment: khen ngắn, nit, gợi ý, chốt merge. Không This is bad.",
+    "drills": [
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Nhìn chung ổn",
+        "answer": "Looks good overall"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Nit nhỏ",
+        "answer": "Small nit"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: Have you considered ___?",
+        "answer": "Have you considered…?"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình sẽ đổi tên cái này",
+        "answer": "I'd rename this"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Review call nói nhanh",
+    "video": null,
+    "unseen": [
+      {
+        "speaker": "B",
+        "en": "Looks good overall. Small nit on line 84.",
+        "vi": "Nhìn chung ổn. Nit nhỏ dòng 84."
+      },
+      {
+        "speaker": "A",
+        "en": "I'd rename this to fetchUserById — is that the nit?",
+        "vi": "Mình đổi tên fetchUserById — đó là nit chứ?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes. Have you considered memoizing the client?",
+        "vi": "Đúng. Đã nghĩ memoize client chưa?"
+      },
+      {
+        "speaker": "A",
+        "en": "Not in this PR. Follow-up?",
+        "vi": "PR này chưa. Follow-up?"
+      },
+      {
+        "speaker": "B",
+        "en": "Happy to merge after the rename. Flag the follow-up in the ticket.",
+        "vi": "Rename xong là merge. Ghi follow-up vào ticket."
+      },
+      {
+        "speaker": "A",
+        "en": "Will do.",
+        "vi": "Ok."
+      },
+      {
+        "speaker": "B",
+        "en": "Please don't bike-shed the tests.",
+        "vi": "Đừng cãi vã test nữa."
+      },
+      {
+        "speaker": "A",
+        "en": "Copy. Thanks.",
+        "vi": "Rõ. Cảm ơn."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Nit nằm ở đâu / dòng nào?",
+        "answer": "Line 84 / rename fetchUserById"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Merge được sau khi làm gì?",
+        "answer": "Rename"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Follow-up nên ghi ở đâu?",
+        "answer": "In the ticket"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "en": "Looks good overall.",
+      "vi": "Nhìn chung ổn."
+    },
+    {
+      "speaker": "A",
+      "en": "Small nit: I'd rename this to fetchUserById.",
+      "vi": "Nit nhỏ: mình đổi tên thành fetchUserById."
+    },
+    {
+      "speaker": "B",
+      "en": "Have you considered a cache here?",
+      "vi": "Bạn đã nghĩ tới cache ở đây chưa?"
+    },
+    {
+      "speaker": "A",
+      "en": "Not yet. I can add a follow-up.",
+      "vi": "Chưa. Mình có thể làm follow-up."
+    },
+    {
+      "speaker": "B",
+      "en": "Happy to merge after that nit.",
+      "vi": "Sửa nit đó xong là merge được."
+    },
+    {
+      "speaker": "A",
+      "en": "Sounds good. I'll push in ten.",
+      "vi": "Ok. Mười phút nữa mình push."
+    },
+    {
+      "speaker": "B",
+      "en": "Also — have you considered a feature flag?",
+      "vi": "À — đã nghĩ feature flag chưa?"
+    },
+    {
+      "speaker": "A",
+      "en": "Good call. I'll add it on the retry path.",
+      "vi": "Hợp lý. Mình gắn trên nhánh retry."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Nhìn chung ổn",
+      "answer": "Looks good overall"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Nit nhỏ",
+      "answer": "Small nit"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Talk through a PR comment, then say the same idea in one spoken line about a real PR.",
+    "system": "You are a friendly teammate (or interviewer) at a software company. Speak natural meeting English. Keep each turn to 1–2 short sentences. You MAY use extra workplace English so the learner practices listening. Nudge the learner to use these phrases: Looks good overall; Small nit; Have you considered…?; I'd rename this; Happy to merge after that. If they ask you to slow down or repeat, do that. Ask one concrete detail about their real work (ticket, bug, PR, or project). Wait for the learner to reply. Scenario: Talk through a PR comment, then say the same idea in one spoken line about a real PR.",
+    "allowedPhrases": [
+      "Looks good overall",
+      "Small nit",
+      "Have you considered…?",
+      "I'd rename this",
+      "Happy to merge after that"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

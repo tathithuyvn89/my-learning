@@ -1,0 +1,222 @@
+{
+  "id": 15,
+  "week": 3,
+  "theme": "Kể bug 4 câu",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "We're seeing…",
+      "note": "Câu 1 kể bug: triệu chứng, không kể cảm xúc.",
+      "vi": "Bên mình đang thấy…",
+      "example": {
+        "en": "We're seeing 500s on checkout.",
+        "vi": "Bên mình đang thấy 500 ở checkout."
+      },
+      "slot": "We're seeing ___"
+    },
+    {
+      "en": "It happens when…",
+      "note": "Câu 2: bước tái hiện.",
+      "vi": "Nó xảy ra khi…",
+      "example": {
+        "en": "It happens when the cart is empty.",
+        "vi": "Nó xảy ra khi giỏ hàng trống."
+      },
+      "slot": "It happens when ___"
+    },
+    {
+      "en": "Expected vs actual",
+      "note": "Câu 3: kỳ vọng / thực tế. Có thể nói đủ câu.",
+      "vi": "Kỳ vọng so với thực tế",
+      "example": {
+        "en": "Expected: a warning. Actual: a crash.",
+        "vi": "Kỳ vọng: cảnh báo. Thực tế: crash."
+      }
+    },
+    {
+      "en": "I already tried…",
+      "note": "Câu 4: đã thử gì. Tránh họ hỏi Have you tried…",
+      "vi": "Mình đã thử…",
+      "example": {
+        "en": "I already tried clearing cache.",
+        "vi": "Mình đã thử xóa cache."
+      },
+      "slot": "I already tried ___"
+    },
+    {
+      "en": "Can you take a look?",
+      "note": "Nhờ người khác sau khi đã kể đủ 4 câu.",
+      "vi": "Bạn xem giúp được không?",
+      "example": {
+        "en": "Can you take a look? I already tried a restart.",
+        "vi": "Bạn xem giúp? Mình đã thử restart."
+      }
+    }
+  ],
+  "pattern": {
+    "title": "Bug in 4 beats",
+    "pattern": "We're seeing… It happens when… Expected vs actual. I already tried…",
+    "explainVi": "Bốn nhịp: triệu chứng, reproduce, expected/actual, đã thử gì. Rồi mới nhờ look.",
+    "drills": [
+      {
+        "prompt": "Nói việc thật hôm nay: We're seeing ___",
+        "answer": "We're seeing…"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: It happens when ___",
+        "answer": "It happens when…"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Kỳ vọng so với thực tế",
+        "answer": "Expected vs actual"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: I already tried ___",
+        "answer": "I already tried…"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Kể bug: symptom / when / expected",
+    "video": {
+      "title": "Harvard CS50 — Lecture 0 opening",
+      "url": "https://www.youtube.com/watch?v=8mAITcNt710",
+      "watchFrom": "0:00",
+      "watchTo": "2:00",
+      "whyVi": "Giọng academic rõ. Nghe người ta giải thích vấn đề; ghi symptom / when / expected nếu nghe được."
+    },
+    "unseen": [
+      {
+        "speaker": "A",
+        "en": "We're seeing timeouts on export, not 500s.",
+        "vi": "Bên mình thấy timeout ở export, không phải 500."
+      },
+      {
+        "speaker": "B",
+        "en": "It happens when the file is over 50MB?",
+        "vi": "Xảy ra khi file trên 50MB?"
+      },
+      {
+        "speaker": "A",
+        "en": "Yes. Expected: a warning. Actual: the job dies silently.",
+        "vi": "Đúng. Kỳ vọng: cảnh báo. Thực tế: job chết im."
+      },
+      {
+        "speaker": "A",
+        "en": "I already tried bumping the timeout to 120 seconds.",
+        "vi": "Mình đã thử tăng timeout lên 120 giây."
+      },
+      {
+        "speaker": "B",
+        "en": "Can you take a look at the worker logs from 08:12?",
+        "vi": "Bạn xem log worker lúc 08:12 được không?"
+      },
+      {
+        "speaker": "A",
+        "en": "I'll pull them. Can you take a look after that?",
+        "vi": "Mình kéo log. Xong bạn xem giúp?"
+      },
+      {
+        "speaker": "B",
+        "en": "Send the request id too.",
+        "vi": "Gửi luôn request id."
+      },
+      {
+        "speaker": "A",
+        "en": "Will do.",
+        "vi": "Ok."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Video 0:00–2:00: speaker đang giải thích vấn đề gì? Một câu.",
+        "answer": "Ghi gist CS50 / computer science intro (tuỳ đoạn)"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Export fail khi file thế nào?",
+        "answer": "Over 50MB"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Expected vs actual là gì?",
+        "answer": "Warning vs job dies silently"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "en": "We're seeing 500s on checkout.",
+      "vi": "Bên mình đang thấy 500 ở checkout."
+    },
+    {
+      "speaker": "A",
+      "en": "It happens when the cart is empty.",
+      "vi": "Nó xảy ra khi giỏ trống."
+    },
+    {
+      "speaker": "A",
+      "en": "Expected: a warning. Actual: a crash.",
+      "vi": "Kỳ vọng: cảnh báo. Thực tế: crash."
+    },
+    {
+      "speaker": "A",
+      "en": "I already tried clearing cache.",
+      "vi": "Mình đã thử xóa cache."
+    },
+    {
+      "speaker": "A",
+      "en": "Can you take a look?",
+      "vi": "Bạn xem giúp được không?"
+    },
+    {
+      "speaker": "B",
+      "en": "Yes — send the timestamp. Was it 10:04 or 10:14?",
+      "vi": "Được — gửi timestamp. 10:04 hay 10:14?"
+    },
+    {
+      "speaker": "A",
+      "en": "10:04 UTC. Logs in #incidents.",
+      "vi": "10:04 UTC. Log ở #incidents."
+    },
+    {
+      "speaker": "B",
+      "en": "Got it. I'll look after standup.",
+      "vi": "Rõ. Standup xong mình xem."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: We're seeing ___",
+      "answer": "We're seeing…"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: It happens when ___",
+      "answer": "It happens when…"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Explain a real bug to a teammate in four short beats.",
+    "system": "You are a friendly teammate (or interviewer) at a software company. Speak natural meeting English. Keep each turn to 1–2 short sentences. You MAY use extra workplace English so the learner practices listening. Nudge the learner to use these phrases: We're seeing…; It happens when…; Expected vs actual; I already tried…; Can you take a look?. If they ask you to slow down or repeat, do that. Ask one concrete detail about their real work (ticket, bug, PR, or project). Wait for the learner to reply. Scenario: Explain a real bug to a teammate in four short beats.",
+    "allowedPhrases": [
+      "We're seeing…",
+      "It happens when…",
+      "Expected vs actual",
+      "I already tried…",
+      "Can you take a look?"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "id": 7,
+  "week": 1,
+  "theme": "AI standup",
+  "kind": "review",
+  "phrases": [
+    {
+      "en": "Morning, team",
+      "note": "Chào channel buổi sáng, không cần dài.",
+      "vi": "Chào team buổi sáng",
+      "example": {
+        "en": "Morning, team — I'll be in standup.",
+        "vi": "Chào team — lát nữa mình vào standup."
+      }
+    },
+    {
+      "en": "Yesterday I finished…",
+      "note": "Standup: câu 1. Nói việc đã xong, không kể dài.",
+      "vi": "Hôm qua mình xong…",
+      "example": {
+        "en": "Yesterday I finished the login bug.",
+        "vi": "Hôm qua mình xong bug login."
+      },
+      "slot": "Yesterday I finished ___"
+    },
+    {
+      "en": "Could you take a look?",
+      "note": "Nhờ xem giúp. Lịch sự hơn Can you look?",
+      "vi": "Bạn xem giúp được không?",
+      "example": {
+        "en": "Could you take a look at this PR?",
+        "vi": "Bạn xem giúp PR này được không?"
+      }
+    },
+    {
+      "en": "Just to confirm",
+      "note": "Mở câu hỏi lại ticket, không nghe như cãi.",
+      "vi": "Chỉ để xác nhận",
+      "example": {
+        "en": "Just to confirm: we ship Friday, right?",
+        "vi": "Xác nhận lại: mình ship thứ Sáu chứ?"
+      }
+    },
+    {
+      "en": "Still working on…",
+      "note": "Update giữa ngày. Chưa xong.",
+      "vi": "Vẫn đang làm…",
+      "example": {
+        "en": "Still working on the payment retry.",
+        "vi": "Vẫn đang làm retry thanh toán."
+      },
+      "slot": "Still working on ___"
+    }
+  ],
+  "pattern": {
+    "title": "Chỉ dùng mẫu tuần 1",
+    "pattern": "Standup + one Slack ping",
+    "explainVi": "Roleplay: standup rồi một tin Slack. AI chỉ được dùng cụm tuần 1.",
+    "drills": [
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Chào team buổi sáng",
+        "answer": "Morning, team"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: Yesterday I finished ___",
+        "answer": "Yesterday I finished…"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Bạn xem giúp được không?",
+        "answer": "Could you take a look?"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Chỉ để xác nhận",
+        "answer": "Just to confirm"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Standup rồi một ping Slack",
+    "video": null,
+    "unseen": [
+      {
+        "speaker": "B",
+        "en": "I'll start. Yesterday I shipped the banner.",
+        "vi": "Mình nói trước. Hôm qua ship banner."
+      },
+      {
+        "speaker": "B",
+        "en": "Today I'll work on copy. No blockers.",
+        "vi": "Hôm nay làm copy. Không blocker."
+      },
+      {
+        "speaker": "A",
+        "en": "Yesterday I finished the timeout. Today I'll work on tests. I'm blocked on staging.",
+        "vi": "Hôm qua xong timeout. Hôm nay test. Kẹt staging."
+      },
+      {
+        "speaker": "B",
+        "en": "Could you take a look at my PR when you have a minute?",
+        "vi": "Rảnh xem PR mình với?"
+      },
+      {
+        "speaker": "A",
+        "en": "No rush. Just to confirm it's the retry PR?",
+        "vi": "Không gấp. Xác nhận là PR retry chứ?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, VEHO-218.",
+        "vi": "Ừ, VEHO-218."
+      },
+      {
+        "speaker": "A",
+        "en": "I'll post here when it's done.",
+        "vi": "Xong mình báo ở đây."
+      },
+      {
+        "speaker": "B",
+        "en": "Thanks in advance. Have a good one.",
+        "vi": "Cảm ơn trước. Chúc làm việc vui."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Bạn (A) bị blocked ở đâu?",
+        "answer": "Staging"
+      },
+      {
+        "type": "cloze",
+        "prompt": "PR cần xem là ticket nào?",
+        "answer": "VEHO-218"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Bên B hôm qua đã ship gì?",
+        "answer": "Banner"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "B",
+      "en": "Your turn.",
+      "vi": "Tới bạn."
+    },
+    {
+      "speaker": "A",
+      "en": "Yesterday I finished the timeout fix.",
+      "vi": "Hôm qua xong fix timeout."
+    },
+    {
+      "speaker": "A",
+      "en": "Today I'll work on tests. I'm blocked on staging.",
+      "vi": "Hôm nay làm test. Mình kẹt staging."
+    },
+    {
+      "speaker": "A",
+      "en": "That's it from me.",
+      "vi": "Mình hết rồi."
+    },
+    {
+      "speaker": "B",
+      "en": "Got it, thanks. Quick ping later?",
+      "vi": "Rõ. Lát ping nhanh nhé?"
+    },
+    {
+      "speaker": "A",
+      "en": "Sure. Thanks in advance.",
+      "vi": "Ok. Cảm ơn trước."
+    },
+    {
+      "speaker": "B",
+      "en": "Just to confirm: you're blocked on the deploy, not the tests.",
+      "vi": "Xác nhận: bạn kẹt deploy, không phải test."
+    },
+    {
+      "speaker": "A",
+      "en": "Yes. Waiting on staging.",
+      "vi": "Đúng. Đang chờ staging."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Chào team buổi sáng",
+      "answer": "Morning, team"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: Yesterday I finished ___",
+      "answer": "Yesterday I finished…"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Standup plus one Slack ping. Stay inside week 1 phrases when you speak; the teammate may add workplace English.",
+    "system": "You are a friendly teammate (or interviewer) at a software company. Speak natural meeting English. Keep each turn to 1–2 short sentences. You MAY use extra workplace English so the learner practices listening. Nudge the learner to use these phrases: Morning, team; Yesterday I finished…; Could you take a look?; Just to confirm; Still working on…. If they ask you to slow down or repeat, do that. Ask one concrete detail about their real work (ticket, bug, PR, or project). Wait for the learner to reply. Scenario: Standup plus one Slack ping. Stay inside week 1 phrases when you speak; the teammate may add workplace English. You start the standup. Ask what ticket they shipped.",
+    "allowedPhrases": [
+      "Morning, team",
+      "Yesterday I finished…",
+      "Could you take a look?",
+      "Just to confirm",
+      "Still working on…"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

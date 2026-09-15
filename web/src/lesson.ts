@@ -1,7 +1,9 @@
+import type { HskLevel } from "./course";
+
 export type Lesson = {
   id: number;
   week: number;
-  hsk: 1 | 2 | 3 | 4;
+  hsk: HskLevel;
   theme: string;
   kind: "learn" | "review";
   vocab: Array<{

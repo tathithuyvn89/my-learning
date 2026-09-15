@@ -48,6 +48,16 @@ describe("vocab-index", () => {
     expect(hsk4.every((item) => item.week >= 25)).toBe(true);
     expect(hsk4.some((item) => item.han === "工资")).toBe(true);
     expect(hsk3.some((item) => item.han === "工资")).toBe(false);
+
+    const hsk5 = vocabForHsk(5, "all");
+    expect(hsk5.every((item) => item.week >= 33)).toBe(true);
+    expect(hsk5.some((item) => item.han === "事业")).toBe(true);
+    expect(hsk4.some((item) => item.han === "事业")).toBe(false);
+
+    const hsk6 = vocabForHsk(6, "all");
+    expect(hsk6.every((item) => item.week >= 41)).toBe(true);
+    expect(hsk6.some((item) => item.han === "权利")).toBe(true);
+    expect(hsk5.some((item) => item.han === "权利")).toBe(false);
   });
 
   it("does not invent words outside JSON", () => {

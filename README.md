@@ -1,6 +1,6 @@
-# Học tiếng Trung HSK 1–4
+# Học tiếng Trung HSK 1–6
 
-Web tĩnh, 30 phút/ngày, 224 bài / 32 tuần (HSK 1 rồi HSK 2 rồi HSK 3 rồi HSK 4). Giao diện tiếng Việt, chữ giản thể, pinyin. Không tài khoản, không API AI — tiến độ lưu trên máy (`localStorage`), prompt copy ra ChatGPT/Claude.
+Web tĩnh, 30 phút/ngày, 336 bài / 48 tuần (HSK 1 rồi HSK 2 rồi HSK 3 rồi HSK 4 rồi HSK 5 rồi HSK 6). Giao diện tiếng Việt, chữ giản thể, pinyin. Không tài khoản, không API AI — tiến độ lưu trên máy (`localStorage`), prompt copy ra ChatGPT/Claude.
 
 App nằm trong thư mục `web/`. Điều hướng dùng **hash** (`#/`, `#/day/1`, …) nên GitHub Pages và Netlify không cần rewrite.
 
@@ -36,7 +36,7 @@ cd web
 npm run preview
 ```
 
-Hash vẫn phải chạy: `#/`, `#/calendar`, `#/words`, `#/day/2`, `#/day/56`, `#/day/57`, `#/day/112`, `#/hsk3`, `#/day/113`, `#/day/168`, `#/hsk4`, `#/day/169`, `#/day/224`.
+Hash vẫn phải chạy: `#/`, `#/calendar`, `#/words`, `#/day/2`, `#/day/56`, `#/day/57`, `#/day/112`, `#/hsk3`, `#/day/113`, `#/day/168`, `#/hsk4`, `#/day/169`, `#/day/224`, `#/hsk5`, `#/day/225`, `#/day/280`, `#/hsk6`, `#/day/281`, `#/day/336`.
 
 ## Deploy — GitHub Pages
 
@@ -78,6 +78,8 @@ jobs:
 
 Sau khi lên: mở `…/#/day/1` — F5 không được mất trang.
 
+Title, description, Open Graph nằm trong `web/index.html`. `robots.txt` và `sitemap.xml` mặc định trỏ `https://tathithuyvn89.github.io/my-learning/` — sửa URL đó nếu site không nằm trên GitHub Pages.
+
 ## Deploy — Netlify
 
 - **Base directory:** `web`
@@ -85,3 +87,9 @@ Sau khi lên: mở `…/#/day/1` — F5 không được mất trang.
 - **Publish directory:** `dist`
 
 Hoặc kéo thả thư mục `web/dist` vào [Netlify Drop](https://app.netlify.com/drop). Không cần file `_redirects` vì hash router.
+
+## Deploy — Vercel
+
+Import repo trên [Vercel](https://vercel.com/new). File `vercel.json` ở root đã cấu hình build trong `web/`.
+
+Sau deploy, bật **Analytics → Web Analytics** trong project Vercel. App dùng `@vercel/analytics` (`web/src/analytics.ts`): chỉ inject khi build trên Vercel (`VERCEL=1`), và gửi pageview thủ công mỗi lần đổi hash (`#/hsk1/day/1`, …). Build GitHub Pages / Netlify không gửi analytics.

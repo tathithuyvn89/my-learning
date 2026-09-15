@@ -1,5 +1,7 @@
 import {
   DAYS_PER_HSK,
+  EN_FIRST_DAY,
+  type EnCourse,
   FIRST_DAY,
   LAST_DAY,
   type HskLevel,
@@ -7,10 +9,13 @@ import {
   hrefDay,
   hrefPage,
   hskOfDay,
+  lastEnDay,
   localDayOf,
 } from "./course";
 
 export const PROGRESS_KEY = "hsk1-progress";
+export const EN_PROGRESS_KEY = "en-it-progress";
+export const EN_IV_PROGRESS_KEY = "en-iv-progress";
 export const PROFILE_KEY = "hsk-profile";
 export const USERS_KEY = "hsk-users";
 
@@ -318,4 +323,78 @@ export function completeOnboarding(
 
 export function isDayComplete(day: number): boolean {
   return loadProgress().completedDays.includes(day);
+}
+
+function enKey(course: EnCourse = "it"): string {
+  return course === "iv" ? EN_IV_PROGRESS_KEY : EN_PROGRESS_KEY;
+}
+
+export function loadEnProgress(course: EnCourse = "it"): Progress {
+  const raw = readRaw(enKey(course));
+  if (!raw) return emptyProgress();
+  try {
+    return parseProgress(JSON.parse(raw) as Partial<Progress>);
+  } catch {
+    return emptyProgress();
+  }
+}
+
+export function saveEnProgress(
+  progress: Progress,
+  course: EnCourse = "it",
+): void {
+  writeRaw(enKey(course), JSON.stringify(progress));
+}
+
+export function isEnDayComplete(
+  day: number,
+  course: EnCourse = "it",
+): boolean {
+  return loadEnProgress(course).completedDays.includes(day);
+}
+
+export function nextUnfinishedEnDay(course: EnCourse = "it"): number | null {
+  const done = new Set(loadEnProgress(course).completedDays);
+  const last = lastEnDay(course);
+  for (let n = EN_FIRST_DAY; n <= last; n++) {
+    if (!done.has(n)) return n;
+  }
+  return null;
+}
+
+export function currentEnStreak(
+  now = new Date(),
+  course: EnCourse = "it",
+): number {
+  return currentStreak(loadEnProgress(course), now);
+}
+
+export function markEnDayComplete(
+  day: number,
+  now = new Date(),
+  course: EnCourse = "it",
+): Progress {
+  const current = loadEnProgress(course);
+  const completedDays = current.completedDays.includes(day)
+    ? current.completedDays
+    : [...current.completedDays, day].sort((a, b) => a - b);
+  const today = dateKey(now);
+  const last = keyFromIso(current.lastCompletedAt);
+  let streak = current.streak;
+  if (!last) {
+    streak = 1;
+  } else if (last === today) {
+    streak = Math.max(current.streak, 1);
+  } else if (last === shiftDateKey(today, -1)) {
+    streak = current.streak + 1;
+  } else {
+    streak = 1;
+  }
+  const next: Progress = {
+    completedDays,
+    lastCompletedAt: now.toISOString(),
+    streak,
+  };
+  saveEnProgress(next, course);
+  return next;
 }

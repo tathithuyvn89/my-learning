@@ -1,0 +1,219 @@
+{
+  "id": 8,
+  "week": 2,
+  "theme": "Requirements",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "Let's start with requirements",
+      "note": "Design: đừng vẽ DB trước.",
+      "vi": "Mình bắt đầu từ requirements",
+      "example": {
+        "en": "Let's start with requirements before the boxes.",
+        "vi": "Requirements trước, rồi mới vẽ hộp."
+      }
+    },
+    {
+      "en": "Functional requirements",
+      "note": "User làm được gì.",
+      "vi": "Functional requirements",
+      "example": {
+        "en": "Functional: create a short URL and redirect.",
+        "vi": "Functional: tạo short URL và redirect."
+      }
+    },
+    {
+      "en": "Non-functional requirements",
+      "note": "Scale, latency, consistency.",
+      "vi": "Non-functional requirements",
+      "example": {
+        "en": "Non-functional: low latency reads, 100M URLs.",
+        "vi": "Non-functional: đọc nhanh, 100 triệu URL."
+      }
+    },
+    {
+      "en": "What's the scale?",
+      "note": "Hỏi QPS / storage. Đừng đoán thầm.",
+      "vi": "Scale cỡ nào ạ?",
+      "example": {
+        "en": "What's the scale — QPS and storage?",
+        "vi": "Scale thế nào — QPS và storage ạ?"
+      }
+    },
+    {
+      "en": "Any latency target?",
+      "note": "Hỏi SLO. Một số.",
+      "vi": "Có mục tiêu latency không ạ?",
+      "example": {
+        "en": "Any latency target for the redirect?",
+        "vi": "Redirect có mục tiêu latency không ạ?"
+      }
+    }
+  ],
+  "pattern": {
+    "title": "Ask scale first",
+    "pattern": "Let's start with requirements → Functional / Non-functional → What's the scale? / Any latency target?",
+    "explainVi": "Design: requirements trước hộp. Hỏi scale và latency. Đừng vẽ DB ngay.",
+    "drills": [
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình bắt đầu từ requirements",
+        "answer": "Let's start with requirements"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Functional requirements",
+        "answer": "Functional requirements"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Non-functional requirements",
+        "answer": "Non-functional requirements"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Scale cỡ nào ạ?",
+        "answer": "What's the scale?"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Mở system design",
+    "video": {
+      "title": "ByteByteGo — Design a URL Shortener",
+      "url": "https://www.youtube.com/watch?v=JPD84tQFP0I",
+      "watchFrom": "0:00",
+      "watchTo": "2:00",
+      "whyVi": "System design mở: requirements rồi high-level. Nghe scale / API, không chép kiến thức."
+    },
+    "unseen": [
+      {
+        "speaker": "B",
+        "en": "URL shortener. Don't jump to databases.",
+        "vi": "URL shortener. Đừng nhảy tới database."
+      },
+      {
+        "speaker": "A",
+        "en": "Let's start with requirements.",
+        "vi": "Bắt đầu từ requirements."
+      },
+      {
+        "speaker": "A",
+        "en": "Functional requirements: shorten and redirect.",
+        "vi": "Functional: rút và redirect."
+      },
+      {
+        "speaker": "A",
+        "en": "Non-functional requirements: availability over perfect consistency.",
+        "vi": "Non-functional: availability hơn consistency tuyệt đối."
+      },
+      {
+        "speaker": "A",
+        "en": "What's the scale?",
+        "vi": "Scale cỡ nào ạ?"
+      },
+      {
+        "speaker": "B",
+        "en": "A hundred million URLs, mostly reads.",
+        "vi": "100 triệu URL, chủ yếu đọc."
+      },
+      {
+        "speaker": "A",
+        "en": "Any latency target?",
+        "vi": "Có mục tiêu latency không ạ?"
+      },
+      {
+        "speaker": "B",
+        "en": "Redirect should feel instant. Under 100ms.",
+        "vi": "Redirect phải tức thì. Dưới 100ms."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Video 0:00–2:00: họ bắt đầu từ requirements hay từ DB?",
+        "answer": "Requirements / high-level (tuỳ clip, không phải DB ngay)"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Chủ yếu read hay write?",
+        "answer": "Read"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Latency redirect mục tiêu?",
+        "answer": "Under 100ms / dưới 100ms"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "B",
+      "en": "Design a URL shortener. 15 minutes.",
+      "vi": "Design URL shortener. 15 phút."
+    },
+    {
+      "speaker": "A",
+      "en": "Let's start with requirements before the boxes.",
+      "vi": "Requirements trước, rồi mới vẽ hộp."
+    },
+    {
+      "speaker": "A",
+      "en": "Functional: create a short URL and redirect.",
+      "vi": "Functional: tạo short URL và redirect."
+    },
+    {
+      "speaker": "A",
+      "en": "Non-functional: low latency reads, 100M URLs.",
+      "vi": "Non-functional: đọc nhanh, 100 triệu URL."
+    },
+    {
+      "speaker": "A",
+      "en": "What's the scale — QPS and storage?",
+      "vi": "Scale thế nào — QPS và storage ạ?"
+    },
+    {
+      "speaker": "B",
+      "en": "Reads 10k QPS. Writes much less.",
+      "vi": "Read 10k QPS. Write ít hơn nhiều."
+    },
+    {
+      "speaker": "A",
+      "en": "Any latency target for the redirect?",
+      "vi": "Redirect có mục tiêu latency không ạ?"
+    },
+    {
+      "speaker": "B",
+      "en": "Under 50ms p99.",
+      "vi": "Dưới 50ms p99."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Mình bắt đầu từ requirements",
+      "answer": "Let's start with requirements"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Functional requirements",
+      "answer": "Functional requirements"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "System design opening for URL shortener or notifications. Force requirements and scale questions.",
+    "system": "You are a software interviewer at a foreign company. Speak natural interview English. Keep each turn to 1–2 short sentences. You MAY use extra interview English so the learner practices listening. Interrupt with a follow-up. Nudge the learner to use these phrases: Let's start with requirements; Functional requirements; Non-functional requirements; What's the scale?; Any latency target?. Ask about their real experience. Wait for the learner to reply. Scenario: System design opening for URL shortener or notifications. Force requirements and scale questions.",
+    "allowedPhrases": [
+      "Let's start with requirements",
+      "Functional requirements",
+      "Non-functional requirements",
+      "What's the scale?",
+      "Any latency target?"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "id": 13,
+  "week": 2,
+  "theme": "Tổng hợp tuần 2",
+  "kind": "review",
+  "phrases": [
+    {
+      "en": "Let's start with requirements",
+      "note": "Design: đừng vẽ DB trước.",
+      "vi": "Mình bắt đầu từ requirements",
+      "example": {
+        "en": "Let's start with requirements before the boxes.",
+        "vi": "Requirements trước, rồi mới vẽ hộp."
+      }
+    },
+    {
+      "en": "I'd sketch this first",
+      "note": "Báo sẽ vẽ high-level.",
+      "vi": "Mình sketch cái này trước",
+      "example": {
+        "en": "I'd sketch this first, four boxes.",
+        "vi": "Mình sketch bốn hộp trước."
+      }
+    },
+    {
+      "en": "I'd pick X because…",
+      "note": "Chọn rồi nói lý do. Một lý do.",
+      "vi": "Mình chọn X vì…",
+      "example": {
+        "en": "I'd pick Postgres because we need joins.",
+        "vi": "Mình chọn Postgres vì cần join."
+      },
+      "slot": "I'd pick X because ___"
+    },
+    {
+      "en": "This breaks when…",
+      "note": "Nói điều kiện vỡ. Có số thì tốt.",
+      "vi": "Cái này vỡ khi…",
+      "example": {
+        "en": "This breaks when writes hit one shard.",
+        "vi": "Vỡ khi write dồn một shard."
+      },
+      "slot": "This breaks when ___"
+    },
+    {
+      "en": "I haven't operated this in prod",
+      "note": "Gap thật. Không bịa Kafka cluster.",
+      "vi": "Mình chưa vận hành cái này trên prod",
+      "example": {
+        "en": "I haven't operated Kafka in prod.",
+        "vi": "Mình chưa vận hành Kafka trên prod."
+      }
+    }
+  ],
+  "pattern": {
+    "title": "Design 5 nhịp",
+    "pattern": "Requirements → sketch → trade-off → bottleneck → honest gap",
+    "explainVi": "Ghép tuần 2. Không thêm cụm. URL shortener hoặc notification — khung.",
+    "drills": [
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình bắt đầu từ requirements",
+        "answer": "Let's start with requirements"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình sketch cái này trước",
+        "answer": "I'd sketch this first"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: I'd pick X because ___",
+        "answer": "I'd pick X because…"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: This breaks when ___",
+        "answer": "This breaks when…"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Ghép một vòng design",
+    "video": {
+      "title": "ByteByteGo — Design a URL Shortener",
+      "url": "https://www.youtube.com/watch?v=JPD84tQFP0I",
+      "watchFrom": "0:00",
+      "watchTo": "2:00",
+      "whyVi": "System design mở: requirements rồi high-level. Nghe scale / API, không chép kiến thức."
+    },
+    "unseen": [
+      {
+        "speaker": "A",
+        "en": "Let's start with requirements.",
+        "vi": "Bắt đầu requirements."
+      },
+      {
+        "speaker": "A",
+        "en": "High-level, we have clients, API, store, cache.",
+        "vi": "High-level bốn hộp."
+      },
+      {
+        "speaker": "A",
+        "en": "I'd pick X because lookups are by key. The downside is analytics.",
+        "vi": "Chọn X vì lookup theo key. Nhược: analytics."
+      },
+      {
+        "speaker": "A",
+        "en": "The bottleneck is the redirect path.",
+        "vi": "Bottleneck đường redirect."
+      },
+      {
+        "speaker": "A",
+        "en": "To scale reads, cache plus replicas.",
+        "vi": "Scale read: cache + replica."
+      },
+      {
+        "speaker": "B",
+        "en": "How do you operate the cache in prod?",
+        "vi": "Cache prod vận hành sao?"
+      },
+      {
+        "speaker": "A",
+        "en": "I know the idea, not the ops. I'd ask the team.",
+        "vi": "Biết ý, chưa ops. Hỏi team."
+      },
+      {
+        "speaker": "A",
+        "en": "I'd rather keep it simple.",
+        "vi": "Giữ đơn giản."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Video: họ nói scale/API sớm hay muộn?",
+        "answer": "Sớm / trong 2 phút đầu (tuỳ clip)"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Bottleneck nêu ở path nào?",
+        "answer": "Redirect"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Khi bị hỏi ops cache, họ làm gì?",
+        "answer": "Ask the team / không bluff"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "en": "Let's start with requirements. What's the scale?",
+      "vi": "Requirements. Scale cỡ nào ạ?"
+    },
+    {
+      "speaker": "A",
+      "en": "I'd sketch this first. Clients talk to the API.",
+      "vi": "Sketch. Client nói với API."
+    },
+    {
+      "speaker": "A",
+      "en": "Store goes in a key-value store.",
+      "vi": "Lưu KV."
+    },
+    {
+      "speaker": "A",
+      "en": "I'd pick Redis because reads dominate. The downside is memory.",
+      "vi": "Chọn Redis vì đọc nhiều. Nhược: RAM."
+    },
+    {
+      "speaker": "A",
+      "en": "This breaks when the cache misses. I'd cache the mapping.",
+      "vi": "Vỡ khi cache miss. Cache mapping."
+    },
+    {
+      "speaker": "B",
+      "en": "Kafka for click events?",
+      "vi": "Kafka cho click?"
+    },
+    {
+      "speaker": "A",
+      "en": "I haven't operated this in prod. I'd rather keep it simple for v1.",
+      "vi": "Chưa ops prod. V1 giữ đơn giản."
+    },
+    {
+      "speaker": "B",
+      "en": "Okay.",
+      "vi": "Ok."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Mình bắt đầu từ requirements",
+      "answer": "Let's start with requirements"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Mình sketch cái này trước",
+      "answer": "I'd sketch this first"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "15-minute design recap: requirements, four boxes, one trade-off, one bottleneck, one honest gap.",
+    "system": "You are a software interviewer at a foreign company. Speak natural interview English. Keep each turn to 1–2 short sentences. You MAY use extra interview English so the learner practices listening. Interrupt with a follow-up. Nudge the learner to use these phrases: Let's start with requirements; I'd sketch this first; I'd pick X because…; This breaks when…; I haven't operated this in prod. Ask about their real experience. Wait for the learner to reply. Scenario: 15-minute design recap: requirements, four boxes, one trade-off, one bottleneck, one honest gap.",
+    "allowedPhrases": [
+      "Let's start with requirements",
+      "I'd sketch this first",
+      "I'd pick X because…",
+      "This breaks when…",
+      "I haven't operated this in prod"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

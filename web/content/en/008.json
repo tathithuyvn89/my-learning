@@ -1,0 +1,219 @@
+{
+  "id": 8,
+  "week": 2,
+  "theme": "Vào meeting",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "Can you hear me?",
+      "note": "30 giây đầu Zoom. Hỏi âm thanh, không xin lỗi dài.",
+      "vi": "Mọi người nghe mình không?",
+      "example": {
+        "en": "Can you hear me? I'll share in a second.",
+        "vi": "Nghe mình không? Lát mình share."
+      }
+    },
+    {
+      "en": "I'll share my screen",
+      "note": "Báo trước khi share. Đừng share im lặng.",
+      "vi": "Mình sẽ share màn hình",
+      "example": {
+        "en": "I'll share my screen — one sec.",
+        "vi": "Mình share màn hình — chờ một chút."
+      }
+    },
+    {
+      "en": "Sorry I'm a couple minutes late",
+      "note": "Muộn nhẹ. Một câu rồi vào việc.",
+      "vi": "Xin lỗi mình muộn vài phút",
+      "example": {
+        "en": "Sorry I'm a couple minutes late — traffic.",
+        "vi": "Xin lỗi muộn vài phút — kẹt đường."
+      }
+    },
+    {
+      "en": "Let's get started",
+      "note": "Mở họp khi đã đủ người.",
+      "vi": "Bắt đầu nhé",
+      "example": {
+        "en": "Everyone's here. Let's get started.",
+        "vi": "Đủ người rồi. Bắt đầu nhé."
+      }
+    },
+    {
+      "en": "I might be on mute",
+      "note": "Khi người ta không nghe. Kiểm tra mute trước.",
+      "vi": "Có thể mình đang mute",
+      "example": {
+        "en": "I might be on mute — hang on.",
+        "vi": "Có thể mình đang mute — chờ xíu."
+      }
+    }
+  ],
+  "pattern": {
+    "title": "Join + setup",
+    "pattern": "Can you hear me? I'll share my screen. Let's get started.",
+    "explainVi": "30 giây đầu: âm thanh, xin lỗi nếu muộn một câu, share, bắt đầu. Đừng kể lý do 1 phút.",
+    "drills": [
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mọi người nghe mình không?",
+        "answer": "Can you hear me?"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình sẽ share màn hình",
+        "answer": "I'll share my screen"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Xin lỗi mình muộn vài phút",
+        "answer": "Sorry I'm a couple minutes late"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Bắt đầu nhé",
+        "answer": "Let's get started"
+      }
+    ]
+  },
+  "listen": {
+    "title": "30 giây đầu cuộc họp",
+    "video": {
+      "title": "BBC English at Work — box set ep. 6–10",
+      "url": "https://www.youtube.com/watch?v=4zB8KhyYlx4",
+      "watchFrom": "0:00",
+      "watchTo": "2:00",
+      "whyVi": "Họp và điện thoại văn phòng. Bắt tên, số, deadline. Xin nhắc nếu miss."
+    },
+    "unseen": [
+      {
+        "speaker": "A",
+        "en": "Can you hear me? I might be on mute.",
+        "vi": "Nghe mình không? Có thể mình đang mute."
+      },
+      {
+        "speaker": "B",
+        "en": "We can. Sorry, I was a couple minutes late too.",
+        "vi": "Nghe. Xin lỗi mình cũng muộn vài phút."
+      },
+      {
+        "speaker": "A",
+        "en": "I'll share my screen — one sec.",
+        "vi": "Mình share màn hình — chờ xíu."
+      },
+      {
+        "speaker": "B",
+        "en": "You're sharing the local build, not staging.",
+        "vi": "Bạn đang share bản local, không phải staging."
+      },
+      {
+        "speaker": "A",
+        "en": "Ah — switching. Let's get started.",
+        "vi": "À — đổi. Bắt đầu nhé."
+      },
+      {
+        "speaker": "B",
+        "en": "Can we start with the 500s from 9:12?",
+        "vi": "Bắt đầu với mấy cái 500 lúc 9:12 được không?"
+      },
+      {
+        "speaker": "A",
+        "en": "Yes. Timestamp 9:12.",
+        "vi": "Được. Timestamp 9:12."
+      },
+      {
+        "speaker": "B",
+        "en": "Got it.",
+        "vi": "Rõ."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Video 0:00–2:00: cuộc nói chuyện đang ở đâu (họp / điện thoại / bàn)?",
+        "answer": "Office / meeting / phone (tuỳ đoạn clip)"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Họ bắt đầu với timestamp nào?",
+        "answer": "9:12"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Lúc đầu share nhầm môi trường nào?",
+        "answer": "Local build, không phải staging"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "en": "Can you hear me?",
+      "vi": "Mọi người nghe mình không?"
+    },
+    {
+      "speaker": "B",
+      "en": "Yes. I might be on mute — hang on.",
+      "vi": "Nghe. Có thể mình đang mute — chờ xíu."
+    },
+    {
+      "speaker": "A",
+      "en": "Sorry I'm a couple minutes late.",
+      "vi": "Xin lỗi mình muộn vài phút."
+    },
+    {
+      "speaker": "B",
+      "en": "All good. Priya's still joining.",
+      "vi": "Không sao. Priya vẫn đang vào."
+    },
+    {
+      "speaker": "A",
+      "en": "I'll share my screen. Let's get started.",
+      "vi": "Mình share màn hình. Bắt đầu nhé."
+    },
+    {
+      "speaker": "B",
+      "en": "Ready — you're looking at staging, right?",
+      "vi": "Sẵn sàng — bạn đang mở staging chứ?"
+    },
+    {
+      "speaker": "A",
+      "en": "Yes, staging dashboard.",
+      "vi": "Đúng, dashboard staging."
+    },
+    {
+      "speaker": "B",
+      "en": "Loud and clear.",
+      "vi": "Nghe rõ."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Mọi người nghe mình không?",
+      "answer": "Can you hear me?"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Mình sẽ share màn hình",
+      "answer": "I'll share my screen"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "The first 30 seconds of a Zoom meeting about a real ticket.",
+    "system": "You are a friendly teammate (or interviewer) at a software company. Speak natural meeting English. Keep each turn to 1–2 short sentences. You MAY use extra workplace English so the learner practices listening. Nudge the learner to use these phrases: Can you hear me?; I'll share my screen; Sorry I'm a couple minutes late; Let's get started; I might be on mute. If they ask you to slow down or repeat, do that. Ask one concrete detail about their real work (ticket, bug, PR, or project). Wait for the learner to reply. Scenario: The first 30 seconds of a Zoom meeting about a real ticket.",
+    "allowedPhrases": [
+      "Can you hear me?",
+      "I'll share my screen",
+      "Sorry I'm a couple minutes late",
+      "Let's get started",
+      "I might be on mute"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "id": 7,
+  "week": 1,
+  "theme": "AI live coding",
+  "kind": "review",
+  "phrases": [
+    {
+      "en": "Let me restate the problem",
+      "note": "Clarify: nói lại đề trước khi gõ. Không nhảy vào code.",
+      "vi": "Mình restated đề nhé",
+      "example": {
+        "en": "Let me restate the problem in my own words.",
+        "vi": "Mình restated đề bằng lời mình."
+      }
+    },
+    {
+      "en": "Let me think out loud",
+      "note": "Báo sẽ nghĩ to. Đừng gõ im 3 phút.",
+      "vi": "Mình nghĩ to nhé",
+      "example": {
+        "en": "Let me think out loud for a bit.",
+        "vi": "Mình nghĩ to một chút."
+      }
+    },
+    {
+      "en": "Time is O(…)",
+      "note": "Nói big-O time. Điền n / n log n.",
+      "vi": "Time là O(…)",
+      "example": {
+        "en": "Time is O(n log n) after the sort.",
+        "vi": "Time là O(n log n) sau sort."
+      },
+      "slot": "Time is O(___)."
+    },
+    {
+      "en": "Let me trace this",
+      "note": "Dry-run trước khi tuyên bố xong.",
+      "vi": "Mình trace cái này",
+      "example": {
+        "en": "Let me trace this on the example.",
+        "vi": "Mình trace trên ví dụ."
+      }
+    },
+    {
+      "en": "I'm not sure yet",
+      "note": "Kẹt. Nói thật, đừng bịa.",
+      "vi": "Mình chưa chắc",
+      "example": {
+        "en": "I'm not sure yet — give me a second.",
+        "vi": "Mình chưa chắc — cho mình giây lát."
+      }
+    }
+  ],
+  "pattern": {
+    "title": "Easy bài, interviewer cắt",
+    "pattern": "Clarify → think out loud → stuck phrases if needed",
+    "explainVi": "Mock một bài easy. Interviewer cắt ngang. Không thêm cụm. Không cần ra test pass — cần nói.",
+    "drills": [
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình restated đề nhé",
+        "answer": "Let me restate the problem"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình nghĩ to nhé",
+        "answer": "Let me think out loud"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: Time is O(___).",
+        "answer": "Time is O(…)"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình trace cái này",
+        "answer": "Let me trace this"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Interviewer cắt bài easy",
+    "video": null,
+    "unseen": [
+      {
+        "speaker": "B",
+        "en": "Palindrome check. 15 minutes.",
+        "vi": "Check palindrome. 15 phút."
+      },
+      {
+        "speaker": "A",
+        "en": "Let me restate the problem. Ignore spaces?",
+        "vi": "Restated. Bỏ space chứ?"
+      },
+      {
+        "speaker": "B",
+        "en": "Keep letters only. Case insensitive.",
+        "vi": "Chỉ chữ. Không phân hoa thường."
+      },
+      {
+        "speaker": "A",
+        "en": "I'll start with a brute force: reverse a copy.",
+        "vi": "Brute: copy rồi reverse."
+      },
+      {
+        "speaker": "B",
+        "en": "Can we do better on space?",
+        "vi": "Space làm tốt hơn được không?"
+      },
+      {
+        "speaker": "A",
+        "en": "Then I'd optimize with two pointers.",
+        "vi": "Optimize two pointer."
+      },
+      {
+        "speaker": "B",
+        "en": "Empty string?",
+        "vi": "Chuỗi rỗng?"
+      },
+      {
+        "speaker": "A",
+        "en": "I might be missing something. Empty is true. Let me trace this.",
+        "vi": "Có thể miss. Rỗng là true. Mình trace."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Bài là gì?",
+        "answer": "Palindrome check"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Empty string xử lý sao?",
+        "answer": "True"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Optimize bằng gì?",
+        "answer": "Two pointers"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "B",
+      "en": "Reverse a string in place. Go.",
+      "vi": "Reverse string tại chỗ. Làm đi."
+    },
+    {
+      "speaker": "A",
+      "en": "Let me restate the problem. Swap from both ends.",
+      "vi": "Restated. Đổi hai đầu."
+    },
+    {
+      "speaker": "A",
+      "en": "Can I assume it's a mutable array of characters?",
+      "vi": "Giả định mảng ký tự mutable được không?"
+    },
+    {
+      "speaker": "B",
+      "en": "Yes. Complexity?",
+      "vi": "Ừ. Độ phức tạp?"
+    },
+    {
+      "speaker": "A",
+      "en": "Time is O(n). Space is O(1).",
+      "vi": "Time O(n). Space O(1)."
+    },
+    {
+      "speaker": "B",
+      "en": "What if it's Unicode?",
+      "vi": "Nếu Unicode thì sao?"
+    },
+    {
+      "speaker": "A",
+      "en": "I'm not sure yet. Give me 20 seconds.",
+      "vi": "Chưa chắc. 20 giây."
+    },
+    {
+      "speaker": "A",
+      "en": "I'd look that up. For ASCII, two pointers.",
+      "vi": "Mình tra. ASCII thì two pointer."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Mình restated đề nhé",
+      "answer": "Let me restate the problem"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Mình nghĩ to nhé",
+      "answer": "Let me think out loud"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Easy live-coding mock. Interrupt twice. If they freeze, ask them to use I'm not sure yet.",
+    "system": "You are a software interviewer at a foreign company. Speak natural interview English. Keep each turn to 1–2 short sentences. You MAY use extra interview English so the learner practices listening. Interrupt with a follow-up. Nudge the learner to use these phrases: Let me restate the problem; Let me think out loud; Time is O(…); Let me trace this; I'm not sure yet. Ask about their real experience. Wait for the learner to reply. Scenario: Easy live-coding mock. Interrupt twice. If they freeze, ask them to use I'm not sure yet.",
+    "allowedPhrases": [
+      "Let me restate the problem",
+      "Let me think out loud",
+      "Time is O(…)",
+      "Let me trace this",
+      "I'm not sure yet"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

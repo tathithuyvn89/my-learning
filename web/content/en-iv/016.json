@@ -1,0 +1,216 @@
+{
+  "id": 16,
+  "week": 3,
+  "theme": "Failure",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "What I missed was…",
+      "note": "Failure: miss của mình, không họ.",
+      "vi": "Mình miss…",
+      "example": {
+        "en": "What I missed was the null path in retry.",
+        "vi": "Mình miss nhánh null lúc retry."
+      },
+      "slot": "What I missed was ___"
+    },
+    {
+      "en": "I owned the miss",
+      "note": "Nhận. Không The test didn't catch it as excuse duy nhất.",
+      "vi": "Mình nhận miss đó",
+      "example": {
+        "en": "I owned the miss — I should have added a test.",
+        "vi": "Mình nhận — lẽ ra phải thêm test."
+      }
+    },
+    {
+      "en": "The impact was…",
+      "note": "Số hoặc user impact.",
+      "vi": "Impact là…",
+      "example": {
+        "en": "The impact was 20 minutes of failed checkouts.",
+        "vi": "Impact: 20 phút checkout fail."
+      },
+      "slot": "The impact was ___"
+    },
+    {
+      "en": "What I changed after",
+      "note": "Hành động sau. Một thay đổi.",
+      "vi": "Sau đó mình đổi…",
+      "example": {
+        "en": "What I changed after: a checklist before merge.",
+        "vi": "Sau đó: checklist trước merge."
+      }
+    },
+    {
+      "en": "Next time I'd…",
+      "note": "Hướng khác. Cụ thể.",
+      "vi": "Lần sau mình sẽ…",
+      "example": {
+        "en": "Next time I'd page earlier.",
+        "vi": "Lần sau mình page sớm hơn."
+      },
+      "slot": "Next time I'd ___"
+    }
+  ],
+  "pattern": {
+    "title": "Own the miss",
+    "pattern": "What I missed was… I owned the miss → The impact was… → What I changed after / Next time I'd…",
+    "explainVi": "Failure: miss của mình, nhận, impact, một thay đổi sau. Không đổ QA / không I learned to work harder.",
+    "drills": [
+      {
+        "prompt": "Nói việc thật hôm nay: What I missed was ___",
+        "answer": "What I missed was…"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình nhận miss đó",
+        "answer": "I owned the miss"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: The impact was ___",
+        "answer": "The impact was…"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Sau đó mình đổi…",
+        "answer": "What I changed after"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Failure follow-up",
+    "video": null,
+    "unseen": [
+      {
+        "speaker": "B",
+        "en": "A production miss you caused.",
+        "vi": "Một miss prod do bạn."
+      },
+      {
+        "speaker": "A",
+        "en": "What I missed was a config default in staging vs prod.",
+        "vi": "Miss: default config staging khác prod."
+      },
+      {
+        "speaker": "A",
+        "en": "I owned the miss. I copied staging blindly.",
+        "vi": "Mình nhận. Copy staging mù."
+      },
+      {
+        "speaker": "A",
+        "en": "The impact was 12 minutes of empty search.",
+        "vi": "Impact: 12 phút search rỗng."
+      },
+      {
+        "speaker": "B",
+        "en": "Then what changed?",
+        "vi": "Rồi đổi gì?"
+      },
+      {
+        "speaker": "A",
+        "en": "What I changed after: prod/staging diffs in the PR template.",
+        "vi": "Sau đó: diff prod/staging trong PR template."
+      },
+      {
+        "speaker": "A",
+        "en": "Next time I'd compare configs before merge.",
+        "vi": "Lần sau so config trước merge."
+      },
+      {
+        "speaker": "B",
+        "en": "Don't blame QA.",
+        "vi": "Đừng đổ QA."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Miss là gì?",
+        "answer": "Config default staging vs prod"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Impact bao lâu?",
+        "answer": "12 minutes"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Đổi gì sau đó?",
+        "answer": "PR template / prod-staging diffs"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "B",
+      "en": "Tell me about a failure.",
+      "vi": "Kể một failure."
+    },
+    {
+      "speaker": "A",
+      "en": "What I missed was the null path in retry.",
+      "vi": "Mình miss nhánh null lúc retry."
+    },
+    {
+      "speaker": "A",
+      "en": "I owned the miss — I should have added a test.",
+      "vi": "Mình nhận — lẽ ra thêm test."
+    },
+    {
+      "speaker": "A",
+      "en": "The impact was 20 minutes of failed checkouts.",
+      "vi": "Impact: 20 phút checkout fail."
+    },
+    {
+      "speaker": "A",
+      "en": "What I changed after: a checklist before merge.",
+      "vi": "Sau đó: checklist trước merge."
+    },
+    {
+      "speaker": "A",
+      "en": "Next time I'd page earlier.",
+      "vi": "Lần sau mình page sớm hơn."
+    },
+    {
+      "speaker": "B",
+      "en": "Why didn't tests catch it?",
+      "vi": "Sao test không bắt?"
+    },
+    {
+      "speaker": "A",
+      "en": "I owned that too — I skipped the null fixture.",
+      "vi": "Mình nhận luôn — bỏ fixture null."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: What I missed was ___",
+      "answer": "What I missed was…"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Mình nhận miss đó",
+      "answer": "I owned the miss"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "A real miss the learner owned. Push for impact numbers and one process change. No blaming QA.",
+    "system": "You are a software interviewer at a foreign company. Speak natural interview English. Keep each turn to 1–2 short sentences. You MAY use extra interview English so the learner practices listening. Interrupt with a follow-up. Nudge the learner to use these phrases: What I missed was…; I owned the miss; The impact was…; What I changed after; Next time I'd…. Ask about their real experience. Wait for the learner to reply. Scenario: A real miss the learner owned. Push for impact numbers and one process change. No blaming QA.",
+    "allowedPhrases": [
+      "What I missed was…",
+      "I owned the miss",
+      "The impact was…",
+      "What I changed after",
+      "Next time I'd…"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

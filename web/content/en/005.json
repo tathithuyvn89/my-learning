@@ -1,0 +1,215 @@
+{
+  "id": 5,
+  "week": 1,
+  "theme": "Update Slack",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "Still working on…",
+      "note": "Update giữa ngày. Chưa xong.",
+      "vi": "Vẫn đang làm…",
+      "example": {
+        "en": "Still working on the payment retry.",
+        "vi": "Vẫn đang làm retry thanh toán."
+      },
+      "slot": "Still working on ___"
+    },
+    {
+      "en": "Shipped",
+      "note": "Đã lên prod / đã merge xong. Ngắn, rõ.",
+      "vi": "Đã ship",
+      "example": {
+        "en": "Shipped the fix to prod.",
+        "vi": "Đã ship fix lên prod."
+      }
+    },
+    {
+      "en": "Waiting on…",
+      "note": "Kẹt vì người khác / job. Không phải mình ngồi không.",
+      "vi": "Đang chờ…",
+      "example": {
+        "en": "Waiting on design for the empty state.",
+        "vi": "Đang chờ design cho empty state."
+      },
+      "slot": "Waiting on ___"
+    },
+    {
+      "en": "Quick update",
+      "note": "Mở một dòng status, không essay.",
+      "vi": "Update nhanh",
+      "example": {
+        "en": "Quick update: still working on the query.",
+        "vi": "Update nhanh: vẫn đang làm query."
+      }
+    },
+    {
+      "en": "I'll post here when it's done",
+      "note": "Hứa đóng loop trên Slack.",
+      "vi": "Xong mình sẽ báo ở đây",
+      "example": {
+        "en": "Waiting on QA. I'll post here when it's done.",
+        "vi": "Đang chờ QA. Xong mình báo ở đây."
+      }
+    }
+  ],
+  "pattern": {
+    "title": "Status line",
+    "pattern": "Quick update: still working on… / shipped / waiting on… I'll post here when it's done.",
+    "explainVi": "Một dòng trạng thái: đang làm / đã ship / đang chờ. Hứa đóng loop. Không viết nhật ký.",
+    "drills": [
+      {
+        "prompt": "Nói việc thật hôm nay: Still working on ___",
+        "answer": "Still working on…"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Đã ship",
+        "answer": "Shipped"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: Waiting on ___",
+        "answer": "Waiting on…"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Update nhanh",
+        "answer": "Quick update"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Status Slack giữa ngày",
+    "video": null,
+    "unseen": [
+      {
+        "speaker": "A",
+        "en": "Quick update: still working on the export job.",
+        "vi": "Update nhanh: vẫn đang làm job export."
+      },
+      {
+        "speaker": "B",
+        "en": "Blocked?",
+        "vi": "Bị kẹt?"
+      },
+      {
+        "speaker": "A",
+        "en": "Waiting on the warehouse dump. ETA 4pm.",
+        "vi": "Đang chờ dump warehouse. ETA 4 giờ."
+      },
+      {
+        "speaker": "B",
+        "en": "Shipped the UI stub already.",
+        "vi": "UI stub đã ship rồi."
+      },
+      {
+        "speaker": "A",
+        "en": "I'll post here when the dump lands.",
+        "vi": "Dump về là mình báo ở đây."
+      },
+      {
+        "speaker": "B",
+        "en": "If it slips past 5, flag #data.",
+        "vi": "Nếu trễ quá 5 giờ, báo #data."
+      },
+      {
+        "speaker": "A",
+        "en": "Copy.",
+        "vi": "Rõ."
+      },
+      {
+        "speaker": "B",
+        "en": "Thanks. Have a good one.",
+        "vi": "Cảm ơn. Chúc làm việc vui."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Việc nào vẫn đang làm, việc nào đã ship?",
+        "answer": "Export job vẫn làm; UI stub đã ship"
+      },
+      {
+        "type": "cloze",
+        "prompt": "ETA dump là mấy giờ?",
+        "answer": "4pm / 4 giờ"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Trễ quá 5 giờ thì báo channel nào?",
+        "answer": "#data"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "en": "Quick update: still working on the payment retry.",
+      "vi": "Update nhanh: vẫn đang làm retry thanh toán."
+    },
+    {
+      "speaker": "B",
+      "en": "Need anything? QA is free after 3.",
+      "vi": "Cần gì không? QA rảnh sau 3 giờ."
+    },
+    {
+      "speaker": "A",
+      "en": "Waiting on QA for the last case.",
+      "vi": "Đang chờ QA case cuối."
+    },
+    {
+      "speaker": "B",
+      "en": "Okay, I'll poke them.",
+      "vi": "Ok, mình nhắc họ."
+    },
+    {
+      "speaker": "A",
+      "en": "I'll post here when it's done.",
+      "vi": "Xong mình báo ở đây."
+    },
+    {
+      "speaker": "B",
+      "en": "Shipped on my side. Have a good one.",
+      "vi": "Bên mình đã ship. Chúc làm việc vui."
+    },
+    {
+      "speaker": "A",
+      "en": "Nice — which ticket?",
+      "vi": "Hay — ticket nào?"
+    },
+    {
+      "speaker": "B",
+      "en": "VEHO-218, the timeout banner.",
+      "vi": "VEHO-218, banner timeout."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: Still working on ___",
+      "answer": "Still working on…"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Đã ship",
+      "answer": "Shipped"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Post a short status in Slack during the day about a real task.",
+    "system": "You are a friendly teammate (or interviewer) at a software company. Speak natural meeting English. Keep each turn to 1–2 short sentences. You MAY use extra workplace English so the learner practices listening. Nudge the learner to use these phrases: Still working on…; Shipped; Waiting on…; Quick update; I'll post here when it's done. If they ask you to slow down or repeat, do that. Ask one concrete detail about their real work (ticket, bug, PR, or project). Wait for the learner to reply. Scenario: Post a short status in Slack during the day about a real task.",
+    "allowedPhrases": [
+      "Still working on…",
+      "Shipped",
+      "Waiting on…",
+      "Quick update",
+      "I'll post here when it's done"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

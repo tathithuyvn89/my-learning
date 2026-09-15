@@ -68,4 +68,16 @@ describe("reviewForDay", () => {
       true,
     );
   });
+
+  it("skips the first day of HSK 6", () => {
+    expect(reviewForDay(281).words).toEqual([]);
+  });
+
+  it("labels HSK 6 review weeks from 1", () => {
+    const set = reviewForDay(286);
+    expect(set.label).toBe("Từ tuần 1");
+    expect(set.words.every((item) => item.week === 41 && item.day < 286)).toBe(
+      true,
+    );
+  });
 });

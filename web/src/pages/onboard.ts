@@ -8,6 +8,7 @@ import {
 
 type OnboardOptions = {
   onDone: (hash: string) => void;
+  preferHash?: string;
 };
 
 function field(
@@ -205,7 +206,7 @@ export function openOnboardDialog(options: OnboardOptions): void {
         localDay: Number(dayInput.value),
       });
       close();
-      options.onDone(result.hash);
+      options.onDone(options.preferHash ?? result.hash);
     } catch {
       error.textContent = "Không lưu được. Thử lại nhé.";
       error.hidden = false;

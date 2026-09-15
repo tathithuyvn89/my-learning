@@ -1,18 +1,25 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import {
+  EN_IV_PROGRESS_KEY,
+  EN_PROGRESS_KEY,
   PROFILE_KEY,
   PROGRESS_KEY,
   completeOnboarding,
+  currentEnStreak,
   currentStreak,
   findUser,
   globalDayFromLocal,
   hasProfile,
   isDayComplete,
+  isEnDayComplete,
+  loadEnProgress,
   loadProfile,
   loadProgress,
   markDayComplete,
   markDaysCompleteThrough,
+  markEnDayComplete,
   nextUnfinishedDay,
+  nextUnfinishedEnDay,
 } from "./progress";
 
 const mem = new Map<string, string>();
@@ -142,5 +149,50 @@ describe("progress", () => {
     expect(loadProfile()?.name).toBe("Lan");
     expect(isDayComplete(59)).toBe(true);
     expect(resumed.hash).toBe("#/hsk2/day/60");
+  });
+});
+
+describe("English IT progress", () => {
+  it("stores EN completions on a separate key", () => {
+    const at = new Date("2026-09-08T04:00:00.000Z");
+    markDayComplete(1, at);
+    markEnDayComplete(1, at);
+    expect(isDayComplete(1)).toBe(true);
+    expect(isEnDayComplete(1)).toBe(true);
+    expect(JSON.parse(mem.get(PROGRESS_KEY) ?? "{}").completedDays).toEqual([1]);
+    expect(JSON.parse(mem.get(EN_PROGRESS_KEY) ?? "{}").completedDays).toEqual([
+      1,
+    ]);
+    expect(nextUnfinishedEnDay()).toBe(2);
+  });
+
+  it("does not mix EN streak with HSK streak", () => {
+    markEnDayComplete(1, new Date(2026, 8, 6, 10, 0, 0));
+    expect(currentEnStreak(new Date(2026, 8, 6, 22, 0, 0))).toBe(1);
+    expect(currentStreak(loadProgress(), new Date(2026, 8, 6, 22, 0, 0))).toBe(
+      0,
+    );
+    expect(loadEnProgress().completedDays).toEqual([1]);
+  });
+});
+
+describe("English interview progress", () => {
+  it("stores IV completions on a separate key from IT", () => {
+    const at = new Date("2026-09-08T04:00:00.000Z");
+    markEnDayComplete(1, at, "it");
+    markEnDayComplete(3, at, "iv");
+    expect(isEnDayComplete(1, "it")).toBe(true);
+    expect(isEnDayComplete(1, "iv")).toBe(false);
+    expect(isEnDayComplete(3, "iv")).toBe(true);
+    expect(JSON.parse(mem.get(EN_PROGRESS_KEY) ?? "{}").completedDays).toEqual([
+      1,
+    ]);
+    expect(
+      JSON.parse(mem.get(EN_IV_PROGRESS_KEY) ?? "{}").completedDays,
+    ).toEqual([3]);
+    expect(nextUnfinishedEnDay("it")).toBe(2);
+    expect(nextUnfinishedEnDay("iv")).toBe(1);
+    expect(currentEnStreak(at, "iv")).toBe(1);
+    expect(currentEnStreak(at, "it")).toBe(1);
   });
 });

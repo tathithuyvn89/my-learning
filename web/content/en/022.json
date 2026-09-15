@@ -1,0 +1,223 @@
+{
+  "id": 22,
+  "week": 4,
+  "theme": "60s about yourself",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "I'm a software engineer",
+      "note": "60s intro: câu 1. Role, không đọc CV.",
+      "vi": "Mình là software engineer",
+      "example": {
+        "en": "I'm a software engineer focused on backend.",
+        "vi": "Mình là software engineer, thiên backend."
+      },
+      "slot": "I'm a software engineer focused on ___."
+    },
+    {
+      "en": "I currently work on…",
+      "note": "Câu 2: việc hiện tại, một product.",
+      "vi": "Hiện mình đang làm…",
+      "example": {
+        "en": "I currently work on payments at a logistics company.",
+        "vi": "Hiện mình làm payments ở công ty logistics."
+      },
+      "slot": "I currently work on ___"
+    },
+    {
+      "en": "I enjoy…",
+      "note": "Câu 3: một điều thật, không I am passionate about synergy.",
+      "vi": "Mình thích…",
+      "example": {
+        "en": "I enjoy debugging messy production issues.",
+        "vi": "Mình thích debug issue production lộn xộn."
+      },
+      "slot": "I enjoy ___"
+    },
+    {
+      "en": "I'm looking for…",
+      "note": "Câu 4: vì sao apply. Cụ thể.",
+      "vi": "Mình đang tìm…",
+      "example": {
+        "en": "I'm looking for a role with more ownership.",
+        "vi": "Mình tìm role được ownership nhiều hơn."
+      },
+      "slot": "I'm looking for ___"
+    },
+    {
+      "en": "Happy to dive into a project",
+      "note": "Câu 5: nhường interviewer hỏi sâu.",
+      "vi": "Mình sẵn sàng kể một project",
+      "example": {
+        "en": "Happy to dive into a project if useful.",
+        "vi": "Nếu hữu ích mình kể một project."
+      }
+    }
+  ],
+  "pattern": {
+    "title": "Mini intro",
+    "pattern": "I'm… I currently work on… I enjoy… I'm looking for… Happy to dive into a project",
+    "explainVi": "Năm câu, khoảng 60 giây. Không đọc CV. Không I am a hard-working team player.",
+    "drills": [
+      {
+        "prompt": "Nói việc thật hôm nay: I'm a software engineer focused on ___.",
+        "answer": "I'm a software engineer"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: I currently work on ___",
+        "answer": "I currently work on…"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: I enjoy ___",
+        "answer": "I enjoy…"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: I'm looking for ___",
+        "answer": "I'm looking for…"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Intro 60 giây — nghe cấu trúc rồi nói bản của bạn",
+    "video": {
+      "title": "How successful software engineers answer Tell me about yourself",
+      "url": "https://www.youtube.com/watch?v=0PN_W-7fBRo",
+      "watchFrom": "0:00",
+      "watchTo": "2:00",
+      "whyVi": "Intro phỏng vấn engineer. Chép Present → Past → Future, rồi nói bản của bạn, không đọc CV mẫu."
+    },
+    "unseen": [
+      {
+        "speaker": "B",
+        "en": "Tell me about yourself — keep it under a minute.",
+        "vi": "Kể về bạn — dưới một phút."
+      },
+      {
+        "speaker": "A",
+        "en": "I'm a software engineer focused on backend.",
+        "vi": "Mình là engineer, thiên backend."
+      },
+      {
+        "speaker": "A",
+        "en": "I currently work on routing at a logistics company.",
+        "vi": "Hiện mình làm routing ở công ty logistics."
+      },
+      {
+        "speaker": "A",
+        "en": "I enjoy debugging messy production issues more than greenfield.",
+        "vi": "Mình thích debug prod lộn xộn hơn greenfield."
+      },
+      {
+        "speaker": "A",
+        "en": "I'm looking for a role with more ownership of on-call.",
+        "vi": "Mình tìm role own on-call nhiều hơn."
+      },
+      {
+        "speaker": "A",
+        "en": "Happy to dive into a project if useful.",
+        "vi": "Nếu hữu ích mình kể một project."
+      },
+      {
+        "speaker": "B",
+        "en": "Present, past, future — you hit all three.",
+        "vi": "Hiện tại, quá khứ, tương lai — đủ ba."
+      },
+      {
+        "speaker": "A",
+        "en": "That's the idea.",
+        "vi": "Đúng ý đó."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Video 0:00–2:00: cấu trúc intro là gì? (Present → Past → Future hoặc tương đương)",
+        "answer": "Present → Past → Future / current role then path then why this job"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Người nói đang tìm ownership phần nào?",
+        "answer": "On-call"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Họ thích việc gì hơn greenfield?",
+        "answer": "Debugging messy production issues"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "B",
+      "en": "Tell me about yourself.",
+      "vi": "Kể về bạn đi."
+    },
+    {
+      "speaker": "A",
+      "en": "I'm a software engineer focused on backend.",
+      "vi": "Mình là software engineer, thiên backend."
+    },
+    {
+      "speaker": "A",
+      "en": "I currently work on payments at a logistics company.",
+      "vi": "Hiện mình làm payments ở công ty logistics."
+    },
+    {
+      "speaker": "A",
+      "en": "I enjoy debugging messy production issues.",
+      "vi": "Mình thích debug issue production lộn xộn."
+    },
+    {
+      "speaker": "A",
+      "en": "I'm looking for a role with more ownership.",
+      "vi": "Mình tìm role được ownership nhiều hơn."
+    },
+    {
+      "speaker": "A",
+      "en": "Happy to dive into a project if useful.",
+      "vi": "Nếu hữu ích mình kể một project."
+    },
+    {
+      "speaker": "B",
+      "en": "How long have you been on payments?",
+      "vi": "Làm payments bao lâu rồi?"
+    },
+    {
+      "speaker": "A",
+      "en": "Three years. Happy to dive into a project.",
+      "vi": "Ba năm. Sẵn sàng kể một project."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: I'm a software engineer focused on ___.",
+      "answer": "I'm a software engineer"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: I currently work on ___",
+      "answer": "I currently work on…"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Interview opening: 60-second intro about YOUR real work. The interviewer only cues you.",
+    "system": "You are a friendly teammate (or interviewer) at a software company. Speak natural meeting English. Keep each turn to 1–2 short sentences. You MAY use extra workplace English so the learner practices listening. Nudge the learner to use these phrases: I'm a software engineer; I currently work on…; I enjoy…; I'm looking for…; Happy to dive into a project. If they ask you to slow down or repeat, do that. Ask one concrete detail about their real work (ticket, bug, PR, or project). Wait for the learner to reply. Scenario: Interview opening: 60-second intro about YOUR real work. The interviewer only cues you.",
+    "allowedPhrases": [
+      "I'm a software engineer",
+      "I currently work on…",
+      "I enjoy…",
+      "I'm looking for…",
+      "Happy to dive into a project"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "id": 4,
+  "week": 1,
+  "theme": "Walkthrough",
+  "kind": "learn",
+  "phrases": [
+    {
+      "en": "Let me trace this",
+      "note": "Dry-run trước khi tuyên bố xong.",
+      "vi": "Mình trace cái này",
+      "example": {
+        "en": "Let me trace this on the example.",
+        "vi": "Mình trace trên ví dụ."
+      }
+    },
+    {
+      "en": "For this input…",
+      "note": "Chỉ input đang trace.",
+      "vi": "Với input này…",
+      "example": {
+        "en": "For this input [1, 2, 3], i starts at 0.",
+        "vi": "Input [1,2,3], i bắt đầu 0."
+      },
+      "slot": "For this input ___"
+    },
+    {
+      "en": "That's an off-by-one",
+      "note": "Tự bắt lỗi index. Nghe senior.",
+      "vi": "Đó là off-by-one",
+      "example": {
+        "en": "That's an off-by-one — I should stop at n-1.",
+        "vi": "Off-by-one — phải dừng ở n-1."
+      }
+    },
+    {
+      "en": "I'll dry-run the example",
+      "note": "Xin 30 giây chạy tay.",
+      "vi": "Mình dry-run ví dụ",
+      "example": {
+        "en": "I'll dry-run the example on the board.",
+        "vi": "Mình dry-run ví dụ trên bảng."
+      }
+    },
+    {
+      "en": "That matches the expected output",
+      "note": "Chốt trace đúng.",
+      "vi": "Khớp output kỳ vọng",
+      "example": {
+        "en": "That matches the expected output, 4.",
+        "vi": "Khớp output kỳ vọng, 4."
+      }
+    }
+  ],
+  "pattern": {
+    "title": "Dry-run the example",
+    "pattern": "Let me trace this → For this input… → That's an off-by-one / That matches the expected output",
+    "explainVi": "Chạy tay một example. Tự bắt off-by-one. Chốt khớp output.",
+    "drills": [
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình trace cái này",
+        "answer": "Let me trace this"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: For this input ___",
+        "answer": "For this input…"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Đó là off-by-one",
+        "answer": "That's an off-by-one"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Mình dry-run ví dụ",
+        "answer": "I'll dry-run the example"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Dry-run bị interviewer cắt",
+    "video": null,
+    "unseen": [
+      {
+        "speaker": "A",
+        "en": "Let me trace this on [2, 7, 11], target 9.",
+        "vi": "Mình trace [2,7,11], target 9."
+      },
+      {
+        "speaker": "A",
+        "en": "For this input, I put 2 in the map.",
+        "vi": "Input này, mình bỏ 2 vào map."
+      },
+      {
+        "speaker": "B",
+        "en": "Index?",
+        "vi": "Index?"
+      },
+      {
+        "speaker": "A",
+        "en": "Index 0. Then 7, need 2 — found.",
+        "vi": "Index 0. Rồi 7, cần 2 — thấy."
+      },
+      {
+        "speaker": "B",
+        "en": "Loop bound?",
+        "vi": "Biên loop?"
+      },
+      {
+        "speaker": "A",
+        "en": "That's an off-by-one if I go to n. I'll stop at n-1.",
+        "vi": "Off-by-one nếu tới n. Dừng n-1."
+      },
+      {
+        "speaker": "A",
+        "en": "I'll dry-run the example once more. Output 0 and 1.",
+        "vi": "Dry-run thêm lần. Output 0 và 1."
+      },
+      {
+        "speaker": "A",
+        "en": "That matches the expected output.",
+        "vi": "Khớp output kỳ vọng."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Cặp index đúng là gì?",
+        "answer": "0 và 1"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Lỗi loop nào được nhắc?",
+        "answer": "Off-by-one"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Target là bao nhiêu?",
+        "answer": "9"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "en": "I'll dry-run the example on the board.",
+      "vi": "Mình dry-run ví dụ trên bảng."
+    },
+    {
+      "speaker": "A",
+      "en": "For this input [1, 2, 3], i starts at 0.",
+      "vi": "Input [1,2,3], i bắt đầu 0."
+    },
+    {
+      "speaker": "B",
+      "en": "Where do you stop?",
+      "vi": "Dừng ở đâu?"
+    },
+    {
+      "speaker": "A",
+      "en": "That's an off-by-one — I should stop at n-1.",
+      "vi": "Off-by-one — dừng ở n-1."
+    },
+    {
+      "speaker": "A",
+      "en": "Let me trace this again after the fix.",
+      "vi": "Mình trace lại sau khi sửa."
+    },
+    {
+      "speaker": "A",
+      "en": "i = 0, 1, then stop. Sum is 6.",
+      "vi": "i = 0, 1, rồi dừng. Tổng 6."
+    },
+    {
+      "speaker": "A",
+      "en": "That matches the expected output, 6.",
+      "vi": "Khớp output kỳ vọng, 6."
+    },
+    {
+      "speaker": "B",
+      "en": "Good catch. Keep going.",
+      "vi": "Bắt hay. Làm tiếp."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Mình trace cái này",
+      "answer": "Let me trace this"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: For this input ___",
+      "answer": "For this input…"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "Walk through one example out loud. Catch an off-by-one. Use a real snippet if the learner has one.",
+    "system": "You are a software interviewer at a foreign company. Speak natural interview English. Keep each turn to 1–2 short sentences. You MAY use extra interview English so the learner practices listening. Interrupt with a follow-up. Nudge the learner to use these phrases: Let me trace this; For this input…; That's an off-by-one; I'll dry-run the example; That matches the expected output. Ask about their real experience. Wait for the learner to reply. Scenario: Walk through one example out loud. Catch an off-by-one. Use a real snippet if the learner has one.",
+    "allowedPhrases": [
+      "Let me trace this",
+      "For this input…",
+      "That's an off-by-one",
+      "I'll dry-run the example",
+      "That matches the expected output"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

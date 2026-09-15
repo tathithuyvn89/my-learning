@@ -8,7 +8,7 @@ Buổi học vẫn 30 phút, 5 khối như `session.md`. Ngày 6–7 mỗi tuầ
 
 Trọng tâm HSK 4 là **câu phức** (不仅…而且…, 既…又…, 即使…也…, 连…都…, 越…越…) và hội thoại công việc / đời sống đô thị.
 
-Đã có trong app: `web/content/days/169.json` … `224.json`.
+Đã có trong app: `web/content/days/169.json` … `224.json`. HSK 5: [curriculum-hsk5.md](curriculum-hsk5.md).
 
 ## Tuần 25 — Công việc nâng cao
 

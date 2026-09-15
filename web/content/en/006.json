@@ -1,0 +1,221 @@
+{
+  "id": 6,
+  "week": 1,
+  "theme": "Tổng hợp tuần 1",
+  "kind": "review",
+  "phrases": [
+    {
+      "en": "Morning, team",
+      "note": "Chào channel buổi sáng, không cần dài.",
+      "vi": "Chào team buổi sáng",
+      "example": {
+        "en": "Morning, team — I'll be in standup.",
+        "vi": "Chào team — lát nữa mình vào standup."
+      }
+    },
+    {
+      "en": "Yesterday I finished…",
+      "note": "Standup: câu 1. Nói việc đã xong, không kể dài.",
+      "vi": "Hôm qua mình xong…",
+      "example": {
+        "en": "Yesterday I finished the login bug.",
+        "vi": "Hôm qua mình xong bug login."
+      },
+      "slot": "Yesterday I finished ___"
+    },
+    {
+      "en": "Could you take a look?",
+      "note": "Nhờ xem giúp. Lịch sự hơn Can you look?",
+      "vi": "Bạn xem giúp được không?",
+      "example": {
+        "en": "Could you take a look at this PR?",
+        "vi": "Bạn xem giúp PR này được không?"
+      }
+    },
+    {
+      "en": "Just to confirm",
+      "note": "Mở câu hỏi lại ticket, không nghe như cãi.",
+      "vi": "Chỉ để xác nhận",
+      "example": {
+        "en": "Just to confirm: we ship Friday, right?",
+        "vi": "Xác nhận lại: mình ship thứ Sáu chứ?"
+      }
+    },
+    {
+      "en": "Still working on…",
+      "note": "Update giữa ngày. Chưa xong.",
+      "vi": "Vẫn đang làm…",
+      "example": {
+        "en": "Still working on the payment retry.",
+        "vi": "Vẫn đang làm retry thanh toán."
+      },
+      "slot": "Still working on ___"
+    }
+  ],
+  "pattern": {
+    "title": "Ghép standup + Slack",
+    "pattern": "Morning → standup 3 câu → quick update",
+    "explainVi": "Nói hết một buổi sáng: chào, standup, một ping nhờ việc hoặc update. Không thêm cụm mới.",
+    "drills": [
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Chào team buổi sáng",
+        "answer": "Morning, team"
+      },
+      {
+        "prompt": "Nói việc thật hôm nay: Yesterday I finished ___",
+        "answer": "Yesterday I finished…"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Bạn xem giúp được không?",
+        "answer": "Could you take a look?"
+      },
+      {
+        "prompt": "Nói to, đừng chỉ đọc thầm: Chỉ để xác nhận",
+        "answer": "Just to confirm"
+      }
+    ]
+  },
+  "listen": {
+    "title": "Một buổi sáng: chào, standup, ping",
+    "video": {
+      "title": "BBC English at Work — box set ep. 0–5",
+      "url": "https://www.youtube.com/watch?v=PyL2HDKwR9E",
+      "watchFrom": "0:00",
+      "watchTo": "1:30",
+      "whyVi": "Office small talk thật: chào, hỏi thăm. Nghe giọng Anh-Anh, không TTS."
+    },
+    "unseen": [
+      {
+        "speaker": "A",
+        "en": "Morning, team. Yesterday I finished the timeout fix.",
+        "vi": "Chào team. Hôm qua xong fix timeout."
+      },
+      {
+        "speaker": "A",
+        "en": "Today I'll work on tests. I'm blocked on staging.",
+        "vi": "Hôm nay làm test. Mình kẹt staging."
+      },
+      {
+        "speaker": "B",
+        "en": "Got it. Quick ping — can you take a look at VEHO-301 when you have a minute?",
+        "vi": "Rõ. Ping nhanh — rảnh thì xem VEHO-301?"
+      },
+      {
+        "speaker": "A",
+        "en": "No rush on my side. What's the expected behavior?",
+        "vi": "Bên mình không gấp. Kỳ vọng là gì?"
+      },
+      {
+        "speaker": "B",
+        "en": "Empty cart should warn, not 500.",
+        "vi": "Giỏ trống thì cảnh báo, đừng 500."
+      },
+      {
+        "speaker": "A",
+        "en": "So the next step is a guard. I'll post here when it's done.",
+        "vi": "Bước tiếp là guard. Xong mình báo."
+      },
+      {
+        "speaker": "B",
+        "en": "Thanks in advance.",
+        "vi": "Cảm ơn trước."
+      },
+      {
+        "speaker": "A",
+        "en": "Have a good one.",
+        "vi": "Chúc làm việc vui."
+      }
+    ],
+    "tasks": [
+      {
+        "type": "gist",
+        "prompt": "Video: thêm 2 cụm chào khác ngày 1.",
+        "answer": "Ví dụ hello / see you / how's work (tuỳ clip)"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Ticket được nhắc tên là gì?",
+        "answer": "VEHO-301"
+      },
+      {
+        "type": "cloze",
+        "prompt": "Empty cart kỳ vọng gì?",
+        "answer": "Warn, not 500"
+      }
+    ],
+    "methodVi": "Ẩn chữ. Nghe 1–2 lần (video hoặc TTS). Làm task. Mới mở transcript. Shadow 3 lượt: nghe → nói theo → nói một mình."
+  },
+  "dialogue": [
+    {
+      "speaker": "A",
+      "en": "Morning, team",
+      "vi": "Chào team buổi sáng"
+    },
+    {
+      "speaker": "B",
+      "en": "How's it going?",
+      "vi": "Dạo này thế nào?"
+    },
+    {
+      "speaker": "A",
+      "en": "Yesterday I finished the login bug. Today I'll work on tests.",
+      "vi": "Hôm qua xong bug login. Hôm nay làm test."
+    },
+    {
+      "speaker": "A",
+      "en": "No blockers. That's it from me.",
+      "vi": "Không blocker. Mình hết rồi."
+    },
+    {
+      "speaker": "B",
+      "en": "Could you take a look when you have a minute?",
+      "vi": "Rảnh thì xem giúp mình với?"
+    },
+    {
+      "speaker": "A",
+      "en": "No rush. I'll post here when it's done.",
+      "vi": "Không gấp. Xong mình báo ở đây."
+    },
+    {
+      "speaker": "B",
+      "en": "Quick ping later about staging?",
+      "vi": "Lát ping nhanh về staging nhé?"
+    },
+    {
+      "speaker": "A",
+      "en": "Sure. Just to confirm: after 2pm.",
+      "vi": "Ok. Xác nhận: sau 2 giờ."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "say",
+      "prompt": "Nói to, đừng chỉ đọc thầm: Chào team buổi sáng",
+      "answer": "Morning, team"
+    },
+    {
+      "type": "say",
+      "prompt": "Nói việc thật hôm nay: Yesterday I finished ___",
+      "answer": "Yesterday I finished…"
+    }
+  ],
+  "aiPrompt": {
+    "scenario": "A full quiet morning: greeting, standup, then one Slack ping about a real ticket.",
+    "system": "You are a friendly teammate (or interviewer) at a software company. Speak natural meeting English. Keep each turn to 1–2 short sentences. You MAY use extra workplace English so the learner practices listening. Nudge the learner to use these phrases: Morning, team; Yesterday I finished…; Could you take a look?; Just to confirm; Still working on…. If they ask you to slow down or repeat, do that. Ask one concrete detail about their real work (ticket, bug, PR, or project). Wait for the learner to reply. Scenario: A full quiet morning: greeting, standup, then one Slack ping about a real ticket.",
+    "allowedPhrases": [
+      "Morning, team",
+      "Yesterday I finished…",
+      "Could you take a look?",
+      "Just to confirm",
+      "Still working on…"
+    ],
+    "turns": 8
+  },
+  "timer": {
+    "review": 4,
+    "vocab": 5,
+    "grammar": 8,
+    "talk": 8,
+    "ai": 5
+  }
+}

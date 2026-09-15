@@ -12,6 +12,7 @@ import type { Lesson } from "../lesson";
 import { isDayComplete, markDayComplete } from "../progress";
 import { reviewForDay } from "../review";
 import { listenButton } from "../speak";
+import { youglishHref } from "../youglish";
 import {
   createSessionTimer,
   formatClock,
@@ -77,6 +78,16 @@ function actionRow(...nodes: HTMLElement[]): HTMLElement {
   return row;
 }
 
+function youglishLink(han: string): HTMLAnchorElement {
+  const link = document.createElement("a");
+  link.className = "youglish";
+  link.href = youglishHref(han, "chinese");
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  link.textContent = "Nghe người thật (YouGlish)";
+  return link;
+}
+
 function reviewBlock(
   words: ReturnType<typeof reviewForDay>["words"],
   label: string,
@@ -97,7 +108,7 @@ function reviewBlock(
       textEl("p", item.han, "han"),
       textEl("p", item.pinyin, "pinyin"),
       textEl("p", item.vi),
-      actionRow(listenButton(item.han)),
+      actionRow(listenButton(item.han), youglishLink(item.han)),
     );
     list.append(li);
   }
@@ -119,7 +130,7 @@ function vocabPanel(lesson: Lesson): HTMLElement {
         `${item.example.han} · ${item.example.pinyin} · ${item.example.vi}`,
         "example",
       ),
-      actionRow(listenButton(item.han)),
+      actionRow(listenButton(item.han), youglishLink(item.han)),
     );
     list.append(li);
   }
