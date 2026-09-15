@@ -11,6 +11,7 @@ import {
 import type { Lesson } from "../lesson";
 import { isDayComplete, markDayComplete } from "../progress";
 import { reviewForDay } from "../review";
+import { writePracticePanel } from "../hanzi";
 import { listenButton } from "../speak";
 import { youglishHref } from "../youglish";
 import {
@@ -110,6 +111,8 @@ function reviewBlock(
       textEl("p", item.vi),
       actionRow(listenButton(item.han), youglishLink(item.han)),
     );
+    const practice = writePracticePanel(item.han);
+    if (practice) li.append(practice);
     list.append(li);
   }
   wrap.append(list);
@@ -132,6 +135,8 @@ function vocabPanel(lesson: Lesson): HTMLElement {
       ),
       actionRow(listenButton(item.han), youglishLink(item.han)),
     );
+    const practice = writePracticePanel(item.han);
+    if (practice) li.append(practice);
     list.append(li);
   }
   return list;

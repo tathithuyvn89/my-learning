@@ -5,6 +5,7 @@ import {
   localWeekOf,
   weeksOfHsk,
 } from "../course";
+import { writePracticePanel } from "../hanzi";
 import { listenButton } from "../speak";
 import { youglishHref } from "../youglish";
 import { vocabForHsk, type WeekFilter } from "../vocab-index";
@@ -54,6 +55,8 @@ function wordList(hsk: HskLevel, week: WeekFilter): HTMLElement {
       ),
       actions,
     );
+    const practice = writePracticePanel(item.han);
+    if (practice) li.append(practice);
     list.append(li);
   }
 

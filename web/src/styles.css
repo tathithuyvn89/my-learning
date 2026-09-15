@@ -813,6 +813,101 @@ button.cta:hover {
   margin-top: 0.7rem;
 }
 
+.hanzi-practice {
+  margin-top: 0.85rem;
+  border-top: 1px dashed var(--line);
+  padding-top: 0.75rem;
+}
+
+.hanzi-practice > summary {
+  cursor: pointer;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--cinnabar);
+  list-style: none;
+  user-select: none;
+}
+
+.hanzi-practice > summary::-webkit-details-marker {
+  display: none;
+}
+
+.hanzi-practice > summary::before {
+  content: "▸ ";
+  display: inline-block;
+  transition: transform 0.15s ease;
+}
+
+.hanzi-practice[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+.hanzi-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.hanzi-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.55rem;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) - 4px);
+}
+
+.hanzi-char-label {
+  margin: 0;
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.hanzi-target {
+  line-height: 0;
+}
+
+.hanzi-target svg {
+  display: block;
+}
+
+.hanzi-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem;
+}
+
+.hanzi-btn {
+  padding: 0.28rem 0.55rem;
+  font: inherit;
+  font-size: 0.78rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+  color: inherit;
+  cursor: pointer;
+}
+
+.hanzi-btn-primary {
+  border-color: var(--cinnabar);
+  color: var(--cinnabar);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .hanzi-btn:hover {
+    border-color: var(--cinnabar);
+    color: var(--cinnabar);
+  }
+
+  .hanzi-btn-primary:hover {
+    background: rgb(179 58 43 / 0.08);
+  }
+}
+
 .word-source {
   color: var(--muted);
   font-size: 0.88rem;
