@@ -1,5 +1,8 @@
+import { annotationElement } from "./radical";
+
 const WRITER_SIZE = 140;
 const STROKE_COLOR = "#b33a2b";
+const RADICAL_COLOR = "#2d7a4f";
 const OUTLINE_COLOR = "#ddd";
 const HIGHLIGHT_COLOR = "#e8a090";
 
@@ -26,6 +29,7 @@ function writerOptions() {
     padding: 8,
     showOutline: true,
     strokeColor: STROKE_COLOR,
+    radicalColor: RADICAL_COLOR,
     outlineColor: OUTLINE_COLOR,
     drawingColor: STROKE_COLOR,
     highlightColor: HIGHLIGHT_COLOR,
@@ -63,6 +67,8 @@ export function writePracticePanel(han: string): HTMLElement | null {
         label.className = "hanzi-char-label han";
         label.textContent = ch;
 
+        const annotation = annotationElement(ch);
+
         const target = document.createElement("div");
         target.className = "hanzi-target";
         target.setAttribute("aria-label", `Luyện viết ${ch}`);
@@ -81,7 +87,9 @@ export function writePracticePanel(han: string): HTMLElement | null {
         quizBtn.textContent = "Tự viết";
 
         controls.append(animateBtn, quizBtn);
-        cell.append(label, target, controls);
+        cell.append(label);
+        if (annotation) cell.append(annotation);
+        cell.append(target, controls);
         grid.append(cell);
 
         const writer = HanziWriter.create(target, ch, writerOptions());

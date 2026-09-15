@@ -866,6 +866,28 @@ button.cta:hover {
   line-height: 1;
 }
 
+.hanzi-annotation {
+  width: 100%;
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.hanzi-annotation-line {
+  margin: 0.15rem 0 0;
+}
+
+.hanzi-annotation-line .han {
+  font-size: 0.95rem;
+}
+
+.hanzi-annotation-meta {
+  margin: 0.25rem 0 0;
+  font-size: 0.72rem;
+  opacity: 0.85;
+}
+
 .hanzi-target {
   line-height: 0;
 }
