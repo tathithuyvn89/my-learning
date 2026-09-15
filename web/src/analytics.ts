@@ -1,13 +1,20 @@
 import { inject, pageview } from "@vercel/analytics";
 
 /** `"1"` khi build trên Vercel — xem `vite.config.ts`. */
-const enabled = import.meta.env.VITE_VERCEL_BUILD === "1";
+const builtOnVercel = import.meta.env.VITE_VERCEL_BUILD === "1";
 
 let ready = false;
 
+function shouldTrack(): boolean {
+  if (!import.meta.env.PROD || typeof window === "undefined") return false;
+  if (builtOnVercel) return true;
+  // Fallback: preview / production *.vercel.app
+  return window.location.hostname.endsWith(".vercel.app");
+}
+
 export function initAnalytics(): void {
-  if (!enabled || typeof window === "undefined") return;
-  inject({ disableAutoTrack: true });
+  if (!shouldTrack()) return;
+  inject({ disableAutoTrack: true, mode: "production" });
   ready = true;
 }
 

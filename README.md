@@ -92,4 +92,6 @@ Hoặc kéo thả thư mục `web/dist` vào [Netlify Drop](https://app.netlify.
 
 Import repo trên [Vercel](https://vercel.com/new). File `vercel.json` ở root đã cấu hình build trong `web/`.
 
-Sau deploy, bật **Analytics → Web Analytics** trong project Vercel. App dùng `@vercel/analytics` (`web/src/analytics.ts`): chỉ inject khi build trên Vercel (`VERCEL=1`), và gửi pageview thủ công mỗi lần đổi hash (`#/hsk1/day/1`, …). Build GitHub Pages / Netlify không gửi analytics.
+Sau deploy, bật **Analytics → Web Analytics** trong project Vercel, rồi **Redeploy** production (bắt buộc — Vercel thêm route `/_vercel/insights/*` sau khi bật). App dùng `@vercel/analytics` (`web/src/analytics.ts`): inject khi build trên Vercel hoặc host `*.vercel.app`, gửi pageview thủ công mỗi lần đổi hash.
+
+**Analytics chưa hiện số?** (1) Bấm **Enable** trên tab Analytics. (2) Redeploy. (3) Mở URL production, lướt vài trang. (4) DevTools → Network → tìm `/_vercel/insights/view`. (5) Đợi ~30s, refresh tab Analytics. Nếu project bật **Deployment Protection**, cần đăng nhập Vercel khi mở site.
