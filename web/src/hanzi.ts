@@ -6,6 +6,15 @@ const RADICAL_COLOR = "#2d7a4f";
 const OUTLINE_COLOR = "#ddd";
 const HIGHLIGHT_COLOR = "#e8a090";
 
+const WRITE_SVG = `
+  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <path
+      fill="currentColor"
+      d="M4 20h4.5l9.9-9.9a1.8 1.8 0 0 0 0-2.55l-1.85-1.85a1.8 1.8 0 0 0-2.55 0L4 15.5V20Zm2.1-2.9 9.9-9.9 1.05 1.05-9.9 9.9H6.1v-1.05ZM18.7 3.3a1.1 1.1 0 0 1 1.55 0l1.05 1.05a1.1 1.1 0 0 1 0 1.55l-1.2 1.2-2.6-2.6 1.2-1.2Z"
+    />
+  </svg>
+`;
+
 /** Ký tự Hán (giản thể / HSK). */
 const HAN_CHAR_RE = /\p{Script=Han}/u;
 
@@ -36,7 +45,7 @@ function writerOptions() {
   };
 }
 
-/** Khối luyện viết — lazy-init khi mở `<details>`. */
+/** Khối luyện viết — bấm icon + chữ để mở. */
 export function writePracticePanel(han: string): HTMLElement | null {
   const chars = hanChars(han);
   if (chars.length === 0) return null;
@@ -45,7 +54,17 @@ export function writePracticePanel(han: string): HTMLElement | null {
   details.className = "hanzi-practice";
 
   const summary = document.createElement("summary");
-  summary.textContent = "Luyện viết";
+  summary.className = "hanzi-practice-trigger";
+
+  const icon = document.createElement("span");
+  icon.className = "hanzi-practice-icon";
+  icon.innerHTML = WRITE_SVG;
+
+  const label = document.createElement("span");
+  label.className = "hanzi-practice-label";
+  label.textContent = "Luyện viết";
+
+  summary.append(icon, label);
   details.append(summary);
 
   const grid = document.createElement("div");
@@ -63,9 +82,9 @@ export function writePracticePanel(han: string): HTMLElement | null {
         const cell = document.createElement("div");
         cell.className = "hanzi-cell";
 
-        const label = document.createElement("p");
-        label.className = "hanzi-char-label han";
-        label.textContent = ch;
+        const charLabel = document.createElement("p");
+        charLabel.className = "hanzi-char-label han";
+        charLabel.textContent = ch;
 
         const annotation = annotationElement(ch);
 
@@ -87,7 +106,7 @@ export function writePracticePanel(han: string): HTMLElement | null {
         quizBtn.textContent = "Tự viết";
 
         controls.append(animateBtn, quizBtn);
-        cell.append(label);
+        cell.append(charLabel);
         if (annotation) cell.append(annotation);
         cell.append(target, controls);
         grid.append(cell);

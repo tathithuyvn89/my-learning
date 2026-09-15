@@ -815,36 +815,48 @@ button.cta:hover {
 
 .hanzi-practice {
   margin-top: 0.85rem;
+  width: 100%;
   border-top: 1px dashed var(--line);
   padding-top: 0.75rem;
 }
 
-.hanzi-practice > summary {
-  cursor: pointer;
-  font-size: 0.92rem;
-  font-weight: 600;
-  color: var(--cinnabar);
+.hanzi-practice-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   list-style: none;
+  cursor: pointer;
   user-select: none;
 }
 
-.hanzi-practice > summary::-webkit-details-marker {
+.hanzi-practice-trigger::-webkit-details-marker {
   display: none;
 }
 
-.hanzi-practice > summary::before {
-  content: "▸ ";
-  display: inline-block;
-  transition: transform 0.15s ease;
+.hanzi-practice-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  color: var(--cinnabar);
 }
 
-.hanzi-practice[open] > summary::before {
-  transform: rotate(90deg);
+.hanzi-practice-icon svg {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+}
+
+.hanzi-practice-label {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--cinnabar);
+  line-height: 1.2;
 }
 
 .hanzi-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 10.5rem), 1fr));
   gap: 0.75rem;
   margin-top: 0.75rem;
 }
@@ -854,6 +866,7 @@ button.cta:hover {
   flex-direction: column;
   align-items: center;
   gap: 0.35rem;
+  width: 100%;
   padding: 0.55rem;
   background: var(--bg);
   border: 1px solid var(--line);
@@ -1447,6 +1460,10 @@ button.cta:hover {
   .week-filters {
     margin-inline: calc(var(--pad) * -1);
     padding-inline: var(--pad);
+  }
+
+  .hanzi-grid {
+    grid-template-columns: 1fr;
   }
 }
 
