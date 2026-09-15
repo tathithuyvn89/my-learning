@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tathithuyvn89.github.io/my-learning/sitemap.xml
+Sitemap: https://hoc.thungchitieu.com.vn/sitemap.xml

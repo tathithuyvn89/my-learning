@@ -78,7 +78,7 @@ jobs:
 
 Sau khi lên: mở `…/#/day/1` — F5 không được mất trang.
 
-Title, description, Open Graph nằm trong `web/index.html`. `robots.txt` và `sitemap.xml` mặc định trỏ `https://tathithuyvn89.github.io/my-learning/` — sửa URL đó nếu site không nằm trên GitHub Pages.
+Title, description, Open Graph nằm trong `web/index.html`. `robots.txt`, `sitemap.xml` và `web/src/seo.ts` trỏ production `https://hoc.thungchitieu.com.vn/`.
 
 ## Deploy — Netlify
 

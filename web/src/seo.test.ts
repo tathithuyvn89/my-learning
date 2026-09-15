@@ -3,6 +3,7 @@ import { parseHash } from "./router";
 import {
   DEFAULT_DESCRIPTION,
   DEFAULT_TITLE,
+  SITE_URL,
   seoForRoute,
 } from "./seo";
 
@@ -34,6 +35,10 @@ describe("seoForRoute", () => {
 });
 
 describe("default copy", () => {
+  it("uses the production site URL", () => {
+    expect(SITE_URL).toBe("https://hoc.thungchitieu.com.vn");
+  });
+
   it("keeps HSK in the static title used by index.html", () => {
     expect(DEFAULT_TITLE).toContain("Học tiếng Trung HSK 1–6");
     expect(DEFAULT_DESCRIPTION.length).toBeGreaterThan(80);

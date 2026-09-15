@@ -83,7 +83,7 @@ Không khoá ngày tương lai: học vượt được. Streak đếm ngày lị
 
 ## Tìm kiếm (SEO)
 
-`index.html` có title, description, Open Graph, canonical, JSON-LD (`WebApplication` + `Course`). Mỗi lần đổi hash, `applySeo` cập nhật title/description. `web/public/robots.txt` và `sitemap.xml` trỏ GitHub Pages `https://tathithuyvn89.github.io/my-learning/` — đổi URL đó nếu deploy chỗ khác. Hash route không nằm trong sitemap (crawler coi fragment là một trang).
+`index.html` có title, description, Open Graph, canonical, JSON-LD (`WebApplication` + `Course`). Mỗi lần đổi hash, `applySeo` cập nhật title/description. `web/public/robots.txt` và `sitemap.xml` trỏ `https://hoc.thungchitieu.com.vn/`. Hash route không nằm trong sitemap (crawler coi fragment là một trang).
 
 ## Âm thanh
 

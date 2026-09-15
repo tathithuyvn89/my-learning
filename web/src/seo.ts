@@ -7,8 +7,8 @@ import { loadLesson } from "./content";
 import { loadEnLesson } from "./en-content";
 import type { Route } from "./router";
 
-/** URL GitHub Pages. Đổi nếu deploy Netlify / domain riêng. */
-export const SITE_URL = "https://tathithuyvn89.github.io/my-learning";
+/** URL production. */
+export const SITE_URL = "https://hoc.thungchitieu.com.vn";
 
 export const SITE_NAME = COURSE_TITLE;
 
